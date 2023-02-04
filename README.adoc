@@ -1,0 +1,65 @@
+:imagesdir: ./imgs
+:source-highlighter: highlight.js
+:doctype: book
+:toc: left
+:toclevels: 5
+:icons: font
+:hide-uri-scheme:
+
+= Jonas Froeller
+
+I am Jonas, a *webdeveloper*.
+
+== info
+[,json]
+----
+{
+    "name": "jonas froeller",
+    "age": 17,
+    "school": "htbla leonding",
+    "branch": "it/mediadesign",
+    "markup/style/programming/scripting languages (to be politically correct)": [
+        "HyperTextMarkupLanguage [.html]",
+        "CascadingStyleSheets [.css]",
+        "JavaScript (ES) [.js]",
+        "NodeJS [.js]",
+        "PersonalHomePage [.php]",
+        "StructuredQueryLanguage [.sql]",
+        "Java [.java]",
+        "ShellScript [.sh]"
+    ], "other languages": [
+        "german (native)",
+        "english (fluent, B+)"
+    ]
+}
+----
+
+== technologies/software I mainly use
+image:git.svg[static,50,50,link="https://git-scm.com/"] 
+image:github-dark.svg[static,50,50,link="https://github.com/"] 
+image:vscode-dark.svg[static,50,50,link="https://code.visualstudio.com/"] 
+image:xd.svg[static,50,50,link="https://helpx.adobe.com/at/xd/get-started.html"] 
+image:illustrator.svg[static,50,50,link="https://helpx.adobe.com/at/illustrator/get-started.html"] 
+image:photoshop.svg[static,50,50,link="https://helpx.adobe.com/at/photoshop/get-started.html"] 
+image:docker.svg[static,50,50,link="https://www.docker.com/"] 
+image:svelte.svg[static,50,50,link="https://svelte.dev/"] 
+image:vite-dark.svg[static,50,50,link="https://vitejs.dev/"] 
+image:svg-dark.svg[static,50,50,link="https://www.w3.org/TR/SVG2/"] 
+image:asciidoctor.svg[static,50,50,link="https://asciidoctor.org/"] 
+
+// source: iconify.design -> search: skill-icons:<name>
+
+== currently working on
+
+:tip-caption: pass:[🌐]
+[TIP] 
+https://github.com/jonasfroeller/jonasfroeller[portfolio] 
+
+== stats
+
+image::https://github-readme-streak-stats.herokuapp.com/?user=jonasfroeller&theme=dark&hide_border=true&date_format=j%2Fn%5B%2FY%5D[]
+
+image::https://github-readme-stats.vercel.app/api/top-langs?username=jonasfroeller&show_icons=true&theme=dark&hide_border=true&locale=en&layout=compact[]
+
+// == contact
+// image:https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white[link=""]
