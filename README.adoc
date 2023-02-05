@@ -53,7 +53,7 @@ image:asciidoctor.svg[static,50,50,link="https://asciidoctor.org/",window=_blank
 
 :tip-caption: pass:[🌐]
 [TIP] 
-xref:https://github.com/jonasfroeller/jonasfroeller[portfolio,window=_blank] 
+link:https://github.com/jonasfroeller/jonasfroeller[portfolio,window=_blank] 
 
 == stats
 
