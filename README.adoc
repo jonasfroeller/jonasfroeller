@@ -8,7 +8,7 @@
 
 = Jonas Froeller
 
-I am Jonas, a *webdeveloper*.
+I am Jonas, a *link:https://en.wikipedia.org/wiki/Web_developer[webdeveloper,window=_blank]*.
 
 == info
 [,json]
@@ -35,17 +35,17 @@ I am Jonas, a *webdeveloper*.
 ----
 
 == technologies/software I mainly use
-image:git.svg[static,50,50,link="https://git-scm.com/"] 
-image:github-dark.svg[static,50,50,link="https://github.com/"] 
-image:vscode-dark.svg[static,50,50,link="https://code.visualstudio.com/"] 
-image:xd.svg[static,50,50,link="https://helpx.adobe.com/at/xd/get-started.html"] 
-image:illustrator.svg[static,50,50,link="https://helpx.adobe.com/at/illustrator/get-started.html"] 
-image:photoshop.svg[static,50,50,link="https://helpx.adobe.com/at/photoshop/get-started.html"] 
-image:docker.svg[static,50,50,link="https://www.docker.com/"] 
-image:svelte.svg[static,50,50,link="https://svelte.dev/"] 
-image:vite-dark.svg[static,50,50,link="https://vitejs.dev/"] 
-image:svg-dark.svg[static,50,50,link="https://www.w3.org/TR/SVG2/"] 
-image:asciidoctor.svg[static,50,50,link="https://asciidoctor.org/"] 
+image:git.svg[static,50,50,link="https://git-scm.com/",window=_blank] 
+image:github-dark.svg[static,50,50,link="https://github.com/",window=_blank] 
+image:vscode-dark.svg[static,50,50,link="https://code.visualstudio.com/",window=_blank] 
+image:xd.svg[static,50,50,link="https://helpx.adobe.com/at/xd/get-started.html",window=_blank] 
+image:illustrator.svg[static,50,50,link="https://helpx.adobe.com/at/illustrator/get-started.html",window=_blank] 
+image:photoshop.svg[static,50,50,link="https://helpx.adobe.com/at/photoshop/get-started.html",window=_blank] 
+image:docker.svg[static,50,50,link="https://www.docker.com/",window=_blank] 
+image:svelte.svg[static,50,50,link="https://svelte.dev/",window=_blank] 
+image:vite-dark.svg[static,50,50,link="https://vitejs.dev/",window=_blank] 
+image:svg-dark.svg[static,50,50,link="https://www.w3.org/TR/SVG2/",window=_blank] 
+image:asciidoctor.svg[static,50,50,link="https://asciidoctor.org/",window=_blank] 
 
 // source: iconify.design -> search: skill-icons:<name>
 
@@ -53,7 +53,7 @@ image:asciidoctor.svg[static,50,50,link="https://asciidoctor.org/"]
 
 :tip-caption: pass:[🌐]
 [TIP] 
-https://github.com/jonasfroeller/jonasfroeller[portfolio] 
+xref:https://github.com/jonasfroeller/jonasfroeller[portfolio,window=_blank] 
 
 == stats
 
