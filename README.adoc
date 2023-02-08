@@ -8,7 +8,7 @@
 
 = Jonas Froeller
 
-I am Jonas, a *link:https://en.wikipedia.org/wiki/Web_developer[webdeveloper,window=_blank]*.
+I am Jonas, a *link:https://en.wikipedia.org/wiki/Web_developer[webdeveloper,window=_blank]* living in upper Austria.
 
 == info
 [,json]
@@ -44,8 +44,9 @@ image:photoshop.svg[static,50,50,link="https://helpx.adobe.com/at/photoshop/get-
 image:docker.svg[static,50,50,link="https://www.docker.com/",window=_blank] 
 image:svelte.svg[static,50,50,link="https://svelte.dev/",window=_blank] 
 image:vite-dark.svg[static,50,50,link="https://vitejs.dev/",window=_blank] 
-image:svg-dark.svg[static,50,50,link="https://www.w3.org/TR/SVG2/",window=_blank] 
 image:asciidoctor.svg[static,50,50,link="https://asciidoctor.org/",window=_blank] 
+image:svg-dark.svg[static,50,50,link="https://www.w3.org/TR/SVG2/",window=_blank] 
+image:json.svg[static,50,50,link="https://www.w3.org/TR/SVG2/",window=_blank] 
 
 // source: iconify.design -> search: skill-icons:<name>
 
@@ -61,5 +62,6 @@ image::https://github-readme-streak-stats.herokuapp.com/?user=jonasfroeller&them
 
 image::https://github-readme-stats.vercel.app/api/top-langs?username=jonasfroeller&show_icons=true&theme=dark&hide_border=true&locale=en&layout=compact[]
 
-// == contact
-// image:https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white[link=""]
+== contact (not checked daily)
+image:https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white[link="https://www.linkedin.com/in/jonas-fr%C3%B6ller-8b4986235/"]
+image:https://img.shields.io/badge/Xing-green?logo=xing&logoColor=white[link="https://www.xing.com/profile/Jonas_Froeller/cv"]
