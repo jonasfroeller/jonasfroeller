@@ -18,8 +18,8 @@ const config = {
 			$component: 'src/lib/components',
 			$store: 'src/lib/stores',
 			$script: 'src/lib/scripts'
-		}
-		// prerender: { entries: ['/de', '/en'] }
+		},
+		prerender: { entries: ['/de', '/en'] }
 	},
 	preprocess: [
 		preprocess({
