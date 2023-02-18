@@ -18,9 +18,10 @@ jobs:
           cd ./portfolio
           npm ci
           npm run build
+          ls ../portfolio-build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build # The folder the action should deploy.
+          folder: portfolio-build # The folder the action should deploy.
           branch: portfolio
