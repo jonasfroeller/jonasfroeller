@@ -1,18 +1,18 @@
 import { detectLocale } from '$translation/i18n-util';
 import { initAcceptLanguageHeaderDetector } from 'typesafe-i18n/detectors';
-// import { base } from '$app/paths';
+import { base } from '$app/paths';
 
 /** @type { import('@sveltejs/kit').Handle } */
 export const handle = async ({ event, resolve }) => {
 	// read language slug
-	const [, lang] = event.url.pathname.split('/');
+	const [, , lang] = event.url.pathname.split('/');
 
 	if (!lang) {
 		const locale = getPreferredLocale(event);
 
 		return new Response(null, {
 			status: 302,
-			headers: { Location: `/${locale}` } // ${base}
+			headers: { Location: `${base}/${locale}` } // ${base}
 		});
 	}
 
