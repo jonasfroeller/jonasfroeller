@@ -23,11 +23,8 @@ const config = {
 			$script: 'src/lib/scripts'
 		},
 		prerender: {
-			entries:
-				process.env.NODE_ENV === 'production'
-					? ['/jonasfroeller/de', '/jonasfroeller/en']
-					: ['/de', '/en']
-		}
+			entries: ['/de', '/en']
+		} // process.env.NODE_ENV === 'production' ? ['/jonasfroeller/de', '/jonasfroeller/en'] : ['/de', '/en']
 	},
 	preprocess: [
 		preprocess({

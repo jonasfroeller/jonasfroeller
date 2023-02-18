@@ -1,6 +1,6 @@
 import { detectLocale } from '$translation/i18n-util';
 import { initAcceptLanguageHeaderDetector } from 'typesafe-i18n/detectors';
-import { base } from '$app/paths';
+// import { base } from '$app/paths';
 
 /** @type { import('@sveltejs/kit').Handle } */
 export const handle = async ({ event, resolve }) => {
@@ -12,7 +12,7 @@ export const handle = async ({ event, resolve }) => {
 
 		return new Response(null, {
 			status: 302,
-			headers: { Location: `${base}/${locale}` }
+			headers: { Location: `/${locale}` } // ${base}
 		});
 	}
 

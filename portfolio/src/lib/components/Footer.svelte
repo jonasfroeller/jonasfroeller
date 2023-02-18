@@ -1,3 +1,8 @@
+<script>
+	import { base } from '$app/paths'; // gh-pages basepath
+	import { locale } from '$translation/i18n-svelte'; // currentLanguage
+</script>
+
 <footer class="footer p-10 text-base-content border-t-2 border-b-2 border-secondary">
 	<div>
 		<span class="footer-title after:bg-primary">Socials/Contact</span>
@@ -18,10 +23,10 @@
 	</div>
 	<div>
 		<span class="footer-title">Legal</span>
-		<a class="link after:bg-primary" href="/">Terms and Conditions</a>
-		<a class="link after:bg-primary" href="/">Privacy Policy</a>
-		<a class="link after:bg-primary" href="/">Cookie Policy</a>
-		<a class="link after:bg-primary" href="/">Imprint</a>
+		<a class="link after:bg-primary" href="{base}/{$locale}">Terms and Conditions</a>
+		<a class="link after:bg-primary" href="{base}/{$locale}">Privacy Policy</a>
+		<a class="link after:bg-primary" href="{base}/{$locale}">Cookie Policy</a>
+		<a class="link after:bg-primary" href="{base}/{$locale}">Imprint</a>
 	</div>
 </footer>
 <footer class="footer px-10 py-4 border-t text-base-content border-base-300">
