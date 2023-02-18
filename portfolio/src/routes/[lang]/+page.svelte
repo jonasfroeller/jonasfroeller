@@ -38,7 +38,7 @@
 			}, 30);
 		}
 
-		document.querySelector('#name').addEventListener('mouseover', onMouseOver);
+		document.getElementById('name').addEventListener('mouseover', onMouseOver);
 	});
 </script>
 
