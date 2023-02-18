@@ -11,6 +11,9 @@ const config = {
 			precompress: false,
 			strict: true
 		}),
+		paths: {
+			base: process.env.NODE_ENV === 'production' ? '/jonasfroeller' : ''
+		},
 		alias: {
 			$main: 'src',
 			$translation: 'src/lib/translations',
@@ -19,7 +22,12 @@ const config = {
 			$store: 'src/lib/stores',
 			$script: 'src/lib/scripts'
 		},
-		prerender: { entries: ['/jonasfroeller/de', '/jonasfroeller/en'] }
+		prerender: {
+			entries:
+				process.env.NODE_ENV === 'production'
+					? ['/jonasfroeller/de', '/jonasfroeller/en']
+					: ['/de', '/en']
+		}
 	},
 	preprocess: [
 		preprocess({

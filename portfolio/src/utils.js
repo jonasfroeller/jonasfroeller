@@ -1,3 +1,5 @@
+import { base } from '$app/paths';
+
 /**
  * @param { Location } location
  * @param { string } locale
@@ -6,5 +8,5 @@
 export const replaceLocaleInUrl = ({ pathname, search }, locale) => {
 	console.log(pathname, search, locale);
 	const [, , , ...rest] = pathname?.split('/') ?? ''; // [, , ...rest]
-	return `/jonasfroeller/${[locale, ...rest].join('/')}${search}`;
+	return `${base}/${[locale, ...rest].join('/')}${search}`;
 };

@@ -9,7 +9,7 @@ import { loadLocaleAsync } from '$translation/i18n-util.async';
 /** @type { import('./$types').LayoutLoad<{ locale: Locales }> } */
 export const load = async ({ url, params }) => {
 	// fallback needed because of https://github.com/sveltejs/kit/issues/3647
-	const lang = /** @type { Locales } */ (params.lang || url.pathname.split('/')[2]); // const lang = /** @type { Locales } */ (params.lang || url.pathname.split('/')[1]);
+	const lang = /** @type { Locales } */ (params.lang || url.pathname.split('/')[1]); // const lang = /** @type { Locales } */ (params.lang || url.pathname.split('/')[2]);
 
 	// redirect to base locale if language is not present
 	if (!locales.includes(lang)) {
