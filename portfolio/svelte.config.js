@@ -4,8 +4,8 @@ import adapter from '@sveltejs/adapter-static';
 const config = {
 	kit: {
 		adapter: adapter({
-			pages: '../portfolio-build',
-			assets: '../portfolio-build/assets',
+			pages: 'build',
+			assets: 'build/assets',
 			fallback: null,
 			precompress: false,
 			strict: true
