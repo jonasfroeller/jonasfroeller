@@ -1,12 +1,12 @@
 import adapter from '@sveltejs/adapter-static';
-import preprocess from 'svelte-preprocess'; // || import { vitePreprocess } from '@sveltejs/kit/vite';
+import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
 		adapter: adapter({
 			pages: '../portfolio-build',
-			assets: '../portfolio-build/assets',
+			assets: '../portfolio-build',
 			fallback: null,
 			precompress: false,
 			strict: true
@@ -24,13 +24,12 @@ const config = {
 		},
 		prerender: {
 			entries: ['/de', '/en']
-		} // process.env.NODE_ENV === 'production' ? ['/jonasfroeller/de', '/jonasfroeller/en'] : ['/de', '/en']
+		}
 	},
 	preprocess: [
 		preprocess({
 			postcss: true
 		})
-		// vitePreprocess()
 	]
 };
 
