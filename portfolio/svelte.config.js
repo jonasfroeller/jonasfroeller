@@ -19,7 +19,7 @@ const config = {
 			$store: 'src/lib/stores',
 			$script: 'src/lib/scripts'
 		},
-		prerender: { entries: ['/de', '/en'] }
+		prerender: { entries: ['/jonasfroeller/de', '/jonasfroeller/en'] }
 	},
 	preprocess: [
 		preprocess({
