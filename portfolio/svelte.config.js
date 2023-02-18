@@ -5,15 +5,15 @@ import preprocess from 'svelte-preprocess';
 const config = {
 	kit: {
 		adapter: adapter({
-			pages: '../portfolio-build',
-			assets: '../portfolio-build',
+			pages: '../jonasfroeller',
+			assets: '../jonasfroeller',
 			fallback: null,
 			precompress: false,
 			strict: true
 		}),
 		paths: {
 			base: process.env.NODE_ENV === 'production' ? '/jonasfroeller' : ''
-		},
+		}, // for gh-pages: /jonasfroeller/
 		alias: {
 			$main: 'src',
 			$translation: 'src/lib/translations',
