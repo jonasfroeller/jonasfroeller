@@ -15,8 +15,6 @@ jobs:
 
       - name: Install and Build 🔧 # Build Project
         run: |
-          echo Install and Build
-          cd ./portfolio
           npm ci
           npm run build
 
