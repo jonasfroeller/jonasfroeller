@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
+const dev = process.argv.includes('dev'); // process.env.NODE_ENV === 'developement'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -12,8 +13,9 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/jonasfroeller' : ''
-		}, // for gh-pages: /jonasfroeller/
+			base: dev ? '' : '/jonasfroeller'
+		},
+		appDir: 'portfolio',
 		alias: {
 			$main: 'src',
 			$translation: 'src/lib/translations',
