@@ -10,8 +10,8 @@
 	import Footer from '$component/Footer.svelte';
 
 	import { setLocale } from '$translation/i18n-svelte';
-	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
+	import { browser } from '$app/environment';
 
 	/** @type { import('./$types').LayoutData } */
 	export let data;
@@ -20,22 +20,36 @@
 	onMount(async () => {
 		console.log(new Date().toLocaleString());
 
-		/* https://codepen.io/designcourse/pen/GzJKOE */
-		const cursor = document.querySelector('#cursor');
+		/* 	const cursor = document.querySelector('#cursor');
 
+		let posX, posY;
 		document.querySelector('main').addEventListener('mousemove', (e) => {
-			cursor.setAttribute(
-				'style',
-				'top: ' + (e.pageY - 10) + 'px; left: ' + (e.pageX - 10) + 'px;'
-			);
+			posX = e.clientX;
+			posY = e.clientY;
+			if (browser) {
+				if (window.requestAnimationFrame) {
+					window.requestAnimationFrame(animateBall);
+				} else {
+					animateBall();
+				}
+			}
 		});
+
+		function animateBall() {
+			if (browser) {
+				//cursor.style.transform = `translate(${posX - 10}px, ${posY - 10}px)`;
+				// cursor.style.transform = `translateX(${posX - 10}px) translateY(${posY - 10}px)`;
+				// cursor.style = `transform': 'translateX('${posX - 10}'px) translateY('${posY - 10}'px);`;
+				cursor.setAttribute('style', 'top: ' + (posY - 10) + 'px; left: ' + (posX - 10) + 'px;');
+			}
+		}
 
 		document.querySelector('main').addEventListener('mousedown', () => {
 			document.querySelector('#cursor').classList.add('clicked');
 		});
 		document.querySelector('main').addEventListener('mouseup', () => {
 			document.querySelector('#cursor').classList.remove('clicked');
-		});
+		}); */
 	});
 </script>
 
@@ -43,18 +57,18 @@
 
 <Main>
 	<slot />
-	<div id="cursor">
+	<!-- <div id="cursor">
 		<style>
 			#cursor.clicked {
 				transform: scale(1.5);
 			}
 		</style>
-	</div>
+	</div> -->
 </Main>
 
 <Footer />
 
-<style>
+<!-- <style>
 	#cursor {
 		width: 20px;
 		aspect-ratio: 1/1;
@@ -64,4 +78,4 @@
 		pointer-events: none;
 		transition: 0.3s;
 	}
-</style>
+</style> -->

@@ -1,7 +1,11 @@
 <script>
-	import { config } from '$store/styleConfig';
-	import { onMount } from 'svelte';
+	// the way the language gets changed in the url
+	import { base } from '$app/paths'; // gh-pages basepath
+	// @ts-ignore
+	const dev = base === '' ? true : false;
+
 	import styleCfg from '$script/styleStorage';
+	import { config } from '$store/styleConfig';
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
 	import { setLocale, locale } from '$translation/i18n-svelte';
@@ -14,8 +18,9 @@
 	 * @return { Promise<void> }
 	 */
 	const switchLocale = async (newLocale, updateHistoryState = true) => {
-		// @ts-ignore
 		// save to locale storage
+		$config = await styleCfg.load();
+		// @ts-ignore
 		$config.language = newLocale;
 		await styleCfg.save($config);
 
@@ -29,7 +34,7 @@
 		document.querySelector('html').setAttribute('lang', newLocale);
 		if (updateHistoryState) {
 			// update url to reflect locale changes
-			history.pushState({ locale: newLocale }, '', replaceLocaleInUrl(location, newLocale));
+			history.pushState({ locale: newLocale }, '', replaceLocaleInUrl(location, newLocale, dev));
 		}
 	};
 	// update locale when navigating via browser back/forward buttons
@@ -44,17 +49,9 @@
 		history.replaceState(
 			{ ...history.state, locale: lang },
 			'',
-			replaceLocaleInUrl(location, lang)
+			replaceLocaleInUrl(location, lang, dev)
 		);
 	}
-
-	$: language = 'en';
-
-	onMount(async () => {
-		// @ts-ignore
-		language = $config.language;
-		console.log('language:', language);
-	});
 </script>
 
 <svelte:window on:popstate={handlePopStateEvent} />
@@ -64,7 +61,7 @@
 		<li>
 			<button
 				type="button"
-				class="link after:bg-primary"
+				class="link after:bg-primary text-xl"
 				class:active={l === $locale}
 				on:click={() => switchLocale(l)}
 			>

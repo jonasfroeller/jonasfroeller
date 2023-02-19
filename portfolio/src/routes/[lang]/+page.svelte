@@ -3,9 +3,15 @@
 	/** @type {import('./$types').PageData} */
 	export let data; // HAS TO BE NAMED "data"
 
-	$: console.log(data);
-
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths'; // gh-pages basepath
+	import { locale } from '$translation/i18n-svelte'; // currentLanguage
+	import Category from '$component/Category.svelte';
+
+	$: console.log('[lang]', data);
+
+	let name = 'home';
+	let nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
 
 	onMount(async () => {
 		/* https://codepen.io/Hyperplexed/pen/rNrJgrd */
@@ -42,22 +48,17 @@
 	});
 </script>
 
-<svelte:head>
-	<meta name="keywords" content="rapid,onlineshop,cheap,darkmode,bilingual" />
-
-	<meta property="og:url" content="https://jonasfroeller.github.io/jonasfroeller" />
-	<meta property="og:title" content="home" />
-
-	<title>Home</title>
-</svelte:head>
+<Category {name} {nameCapitalized} />
 
 <section class="flex flex-col justify-center items-center gap-6 w-100 h-[75vh]">
 	<h1 class="text-9xl select-none" id="name" data-value="JONAS FRÖLLER">UWIAS AWCELLRX</h1>
 	<p class="text-lg select-none">Hi, I am Jonas!</p>
 	<div class="flex gap-4">
-		<button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">About</button>
-		<button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Socials</button>
-		<button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Projects</button>
-		<button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Legal</button>
+		<a href="{base}/{$locale}/about">
+			<button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">About</button>
+		</a>
+		<a href="{base}/{$locale}/projects">
+			<button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Projects</button>
+		</a>
 	</div>
 </section>

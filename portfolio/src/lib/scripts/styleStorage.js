@@ -6,20 +6,21 @@ function fillStyleObject(cfg) {
 	if (browser) {
 		// wegen document.referrer
 		if (cfg.language == null || cfg.language == undefined || cfg.language == '') {
-			cfg.language = 'de';
+			cfg.language = 'en';
 		}
 		if (cfg.theme == null || cfg.theme == undefined || cfg.theme == '') {
 			cfg.theme = 'night';
 		}
+		return cfg;
 	}
 }
 
 export default class styleCfg {
 	static async save(cfg) {
-		if (browser && cfg != null && cfg != undefined) {
-			console.log('saving config: ', cfg);
+		if (browser) {
+			cfg = fillStyleObject(cfg, 'save');
 			document.documentElement.setAttribute('data-theme', cfg.theme);
-			// document.documentElement.setAttribute('lang', cfg.language);
+			document.documentElement.setAttribute('lang', cfg.language);
 			localStore.save('jf-portfolio-styleConfig', cfg);
 		}
 	}
@@ -29,13 +30,10 @@ export default class styleCfg {
 			let cfg = await localStore.load('jf-portfolio-styleConfig');
 
 			if (cfg != null && cfg != undefined) {
-				fillStyleObject(cfg);
-				console.log('recovered following config: ', cfg);
+				cfg = fillStyleObject(cfg);
 			} else {
-				console.log('no data recovered!');
-
 				cfg = {
-					language: 'de',
+					language: 'en',
 					theme: 'night'
 				};
 			}

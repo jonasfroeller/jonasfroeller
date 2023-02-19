@@ -1,4 +1,7 @@
-let production = process.env.NODE_ENV === 'production' ? true : false;
+// the way the language gets changed in the url
+import { base } from '$app/paths'; // gh-pages basepath
+// @ts-ignore
+const dev = base === '' ? true : false;
 
 // @ts-nocheck
 import { redirect } from '@sveltejs/kit';
@@ -11,13 +14,13 @@ import { loadLocaleAsync } from '$translation/i18n-util.async';
 /** @type { import('./$types').LayoutLoad<{ locale: Locales }> } */
 export const load = async ({ url, params }) => {
 	// fallback needed because of https://github.com/sveltejs/kit/issues/3647
-	let fallback = production ? url.pathname.split('/')[2] : url.pathname.split('/')[1]; // jonasfroeller/de||en/search
+	let fallback = dev === true ? url.pathname.split('/')[1] : url.pathname.split('/')[2]; // jonasfroeller/de||en/search
 	const lang = /** @type { Locales } */ (params.lang || fallback); // const lang = /** @type { Locales } */ (params.lang || url.pathname.split('/')[2]);
 
 	// redirect to base locale if language is not present
 	if (!locales.includes(lang)) {
 		// @ts-ignore
-		throw redirect(302, replaceLocaleInUrl(url.pathname, baseLocale));
+		throw redirect(302, replaceLocaleInUrl(url.pathname, baseLocale, dev));
 	}
 
 	await loadLocaleAsync(lang);

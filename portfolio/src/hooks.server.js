@@ -1,3 +1,6 @@
+// the way the language gets changed in the url
+const dev = process.argv.includes('dev');
+
 import { detectLocale } from '$translation/i18n-util';
 import { initAcceptLanguageHeaderDetector } from 'typesafe-i18n/detectors';
 import { base } from '$app/paths';
@@ -5,18 +8,24 @@ import { base } from '$app/paths';
 /** @type { import('@sveltejs/kit').Handle } */
 export const handle = async ({ event, resolve }) => {
 	// read language slug
-	const [, , lang] = event.url.pathname.split('/');
+	// @ts-ignore
+	let [, , lang] = event.url.pathname.split('/'); // ip||domain/prefix/[lang]
+	if (dev) {
+		// [, lang];
+		[, lang] = event.url.pathname.split('/'); // ip||domain/[lang]
+	}
 
 	if (!lang) {
 		const locale = getPreferredLocale(event);
 
 		return new Response(null, {
 			status: 302,
-			headers: { Location: `${base}/${locale}` } // ${base}
+			headers: { Location: `${base}/${locale}` } // ${base} => "" or "/repo"
 		});
 	}
 
 	// replace html lang attribute with correct language
+	// @ts-ignore
 	return resolve(event, { transformPageChunk: ({ html }) => html.replace('%lang%', lang) });
 };
 
