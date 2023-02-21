@@ -74,7 +74,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="social-medias">
+			<div class="social-medias flex items-center">
 				<div class="tooltip" data-tip="Xing">
 					<a class="align-middle" href="https://xing.com/profile/Jonas_Froeller/cv"
 						><iconify-icon icon="fa6-brands:square-xing" width="24" height="24" />

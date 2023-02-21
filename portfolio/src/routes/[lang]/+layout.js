@@ -30,7 +30,7 @@ export const load = async ({ url, params }) => {
 
 // Static Generation: true
 // Generation: Documentation: https://kit.svelte.dev/docs/page-options#prerender
-export const prerender = true;
+export const prerender = true; // 'auto'
 
 // Generate SPA? => Set false
 // Documentation: https://kit.svelte.dev/docs/page-options#ssr

@@ -3,8 +3,8 @@
 	import { page } from '$app/stores';
 	import { base } from '$app/paths'; // gh-pages basepath
 	import { locale } from '$translation/i18n-svelte';
-	import LocaleSwitcher from './LocaleSwitcher.svelte';
-	import ThemeSwitcher from './ThemeSwitcher.svelte';
+	import LocaleSwitcher from '$component/LocaleSwitcher.svelte';
+	import ThemeSwitcher from '$component/ThemeSwitcher.svelte';
 	import { config } from '$store/styleConfig';
 	import styleCfg from '$script/styleStorage';
 	import { onMount } from 'svelte';
@@ -24,66 +24,124 @@
 
 	function toggleMenu() {
 		if (browser) {
-			console.log(document.getElementById('menu').classList.toggle('hidden'));
+			document.getElementById('menu').classList.toggle('hidden');
 		}
 	}
 </script>
 
-<header class="flex flex-wrap justify-end p-2 border-b-2 border-secondary min-h-[10vh] select-none">
+<header
+	class="flex flex-wrap justify-end p-2 border-b-2 border-secondary min-h-[10dvh] min-h-[10vh] select-none"
+>
 	<nav class="w-full flex justify-between items-center">
-		<div class="cursor-pointer breadcrumbs p-2 rounded-md">
-			<ul class="flex">
-				<li>
-					<label
-						class="btn bg-transparent hover:bg-transparent btn-circle swap swap-rotate border-2 text-secondary border-secondary hover:border-primary"
-					>
-						<!-- this hidden checkbox controls the state -->
-						<input type="checkbox" on:click={() => toggleMenu()} />
+		<ul class="flex">
+			<li>
+				<label
+					class="btn bg-transparent hover:bg-transparent btn-circle swap swap-rotate border-2 text-secondary border-secondary hover:border-primary"
+				>
+					<!-- this hidden checkbox controls the state -->
+					<input type="checkbox" on:click={() => toggleMenu()} />
 
-						<!-- hamburger icon -->
-						<svg
-							class="swap-off fill-current"
-							xmlns="http://www.w3.org/2000/svg"
-							width="32"
-							height="32"
-							viewBox="0 0 512 512"
-							><path
-								d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
-							/></svg
-						>
-
-						<!-- close icon -->
-						<svg
-							class="swap-on fill-current"
-							xmlns="http://www.w3.org/2000/svg"
-							width="32"
-							height="32"
-							viewBox="0 0 512 512"
-							><polygon
-								points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
-							/></svg
-						>
-					</label>
-				</li>
-				<li class="text-xl">
-					<a href="{base}/{$locale}"><iconify-icon icon="mdi:home" width="24" height="24" /> Home</a
+					<!-- hamburger icon -->
+					<svg
+						class="swap-off fill-current"
+						xmlns="http://www.w3.org/2000/svg"
+						width="32"
+						height="32"
+						viewBox="0 0 512 512"
+						><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /></svg
 					>
-				</li>
-				<li class="text-xl">
-					<a href="{base}/{$locale}/{dir}">{dir}</a>
-				</li>
-			</ul>
-		</div>
-		<div class="flex items-center gap-8">
+
+					<!-- close icon -->
+					<svg
+						class="swap-on fill-current"
+						xmlns="http://www.w3.org/2000/svg"
+						width="32"
+						height="32"
+						viewBox="0 0 512 512"
+						><polygon
+							points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
+						/></svg
+					>
+				</label>
+			</li>
+		</ul>
+		<div class="flex items-center gap-4">
 			<LocaleSwitcher />
 			<ThemeSwitcher />
+			<label for="settings" class="flex items-center">
+				<iconify-icon
+					class="cursor-pointer rotate"
+					icon="material-symbols:settings-outline"
+					width="38"
+					height="38"
+				/></label
+			>
+
+			<input type="checkbox" id="settings" class="modal-toggle" />
+			<label for="settings" class="modal cursor-pointer">
+				<label class="modal-box relative" for="">
+					<!-- disables closing modal on click of modal -->
+					<label for="settings" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+					<h3 class="text-lg font-bold mb-2">Settings</h3>
+					<form class="form-control mb-4">
+						<h4 class="text-base font-bold mb-2">Legal</h4>
+						<label class="label cursor-pointer">
+							<span class="label-text">Accept "Terms and Conditions"</span>
+							<input type="checkbox" class="checkbox" checked />
+							<!-- alt class: toggle -->
+						</label>
+						<label class="label cursor-pointer">
+							<span class="label-text">Accept "Privacy Policy"</span>
+							<input type="checkbox" class="checkbox" checked />
+						</label>
+						<label class="label cursor-pointer">
+							<span class="label-text">Accept "Cookie Policy"</span>
+							<input type="checkbox" class="checkbox" checked />
+						</label>
+						<h4 class="text-base font-bold mb-2">Style</h4>
+						<div class="flex items-center justify-between">
+							<ThemeSwitcher asSelect={true} />
+							<ThemeSwitcher asToggle={true} />
+						</div>
+						<h4 class="text-base font-bold mb-2">Language</h4>
+						<LocaleSwitcher asSelect={true} />
+					</form>
+					<!-- svelte-ignore a11y-click-events-have-key-events -->
+					<a href="{base}/{$locale}/settings">
+						<!-- for ux => because on:click is needed and the user can't see where he will end up -->
+						<label
+							on:click={() => (location.href = `${base}/${$locale}/settings`)}
+							for="settings"
+							class="btn flex gap-1"
+						>
+							<iconify-icon
+								icon="material-symbols:settings-outline-rounded"
+								width="24"
+								height="24"
+							/> detail
+						</label>
+					</a>
+				</label>
+			</label>
 		</div>
 	</nav>
 </header>
+<aside class="flex justify-center">
+	<div class="cursor-pointer breadcrumbs p-2 rounded-md">
+		<ul class="flex items-center">
+			<li class="text-xl">
+				<a href="{base}/{$locale}"><iconify-icon icon="mdi:home" width="24" height="24" /> Home</a>
+			</li>
+			<li class="text-xl">
+				<a href="{base}/{$locale}/{dir}">{dir}</a>
+			</li>
+		</ul>
+	</div>
+</aside>
 
 <ul
 	id="menu"
-	class="menu hidden absolute left-4 top-[calc(10vh+1rem)] border-2 border-secondary p-2 gap-2 rounded-box"
+	class="menu hidden absolute left-4 top-[calc(10vh+1rem)] border-2 border-secondary p-2 gap-2 rounded-box bg-neutral"
 >
 	<li>
 		<a href="{base}/{$locale}" class={dir.length === 0 ? 'active' : ''}>

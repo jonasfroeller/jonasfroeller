@@ -14,98 +14,18 @@ export type Translation = RootTranslation
 export type Translations = RootTranslation
 
 type RootTranslation = {
-	Error: {
-		/**
-		 * {​e​r​r​o​r​}​ ​F​e​h​l​e​r
-		 * @param {number} error
-		 */
-		error: RequiredParams<'error'>
-		/**
-		 * z​u​r​ü​c​k​ ​z​u​r​ ​h​o​m​e​p​a​g​e
-		 */
-		action: string
-	}
-	Footer: {
-		contact: {
-			/**
-			 * K​o​n​t​a​k​t
-			 */
-			title: string
-		}
-		social: {
-			/**
-			 * F​o​l​g​e​ ​u​n​s
-			 */
-			title: string
-		}
-		legal: {
-			/**
-			 * R​e​c​h​t​l​i​c​h​e​s
-			 */
-			title: string
-			list: {
-				/**
-				 * D​a​t​e​n​s​c​h​u​t​z
-				 */
-				privacy_policy: string
-				/**
-				 * G​e​s​c​h​ä​f​t​s​b​e​d​i​n​g​u​n​g​e​n
-				 */
-				terms_and_conditions: string
-				/**
-				 * I​m​p​r​e​s​s​u​m
-				 */
-				imprint: string
-			}
-		}
-	}
+	/**
+	 * H​a​l​l​o​ ​{​n​a​m​e​}​!​ ​B​i​t​t​e​ ​h​i​n​t​e​r​l​a​s​s​e​ ​e​i​n​e​n​ ​S​t​e​r​n​,​ ​w​e​n​n​ ​d​i​r​ ​d​a​s​ ​P​r​o​j​e​k​t​ ​g​e​f​ä​l​l​t​:​ ​h​t​t​p​s​:​/​/​g​i​t​h​u​b​.​c​o​m​/​i​v​a​n​h​o​f​e​r​/​t​y​p​e​s​a​f​e​-​i​1​8​n
+	 * @param {string} name
+	 */
+	HI: RequiredParams<'name'>
 }
 
 export type TranslationFunctions = {
-	Error: {
-		/**
-		 * {error} Fehler
-		 */
-		error: (arg: { error: number }) => LocalizedString
-		/**
-		 * zurück zur homepage
-		 */
-		action: () => LocalizedString
-	}
-	Footer: {
-		contact: {
-			/**
-			 * Kontakt
-			 */
-			title: () => LocalizedString
-		}
-		social: {
-			/**
-			 * Folge uns
-			 */
-			title: () => LocalizedString
-		}
-		legal: {
-			/**
-			 * Rechtliches
-			 */
-			title: () => LocalizedString
-			list: {
-				/**
-				 * Datenschutz
-				 */
-				privacy_policy: () => LocalizedString
-				/**
-				 * Geschäftsbedingungen
-				 */
-				terms_and_conditions: () => LocalizedString
-				/**
-				 * Impressum
-				 */
-				imprint: () => LocalizedString
-			}
-		}
-	}
+	/**
+	 * Hallo {name}! Bitte hinterlasse einen Stern, wenn dir das Projekt gefällt: https://github.com/ivanhofer/typesafe-i18n
+	 */
+	HI: (arg: { name: string }) => LocalizedString
 }
 
 export type Formatters = {}

@@ -51,7 +51,13 @@
 <Category {name} {nameCapitalized} />
 
 <section class="flex flex-col justify-center items-center gap-6 w-100 h-[75vh]">
-	<h1 class="text-9xl select-none" id="name" data-value="JONAS FRÖLLER">UWIAS AWCELLRX</h1>
+	<h1
+		class="2xl:text-9xl xl:text-8xl	lg:text-7xl	md:text-6xl	sm:text-5xl text-4xl select-none text-center"
+		id="name"
+		data-value="JONAS FRÖLLER"
+	>
+		UWIAS AWCELLRX
+	</h1>
 	<p class="text-lg select-none">Hi, I am Jonas!</p>
 	<div class="flex gap-4">
 		<a href="{base}/{$locale}/about">

@@ -3,6 +3,8 @@
 	import { base } from '$app/paths'; // gh-pages basepath
 	// @ts-ignore
 	const dev = base === '' ? true : false;
+	
+	export let asSelect = false;
 
 	import styleCfg from '$script/styleStorage';
 	import { config } from '$store/styleConfig';
@@ -12,6 +14,7 @@
 	import { locales } from '$translation/i18n-util';
 	import { loadLocaleAsync } from '$translation/i18n-util.async';
 	import { replaceLocaleInUrl } from '$main/utils';
+
 	/**
 	 * @param { import('$translation/i18n-types').Locales } newLocale
 	 * @param { boolean } updateHistoryState
@@ -56,17 +59,37 @@
 
 <svelte:window on:popstate={handlePopStateEvent} />
 
-<ul class="flex gap-2">
-	{#each locales as l}
-		<li>
-			<button
-				type="button"
-				class="link after:bg-primary text-xl"
-				class:active={l === $locale}
-				on:click={() => switchLocale(l)}
-			>
+	{#if asSelect}
+		<select class="select select-bordered w-auto">
+			<option disabled selected>Language</option>
+			{#each locales as l}
+			<option class:active={l === $locale}>
 				{l}
-			</button>
-		</li>
-	{/each}
-</ul>
+			</option>
+			{/each}
+		</select>
+	{:else}
+		<ul class="flex gap-2">
+			{#each locales as l}
+			<li>
+				<button
+					type="button"
+					class="link after:bg-primary text-xl"
+					class:active={l === $locale}
+					on:click={() => switchLocale(l)}
+				>
+					{l}
+				</button>
+			</li>
+			{/each}
+		</ul>
+	{/if}
+
+	
+		
+		
+			
+
+	
+
+
