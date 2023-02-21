@@ -60,7 +60,7 @@
 	</h1>
 	<p class="text-lg select-none">Hi, I am Jonas!</p>
 	<div class="flex gap-4">
-		<a href="{base}/{$locale}/about">
+		<a href="{base}/{$locale}/about/resume">
 			<button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">About</button>
 		</a>
 		<a href="{base}/{$locale}/projects">

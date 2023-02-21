@@ -6,8 +6,26 @@
 
 /** @type { BaseTranslation } */
 const de = {
-	// TODO: your translations go here
-	HI: 'Hallo {name:string}! Bitte hinterlasse einen Stern, wenn dir das Projekt gefällt: https://github.com/ivanhofer/typesafe-i18n',
-}
+	Error: {
+		error: '{error:number} Fehler',
+		action: 'zurück zur homepage'
+	},
+	Footer: {
+		contact: {
+			title: 'Kontakt'
+		},
+		social: {
+			title: 'Folge uns'
+		},
+		legal: {
+			title: 'Rechtliches',
+			list: {
+				privacy_policy: 'Datenschutz',
+				terms_and_conditions: 'Geschäftsbedingungen',
+				imprint: 'Impressum'
+			}
+		}
+	}
+};
 
-export default de
+export default de;

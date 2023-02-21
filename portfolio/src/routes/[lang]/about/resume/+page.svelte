@@ -1,5 +1,6 @@
 <script>
 	import SubCategory from '$component/SubCategory.svelte';
+	import AboutNav from '$component/AboutNav.svelte';
 	let parent = 'about';
 	let parentCapitalized = parent.charAt(0).toUpperCase() + parent.slice(1);
 	let name = 'resume';
@@ -8,6 +9,13 @@
 
 <SubCategory {parent} {parentCapitalized} {name} {nameCapitalized} />
 
-<section class="flex flex-col justify-center items-center gap-6 w-100 h-[75vh]">
-	<h1>{parentCapitalized}/{nameCapitalized}</h1>
+<AboutNav {name} />
+
+<section class="flex justify-center mt-4">
+	<div class="prose">
+		<h1 class="text-center mb-0">
+			{nameCapitalized}
+		</h1>
+		<p class="text-center">Hey, I am Jonas!</p>
+	</div>
 </section>

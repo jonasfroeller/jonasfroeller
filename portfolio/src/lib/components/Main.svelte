@@ -7,6 +7,7 @@
 		min-height: 90vh;
 		max-width: calc(1920px * 0.9);
 		padding: 2rem;
+		padding-top: 0rem;
 		margin-left: auto;
 		margin-right: auto;
 	}

@@ -6,8 +6,26 @@
 
 /** @type { Translation } */
 const en = {
-	// this is an example Translation, just rename or delete this folder if you want
-	HI: 'Hi {name}! Please leave a star if you like this project: https://github.com/ivanhofer/typesafe-i18n',
-}
+	Error: {
+		error: '{error} Error',
+		action: 'back to homepage'
+	},
+	Footer: {
+		contact: {
+			title: 'Contact'
+		},
+		social: {
+			title: 'Follow us'
+		},
+		legal: {
+			title: 'Legal',
+			list: {
+				privacy_policy: 'Privacy Policy',
+				terms_and_conditions: 'Terms and Conditions',
+				imprint: 'Imprint'
+			}
+		}
+	}
+};
 
-export default en
+export default en;

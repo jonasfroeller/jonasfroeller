@@ -133,7 +133,11 @@
 				<a href="{base}/{$locale}"><iconify-icon icon="mdi:home" width="24" height="24" /> Home</a>
 			</li>
 			<li class="text-xl">
-				<a href="{base}/{$locale}/{dir}">{dir}</a>
+				<a
+					href="{base}/{$locale}/{dir}{dir == 'about' ? '/resume' : ''}{dir == 'legal'
+						? '/terms-and-conditions'
+						: ''}">{dir}</a
+				>
 			</li>
 		</ul>
 	</div>
@@ -141,7 +145,7 @@
 
 <ul
 	id="menu"
-	class="menu hidden absolute left-4 top-[calc(10vh+1rem)] border-2 border-secondary p-2 gap-2 rounded-box bg-neutral"
+	class="menu hidden absolute left-4 top-[calc(10vh+1rem)] border-2 border-secondary p-2 gap-2 rounded-box bg-base-100"
 >
 	<li>
 		<a href="{base}/{$locale}" class={dir.length === 0 ? 'active' : ''}>
@@ -149,7 +153,7 @@
 		</a>
 	</li>
 	<li>
-		<a href="{base}/{$locale}/about" class={dir[0] === 'about' ? 'active' : ''}>
+		<a href="{base}/{$locale}/about/resume" class={dir[0] === 'about' ? 'active' : ''}>
 			<iconify-icon icon="mdi:about" width="24" height="24" /> About
 		</a>
 	</li>
@@ -164,7 +168,10 @@
 		</a>
 	</li>
 	<li>
-		<a href="{base}/{$locale}/legal" class={dir[0] === 'legal' ? 'active' : ''}>
+		<a
+			href="{base}/{$locale}/legal/terms-and-conditions"
+			class={dir[0] === 'legal' ? 'active' : ''}
+		>
 			<iconify-icon icon="mdi:legal" width="24" height="24" /> Legal
 		</a>
 	</li>

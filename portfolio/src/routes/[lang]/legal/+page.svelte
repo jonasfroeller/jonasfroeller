@@ -1,11 +1,15 @@
 <script>
+	import { building } from '$app/environment';
+	import { goto } from '$app/navigation';
+	import { locale } from '$translation/i18n-svelte';
+	import { base } from '$app/paths';
 	import Category from '$component/Category.svelte';
 	let name = 'legal';
 	let nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
+
+	if (!building) {
+		goto(`${base}/${$locale}/legal/terms-and-conditions`);
+	}
 </script>
 
-<Category {name} {nameCapitalized} />
-
-<section class="flex flex-col justify-center items-center gap-6 w-100 h-[75vh]">
-	<h1>{nameCapitalized}</h1>
-</section>
+<Category {name} {nameCapitalized} referHome={true} />

@@ -5,7 +5,7 @@
 
 <footer class="footer p-10 text-base-content border-t-2 border-b-2 border-secondary">
 	<div>
-		<span class="footer-title"><a href="{base}/{$locale}/about">About</a></span>
+		<span class="footer-title"><a href="{base}/{$locale}/about/resume">About</a></span>
 		<a class="link after:bg-primary" href="{base}/{$locale}/about/skills">Skills</a>
 		<a class="link after:bg-primary" href="{base}/{$locale}/about/photography">Photography</a>
 		<a class="link after:bg-primary" href="{base}/{$locale}/about/resume">Resume</a>
@@ -27,24 +27,71 @@
 	</div>
 	<div>
 		<span class="footer-title"><a href="{base}/{$locale}/projects">Projects</a></span>
-		<a class="link after:bg-primary" href="https://github.com/jonasfroeller/Svelte_TodoManagement"
-			>SVELTE ToDo App</a
-		>
-		<a class="link after:bg-primary" href="https://github.com/jonasfroeller/JS_WebComponent-Clock"
-			>JS Clock Components</a
-		>
-		<a class="link after:bg-primary" href="https://github.com/jonasfroeller/PHP_AdventCalender"
-			>PHP Advent Calender</a
-		>
+		<div class="flex items-bottom gap-1">
+			<a class="link after:bg-primary" href="https://github.com/jonasfroeller/Svelte_TodoManagement"
+				>SVELTE ToDo App</a
+			>
+			<div class="tooltip" data-tip="GitHub">
+				<a
+					href="https://github.com/jonasfroeller/Svelte_TodoManagement"
+					target="_blank"
+					rel="noreferrer"
+					><iconify-icon icon="radix-icons:open-in-new-window" width="20" height="20" /></a
+				>
+			</div>
+			<div class="tooltip" data-tip="LiveDemo">
+				<a href="https://svelte-rollup-todo-app.netlify.app"
+					><iconify-icon icon="eos-icons:application-outlined" width="20" height="20" /></a
+				>
+			</div>
+		</div>
+		<div class="flex items-bottom gap-1">
+			<a class="link after:bg-primary" href="https://github.com/jonasfroeller/JS_WebComponent-Clock"
+				>JS Clock Components</a
+			>
+			<div class="tooltip" data-tip="GitHub">
+				<a
+					href="https://github.com/jonasfroeller/JS_WebComponent-Clock"
+					target="_blank"
+					rel="noreferrer"
+					><iconify-icon icon="radix-icons:open-in-new-window" width="20" height="20" /></a
+				>
+			</div>
+			<div class="tooltip" data-tip="LiveDemo">
+				<a href="https://js-clock-components.netlify.app"
+					><iconify-icon icon="eos-icons:application-outlined" width="20" height="20" /></a
+				>
+			</div>
+		</div>
+		<div class="flex items-bottom gap-1">
+			<a class="link after:bg-primary" href="https://github.com/jonasfroeller/PHP_AdventCalender"
+				>PHP Advent Calender</a
+			>
+			<div class="tooltip" data-tip="GitHub">
+				<a
+					href="https://github.com/jonasfroeller/PHP_AdventCalender"
+					target="_blank"
+					rel="noreferrer"
+					><iconify-icon icon="radix-icons:open-in-new-window" width="20" height="20" /></a
+				>
+			</div>
+			<div class="tooltip" data-tip="LiveDemo">
+				<!-- host me on vercel -->
+				<a href="https://php-advent-calender.000webhostapp.com"
+					><iconify-icon icon="eos-icons:application-outlined" width="20" height="20" /></a
+				>
+			</div>
+		</div>
 	</div>
 	<div>
-		<span class="footer-title"><a href="{base}/{$locale}/legal">Legal</a></span>
+		<span class="footer-title"><a href="{base}/{$locale}/legal/terms-and-conditions">Legal</a></span
+		>
 		<!-- {base}/{$locale} -->
 		<a class="link after:bg-primary" href="{base}/{$locale}/legal/terms-and-conditions"
 			>Terms and Conditions</a
 		>
 		<a class="link after:bg-primary" href="{base}/{$locale}/legal/privacy-policy">Privacy Policy</a>
-		<a class="link after:bg-primary" href="{base}/{$locale}/legal/cookie-policy">Cookie Policy</a>
+		<a class="link after:bg-primary" href="{base}/{$locale}/legal/cookies">Cookies</a>
 		<a class="link after:bg-primary" href="{base}/{$locale}/legal/imprint">Imprint</a>
 	</div>
 </footer>
@@ -75,14 +122,14 @@
 				</div>
 			</div>
 			<div class="social-medias flex items-center">
-				<div class="tooltip" data-tip="Xing">
-					<a class="align-middle" href="https://xing.com/profile/Jonas_Froeller/cv"
-						><iconify-icon icon="fa6-brands:square-xing" width="24" height="24" />
-					</a>
-				</div>
 				<div class="tooltip" data-tip="LinkedIn">
 					<a class="align-middle" href="https://linkedin.com/in/jonas-fr%C3%B6ller-8b4986235/"
 						><iconify-icon icon="fa6-brands:linkedin" width="24" height="24" />
+					</a>
+				</div>
+				<div class="tooltip" data-tip="Xing">
+					<a class="align-middle" href="https://xing.com/profile/Jonas_Froeller/cv"
+						><iconify-icon icon="fa6-brands:square-xing" width="24" height="24" />
 					</a>
 				</div>
 				<div class="tooltip" data-tip="j.froe@gmx.at">
