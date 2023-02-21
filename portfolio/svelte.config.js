@@ -2,7 +2,7 @@ import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 const dev = process.argv.includes('dev'); // || process.env.NODE_ENV === 'developement'
 
-const ghPages = false; // prefix (repo name) needed if hosted on gh (default = false => netlify, vercel...)
+const ghPages = true; // prefix (repo name) needed if hosted on gh (default = false => netlify, vercel...)
 const basePath = ghPages == true ? (dev ? '' : '/jonasfroeller') : ''; // base: dev ? "" : "/jonasfroeller" (gh-pages) || "" (any other static hosting service)
 const buildDir = ghPages == true ? '../jonasfroeller' : '../jonasfroeller-noprefix'; // ../jonasfroeller (gh-pages) || ../jonasfroeller-noprefix (any other static hosting service)
 
@@ -33,6 +33,9 @@ const config = {
 		},
 		prerender: {
 			entries: [
+				'/',
+				'/en',
+				'/de',
 				'/en/about/resume',
 				'/de/about/resume',
 				'/en/about',
