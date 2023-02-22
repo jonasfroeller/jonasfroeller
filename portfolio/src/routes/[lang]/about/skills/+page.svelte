@@ -1,4 +1,7 @@
 <script>
+	// @ts-nocheck
+	import { base } from '$app/paths';
+	import { locale } from '$translation/i18n-svelte';
 	import SubCategory from '$component/SubCategory.svelte';
 	import AboutNav from '$component/AboutNav.svelte';
 	import asciidoctor from '$image/skills/asciidoctor.svg';
@@ -27,6 +30,21 @@
 		vscode,
 		xd
 	];
+	const urls = [
+		'https://asciidoctor.org/',
+		'https://www.docker.com/',
+		'https://git-scm.com/',
+		'https://github.com/',
+		'https://helpx.adobe.com/at/illustrator/get-started.html',
+		'https://www.json.org/json-de.html',
+		'https://helpx.adobe.com/at/photoshop/get-started.html',
+		'https://svelte.dev/',
+		'https://www.w3.org/TR/SVG2/',
+		'https://vitejs.dev/',
+		'https://code.visualstudio.com/',
+		'https://helpx.adobe.com/at/xd/get-started.html'
+	];
+
 	let parent = 'about';
 	let parentCapitalized = parent.charAt(0).toUpperCase() + parent.slice(1);
 	let name = 'skills';
@@ -37,31 +55,82 @@
 
 <AboutNav {name} />
 
-<section class="flex justify-center mt-4">
+<div class="flex justify-center mb-4 mt-4">
 	<div class="prose">
-		<div id="skill-circle">
-			<ul class="skills">
-				{#each images as image, i}
-					<li>
-						<span>
-							<img src={image} alt={image} style="width: 50px; aspect-ration: 1/1;" />
-						</span>
-					</li>
-				{:else}
-					<p><em>Couldn't load Images!</em></p>
-				{/each}
-			</ul>
-			<h1 class="absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] text-center mb-0">
-				{nameCapitalized}
-			</h1>
-		</div>
+		<h1 class="text-center">Languages I Write In</h1>
 	</div>
+</div>
+
+<div class="flex justify-center">
+	<div class="mockup-code w-fit not-prose">
+		<pre data-prefix="1"><code
+				>&lt;p&gt;&lt;strong&gt;<strong>HTML</strong
+				>&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;since 2020&lt;/p&gt; &lt;p&gt;{new Date().getFullYear() -
+					2020}&lt;/p&gt;</code
+			></pre>
+		<pre data-prefix="2"><code
+				>&lt;p class='css'&gt;<strong>CSS</strong
+				>&lt;/p&gt; .css:before {`{content: "CSS"; font-weight: bold;}`} .since:before {'{content: "2020";}'} .years:before {`{content: "${
+					new Date().getFullYear() - 2020
+				}";}`} </code></pre>
+
+		<pre data-prefix="3"><code
+				>System.out.println("<strong>Java</strong
+				>"); int since = 2020; int years = {new Date().getFullYear() - 2020};</code
+			></pre>
+		<pre data-prefix="6"><code
+				>echo "<strong>ShellScript</strong>" since=2021 years={new Date().getFullYear() -
+					2021}</code
+			></pre>
+		<pre data-prefix="4"><code
+				>console.log("<strong>JS & NodeJS</strong
+				>"); let since = 2021; let years = {new Date().getFullYear() - 2021};</code
+			></pre>
+		<pre data-prefix="5"><code
+				>echo "<strong>PHP</strong>"; $since = 2022; $years = {new Date().getFullYear() -
+					2022};</code
+			></pre>
+		<pre data-prefix="6"><code
+				>SELECT '<strong>Oracle SQL</strong
+				>' FROM dual; VARIABLE since NUMBER; BEGIN :since := 2022; END; / VARIABLE years NUMBER; BEGIN :years := {new Date().getFullYear() -
+					2022}; END; /</code
+			></pre>
+	</div>
+</div>
+
+<section class="flex justify-center items-center flex-wrap gap-4 mt-4">
+	<div class="prose">
+		<section class="flex justify-center mt-4">
+			<div id="skill-circle">
+				<ul class="skills">
+					{#each images as image, i}
+						<!-- svelte-ignore a11y-click-events-have-key-events -->
+						<li on:click={() => window.open(urls[i], '_blank').focus()}>
+							<span>
+								<img src={image} alt={image} style="width: 50px; aspect-ration: 1/1;" />
+							</span>
+						</li>
+					{:else}
+						<p><em>Couldn't load Images!</em></p>
+					{/each}
+				</ul>
+				<h1
+					class="absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] text-center mb-0"
+				>
+					TechStack
+				</h1>
+			</div>
+		</section>
+	</div>
+	<a href="{base}/{$locale}/projects">
+		<button class="btn btn-md lg:btn-lg">Projects</button>
+	</a>
 </section>
 
 <style>
 	#skill-circle {
-		width: 30rem;
-		height: 30rem;
+		width: 26rem;
+		height: 26rem;
 		padding: 1rem;
 		border-radius: 50%;
 		position: relative;
@@ -74,14 +143,14 @@
 		padding: 0;
 		position: absolute;
 		text-align: center;
-		left: calc(15rem - 40px);
+		left: calc(13rem - 30px);
 	}
 	.skills li {
+		height: 13rem;
 		position: absolute;
 		transform-origin: 50% 100%;
-		height: 15rem;
 		font-weight: bold;
-		width: 80px;
+		width: 120px;
 	}
 	.skills span {
 		display: block;

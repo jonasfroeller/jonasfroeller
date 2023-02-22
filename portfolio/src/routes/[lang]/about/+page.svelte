@@ -8,7 +8,7 @@
 	let nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
 
 	if (!building) {
-		goto(`${base}/${$locale}/about/resume`);
+		goto(`${base}/${$locale}/about/profile`);
 	}
 </script>
 

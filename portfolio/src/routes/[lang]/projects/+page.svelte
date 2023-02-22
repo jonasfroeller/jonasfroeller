@@ -14,25 +14,31 @@
 
 <Category {name} {nameCapitalized} />
 
-<section class="flex justify-center gap-4 flex-wrap">
+<section class="flex justify-center gap-4 flex-wrap max-w-full break-all">
 	{#await loadData()}
 		<p>loading data...</p>
 	{:then data}
 		{#each data as element}
 			<div
-				class="card w-fit bg-base-100 shadow-xl hover:border-primary border-2 transition hover:transition"
+				class="card max-w-full w-96 bg-base-100 shadow-xl hover:border-primary border-2 transition hover:transition"
 			>
+				<span class=" absolute top-2 right-2 badge badge-secondary"
+					>{element.language.toUpperCase()}</span
+				>
 				<div class="card-body">
 					<h2 class="card-title">
 						{element.name}
-						<div class="badge badge-secondary">{element.language.toUpperCase()}</div>
 					</h2>
 					<p>{element.description}</p>
 					<div class="card-actions">
 						<div
 							class="badge h-auto badge-outline hover:border-primary border-2 transition hover:transition"
 						>
-							<a href={element.html_url} class="flex items-center gap-1 p-1"
+							<a
+								href={element.html_url}
+								target="_blank"
+								rel="noreferrer"
+								class="flex items-center gap-1 p-1"
 								><iconify-icon icon="mdi:github" width="20" height="20" />Code</a
 							>
 						</div>
@@ -40,7 +46,11 @@
 							<div
 								class="badge h-auto badge-outline hover:border-primary border-2 transition hover:transition"
 							>
-								<a href={element.homepage} class="flex items-center gap-1 p-1"
+								<a
+									href={element.homepage}
+									target="_blank"
+									rel="noreferrer"
+									class="flex items-center gap-1 p-1"
 									><iconify-icon
 										icon="eos-icons:application-outlined"
 										width="20"

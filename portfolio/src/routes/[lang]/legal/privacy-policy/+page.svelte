@@ -36,5 +36,9 @@
 			molestias, quidem tenetur, nemo illo hic, praesentium dolor esse soluta. At odit iure veniam
 			optio, rerum, delectus aut nulla blanditiis sapiente, ratione provident cumque.
 		</p>
+		<label class="label justify-start gap-2 cursor-pointer">
+			<span class="label-text"><strong>Accept "Privacy Policy"</strong></span>
+			<input type="checkbox" class="checkbox" checked />
+		</label>
 	</div>
 </section>

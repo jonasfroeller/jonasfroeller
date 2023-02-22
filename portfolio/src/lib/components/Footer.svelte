@@ -5,10 +5,10 @@
 
 <footer class="footer p-10 text-base-content border-t-2 border-b-2 border-secondary">
 	<div>
-		<span class="footer-title"><a href="{base}/{$locale}/about/resume">About</a></span>
+		<span class="footer-title"><a href="{base}/{$locale}/about/profile">About</a></span>
 		<a class="link after:bg-primary" href="{base}/{$locale}/about/skills">Skills</a>
 		<a class="link after:bg-primary" href="{base}/{$locale}/about/photography">Photography</a>
-		<a class="link after:bg-primary" href="{base}/{$locale}/about/resume">Resume</a>
+		<a class="link after:bg-primary" href="{base}/{$locale}/about/profile">Profile</a>
 	</div>
 	<div>
 		<span class="footer-title after:bg-primary"
@@ -40,7 +40,7 @@
 				>
 			</div>
 			<div class="tooltip" data-tip="LiveDemo">
-				<a href="https://svelte-rollup-todo-app.netlify.app"
+				<a target="_blank" rel="noreferrer" href="https://svelte-rollup-todo-app.netlify.app"
 					><iconify-icon icon="eos-icons:application-outlined" width="20" height="20" /></a
 				>
 			</div>
@@ -58,7 +58,7 @@
 				>
 			</div>
 			<div class="tooltip" data-tip="LiveDemo">
-				<a href="https://js-clock-components.netlify.app"
+				<a target="_blank" rel="noreferrer" href="https://js-clock-components.netlify.app"
 					><iconify-icon icon="eos-icons:application-outlined" width="20" height="20" /></a
 				>
 			</div>
@@ -77,7 +77,7 @@
 			</div>
 			<div class="tooltip" data-tip="LiveDemo">
 				<!-- host me on vercel -->
-				<a href="https://php-advent-calender.000webhostapp.com"
+				<a target="_blank" rel="noreferrer" href="https://php-advent-calender.000webhostapp.com"
 					><iconify-icon icon="eos-icons:application-outlined" width="20" height="20" /></a
 				>
 			</div>

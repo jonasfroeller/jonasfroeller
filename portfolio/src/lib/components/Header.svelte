@@ -134,7 +134,7 @@
 			</li>
 			<li class="text-xl">
 				<a
-					href="{base}/{$locale}/{dir}{dir == 'about' ? '/resume' : ''}{dir == 'legal'
+					href="{base}/{$locale}/{dir}{dir == 'about' ? '/profile' : ''}{dir == 'legal'
 						? '/terms-and-conditions'
 						: ''}">{dir}</a
 				>
@@ -145,7 +145,7 @@
 
 <ul
 	id="menu"
-	class="menu hidden absolute left-4 top-[calc(10vh+1rem)] border-2 border-secondary p-2 gap-2 rounded-box bg-base-100"
+	class="menu hidden absolute left-4 top-[calc(10vh+1rem)] border-2 border-secondary p-2 gap-2 rounded-box bg-base-100 z-50"
 >
 	<li>
 		<a href="{base}/{$locale}" class={dir.length === 0 ? 'active' : ''}>
@@ -153,7 +153,7 @@
 		</a>
 	</li>
 	<li>
-		<a href="{base}/{$locale}/about/resume" class={dir[0] === 'about' ? 'active' : ''}>
+		<a href="{base}/{$locale}/about/profile" class={dir[0] === 'about' ? 'active' : ''}>
 			<iconify-icon icon="mdi:about" width="24" height="24" /> About
 		</a>
 	</li>

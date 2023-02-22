@@ -10,17 +10,17 @@
 	<div class="prose">
 		<h1 class="mb-4">Coding</h1>
 		<a class="align-middle" href="https://github.com/jonasfroeller">
-			<button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+			<button class="btn btn-md lg:btn-lg mb-1"
 				><iconify-icon icon="mdi:github" width="24" height="24" />GitHub</button
 			>
 		</a>
 		<a class="align-middle" href="https://codepen.io/jonasfroeller">
-			<button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+			<button class="btn btn-md lg:btn-lg mb-1"
 				><iconify-icon icon="fe:codepen" width="24" height="24" />CodePen</button
 			>
 		</a>
 		<a class="align-middle" href="https://dev.to/jonasfroeller">
-			<button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+			<button class="btn btn-md lg:btn-lg mb-1"
 				><iconify-icon icon="fa-brands:dev" width="24" height="24" />DevTo</button
 			>
 		</a>

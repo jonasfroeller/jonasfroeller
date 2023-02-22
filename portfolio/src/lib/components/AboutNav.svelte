@@ -7,8 +7,8 @@
 
 <section class="tabs flex justify-center">
 	<a
-		href="{base}/{$locale}/about/resume"
-		class="tab tab-bordered {name === 'resume' ? 'tab-active' : ''}">Resume</a
+		href="{base}/{$locale}/about/profile"
+		class="tab tab-bordered {name === 'profile' ? 'tab-active' : ''}">Profile</a
 	>
 	<a
 		href="{base}/{$locale}/about/skills"

@@ -22,8 +22,6 @@
 {#if referHome}
 	<center>
 		<h1 class="mb-2"><em>nothing to see here</em></h1>
-		<a href="{base}/{$locale}/">
-			<button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">home</button></a
-		>
+		<a href="{base}/{$locale}/"> <button class="btn btn-md lg:btn-lg">home</button></a>
 	</center>
 {/if}

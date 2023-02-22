@@ -18,7 +18,7 @@
 		const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜ ';
 		let interval = null;
 
-		function onMouseOver(event) {
+		function animateName(event) {
 			let iteration = 0;
 
 			clearInterval(interval);
@@ -37,14 +37,14 @@
 
 				if (iteration >= event.target.dataset.value.length) {
 					clearInterval(interval);
-					event.target.removeEventListener('mouseover', onMouseOver);
 				}
 
 				iteration += 1 / 3;
 			}, 30);
 		}
 
-		document.getElementById('name').addEventListener('mouseover', onMouseOver);
+		const nameElem = document.getElementById('name');
+		animateName({ target: nameElem });
 	});
 </script>
 
@@ -60,11 +60,11 @@
 	</h1>
 	<p class="text-lg select-none">Hi, I am Jonas!</p>
 	<div class="flex gap-4">
-		<a href="{base}/{$locale}/about/resume">
-			<button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">About</button>
+		<a href="{base}/{$locale}/about/profile">
+			<button class="btn btn-md lg:btn-lg">About</button>
 		</a>
 		<a href="{base}/{$locale}/projects">
-			<button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Projects</button>
+			<button class="btn btn-md lg:btn-lg">Projects</button>
 		</a>
 	</div>
 </section>

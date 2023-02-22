@@ -42,16 +42,21 @@
 		<h1 class="text-center mb-0">
 			{nameCapitalized}
 		</h1>
-		<div class="carousel w-full rounded-2xl mt-4">
+	</div>
+</section>
+
+<section class="flex justify-center">
+	<div class="w-[60dvw] w-[60vw]">
+		<div class="carousel rounded-2xl mt-4">
 			{#each photos as photo, i}
-				<div id="item-{i + 1}" class="carousel-item w-full rounded-2xl">
+				<div id="item-{i + 1}" class="carousel-item w-full rounded-2xl pt-4">
 					<img src={photo} alt="photography-{i + 1}" class="w-full object-cover rounded-2xl" />
 				</div>
 			{:else}
 				<p><em>Couldn't load images!</em></p>
 			{/each}
 		</div>
-		<div class="flex justify-center w-full py-2 gap-2">
+		<div class="flex justify-center flex-wrap w-full py-2 gap-2">
 			{#each photos as photo, i}
 				{#if i % 2 == 0}
 					<a href="#item-{i + 1}" class="btn btn-s text-lg text-primary">{i + 1}</a>
@@ -60,5 +65,11 @@
 				{/if}
 			{/each}
 		</div>
+	</div>
+</section>
+
+<section class="flex justify-center mt-4">
+	<div class="prose">
+		<p><em>photographing since 2020</em></p>
 	</div>
 </section>
