@@ -46,7 +46,7 @@ image:svelte.svg[static,50,50,link="https://svelte.dev/",window=_blank]
 image:vite-dark.svg[static,50,50,link="https://vitejs.dev/",window=_blank] 
 image:asciidoctor.svg[static,50,50,link="https://asciidoctor.org/",window=_blank] 
 image:svg-dark.svg[static,50,50,link="https://www.w3.org/TR/SVG2/",window=_blank] 
-image:json.svg[static,50,50,link="https://www.w3.org/TR/SVG2/",window=_blank] 
+image:json.svg[static,50,50,link="https://www.json.org/json-de.html",window=_blank] 
 
 // source: iconify.design -> search: skill-icons:<name>
 
