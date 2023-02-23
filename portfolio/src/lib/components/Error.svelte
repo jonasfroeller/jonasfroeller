@@ -1,7 +1,9 @@
 <script>
 	// @ts-nocheck
-	import translation from '$translation/i18n-svelte';
-	import { base } from '$app/paths'; // gh-pages basepath
+	// Svelte
+	import { base } from '$app/paths'; // basePath
+	// Translation
+	import translation from '$translation/i18n-svelte'; // translations
 	import { locale } from '$translation/i18n-svelte'; // currentLanguage
 
 	export let code = 404;

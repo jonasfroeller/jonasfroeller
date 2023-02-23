@@ -14,6 +14,150 @@ export type Translation = RootTranslation
 export type Translations = RootTranslation
 
 type RootTranslation = {
+	Pages: {
+		/**
+		 * Ü​b​e​r
+		 */
+		aboutButton: string
+		/**
+		 * P​r​o​j​e​k​t​e
+		 */
+		projectsButton: string
+		home: {
+			/**
+			 * H​i​,​ ​I​c​h​ ​b​i​n​ ​J​o​n​a​s​!
+			 */
+			info: string
+		}
+		socials: {
+			/**
+			 * P​r​o​g​r​a​m​m​i​e​r​e​n
+			 */
+			headline01: string
+			/**
+			 * S​o​z​i​a​l​e​ ​M​e​d​i​e​n
+			 */
+			headline02: string
+			/**
+			 * K​o​n​t​a​k​t
+			 */
+			headline03: string
+			/**
+			 * w​ö​c​h​e​n​t​l​i​c​h​ ​e​i​n​g​e​s​e​h​e​n
+			 */
+			availabilityNoticeWeek: string
+			/**
+			 * t​ä​g​l​i​c​h​ ​e​i​n​g​e​s​e​h​e​n
+			 */
+			availabilityNoticeDay: string
+			copyNotice: {
+				/**
+				 * E​-​M​a​i​l​ ​k​o​p​i​e​r​e​n
+				 */
+				copy: string
+				/**
+				 * E​-​M​a​i​l​ ​k​o​p​i​e​r​t
+				 */
+				copied: string
+			}
+		}
+		legal: {
+			privacy_policy: {
+				/**
+				 * D​a​t​e​n​s​c​h​u​t​z
+				 */
+				title: string
+				/**
+				 * D​a​t​e​n​s​c​h​u​t​z​e​r​k​l​ä​r​u​n​g​ ​a​k​z​e​p​t​i​e​r​e​n
+				 */
+				accept: string
+			}
+			terms_and_conditions: {
+				/**
+				 * G​e​s​c​h​ä​f​t​s​b​e​d​i​n​g​u​n​g​e​n
+				 */
+				title: string
+				/**
+				 * G​e​s​c​h​ä​f​t​s​b​e​d​i​n​g​u​n​g​e​n​ ​a​k​z​e​p​t​i​e​r​e​n
+				 */
+				accept: string
+			}
+			cookies: {
+				/**
+				 * C​o​o​k​i​e​s
+				 */
+				title: string
+				/**
+				 * C​o​o​k​i​e​s​ ​a​k​z​e​p​t​i​e​r​e​n
+				 */
+				accept: string
+			}
+			imprint: {
+				/**
+				 * I​m​p​r​e​s​s​u​m
+				 */
+				title: string
+			}
+		}
+		settings: {
+			/**
+			 * E​i​n​s​t​e​l​l​u​n​g​e​n
+			 */
+			title: string
+			/**
+			 * R​e​c​h​t​l​i​c​h​e​s
+			 */
+			headline01: string
+			/**
+			 * S​t​i​l
+			 */
+			headline02: string
+			/**
+			 * S​p​r​a​c​h​e
+			 */
+			headline03: string
+			/**
+			 * O​p​t​i​o​n​e​n
+			 */
+			options: string
+		}
+		about: {
+			profile: {
+				/**
+				 * P​r​o​f​i​l
+				 */
+				title: string
+				/**
+				 * M​e​i​n​ ​N​a​m​e​ ​i​s​t​ ​J​o​n​a​s​ ​u​n​d​ ​i​c​h​ ​b​i​n​ ​e​i​n​ ​1​7​-​j​ä​h​r​i​g​e​r​ ​S​c​h​ü​l​e​r​,​ ​d​e​r​ ​d​e​r​z​e​i​t​ ​a​n​ ​d​e​r​ ​H​T​B​L​A​ ​L​e​o​n​d​i​n​g​ ​i​n​ ​Ö​s​t​e​r​r​e​i​c​h​ ​s​t​u​d​i​e​r​t​.​ ​I​c​h​ ​s​t​u​d​i​e​r​e​ ​I​n​f​o​r​m​a​t​i​k​/​M​e​d​i​e​n​t​e​c​h​n​i​k​ ​u​n​d​ ​i​n​t​e​r​e​s​s​i​e​r​e​ ​m​i​c​h​ ​s​e​h​r​ ​f​ü​r​ ​P​r​o​g​r​a​m​m​i​e​r​u​n​g​,​ ​i​n​s​b​e​s​o​n​d​e​r​e​ ​W​e​b​e​n​t​w​i​c​k​l​u​n​g​.​ ​N​e​b​e​n​ ​m​e​i​n​e​r​ ​M​u​t​t​e​r​s​p​r​a​c​h​e​ ​D​e​u​t​s​c​h​ ​s​p​r​e​c​h​e​ ​i​c​h​ ​f​l​i​e​ß​e​n​d​ ​E​n​g​l​i​s​c​h​ ​m​i​t​ ​N​i​v​e​a​u​ ​B​+​.​ ​S​p​e​z​i​a​l​i​s​i​e​r​t​ ​h​a​b​e​ ​i​c​h​ ​m​i​c​h​ ​a​u​f​ ​d​i​e​ ​C​o​m​p​u​t​e​r​s​p​r​a​c​h​e​n​ ​H​T​M​L​,​ ​C​S​S​,​ ​J​a​v​a​S​c​r​i​p​t​ ​&​ ​N​o​d​e​J​S​,​ ​P​H​P​,​ ​O​r​a​c​l​e​ ​S​Q​L​ ​u​n​d​ ​J​a​v​a​.​ ​K​ü​r​z​l​i​c​h​ ​h​a​b​e​ ​i​c​h​ ​d​a​s​ ​S​v​e​l​t​e​ ​J​S​-​F​r​a​m​e​w​o​r​k​ ​e​n​t​d​e​c​k​t​ ​u​n​d​ ​S​v​e​l​t​e​ ​z​u​s​a​m​m​e​n​ ​m​i​t​ ​S​v​e​l​t​e​K​i​t​ ​g​e​l​e​r​n​t​.​ ​I​c​h​ ​h​a​b​e​ ​a​u​c​h​ ​E​r​f​a​h​r​u​n​g​e​n​ ​m​i​t​ ​T​a​i​l​w​i​n​d​C​S​S​ ​u​n​d​ ​D​a​i​s​y​U​I​ ​g​e​s​a​m​m​e​l​t​.​ ​I​c​h​ ​l​e​r​n​e​ ​g​e​r​n​e​ ​n​e​u​e​ ​P​r​o​g​r​a​m​m​i​e​r​s​p​r​a​c​h​e​n​ ​u​n​d​ ​F​r​a​m​e​w​o​r​k​s​ ​u​n​d​ ​e​n​t​w​i​c​k​l​e​ ​m​i​t​ ​L​e​i​d​e​n​s​c​h​a​f​t​ ​e​f​f​i​z​i​e​n​t​e​ ​s​o​w​i​e​ ​b​e​n​u​t​z​e​r​f​r​e​u​n​d​l​i​c​h​e​ ​W​e​b​s​i​t​e​s​ ​u​n​d​ ​A​n​w​e​n​d​u​n​g​e​n​.​ ​I​c​h​ ​s​u​c​h​e​ ​s​t​ä​n​d​i​g​ ​n​a​c​h​ ​M​ö​g​l​i​c​h​k​e​i​t​e​n​,​ ​m​e​i​n​e​ ​F​ä​h​i​g​k​e​i​t​e​n​ ​u​n​d​ ​K​e​n​n​t​n​i​s​s​e​ ​i​m​ ​B​e​r​e​i​c​h​ ​W​e​b​e​n​t​w​i​c​k​l​u​n​g​ ​z​u​ ​v​e​r​b​e​s​s​e​r​n​,​ ​u​n​d​ ​i​c​h​ ​b​i​n​ ​e​n​t​s​c​h​l​o​s​s​e​n​,​ ​m​e​i​n​e​ ​K​a​r​r​i​e​r​e​z​i​e​l​e​ ​i​n​ ​d​e​r​ ​W​e​l​t​ ​d​e​r​ ​I​T​ ​u​n​d​ ​P​r​o​g​r​a​m​m​i​e​r​u​n​g​ ​z​u​ ​e​r​r​e​i​c​h​e​n​.​ ​M​i​t​ ​H​i​n​g​a​b​e​ ​u​n​d​ ​E​n​t​h​u​s​i​a​s​m​u​s​ ​g​l​a​u​b​e​ ​i​c​h​,​ ​d​a​s​s​ ​i​c​h​ ​d​a​s​ ​Z​e​u​g​ ​d​a​z​u​ ​h​a​b​e​,​ ​i​n​ ​d​i​e​s​e​m​ ​B​e​r​e​i​c​h​ ​e​r​f​o​l​g​r​e​i​c​h​ ​z​u​ ​s​e​i​n​.
+				 */
+				text: string
+			}
+			skills: {
+				/**
+				 * S​p​r​a​c​h​e​n​ ​i​n​ ​m​e​i​n​e​m​ ​A​r​s​e​n​a​l
+				 */
+				title: string
+				/**
+				 * F​ä​h​i​g​k​e​i​t​e​n
+				 */
+				navTitle: string
+				/**
+				 * A​p​p​s
+				 */
+				appCircle: string
+			}
+			photography: {
+				/**
+				 * F​o​t​o​g​r​a​f​i​e
+				 */
+				title: string
+				/**
+				 * s​e​i​t​ ​2​0​2​0​ ​f​o​t​o​g​r​a​f​i​e​r​e​ ​i​c​h
+				 */
+				note: string
+			}
+		}
+	}
 	Error: {
 		/**
 		 * {​e​r​r​o​r​}​ ​F​e​h​l​e​r
@@ -25,16 +169,62 @@ type RootTranslation = {
 		 */
 		action: string
 	}
+	Header: {
+		/**
+		 * S​t​a​r​t​s​e​i​t​e
+		 */
+		home: string
+		/**
+		 * Ü​b​e​r
+		 */
+		about: string
+		/**
+		 * K​o​n​t​a​k​t
+		 */
+		contact: string
+		/**
+		 * P​r​o​j​e​k​t​e
+		 */
+		projects: string
+		/**
+		 * R​e​c​h​t​l​i​c​h​e​s
+		 */
+		legal: string
+		/**
+		 * E​i​n​s​t​e​l​l​u​n​g​e​n
+		 */
+		settings: string
+	}
 	Footer: {
+		about: {
+			/**
+			 * Ü​b​e​r
+			 */
+			title: string
+			list: {
+				/**
+				 * F​ä​h​i​g​k​e​i​t​e​n
+				 */
+				skills: string
+				/**
+				 * F​o​t​o​g​r​a​f​i​e
+				 */
+				photography: string
+				/**
+				 * P​r​o​f​i​l
+				 */
+				profile: string
+			}
+		}
 		contact: {
 			/**
 			 * K​o​n​t​a​k​t
 			 */
 			title: string
 		}
-		social: {
+		projects: {
 			/**
-			 * F​o​l​g​e​ ​u​n​s
+			 * P​r​o​j​e​k​t​e
 			 */
 			title: string
 		}
@@ -53,15 +243,167 @@ type RootTranslation = {
 				 */
 				terms_and_conditions: string
 				/**
+				 * C​o​o​k​i​e​s
+				 */
+				cookies: string
+				/**
 				 * I​m​p​r​e​s​s​u​m
 				 */
 				imprint: string
 			}
 		}
+		/**
+		 * h​o​c​h​w​e​r​t​i​g​e​ ​W​e​b​e​n​t​w​i​c​k​l​u​n​g
+		 */
+		quote: string
 	}
 }
 
 export type TranslationFunctions = {
+	Pages: {
+		/**
+		 * Über
+		 */
+		aboutButton: () => LocalizedString
+		/**
+		 * Projekte
+		 */
+		projectsButton: () => LocalizedString
+		home: {
+			/**
+			 * Hi, Ich bin Jonas!
+			 */
+			info: () => LocalizedString
+		}
+		socials: {
+			/**
+			 * Programmieren
+			 */
+			headline01: () => LocalizedString
+			/**
+			 * Soziale Medien
+			 */
+			headline02: () => LocalizedString
+			/**
+			 * Kontakt
+			 */
+			headline03: () => LocalizedString
+			/**
+			 * wöchentlich eingesehen
+			 */
+			availabilityNoticeWeek: () => LocalizedString
+			/**
+			 * täglich eingesehen
+			 */
+			availabilityNoticeDay: () => LocalizedString
+			copyNotice: {
+				/**
+				 * E-Mail kopieren
+				 */
+				copy: () => LocalizedString
+				/**
+				 * E-Mail kopiert
+				 */
+				copied: () => LocalizedString
+			}
+		}
+		legal: {
+			privacy_policy: {
+				/**
+				 * Datenschutz
+				 */
+				title: () => LocalizedString
+				/**
+				 * Datenschutzerklärung akzeptieren
+				 */
+				accept: () => LocalizedString
+			}
+			terms_and_conditions: {
+				/**
+				 * Geschäftsbedingungen
+				 */
+				title: () => LocalizedString
+				/**
+				 * Geschäftsbedingungen akzeptieren
+				 */
+				accept: () => LocalizedString
+			}
+			cookies: {
+				/**
+				 * Cookies
+				 */
+				title: () => LocalizedString
+				/**
+				 * Cookies akzeptieren
+				 */
+				accept: () => LocalizedString
+			}
+			imprint: {
+				/**
+				 * Impressum
+				 */
+				title: () => LocalizedString
+			}
+		}
+		settings: {
+			/**
+			 * Einstellungen
+			 */
+			title: () => LocalizedString
+			/**
+			 * Rechtliches
+			 */
+			headline01: () => LocalizedString
+			/**
+			 * Stil
+			 */
+			headline02: () => LocalizedString
+			/**
+			 * Sprache
+			 */
+			headline03: () => LocalizedString
+			/**
+			 * Optionen
+			 */
+			options: () => LocalizedString
+		}
+		about: {
+			profile: {
+				/**
+				 * Profil
+				 */
+				title: () => LocalizedString
+				/**
+				 * Mein Name ist Jonas und ich bin ein 17-jähriger Schüler, der derzeit an der HTBLA Leonding in Österreich studiert. Ich studiere Informatik/Medientechnik und interessiere mich sehr für Programmierung, insbesondere Webentwicklung. Neben meiner Muttersprache Deutsch spreche ich fließend Englisch mit Niveau B+. Spezialisiert habe ich mich auf die Computersprachen HTML, CSS, JavaScript & NodeJS, PHP, Oracle SQL und Java. Kürzlich habe ich das Svelte JS-Framework entdeckt und Svelte zusammen mit SvelteKit gelernt. Ich habe auch Erfahrungen mit TailwindCSS und DaisyUI gesammelt. Ich lerne gerne neue Programmiersprachen und Frameworks und entwickle mit Leidenschaft effiziente sowie benutzerfreundliche Websites und Anwendungen. Ich suche ständig nach Möglichkeiten, meine Fähigkeiten und Kenntnisse im Bereich Webentwicklung zu verbessern, und ich bin entschlossen, meine Karriereziele in der Welt der IT und Programmierung zu erreichen. Mit Hingabe und Enthusiasmus glaube ich, dass ich das Zeug dazu habe, in diesem Bereich erfolgreich zu sein.
+				 */
+				text: () => LocalizedString
+			}
+			skills: {
+				/**
+				 * Sprachen in meinem Arsenal
+				 */
+				title: () => LocalizedString
+				/**
+				 * Fähigkeiten
+				 */
+				navTitle: () => LocalizedString
+				/**
+				 * Apps
+				 */
+				appCircle: () => LocalizedString
+			}
+			photography: {
+				/**
+				 * Fotografie
+				 */
+				title: () => LocalizedString
+				/**
+				 * seit 2020 fotografiere ich
+				 */
+				note: () => LocalizedString
+			}
+		}
+	}
 	Error: {
 		/**
 		 * {error} Fehler
@@ -72,16 +414,62 @@ export type TranslationFunctions = {
 		 */
 		action: () => LocalizedString
 	}
+	Header: {
+		/**
+		 * Startseite
+		 */
+		home: () => LocalizedString
+		/**
+		 * Über
+		 */
+		about: () => LocalizedString
+		/**
+		 * Kontakt
+		 */
+		contact: () => LocalizedString
+		/**
+		 * Projekte
+		 */
+		projects: () => LocalizedString
+		/**
+		 * Rechtliches
+		 */
+		legal: () => LocalizedString
+		/**
+		 * Einstellungen
+		 */
+		settings: () => LocalizedString
+	}
 	Footer: {
+		about: {
+			/**
+			 * Über
+			 */
+			title: () => LocalizedString
+			list: {
+				/**
+				 * Fähigkeiten
+				 */
+				skills: () => LocalizedString
+				/**
+				 * Fotografie
+				 */
+				photography: () => LocalizedString
+				/**
+				 * Profil
+				 */
+				profile: () => LocalizedString
+			}
+		}
 		contact: {
 			/**
 			 * Kontakt
 			 */
 			title: () => LocalizedString
 		}
-		social: {
+		projects: {
 			/**
-			 * Folge uns
+			 * Projekte
 			 */
 			title: () => LocalizedString
 		}
@@ -100,11 +488,19 @@ export type TranslationFunctions = {
 				 */
 				terms_and_conditions: () => LocalizedString
 				/**
+				 * Cookies
+				 */
+				cookies: () => LocalizedString
+				/**
 				 * Impressum
 				 */
 				imprint: () => LocalizedString
 			}
 		}
+		/**
+		 * hochwertige Webentwicklung
+		 */
+		quote: () => LocalizedString
 	}
 }
 

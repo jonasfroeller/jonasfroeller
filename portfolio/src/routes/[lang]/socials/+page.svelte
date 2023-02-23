@@ -1,44 +1,95 @@
 <script>
+	// @ts-nocheck
+	// Components
 	import Category from '$component/Category.svelte';
+	// Svelte
+	import { browser } from '$app/environment';
+	// Translation
+	import translation from '$translation/i18n-svelte'; // translations
+
 	let name = 'socials';
 	let nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
+
+	function copyEmail(email) {
+		if (browser) {
+			navigator.clipboard
+				.writeText(email)
+				.then(() => console.log('Text copied to clipboard'))
+				.catch((err) => console.error('Could not copy text: ', err));
+		}
+	}
 </script>
 
 <Category {name} {nameCapitalized} />
 
 <section class="flex justify-center gap-4 flex-wrap">
 	<div class="prose">
-		<h1 class="mb-4">Coding</h1>
-		<a class="align-middle" href="https://github.com/jonasfroeller">
+		<h1 class="mb-4">{$translation.Pages.socials.headline01()}</h1>
+		<a
+			class="align-middle"
+			target="_blank"
+			rel="noreferrer"
+			href="https://github.com/jonasfroeller"
+		>
 			<button class="btn btn-md lg:btn-lg mb-1"
-				><iconify-icon icon="mdi:github" width="24" height="24" />GitHub</button
+				><iconify-icon class="mr-2" icon="mdi:github" width="24" height="24" />GitHub</button
 			>
 		</a>
-		<a class="align-middle" href="https://codepen.io/jonasfroeller">
+		<a
+			class="align-middle"
+			target="_blank"
+			rel="noreferrer"
+			href="https://codepen.io/jonasfroeller"
+		>
 			<button class="btn btn-md lg:btn-lg mb-1"
-				><iconify-icon icon="fe:codepen" width="24" height="24" />CodePen</button
+				><iconify-icon class="mr-2" icon="fe:codepen" width="24" height="24" />CodePen</button
 			>
 		</a>
-		<a class="align-middle" href="https://dev.to/jonasfroeller">
+		<a class="align-middle" target="_blank" rel="noreferrer" href="https://dev.to/jonasfroeller">
 			<button class="btn btn-md lg:btn-lg mb-1"
-				><iconify-icon icon="fa-brands:dev" width="24" height="24" />DevTo</button
+				><iconify-icon class="mr-2" icon="fa-brands:dev" width="24" height="24" />DevTo</button
 			>
 		</a>
-		<h1 class="mb-4 mt-4">Social Media</h1>
+		<h1 class="mb-4 mt-4">{$translation.Pages.socials.headline02()}</h1>
 		<div class="tooltip" data-tip="LinkedIn">
 			<a class="align-middle" href="https://linkedin.com/in/jonas-fr%C3%B6ller-8b4986235/"
-				><iconify-icon icon="fa6-brands:linkedin" width="24" height="24" />
+				><button class="btn btn-md lg:btn-lg mb-1 gap-2"
+					><iconify-icon icon="fa6-brands:linkedin" width="24" height="24" />LinkedIn
+					<div class="badge badge-success gap-2 lowercase">
+						{$translation.Pages.socials.availabilityNoticeWeek()}
+					</div></button
+				>
 			</a>
 		</div>
 		<div class="tooltip" data-tip="Xing">
 			<a class="align-middle" href="https://xing.com/profile/Jonas_Froeller/cv"
-				><iconify-icon icon="fa6-brands:square-xing" width="24" height="24" />
+				><button class="btn btn-md lg:btn-lg mb-1 gap-2"
+					><iconify-icon icon="fa6-brands:square-xing" width="24" height="24" />Xing
+					<div class="badge badge-success gap-2 lowercase">
+						{$translation.Pages.socials.availabilityNoticeWeek()}
+					</div></button
+				>
 			</a>
 		</div>
-		<div class="tooltip" data-tip="j.froe@gmx.at">
-			<a class="align-middle" href="mailto:j.froe@gmx.at"
-				><iconify-icon icon="ic:round-email" width="28" height="28" />
-			</a>
+		<h1 class="mb-4 mt-4">{$translation.Pages.socials.headline03()}</h1>
+		<div class="tooltip not-prose flex" data-tip="j.froe@gmx.at">
+			<button class="btn btn-md lg:btn-lg mb-1 lowercase justify-between gap-4">
+				<a class="flex items-center text-neutral-content gap-2" href="mailto:j.froe@gmx.at"
+					><iconify-icon icon="ic:round-email" width="28" height="28" />j.froe@gmx.at
+					<div class="badge badge-success gap-2">
+						{$translation.Pages.socials.availabilityNoticeDay()}
+					</div>
+				</a>
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
+				<div class="divider lg:divider-horizontal before:bg-white after:bg-white" />
+				<div class="cursor-copy copy-text normal-case">
+					<label class="swap">
+						<input on:click={() => copyEmail('j.froe@gmx.at')} type="checkbox" />
+						<div class="swap-on">{$translation.Pages.socials.copyNotice.copy()}</div>
+						<div class="swap-off">{$translation.Pages.socials.copyNotice.copied()} &check;</div>
+					</label>
+				</div>
+			</button>
 		</div>
 	</div>
 </section>

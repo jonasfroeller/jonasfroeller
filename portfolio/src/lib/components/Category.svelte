@@ -1,5 +1,7 @@
 <script>
-	import { base } from '$app/paths'; // gh-pages basepath
+	// Svelte
+	import { base } from '$app/paths'; // basepath
+	// Translation
 	import { locale } from '$translation/i18n-svelte'; // currentLanguage
 
 	export let name = 'unknown';

@@ -1,6 +1,9 @@
+// Test
 import { expect, test } from '@playwright/test';
+// Translation
+import { base } from '$app/paths'; // basePath
 
-test('index page has expected h1', async ({ page }) => {
-	await page.goto('/');
-	await expect(page.getByRole('heading', { name: 'Welcome to SvelteKit' })).toBeVisible();
+test('test projects page', async ({ page }) => {
+	await page.goto(`${base}/en/projects`);
+	await expect(page).toHaveTitle(/Projects/);
 });

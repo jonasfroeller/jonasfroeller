@@ -1,14 +1,15 @@
-// the way the language gets changed in the url
-import { base } from '$app/paths'; // gh-pages basepath
-// @ts-ignore
-const dev = base === '' ? true : false;
-
 // @ts-nocheck
+// Svelte
+import { base } from '$app/paths'; // basePath
 import { redirect } from '@sveltejs/kit';
+// Translation
 import { replaceLocaleInUrl } from '$main/utils';
 import { baseLocale, locales } from '$translation/i18n-util';
 import { loadLocaleAsync } from '$translation/i18n-util.async';
 
+const dev = base === '' ? true : false; // checks if development or production
+
+// -chamges language in url-
 /** @typedef { import('$translation/i18n-types').Locales } Locales } */
 
 /** @type { import('./$types').LayoutLoad<{ locale: Locales }> } */
@@ -32,7 +33,7 @@ export const load = async ({ url, params }) => {
 // Generation: Documentation: https://kit.svelte.dev/docs/page-options#prerender
 export const prerender = true; // 'auto'
 
-// Generate SPA? => Set false
+// Generate SPA? => set false
 // Documentation: https://kit.svelte.dev/docs/page-options#ssr
 export const ssr = true;
 

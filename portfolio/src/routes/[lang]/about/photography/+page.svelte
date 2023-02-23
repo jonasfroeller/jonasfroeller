@@ -1,6 +1,10 @@
 <script>
+	// Components
 	import SubCategory from '$component/SubCategory.svelte';
 	import AboutNav from '$component/AboutNav.svelte';
+	// Translation
+	import translation from '$translation/i18n-svelte'; // translations
+	// Assets
 	import photo1 from '$image/photography/photography-1.jpg';
 	import photo2 from '$image/photography/photography-2.jpg';
 	import photo3 from '$image/photography/photography-3.jpg';
@@ -13,6 +17,7 @@
 	import photo10 from '$image/photography/photography-10.jpg';
 	import photo11 from '$image/photography/photography-11.jpg';
 	import photo12 from '$image/photography/photography-12.jpg';
+
 	const photos = [
 		photo1,
 		photo2,
@@ -27,6 +32,7 @@
 		photo11,
 		photo12
 	];
+
 	let parent = 'about';
 	let parentCapitalized = parent.charAt(0).toUpperCase() + parent.slice(1);
 	let name = 'photography';
@@ -40,7 +46,7 @@
 <section class="flex justify-center mt-4">
 	<div class="prose">
 		<h1 class="text-center mb-0">
-			{nameCapitalized}
+			{$translation.Pages.about.photography.title()}
 		</h1>
 	</div>
 </section>
@@ -70,6 +76,6 @@
 
 <section class="flex justify-center mt-4">
 	<div class="prose">
-		<p><em>photographing since 2020</em></p>
+		<p><em>{$translation.Pages.about.photography.note()}</em></p>
 	</div>
 </section>

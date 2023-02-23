@@ -1,6 +1,10 @@
 <script>
+	// Components
 	import LegalNav from '$component/LegalNav.svelte';
 	import SubCategory from '$component/SubCategory.svelte';
+	// Translation
+	import translation from '$translation/i18n-svelte'; // translations
+
 	let parent = 'legal';
 	let parentCapitalized = parent.charAt(0).toUpperCase() + parent.slice(1);
 	let name = 'privacy-policy';
@@ -14,7 +18,7 @@
 <section class="flex justify-center mt-4">
 	<div class="prose">
 		<h1 class="text-center mb-0">
-			{nameCapitalized}
+			{$translation.Pages.legal.privacy_policy.title()}
 		</h1>
 		<p>
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi pariatur consequatur libero
@@ -37,7 +41,9 @@
 			optio, rerum, delectus aut nulla blanditiis sapiente, ratione provident cumque.
 		</p>
 		<label class="label justify-start gap-2 cursor-pointer">
-			<span class="label-text"><strong>Accept "Privacy Policy"</strong></span>
+			<span class="label-text"
+				><strong>{$translation.Pages.legal.privacy_policy.accept()}</strong></span
+			>
 			<input type="checkbox" class="checkbox" checked />
 		</label>
 	</div>

@@ -1,5 +1,7 @@
 <script>
+	// Components
 	import Category from '$component/Category.svelte';
+
 	let name = 'projects';
 	let nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
 
@@ -20,9 +22,9 @@
 	{:then data}
 		{#each data as element}
 			<div
-				class="card max-w-full w-96 bg-base-100 shadow-xl hover:border-primary border-2 transition hover:transition"
+				class="card max-w-full w-96 bg-base-100 hover:border-primary border-2 transition hover:transition"
 			>
-				<span class=" absolute top-2 right-2 badge badge-secondary"
+				<span class="absolute top-2 right-2 badge badge-secondary"
 					>{element.language.toUpperCase()}</span
 				>
 				<div class="card-body">

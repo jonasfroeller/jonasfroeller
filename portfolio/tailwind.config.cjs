@@ -7,12 +7,12 @@ module.exports = {
 	plugins: [require('daisyui'), require('@tailwindcss/typography')],
 	daisyui: {
 		styled: true,
-		themes: ['night', 'cmyk'],
+		themes: ['night', 'cmyk'], // dark, light
+		darkTheme: 'night',
 		base: true,
 		utils: true,
 		logs: true,
 		rtl: false,
-		prefix: '',
-		darkTheme: 'night'
+		prefix: ''
 	}
 };

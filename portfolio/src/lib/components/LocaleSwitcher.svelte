@@ -1,21 +1,28 @@
 <script>
-	// the way the language gets changed in the url
-	import { base } from '$app/paths'; // gh-pages basepath
-	// @ts-ignore
-	const dev = base === '' ? true : false;
-	
-	export let asSelect = false;
-
-	import styleCfg from '$script/styleStorage';
+	// @ts-nocheck
+	// Stores
+	import { langState } from '$store/styleConfig';
 	import { config } from '$store/styleConfig';
+	// Scripts
+	import styleCfg from '$script/styleStorage';
+	// Svelte
+	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
+	// Translation
 	import { setLocale, locale } from '$translation/i18n-svelte';
 	import { locales } from '$translation/i18n-util';
 	import { loadLocaleAsync } from '$translation/i18n-util.async';
 	import { replaceLocaleInUrl } from '$main/utils';
 
+	export let asSelect = false;
+
+	// @ts-ignore
+	const dev = base === '' ? true : false;
+
 	/**
+	 * the way the language gets changed in the url
 	 * @param { import('$translation/i18n-types').Locales } newLocale
 	 * @param { boolean } updateHistoryState
 	 * @return { Promise<void> }
@@ -55,22 +62,35 @@
 			replaceLocaleInUrl(location, lang, dev)
 		);
 	}
+
+	onMount(async () => {
+		$config = await styleCfg.load();
+		$langState = $config.language;
+	});
 </script>
 
 <svelte:window on:popstate={handlePopStateEvent} />
 
-	{#if asSelect}
-		<select class="select select-bordered w-auto">
-			<option disabled selected>Language</option>
-			{#each locales as l}
-			<option class:active={l === $locale}>
+{#if asSelect}
+	<select
+		class="select select-bordered w-auto"
+		bind:value={$langState}
+		on:change={() => {
+			$config.language = $langState;
+			styleCfg.save($config);
+			switchLocale($langState);
+		}}
+	>
+		<option disabled selected>Language</option>
+		{#each locales as l}
+			<option value={l}>
 				{l}
 			</option>
-			{/each}
-		</select>
-	{:else}
-		<ul class="flex gap-2">
-			{#each locales as l}
+		{/each}
+	</select>
+{:else}
+	<ul class="flex gap-2">
+		{#each locales as l}
 			<li>
 				<button
 					type="button"
@@ -81,15 +101,6 @@
 					{l}
 				</button>
 			</li>
-			{/each}
-		</ul>
-	{/if}
-
-	
-		
-		
-			
-
-	
-
-
+		{/each}
+	</ul>
+{/if}

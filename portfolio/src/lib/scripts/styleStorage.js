@@ -6,10 +6,10 @@ function fillStyleObject(cfg) {
 	if (browser) {
 		// wegen document.referrer
 		if (cfg.language == null || cfg.language == undefined || cfg.language == '') {
-			cfg.language = 'en';
+			cfg.language = (navigator.language || navigator.userLanguage).includes('de') ? 'de' : 'en';
 		}
 		if (cfg.theme == null || cfg.theme == undefined || cfg.theme == '') {
-			cfg.theme = 'night';
+			cfg.theme = window.matchMedia('prefers-color-scheme: dark').matches ? 'night' : 'cmyk';
 		}
 		return cfg;
 	}
@@ -33,8 +33,8 @@ export default class styleCfg {
 				cfg = fillStyleObject(cfg);
 			} else {
 				cfg = {
-					language: 'en',
-					theme: 'night'
+					language: (navigator.language || navigator.userLanguage).includes('de') ? 'de' : 'en',
+					theme: window.matchMedia('prefers-color-scheme: dark').matches ? 'night' : 'cmyk'
 				};
 			}
 

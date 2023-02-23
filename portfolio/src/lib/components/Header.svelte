@@ -1,14 +1,20 @@
 <script>
 	// @ts-nocheck
+	// Svelte
 	import { page } from '$app/stores';
-	import { base } from '$app/paths'; // gh-pages basepath
-	import { locale } from '$translation/i18n-svelte';
-	import LocaleSwitcher from '$component/LocaleSwitcher.svelte';
-	import ThemeSwitcher from '$component/ThemeSwitcher.svelte';
-	import { config } from '$store/styleConfig';
-	import styleCfg from '$script/styleStorage';
+	import { base } from '$app/paths';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
+	// Translation
+	import { locale } from '$translation/i18n-svelte'; // currentLanguage
+	import translation from '$translation/i18n-svelte'; // translations
+	// Components
+	import LocaleSwitcher from '$component/LocaleSwitcher.svelte';
+	import ThemeSwitcher from '$component/ThemeSwitcher.svelte';
+	// Stores
+	import { config } from '$store/styleConfig';
+	// Scripts
+	import styleCfg from '$script/styleStorage';
 
 	onMount(async () => {
 		$config = await styleCfg.load();
@@ -82,28 +88,30 @@
 				<label class="modal-box relative" for="">
 					<!-- disables closing modal on click of modal -->
 					<label for="settings" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-					<h3 class="text-lg font-bold mb-2">Settings</h3>
+					<h3 class="text-lg font-bold mb-2">{$translation.Pages.settings.title()}</h3>
 					<form class="form-control mb-4">
-						<h4 class="text-base font-bold mb-2">Legal</h4>
+						<h4 class="text-base font-bold mb-2">{$translation.Pages.settings.headline01()}</h4>
 						<label class="label cursor-pointer">
-							<span class="label-text">Accept "Terms and Conditions"</span>
+							<span class="label-text"
+								>{$translation.Pages.legal.terms_and_conditions.accept()}</span
+							>
 							<input type="checkbox" class="checkbox" checked />
 							<!-- alt class: toggle -->
 						</label>
 						<label class="label cursor-pointer">
-							<span class="label-text">Accept "Privacy Policy"</span>
+							<span class="label-text">{$translation.Pages.legal.privacy_policy.accept()}</span>
 							<input type="checkbox" class="checkbox" checked />
 						</label>
 						<label class="label cursor-pointer">
-							<span class="label-text">Accept "Cookie Policy"</span>
+							<span class="label-text">{$translation.Pages.legal.cookies.accept()}</span>
 							<input type="checkbox" class="checkbox" checked />
 						</label>
-						<h4 class="text-base font-bold mb-2">Style</h4>
+						<h4 class="text-base font-bold mb-2">{$translation.Pages.settings.headline02()}</h4>
 						<div class="flex items-center justify-between">
 							<ThemeSwitcher asSelect={true} />
 							<ThemeSwitcher asToggle={true} />
 						</div>
-						<h4 class="text-base font-bold mb-2">Language</h4>
+						<h4 class="text-base font-bold mb-2">{$translation.Pages.settings.headline03()}</h4>
 						<LocaleSwitcher asSelect={true} />
 					</form>
 					<!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -112,7 +120,7 @@
 						<label
 							on:click={() => (location.href = `${base}/${$locale}/settings`)}
 							for="settings"
-							class="btn flex gap-1"
+							class="btn flex gap-1 rotateChild"
 						>
 							<iconify-icon
 								icon="material-symbols:settings-outline-rounded"
@@ -130,15 +138,31 @@
 	<div class="cursor-pointer breadcrumbs p-2 rounded-md">
 		<ul class="flex items-center">
 			<li class="text-xl">
-				<a href="{base}/{$locale}"><iconify-icon icon="mdi:home" width="24" height="24" /> Home</a>
-			</li>
-			<li class="text-xl">
-				<a
-					href="{base}/{$locale}/{dir}{dir == 'about' ? '/profile' : ''}{dir == 'legal'
-						? '/terms-and-conditions'
-						: ''}">{dir}</a
+				<a href="{base}/{$locale}"
+					><iconify-icon icon="mdi:home" width="24" height="24" /> {$translation.Header.home()}</a
 				>
 			</li>
+			{#if dir != ''}
+				<li class="text-xl">
+					<a
+						href="{base}/{$locale}/{dir}{dir == 'about' ? '/profile' : ''}{dir == 'legal'
+							? '/terms-and-conditions'
+							: ''}"
+					>
+						{#if dir == 'about'}
+							{$translation.Header.about()}
+						{:else if dir == 'socials'}
+							{$translation.Header.contact()}
+						{:else if dir == 'projects'}
+							{$translation.Header.projects()}
+						{:else if dir == 'legal'}
+							{$translation.Header.legal()}
+						{:else if dir == 'settings'}
+							{$translation.Header.settings()}
+						{/if}
+					</a>
+				</li>
+			{/if}
 		</ul>
 	</div>
 </aside>
@@ -149,22 +173,26 @@
 >
 	<li>
 		<a href="{base}/{$locale}" class={dir.length === 0 ? 'active' : ''}>
-			<iconify-icon icon="mdi:home" width="24" height="24" /> Home
+			<iconify-icon icon="mdi:home" width="24" height="24" />
+			{$translation.Header.home()}
 		</a>
 	</li>
 	<li>
 		<a href="{base}/{$locale}/about/profile" class={dir[0] === 'about' ? 'active' : ''}>
-			<iconify-icon icon="mdi:about" width="24" height="24" /> About
+			<iconify-icon icon="mdi:about" width="24" height="24" />
+			{$translation.Header.about()}
 		</a>
 	</li>
 	<li>
 		<a href="{base}/{$locale}/socials" class={dir[0] === 'socials' ? 'active' : ''}>
-			<iconify-icon icon="bi:people-fill" width="24" height="24" /> Socials
+			<iconify-icon icon="bi:people-fill" width="24" height="24" />
+			{$translation.Header.contact()}
 		</a>
 	</li>
 	<li>
 		<a href="{base}/{$locale}/projects" class={dir[0] === 'projects' ? 'active' : ''}>
-			<iconify-icon icon="ic:baseline-web" width="24" height="24" /> Projects
+			<iconify-icon icon="ic:baseline-web" width="24" height="24" />
+			{$translation.Header.projects()}
 		</a>
 	</li>
 	<li>
@@ -172,12 +200,14 @@
 			href="{base}/{$locale}/legal/terms-and-conditions"
 			class={dir[0] === 'legal' ? 'active' : ''}
 		>
-			<iconify-icon icon="mdi:legal" width="24" height="24" /> Legal
+			<iconify-icon icon="mdi:legal" width="24" height="24" />
+			{$translation.Header.legal()}
 		</a>
 	</li>
 	<li>
 		<a href="{base}/{$locale}/settings" class={dir[0] === 'settings' ? 'active' : ''}>
-			<iconify-icon icon="material-symbols:settings-outline-rounded" width="24" height="24" /> Settings
+			<iconify-icon icon="material-symbols:settings-outline-rounded" width="24" height="24" />
+			{$translation.Header.settings()}
 		</a>
 	</li>
 </ul>

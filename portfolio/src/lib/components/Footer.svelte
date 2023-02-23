@@ -1,18 +1,29 @@
 <script>
-	import { base } from '$app/paths'; // gh-pages basepath
+	// Svelte
+	import { base } from '$app/paths'; // basepath
+	// Translation
+	import translation from '$translation/i18n-svelte'; // translations
 	import { locale } from '$translation/i18n-svelte'; // currentLanguage
 </script>
 
 <footer class="footer p-10 text-base-content border-t-2 border-b-2 border-secondary">
 	<div>
-		<span class="footer-title"><a href="{base}/{$locale}/about/profile">About</a></span>
-		<a class="link after:bg-primary" href="{base}/{$locale}/about/skills">Skills</a>
-		<a class="link after:bg-primary" href="{base}/{$locale}/about/photography">Photography</a>
-		<a class="link after:bg-primary" href="{base}/{$locale}/about/profile">Profile</a>
+		<span class="footer-title"
+			><a href="{base}/{$locale}/about/profile">{$translation.Footer.about.title()}</a></span
+		>
+		<a class="link after:bg-primary" href="{base}/{$locale}/about/skills"
+			>{$translation.Footer.about.list.skills()}</a
+		>
+		<a class="link after:bg-primary" href="{base}/{$locale}/about/photography"
+			>{$translation.Footer.about.list.photography()}</a
+		>
+		<a class="link after:bg-primary" href="{base}/{$locale}/about/profile"
+			>{$translation.Footer.about.list.profile()}</a
+		>
 	</div>
 	<div>
 		<span class="footer-title after:bg-primary"
-			><a href="{base}/{$locale}/socials">Socials/Contact</a></span
+			><a href="{base}/{$locale}/socials">{$translation.Footer.contact.title()}</a></span
 		>
 		<a class="link after:bg-primary" href="https://github.com/jonasfroeller">GitHub</a>
 		<a class="link after:bg-primary" href="https://codepen.io/jonasfroeller">CodePen</a>
@@ -26,7 +37,9 @@
 		</div>
 	</div>
 	<div>
-		<span class="footer-title"><a href="{base}/{$locale}/projects">Projects</a></span>
+		<span class="footer-title"
+			><a href="{base}/{$locale}/projects">{$translation.Footer.projects.title()}</a></span
+		>
 		<div class="flex items-bottom gap-1">
 			<a class="link after:bg-primary" href="https://github.com/jonasfroeller/Svelte_TodoManagement"
 				>SVELTE ToDo App</a
@@ -84,15 +97,23 @@
 		</div>
 	</div>
 	<div>
-		<span class="footer-title"><a href="{base}/{$locale}/legal/terms-and-conditions">Legal</a></span
+		<span class="footer-title"
+			><a href="{base}/{$locale}/legal/terms-and-conditions">{$translation.Footer.legal.title()}</a
+			></span
 		>
 		<!-- {base}/{$locale} -->
 		<a class="link after:bg-primary" href="{base}/{$locale}/legal/terms-and-conditions"
-			>Terms and Conditions</a
+			>{$translation.Footer.legal.list.terms_and_conditions()}</a
 		>
-		<a class="link after:bg-primary" href="{base}/{$locale}/legal/privacy-policy">Privacy Policy</a>
-		<a class="link after:bg-primary" href="{base}/{$locale}/legal/cookies">Cookies</a>
-		<a class="link after:bg-primary" href="{base}/{$locale}/legal/imprint">Imprint</a>
+		<a class="link after:bg-primary" href="{base}/{$locale}/legal/privacy-policy"
+			>{$translation.Footer.legal.list.privacy_policy()}</a
+		>
+		<a class="link after:bg-primary" href="{base}/{$locale}/legal/cookies"
+			>{$translation.Footer.legal.list.cookies()}</a
+		>
+		<a class="link after:bg-primary" href="{base}/{$locale}/legal/imprint"
+			>{$translation.Footer.legal.list.imprint()}</a
+		>
 	</div>
 </footer>
 <footer class="footer px-10 py-4 border-t text-base-content border-base-300">
@@ -100,7 +121,7 @@
 		<div class="tooltip" data-tip="j.froe@gmx.at">
 			<iconify-icon icon="bytesize:portfolio" width="24" height="24" />
 		</div>
-		<p><strong>Jonas Fröller</strong><br /><em>quality web developement</em></p>
+		<p><strong>Jonas Fröller</strong><br /><em>{$translation.Footer.quote()}</em></p>
 	</div>
 	<div class="md:place-self-center md:justify-self-end">
 		<div class="grid grid-flow-col gap-8 items-center">

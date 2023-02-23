@@ -101,6 +101,15 @@ a, button {
     animation-iteration-count: 1;
 }
 
+.rotateChild>iconify-icon {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+.rotateChild:hover>iconify-icon {
+    transform: rotate(180deg);
+}
+
 .rotate {
     transform: rotate(0deg);
     transition: 0.3s;

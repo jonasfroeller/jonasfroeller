@@ -1,7 +1,11 @@
 <script>
 	// @ts-nocheck
+	// Svelte
 	import { base } from '$app/paths';
+	// Translation
 	import { locale } from '$translation/i18n-svelte';
+	import translation from '$translation/i18n-svelte'; // translations
+	// Assets
 	import SubCategory from '$component/SubCategory.svelte';
 	import AboutNav from '$component/AboutNav.svelte';
 	import asciidoctor from '$image/skills/asciidoctor.svg';
@@ -16,6 +20,7 @@
 	import vite from '$image/skills/vite-dark.svg';
 	import vscode from '$image/skills/vscode-dark.svg';
 	import xd from '$image/skills/xd.svg';
+
 	const images = [
 		asciidoctor,
 		docker,
@@ -30,6 +35,7 @@
 		vscode,
 		xd
 	];
+
 	const urls = [
 		'https://asciidoctor.org/',
 		'https://www.docker.com/',
@@ -57,7 +63,7 @@
 
 <div class="flex justify-center mb-4 mt-4">
 	<div class="prose">
-		<h1 class="text-center">Languages I Write In</h1>
+		<h1 class="text-center">{$translation.Pages.about.skills.title()}</h1>
 	</div>
 </div>
 
@@ -117,13 +123,13 @@
 				<h1
 					class="absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] text-center mb-0"
 				>
-					TechStack
+					{$translation.Pages.about.skills.appCircle()}
 				</h1>
 			</div>
 		</section>
 	</div>
 	<a href="{base}/{$locale}/projects">
-		<button class="btn btn-md lg:btn-lg">Projects</button>
+		<button class="btn btn-md lg:btn-lg">{$translation.Pages.projectsButton()}</button>
 	</a>
 </section>
 

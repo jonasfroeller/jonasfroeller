@@ -3,10 +3,14 @@
 	/** @type {import('./$types').PageData} */
 	export let data; // HAS TO BE NAMED "data"
 
-	import { onMount } from 'svelte';
-	import { base } from '$app/paths'; // gh-pages basepath
-	import { locale } from '$translation/i18n-svelte'; // currentLanguage
+	// Components
 	import Category from '$component/Category.svelte';
+	// Svelte
+	import { onMount } from 'svelte';
+	// Translation
+	import { base } from '$app/paths'; // basePath
+	import { locale } from '$translation/i18n-svelte'; // currentLanguage
+	import translation from '$translation/i18n-svelte'; // translations
 
 	$: console.log('[lang]', data);
 
@@ -14,7 +18,7 @@
 	let nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
 
 	onMount(async () => {
-		/* https://codepen.io/Hyperplexed/pen/rNrJgrd */
+		/* src: https://codepen.io/Hyperplexed/pen/rNrJgrd */
 		const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜ ';
 		let interval = null;
 
@@ -58,13 +62,13 @@
 	>
 		UWIAS AWCELLRX
 	</h1>
-	<p class="text-lg select-none">Hi, I am Jonas!</p>
+	<p class="text-lg select-none">{$translation.Pages.home.info()}</p>
 	<div class="flex gap-4">
 		<a href="{base}/{$locale}/about/profile">
-			<button class="btn btn-md lg:btn-lg">About</button>
+			<button class="btn btn-md lg:btn-lg">{$translation.Pages.aboutButton()}</button>
 		</a>
 		<a href="{base}/{$locale}/projects">
-			<button class="btn btn-md lg:btn-lg">Projects</button>
+			<button class="btn btn-md lg:btn-lg">{$translation.Pages.projectsButton()}</button>
 		</a>
 	</div>
 </section>
