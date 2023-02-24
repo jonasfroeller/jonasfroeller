@@ -953,6 +953,12 @@ html {
   cursor: pointer;
   text-decoration-line: underline;
 }
+.link-hover {
+  text-decoration-line: none;
+}
+.link-hover:hover {
+  text-decoration-line: underline;
+}
 .menu {
   display: flex;
   flex-direction: column;
@@ -2864,6 +2870,9 @@ html {
 .z-50 {
   z-index: 50;
 }
+.m-0 {
+  margin: 0px;
+}
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -2878,6 +2887,9 @@ html {
 }
 .mr-2 {
   margin-right: 0.5rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
 }
 .mt-4 {
   margin-top: 1rem;
@@ -2905,6 +2917,13 @@ html {
 }
 .h-auto {
   height: auto;
+}
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.h-full {
+  height: 100%;
 }
 .h-min {
   height: -moz-min-content;
@@ -3027,6 +3046,9 @@ html {
 .border-b-2 {
   border-bottom-width: 2px;
 }
+.border-l-2 {
+  border-left-width: 2px;
+}
 .border-t {
   border-top-width: 1px;
 }
@@ -3059,6 +3081,9 @@ html {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.p-0 {
+  padding: 0px;
+}
 .p-1 {
   padding: 0.25rem;
 }
@@ -3082,6 +3107,9 @@ html {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.pl-1 {
+  padding-left: 0.25rem;
 }
 .pt-4 {
   padding-top: 1rem;
@@ -3502,6 +3530,18 @@ a, button {
 }
 
 @media (min-width: 1024px) {
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:pb-0 {
+    padding-bottom: 0px;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
+  }
 
   .lg\:text-7xl {
     font-size: 4.5rem;
