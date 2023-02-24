@@ -23,6 +23,10 @@ type RootTranslation = {
 		 * P​r​o​j​e​k​t​e
 		 */
 		projectsButton: string
+		/**
+		 * m​e​h​r​ ​e​r​f​a​h​r​e​n
+		 */
+		readMore: string
 		home: {
 			/**
 			 * H​i​,​ ​I​c​h​ ​b​i​n​ ​J​o​n​a​s​!
@@ -120,6 +124,12 @@ type RootTranslation = {
 			 * O​p​t​i​o​n​e​n
 			 */
 			options: string
+			cookieOptions: {
+				/**
+				 * E​r​f​o​r​d​e​r​l​i​c​h​,​ ​d​a​m​i​t​ ​d​i​e​ ​W​e​b​s​i​t​e​ ​d​i​e​ ​g​e​w​ä​h​l​t​e​ ​S​p​r​a​c​h​e​,​ ​d​e​n​ ​g​e​w​ä​h​l​t​e​n​ ​S​t​i​l​,​ ​b​e​r​e​i​t​s​ ​g​e​l​a​d​e​n​e​ ​I​c​o​n​s​ ​u​n​d​ ​d​i​e​ ​S​c​r​o​l​l​p​o​s​i​t​i​o​n​ ​(​w​i​r​d​ ​n​a​c​h​ ​s​c​h​l​i​e​ß​e​n​ ​d​e​s​ ​T​a​b​s​ ​g​e​l​ö​s​c​h​t​)​ ​j​e​d​e​r​ ​S​e​i​t​e​ ​a​u​f​ ​I​h​r​e​m​ ​G​e​r​ä​t​ ​s​p​e​i​c​h​e​r​n​ ​k​a​n​n​!
+				 */
+				necessary: string
+			}
 		}
 		about: {
 			profile: {
@@ -269,6 +279,10 @@ export type TranslationFunctions = {
 		 * Projekte
 		 */
 		projectsButton: () => LocalizedString
+		/**
+		 * mehr erfahren
+		 */
+		readMore: () => LocalizedString
 		home: {
 			/**
 			 * Hi, Ich bin Jonas!
@@ -366,6 +380,12 @@ export type TranslationFunctions = {
 			 * Optionen
 			 */
 			options: () => LocalizedString
+			cookieOptions: {
+				/**
+				 * Erforderlich, damit die Website die gewählte Sprache, den gewählten Stil, bereits geladene Icons und die Scrollposition (wird nach schließen des Tabs gelöscht) jeder Seite auf Ihrem Gerät speichern kann!
+				 */
+				necessary: () => LocalizedString
+			}
 		}
 		about: {
 			profile: {

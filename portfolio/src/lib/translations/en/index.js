@@ -9,6 +9,7 @@ const en = {
 	Pages: {
 		aboutButton: 'About',
 		projectsButton: 'Projects',
+		readMore: 'read more',
 		home: {
 			info: 'Hi, I am Jonas!'
 		},
@@ -45,7 +46,11 @@ const en = {
 			headline01: 'Legal',
 			headline02: 'Style',
 			headline03: 'Language',
-			options: 'Options'
+			options: 'Options',
+			cookieOptions: {
+				necessary:
+					'Necessary so that the website can save the selected language, the selected style, already loaded icons and the scroll position (will be deleted after closing the tab) of each page on your device!'
+			}
 		},
 		about: {
 			profile: {

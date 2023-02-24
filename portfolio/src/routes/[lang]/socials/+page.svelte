@@ -23,73 +23,93 @@
 <Category {name} {nameCapitalized} />
 
 <section class="flex justify-center gap-4 flex-wrap">
-	<div class="prose">
-		<h1 class="mb-4">{$translation.Pages.socials.headline01()}</h1>
-		<a
-			class="align-middle"
-			target="_blank"
-			rel="noreferrer"
-			href="https://github.com/jonasfroeller"
-		>
-			<button class="btn btn-md lg:btn-lg mb-1"
-				><iconify-icon class="mr-2" icon="mdi:github" width="24" height="24" />GitHub</button
+	<div class="flex flex-col">
+		<div class="prose">
+			<h1 class="mb-4">{$translation.Pages.socials.headline01()}</h1>
+		</div>
+		<div class="flex flex-wrap gap-2">
+			<a
+				class="align-middle"
+				target="_blank"
+				rel="noreferrer"
+				href="https://github.com/jonasfroeller"
 			>
-		</a>
-		<a
-			class="align-middle"
-			target="_blank"
-			rel="noreferrer"
-			href="https://codepen.io/jonasfroeller"
-		>
-			<button class="btn btn-md lg:btn-lg mb-1"
-				><iconify-icon class="mr-2" icon="fe:codepen" width="24" height="24" />CodePen</button
+				<button class="btn btn-md lg:btn-lg mb-1"
+					><iconify-icon class="mr-2" icon="mdi:github" width="24" height="24" />GitHub</button
+				>
+			</a>
+			<a
+				class="align-middle"
+				target="_blank"
+				rel="noreferrer"
+				href="https://codepen.io/jonasfroeller"
 			>
-		</a>
-		<a class="align-middle" target="_blank" rel="noreferrer" href="https://dev.to/jonasfroeller">
-			<button class="btn btn-md lg:btn-lg mb-1"
-				><iconify-icon class="mr-2" icon="fa-brands:dev" width="24" height="24" />DevTo</button
-			>
-		</a>
-		<h1 class="mb-4 mt-4">{$translation.Pages.socials.headline02()}</h1>
-		<div class="tooltip" data-tip="LinkedIn">
-			<a class="align-middle" href="https://linkedin.com/in/jonas-fr%C3%B6ller-8b4986235/"
-				><button class="btn btn-md lg:btn-lg mb-1 gap-2"
-					><iconify-icon icon="fa6-brands:linkedin" width="24" height="24" />LinkedIn
-					<div class="badge badge-success gap-2 lowercase">
-						{$translation.Pages.socials.availabilityNoticeWeek()}
-					</div></button
+				<button class="btn btn-md lg:btn-lg mb-1"
+					><iconify-icon class="mr-2" icon="fe:codepen" width="24" height="24" />CodePen</button
+				>
+			</a>
+			<a class="align-middle" target="_blank" rel="noreferrer" href="https://dev.to/jonasfroeller">
+				<button class="btn btn-md lg:btn-lg mb-1"
+					><iconify-icon class="mr-2" icon="fa-brands:dev" width="24" height="24" />DevTo</button
 				>
 			</a>
 		</div>
-		<div class="tooltip" data-tip="Xing">
-			<a class="align-middle" href="https://xing.com/profile/Jonas_Froeller/cv"
-				><button class="btn btn-md lg:btn-lg mb-1 gap-2"
-					><iconify-icon icon="fa6-brands:square-xing" width="24" height="24" />Xing
-					<div class="badge badge-success gap-2 lowercase">
-						{$translation.Pages.socials.availabilityNoticeWeek()}
-					</div></button
-				>
-			</a>
+
+		<div class="prose">
+			<h1 class="mb-4 mt-4">{$translation.Pages.socials.headline02()}</h1>
 		</div>
-		<h1 class="mb-4 mt-4">{$translation.Pages.socials.headline03()}</h1>
-		<div class="tooltip not-prose flex" data-tip="j.froe@gmx.at">
-			<button class="btn btn-md lg:btn-lg mb-1 lowercase justify-between gap-4">
-				<a class="flex items-center text-neutral-content gap-2" href="mailto:j.froe@gmx.at"
-					><iconify-icon icon="ic:round-email" width="28" height="28" />j.froe@gmx.at
-					<div class="badge badge-success gap-2">
-						{$translation.Pages.socials.availabilityNoticeDay()}
-					</div>
+		<div class="flex flex-wrap gap-2">
+			<div class="tooltip" data-tip="LinkedIn">
+				<a class="align-middle" href="https://linkedin.com/in/jonas-fr%C3%B6ller-8b4986235/"
+					><button class="btn btn-md lg:btn-lg mb-1 gap-2 h-fit p-2"
+						><iconify-icon icon="fa6-brands:linkedin" width="24" height="24" />LinkedIn
+						<div class="badge badge-success gap-2 lowercase">
+							{$translation.Pages.socials.availabilityNoticeWeek()}
+						</div></button
+					>
 				</a>
-				<!-- svelte-ignore a11y-click-events-have-key-events -->
-				<div class="divider lg:divider-horizontal before:bg-white after:bg-white" />
-				<div class="cursor-copy copy-text normal-case">
-					<label class="swap">
-						<input on:click={() => copyEmail('j.froe@gmx.at')} type="checkbox" />
-						<div class="swap-on">{$translation.Pages.socials.copyNotice.copy()}</div>
-						<div class="swap-off">{$translation.Pages.socials.copyNotice.copied()} &check;</div>
-					</label>
-				</div>
-			</button>
+			</div>
+			<div class="tooltip" data-tip="Xing">
+				<a class="align-middle" href="https://xing.com/profile/Jonas_Froeller/cv"
+					><button class="btn btn-md lg:btn-lg mb-1 gap-2 h-fit p-2"
+						><iconify-icon icon="fa6-brands:square-xing" width="24" height="24" />Xing
+						<div class="badge badge-success gap-2 lowercase">
+							{$translation.Pages.socials.availabilityNoticeWeek()}
+						</div></button
+					>
+				</a>
+			</div>
+		</div>
+
+		<div class="prose">
+			<h1 class="mb-4 mt-4">{$translation.Pages.socials.headline03()}</h1>
+		</div>
+		<div class="flex flex-wrap gap-2">
+			<div class="tooltip" data-tip="j.froe@gmx.at">
+				<button
+					class="btn btn-md lg:btn-lg mb-1 p-0 lg:pt-0 lg:pb-0 lowercase flex-col lg:flex-row h-fit"
+				>
+					<div class="gap-2 p-2">
+						<a class="flex items-center gap-2 text-neutral-content" href="mailto:j.froe@gmx.at"
+							><iconify-icon icon="ic:round-email" width="28" height="28" />j.froe@gmx.at
+							<span class="badge badge-success gap-2">
+								{$translation.Pages.socials.availabilityNoticeDay()}
+							</span>
+						</a>
+					</div>
+					<div
+						class="divider m-0 p-0 lg:divider-horizontal before:bg-white after:bg-white h-full w-full"
+					/>
+					<!-- svelte-ignore a11y-click-events-have-key-events -->
+					<div class="cursor-copy copy-text normal-case p-2">
+						<label class="swap">
+							<input on:click={() => copyEmail('j.froe@gmx.at')} type="checkbox" />
+							<div class="swap-on">{$translation.Pages.socials.copyNotice.copy()}</div>
+							<div class="swap-off">{$translation.Pages.socials.copyNotice.copied()} &check;</div>
+						</label>
+					</div>
+				</button>
+			</div>
 		</div>
 	</div>
 </section>

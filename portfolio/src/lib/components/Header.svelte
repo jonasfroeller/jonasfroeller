@@ -20,7 +20,7 @@
 		$config = await styleCfg.load();
 	});
 
-	$: console.log('current lang:', $locale);
+	/* $: console.log('current lang:', $locale); */
 
 	$: dir = $page.route.id
 		.replace('/jonasfroeller', '')
@@ -95,16 +95,16 @@
 							<span class="label-text"
 								>{$translation.Pages.legal.terms_and_conditions.accept()}</span
 							>
-							<input type="checkbox" class="checkbox" checked />
+							<input type="checkbox" class="checkbox" checked disabled />
 							<!-- alt class: toggle -->
 						</label>
 						<label class="label cursor-pointer">
 							<span class="label-text">{$translation.Pages.legal.privacy_policy.accept()}</span>
-							<input type="checkbox" class="checkbox" checked />
+							<input type="checkbox" class="checkbox" checked disabled />
 						</label>
 						<label class="label cursor-pointer">
 							<span class="label-text">{$translation.Pages.legal.cookies.accept()}</span>
-							<input type="checkbox" class="checkbox" checked />
+							<input type="checkbox" class="checkbox" checked disabled />
 						</label>
 						<h4 class="text-base font-bold mb-2">{$translation.Pages.settings.headline02()}</h4>
 						<div class="flex items-center justify-between">

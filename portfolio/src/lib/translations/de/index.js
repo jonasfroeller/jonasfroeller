@@ -9,6 +9,7 @@ const de = {
 	Pages: {
 		aboutButton: 'Über',
 		projectsButton: 'Projekte',
+		readMore: 'mehr erfahren',
 		home: {
 			info: 'Hi, Ich bin Jonas!'
 		},
@@ -45,7 +46,11 @@ const de = {
 			headline01: 'Rechtliches',
 			headline02: 'Stil',
 			headline03: 'Sprache',
-			options: 'Optionen'
+			options: 'Optionen',
+			cookieOptions: {
+				necessary:
+					'Erforderlich, damit die Website die gewählte Sprache, den gewählten Stil, bereits geladene Icons und die Scrollposition (wird nach schließen des Tabs gelöscht) jeder Seite auf Ihrem Gerät speichern kann!'
+			}
 		},
 		about: {
 			profile: {

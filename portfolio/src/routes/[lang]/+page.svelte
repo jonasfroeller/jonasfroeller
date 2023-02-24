@@ -12,7 +12,7 @@
 	import { locale } from '$translation/i18n-svelte'; // currentLanguage
 	import translation from '$translation/i18n-svelte'; // translations
 
-	$: console.log('[lang]', data);
+	console.log('[lang]', data);
 
 	let name = 'home';
 	let nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
