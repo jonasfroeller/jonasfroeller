@@ -10,7 +10,8 @@ export const handle = async ({ event, resolve }) => {
 	// read language slug
 	// @ts-ignore
 	let [, , lang] = event.url.pathname.split('/'); // ip||domain/prefix/[lang]
-	if (dev) {
+	// @ts-ignore
+	if (dev || base == '') {
 		// [, lang];
 		[, lang] = event.url.pathname.split('/'); // ip||domain/[lang]
 	}

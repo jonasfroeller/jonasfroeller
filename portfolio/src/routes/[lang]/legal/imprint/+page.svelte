@@ -17,7 +17,7 @@
 
 <section class="flex justify-center mt-4">
 	<div class="prose">
-		<h1 class="text-center mb-0">
+		<h1 class="text-center mb-0 break-all">
 			{$translation.Pages.legal.imprint.title()}
 		</h1>
 		<p>

@@ -33,9 +33,6 @@ const config = {
 		},
 		prerender: {
 			entries: [
-				'/',
-				'/en',
-				'/de',
 				'/en/about/profile',
 				'/de/about/profile',
 				'/en/about',

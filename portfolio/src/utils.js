@@ -8,7 +8,8 @@ import { base } from '$app/paths';
  */
 export const replaceLocaleInUrl = ({ pathname, search }, locale, dev) => {
 	let [, , , ...rest] = pathname?.split('/') ?? ''; // [, , ...rest];
-	if (dev) {
+	// @ts-ignore
+	if (dev || base == '') {
 		[, , ...rest] = pathname?.split('/') ?? '';
 	}
 
