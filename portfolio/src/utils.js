@@ -3,14 +3,13 @@ import { base } from '$app/paths';
 /**
  * @param { Location } location
  * @param { string } locale
- * @param { boolean } dev
+ * @param { boolean } defaultGen
  * @returns string
  */
-export const replaceLocaleInUrl = ({ pathname, search }, locale, dev) => {
-	let [, , , ...rest] = pathname?.split('/') ?? ''; // [, , ...rest];
-	// @ts-ignore
-	if (dev || base == '') {
-		[, , ...rest] = pathname?.split('/') ?? '';
+export const replaceLocaleInUrl = ({ pathname, search }, locale, defaultGen) => {
+	let [, , ...rest] = pathname?.split('/') ?? ''; // => /
+	if (!defaultGen) {
+		[, , , ...rest] = pathname?.split('/') ?? ''; // => prefix/
 	}
 
 	return `${base}/${[locale, ...rest].join('/')}${search}`;

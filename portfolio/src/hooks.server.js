@@ -1,5 +1,5 @@
 // the way the language gets changed in the url
-const dev = process.argv.includes('dev');
+import { dev } from '$app/environment'; // const dev = process.argv.includes('dev'); doesn't work with static hosting, args only filled on node start!
 
 import { detectLocale } from '$translation/i18n-util';
 import { initAcceptLanguageHeaderDetector } from 'typesafe-i18n/detectors';
