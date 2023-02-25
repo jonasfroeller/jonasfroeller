@@ -1,6 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
-const dev = process.argv.includes('dev'); // || const dev = process.env.NODE_ENV === 'developement' || const dev = base === '' ? true : false;
+const dev = process.argv.includes('dev'); // || const dev = process.env.NODE_ENV === 'developement' || const dev = base === '' ? true : false; || https://kit.svelte.dev/docs/modules#$app-environment => import { browser, building, dev, version } from '$app/environment';
 
 const prefixFolder = true; // prefix (repo name) needed if hosted on GitHub (default = false => for: netlify, vercel, 000webhost, oracleCloud...)
 const basePath = prefixFolder == true ? (dev ? '' : '/jonasfroeller') : ''; // base: <prefix> | domain/repo/de/<search> (true) || domain/de/<search> (false)
