@@ -68,7 +68,7 @@
 </div>
 
 <div class="flex justify-center">
-	<div class="mockup-code w-fit not-prose">
+	<div class="mockup-code min-w-0">
 		<pre data-prefix="1"><code
 				>&lt;p&gt;&lt;strong&gt;<strong>HTML</strong
 				>&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;since 2020&lt;/p&gt; &lt;p&gt;{new Date().getFullYear() -
@@ -105,35 +105,73 @@
 </div>
 
 <section class="flex justify-center items-center flex-wrap gap-4 mt-4">
-	<div class="prose">
-		<section class="flex justify-center mt-4">
-			<div id="skill-circle">
-				<ul class="skills">
-					{#each images as image, i}
-						<!-- svelte-ignore a11y-click-events-have-key-events -->
-						<li on:click={() => window.open(urls[i], '_blank').focus()}>
-							<span>
-								<img src={image} alt={image} style="width: 50px; aspect-ration: 1/1;" />
-							</span>
-						</li>
-					{:else}
-						<p><em>Couldn't load Images!</em></p>
-					{/each}
-				</ul>
+	<section class="flex justify-center mt-4">
+		<div id="skill-circle">
+			<ul class="skills">
+				{#each images as image, i}
+					<!-- svelte-ignore a11y-click-events-have-key-events -->
+					<li on:click={() => window.open(urls[i], '_blank').focus()}>
+						<span>
+							<img class="app" src={image} alt={image} />
+						</span>
+					</li>
+				{:else}
+					<p><em>Couldn't load Images!</em></p>
+				{/each}
+			</ul>
+			<div class="prose">
 				<h1
 					class="absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] text-center mb-0"
 				>
 					{$translation.Pages.about.skills.appCircle()}
 				</h1>
 			</div>
-		</section>
-	</div>
+		</div>
+	</section>
 	<a href="{base}/{$locale}/projects">
 		<button class="btn btn-md lg:btn-lg">{$translation.Pages.projectsButton()}</button>
 	</a>
 </section>
 
 <style>
+	@media (max-width: 485px) {
+		#skill-circle {
+			width: 20rem !important;
+			height: 20rem !important;
+		}
+
+		.skills {
+			left: calc(10rem - 2rem) !important;
+		}
+		.skills li {
+			height: 10rem !important;
+			width: 76px !important;
+		}
+	}
+
+	@media (max-width: 375px) {
+		#skill-circle {
+			width: 14rem !important;
+			height: 14rem !important;
+		}
+
+		.skills {
+			left: calc(7rem - 1rem) !important;
+		}
+		.skills li {
+			height: 7rem !important;
+			width: 28px !important;
+		}
+
+		.app {
+			width: 40px !important;
+		}
+	}
+
+	.app {
+		width: 50px;
+		aspect-ration: 1/1;
+	}
 	#skill-circle {
 		width: 26rem;
 		height: 26rem;
@@ -149,7 +187,7 @@
 		padding: 0;
 		position: absolute;
 		text-align: center;
-		left: calc(13rem - 30px);
+		left: calc(13rem - 4rem);
 	}
 	.skills li {
 		height: 13rem;
@@ -159,7 +197,9 @@
 		width: 120px;
 	}
 	.skills span {
-		display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.skills li:nth-of-type(1) {
 		transform: rotate(30deg);

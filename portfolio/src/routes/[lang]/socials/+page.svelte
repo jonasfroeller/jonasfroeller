@@ -63,7 +63,7 @@
 				<a class="align-middle" href="https://linkedin.com/in/jonas-fr%C3%B6ller-8b4986235/"
 					><button class="btn btn-md lg:btn-lg mb-1 gap-2 h-fit p-2"
 						><iconify-icon icon="fa6-brands:linkedin" width="24" height="24" />LinkedIn
-						<div class="badge badge-success gap-2 lowercase">
+						<div class="badge badge-success gap-2 lowercase h-fit">
 							{$translation.Pages.socials.availabilityNoticeWeek()}
 						</div></button
 					>
@@ -73,7 +73,7 @@
 				<a class="align-middle" href="https://xing.com/profile/Jonas_Froeller/cv"
 					><button class="btn btn-md lg:btn-lg mb-1 gap-2 h-fit p-2"
 						><iconify-icon icon="fa6-brands:square-xing" width="24" height="24" />Xing
-						<div class="badge badge-success gap-2 lowercase">
+						<div class="badge badge-success gap-2 lowercase h-fit">
 							{$translation.Pages.socials.availabilityNoticeWeek()}
 						</div></button
 					>
@@ -92,7 +92,7 @@
 					<div class="gap-2 p-2">
 						<a class="flex items-center gap-2 text-neutral-content" href="mailto:j.froe@gmx.at"
 							><iconify-icon icon="ic:round-email" width="28" height="28" />j.froe@gmx.at
-							<span class="badge badge-success gap-2">
+							<span class="badge badge-success gap-2 h-fit">
 								{$translation.Pages.socials.availabilityNoticeDay()}
 							</span>
 						</a>
