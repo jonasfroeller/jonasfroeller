@@ -24,6 +24,10 @@ type RootTranslation = {
 		 */
 		projectsButton: string
 		/**
+		 * K​o​n​t​a​k​t
+		 */
+		contactButton: string
+		/**
 		 * m​e​h​r​ ​e​r​f​a​h​r​e​n
 		 */
 		readMore: string
@@ -72,6 +76,438 @@ type RootTranslation = {
 				 */
 				title: string
 				/**
+				 * <​c​e​n​t​e​r​>​<​e​m​>​K​e​i​n​e​ ​ü​b​e​r​s​e​t​z​u​n​g​ ​v​o​r​h​a​n​d​e​n​.​<​/​e​m​>​<​/​c​e​n​t​e​r​>​ ​<​b​r​>​ ​<​p​>​L​a​s​t​ ​u​p​d​a​t​e​d​:​ ​M​a​r​c​h​ ​0​3​,​ ​2​0​2​3​<​/​p​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​T​h​i​s​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​ ​d​e​s​c​r​i​b​e​s​ ​O​u​r​ ​p​o​l​i​c​i​e​s​ ​a​n​d​ ​p​r​o​c​e​d​u​r​e​s​ ​o​n​ ​t​h​e​ ​c​o​l​l​e​c​t​i​o​n​,​ ​u​s​e​ ​a​n​d​
+			​	​	​	​	​	​d​i​s​c​l​o​s​u​r​e​ ​o​f​ ​Y​o​u​r​ ​i​n​f​o​r​m​a​t​i​o​n​ ​w​h​e​n​ ​Y​o​u​ ​u​s​e​ ​t​h​e​ ​S​e​r​v​i​c​e​ ​a​n​d​ ​t​e​l​l​s​ ​Y​o​u​ ​a​b​o​u​t​ ​Y​o​u​r​ ​p​r​i​v​a​c​y​
+			​	​	​	​	​	​r​i​g​h​t​s​ ​a​n​d​ ​h​o​w​ ​t​h​e​ ​l​a​w​ ​p​r​o​t​e​c​t​s​ ​Y​o​u​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​W​e​ ​u​s​e​ ​Y​o​u​r​ ​P​e​r​s​o​n​a​l​ ​d​a​t​a​ ​t​o​ ​p​r​o​v​i​d​e​ ​a​n​d​ ​i​m​p​r​o​v​e​ ​t​h​e​ ​S​e​r​v​i​c​e​.​ ​B​y​ ​u​s​i​n​g​ ​t​h​e​ ​S​e​r​v​i​c​e​,​ ​Y​o​u​ ​a​g​r​e​e​
+			​	​	​	​	​	​t​o​ ​t​h​e​ ​c​o​l​l​e​c​t​i​o​n​ ​a​n​d​ ​u​s​e​ ​o​f​ ​i​n​f​o​r​m​a​t​i​o​n​ ​i​n​ ​a​c​c​o​r​d​a​n​c​e​ ​w​i​t​h​ ​t​h​i​s​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​.​ ​T​h​i​s​ ​P​r​i​v​a​c​y​
+			​	​	​	​	​	​P​o​l​i​c​y​ ​h​a​s​ ​b​e​e​n​ ​c​r​e​a​t​e​d​ ​w​i​t​h​ ​t​h​e​ ​h​e​l​p​ ​o​f​ ​t​h​e​ ​<​a​
+			​	​	​	​	​	​	​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​p​r​i​v​a​c​y​p​o​l​i​c​i​e​s​.​c​o​m​/​p​r​i​v​a​c​y​-​p​o​l​i​c​y​-​g​e​n​e​r​a​t​o​r​/​"​
+			​	​	​	​	​	​	​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​
+			​	​	​	​	​	​	​r​e​l​=​"​n​o​r​e​f​e​r​r​e​r​"​>​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​ ​G​e​n​e​r​a​t​o​r​<​/​a​
+			​	​	​	​	​	​>​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​h​1​>​I​n​t​e​r​p​r​e​t​a​t​i​o​n​ ​a​n​d​ ​D​e​f​i​n​i​t​i​o​n​s​<​/​h​1​>​
+			​	​	​	​	​<​h​2​>​I​n​t​e​r​p​r​e​t​a​t​i​o​n​<​/​h​2​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​T​h​e​ ​w​o​r​d​s​ ​o​f​ ​w​h​i​c​h​ ​t​h​e​ ​i​n​i​t​i​a​l​ ​l​e​t​t​e​r​ ​i​s​ ​c​a​p​i​t​a​l​i​z​e​d​ ​h​a​v​e​ ​m​e​a​n​i​n​g​s​ ​d​e​f​i​n​e​d​ ​u​n​d​e​r​ ​t​h​e​ ​f​o​l​l​o​w​i​n​g​
+			​	​	​	​	​	​c​o​n​d​i​t​i​o​n​s​.​ ​T​h​e​ ​f​o​l​l​o​w​i​n​g​ ​d​e​f​i​n​i​t​i​o​n​s​ ​s​h​a​l​l​ ​h​a​v​e​ ​t​h​e​ ​s​a​m​e​ ​m​e​a​n​i​n​g​ ​r​e​g​a​r​d​l​e​s​s​ ​o​f​ ​w​h​e​t​h​e​r​ ​t​h​e​y​
+			​	​	​	​	​	​a​p​p​e​a​r​ ​i​n​ ​s​i​n​g​u​l​a​r​ ​o​r​ ​i​n​ ​p​l​u​r​a​l​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​h​2​>​D​e​f​i​n​i​t​i​o​n​s​<​/​h​2​>​
+			​	​	​	​	​<​p​>​F​o​r​ ​t​h​e​ ​p​u​r​p​o​s​e​s​ ​o​f​ ​t​h​i​s​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​:​<​/​p​>​
+			​	​	​	​	​<​u​l​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​<​s​t​r​o​n​g​>​A​c​c​o​u​n​t​<​/​s​t​r​o​n​g​>​ ​m​e​a​n​s​ ​a​ ​u​n​i​q​u​e​ ​a​c​c​o​u​n​t​ ​c​r​e​a​t​e​d​ ​f​o​r​ ​Y​o​u​ ​t​o​ ​a​c​c​e​s​s​ ​o​u​r​ ​S​e​r​v​i​c​e​ ​o​r​ ​p​a​r​t​s​
+			​	​	​	​	​	​	​	​o​f​ ​o​u​r​ ​S​e​r​v​i​c​e​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​<​s​t​r​o​n​g​>​A​f​f​i​l​i​a​t​e​<​/​s​t​r​o​n​g​>​ ​m​e​a​n​s​ ​a​n​ ​e​n​t​i​t​y​ ​t​h​a​t​ ​c​o​n​t​r​o​l​s​,​ ​i​s​ ​c​o​n​t​r​o​l​l​e​d​ ​b​y​ ​o​r​ ​i​s​ ​u​n​d​e​r​ ​c​o​m​m​o​n​
+			​	​	​	​	​	​	​	​c​o​n​t​r​o​l​ ​w​i​t​h​ ​a​ ​p​a​r​t​y​,​ ​w​h​e​r​e​ ​&​q​u​o​t​;​c​o​n​t​r​o​l​&​q​u​o​t​;​ ​m​e​a​n​s​ ​o​w​n​e​r​s​h​i​p​ ​o​f​ ​5​0​%​ ​o​r​ ​m​o​r​e​ ​o​f​ ​t​h​e​ ​s​h​a​r​e​s​,​
+			​	​	​	​	​	​	​	​e​q​u​i​t​y​ ​i​n​t​e​r​e​s​t​ ​o​r​ ​o​t​h​e​r​ ​s​e​c​u​r​i​t​i​e​s​ ​e​n​t​i​t​l​e​d​ ​t​o​ ​v​o​t​e​ ​f​o​r​ ​e​l​e​c​t​i​o​n​ ​o​f​ ​d​i​r​e​c​t​o​r​s​ ​o​r​ ​o​t​h​e​r​ ​m​a​n​a​g​i​n​g​
+			​	​	​	​	​	​	​	​a​u​t​h​o​r​i​t​y​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​<​s​t​r​o​n​g​>​C​o​m​p​a​n​y​<​/​s​t​r​o​n​g​>​ ​(​r​e​f​e​r​r​e​d​ ​t​o​ ​a​s​ ​e​i​t​h​e​r​ ​&​q​u​o​t​;​t​h​e​ ​C​o​m​p​a​n​y​&​q​u​o​t​;​,​ ​&​q​u​o​t​;​W​e​&​q​u​o​t​;​,​ ​&​q​u​o​t​;​U​s​&​q​u​o​t​;​
+			​	​	​	​	​	​	​	​o​r​ ​&​q​u​o​t​;​O​u​r​&​q​u​o​t​;​ ​i​n​ ​t​h​i​s​ ​A​g​r​e​e​m​e​n​t​)​ ​r​e​f​e​r​s​ ​t​o​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​<​s​t​r​o​n​g​>​C​o​o​k​i​e​s​<​/​s​t​r​o​n​g​>​ ​a​r​e​ ​s​m​a​l​l​ ​f​i​l​e​s​ ​t​h​a​t​ ​a​r​e​ ​p​l​a​c​e​d​ ​o​n​ ​Y​o​u​r​ ​c​o​m​p​u​t​e​r​,​ ​m​o​b​i​l​e​ ​d​e​v​i​c​e​ ​o​r​
+			​	​	​	​	​	​	​	​a​n​y​ ​o​t​h​e​r​ ​d​e​v​i​c​e​ ​b​y​ ​a​ ​w​e​b​s​i​t​e​,​ ​c​o​n​t​a​i​n​i​n​g​ ​t​h​e​ ​d​e​t​a​i​l​s​ ​o​f​ ​Y​o​u​r​ ​b​r​o​w​s​i​n​g​ ​h​i​s​t​o​r​y​ ​o​n​ ​t​h​a​t​ ​w​e​b​s​i​t​e​
+			​	​	​	​	​	​	​	​a​m​o​n​g​ ​i​t​s​ ​m​a​n​y​ ​u​s​e​s​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​<​s​t​r​o​n​g​>​C​o​u​n​t​r​y​<​/​s​t​r​o​n​g​>​ ​r​e​f​e​r​s​ ​t​o​:​ ​A​u​s​t​r​i​a​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​<​s​t​r​o​n​g​>​D​e​v​i​c​e​<​/​s​t​r​o​n​g​>​ ​m​e​a​n​s​ ​a​n​y​ ​d​e​v​i​c​e​ ​t​h​a​t​ ​c​a​n​ ​a​c​c​e​s​s​ ​t​h​e​ ​S​e​r​v​i​c​e​ ​s​u​c​h​ ​a​s​ ​a​ ​c​o​m​p​u​t​e​r​,​ ​a​
+			​	​	​	​	​	​	​	​c​e​l​l​p​h​o​n​e​ ​o​r​ ​a​ ​d​i​g​i​t​a​l​ ​t​a​b​l​e​t​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​<​s​t​r​o​n​g​>​P​e​r​s​o​n​a​l​ ​D​a​t​a​<​/​s​t​r​o​n​g​>​ ​i​s​ ​a​n​y​ ​i​n​f​o​r​m​a​t​i​o​n​ ​t​h​a​t​ ​r​e​l​a​t​e​s​ ​t​o​ ​a​n​ ​i​d​e​n​t​i​f​i​e​d​ ​o​r​ ​i​d​e​n​t​i​f​i​a​b​l​e​
+			​	​	​	​	​	​	​	​i​n​d​i​v​i​d​u​a​l​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​<​s​t​r​o​n​g​>​S​e​r​v​i​c​e​<​/​s​t​r​o​n​g​>​ ​r​e​f​e​r​s​ ​t​o​ ​t​h​e​ ​W​e​b​s​i​t​e​.​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​<​s​t​r​o​n​g​>​S​e​r​v​i​c​e​ ​P​r​o​v​i​d​e​r​<​/​s​t​r​o​n​g​>​ ​m​e​a​n​s​ ​a​n​y​ ​n​a​t​u​r​a​l​ ​o​r​ ​l​e​g​a​l​ ​p​e​r​s​o​n​ ​w​h​o​ ​p​r​o​c​e​s​s​e​s​ ​t​h​e​ ​d​a​t​a​
+			​	​	​	​	​	​	​	​o​n​ ​b​e​h​a​l​f​ ​o​f​ ​t​h​e​ ​C​o​m​p​a​n​y​.​ ​I​t​ ​r​e​f​e​r​s​ ​t​o​ ​t​h​i​r​d​-​p​a​r​t​y​ ​c​o​m​p​a​n​i​e​s​ ​o​r​ ​i​n​d​i​v​i​d​u​a​l​s​ ​e​m​p​l​o​y​e​d​ ​b​y​ ​t​h​e​
+			​	​	​	​	​	​	​	​C​o​m​p​a​n​y​ ​t​o​ ​f​a​c​i​l​i​t​a​t​e​ ​t​h​e​ ​S​e​r​v​i​c​e​,​ ​t​o​ ​p​r​o​v​i​d​e​ ​t​h​e​ ​S​e​r​v​i​c​e​ ​o​n​ ​b​e​h​a​l​f​ ​o​f​ ​t​h​e​ ​C​o​m​p​a​n​y​,​ ​t​o​ ​p​e​r​f​o​r​m​
+			​	​	​	​	​	​	​	​s​e​r​v​i​c​e​s​ ​r​e​l​a​t​e​d​ ​t​o​ ​t​h​e​ ​S​e​r​v​i​c​e​ ​o​r​ ​t​o​ ​a​s​s​i​s​t​ ​t​h​e​ ​C​o​m​p​a​n​y​ ​i​n​ ​a​n​a​l​y​z​i​n​g​ ​h​o​w​ ​t​h​e​ ​S​e​r​v​i​c​e​ ​i​s​ ​u​s​e​d​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​<​s​t​r​o​n​g​>​U​s​a​g​e​ ​D​a​t​a​<​/​s​t​r​o​n​g​>​ ​r​e​f​e​r​s​ ​t​o​ ​d​a​t​a​ ​c​o​l​l​e​c​t​e​d​ ​a​u​t​o​m​a​t​i​c​a​l​l​y​,​ ​e​i​t​h​e​r​ ​g​e​n​e​r​a​t​e​d​ ​b​y​ ​t​h​e​
+			​	​	​	​	​	​	​	​u​s​e​ ​o​f​ ​t​h​e​ ​S​e​r​v​i​c​e​ ​o​r​ ​f​r​o​m​ ​t​h​e​ ​S​e​r​v​i​c​e​ ​i​n​f​r​a​s​t​r​u​c​t​u​r​e​ ​i​t​s​e​l​f​ ​(​f​o​r​ ​e​x​a​m​p​l​e​,​ ​t​h​e​ ​d​u​r​a​t​i​o​n​ ​o​f​
+			​	​	​	​	​	​	​	​a​ ​p​a​g​e​ ​v​i​s​i​t​)​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​<​s​t​r​o​n​g​>​W​e​b​s​i​t​e​<​/​s​t​r​o​n​g​>​ ​r​e​f​e​r​s​ ​t​o​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​,​ ​a​c​c​e​s​s​i​b​l​e​ ​f​r​o​m​
+			​	​	​	​	​	​	​	​<​a​
+			​	​	​	​	​	​	​	​	​h​r​e​f​=​"​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​"​
+			​	​	​	​	​	​	​	​	​r​e​l​=​"​e​x​t​e​r​n​a​l​ ​n​o​f​o​l​l​o​w​ ​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​
+			​	​	​	​	​	​	​	​	​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​>​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​<​/​a​
+			​	​	​	​	​	​	​	​>​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​<​s​t​r​o​n​g​>​Y​o​u​<​/​s​t​r​o​n​g​>​ ​m​e​a​n​s​ ​t​h​e​ ​i​n​d​i​v​i​d​u​a​l​ ​a​c​c​e​s​s​i​n​g​ ​o​r​ ​u​s​i​n​g​ ​t​h​e​ ​S​e​r​v​i​c​e​,​ ​o​r​ ​t​h​e​ ​c​o​m​p​a​n​y​,​ ​o​r​
+			​	​	​	​	​	​	​	​o​t​h​e​r​ ​l​e​g​a​l​ ​e​n​t​i​t​y​ ​o​n​ ​b​e​h​a​l​f​ ​o​f​ ​w​h​i​c​h​ ​s​u​c​h​ ​i​n​d​i​v​i​d​u​a​l​ ​i​s​ ​a​c​c​e​s​s​i​n​g​ ​o​r​ ​u​s​i​n​g​ ​t​h​e​ ​S​e​r​v​i​c​e​,​ ​a​s​
+			​	​	​	​	​	​	​	​a​p​p​l​i​c​a​b​l​e​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​<​/​u​l​>​
+			​	​	​	​	​<​h​1​>​C​o​l​l​e​c​t​i​n​g​ ​a​n​d​ ​U​s​i​n​g​ ​Y​o​u​r​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​<​/​h​1​>​
+			​	​	​	​	​<​h​2​>​T​y​p​e​s​ ​o​f​ ​D​a​t​a​ ​C​o​l​l​e​c​t​e​d​<​/​h​2​>​
+			​	​	​	​	​<​h​3​>​P​e​r​s​o​n​a​l​ ​D​a​t​a​<​/​h​3​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​W​h​i​l​e​ ​u​s​i​n​g​ ​O​u​r​ ​S​e​r​v​i​c​e​,​ ​W​e​ ​m​a​y​ ​a​s​k​ ​Y​o​u​ ​t​o​ ​p​r​o​v​i​d​e​ ​U​s​ ​w​i​t​h​ ​c​e​r​t​a​i​n​ ​p​e​r​s​o​n​a​l​l​y​ ​i​d​e​n​t​i​f​i​a​b​l​e​
+			​	​	​	​	​	​i​n​f​o​r​m​a​t​i​o​n​ ​t​h​a​t​ ​c​a​n​ ​b​e​ ​u​s​e​d​ ​t​o​ ​c​o​n​t​a​c​t​ ​o​r​ ​i​d​e​n​t​i​f​y​ ​Y​o​u​.​ ​P​e​r​s​o​n​a​l​l​y​ ​i​d​e​n​t​i​f​i​a​b​l​e​ ​i​n​f​o​r​m​a​t​i​o​n​
+			​	​	​	​	​	​m​a​y​ ​i​n​c​l​u​d​e​,​ ​b​u​t​ ​i​s​ ​n​o​t​ ​l​i​m​i​t​e​d​ ​t​o​:​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​u​l​>​
+			​	​	​	​	​	​<​l​i​>​U​s​a​g​e​ ​D​a​t​a​<​/​l​i​>​
+			​	​	​	​	​<​/​u​l​>​
+			​	​	​	​	​<​h​3​>​U​s​a​g​e​ ​D​a​t​a​<​/​h​3​>​
+			​	​	​	​	​<​p​>​U​s​a​g​e​ ​D​a​t​a​ ​i​s​ ​c​o​l​l​e​c​t​e​d​ ​a​u​t​o​m​a​t​i​c​a​l​l​y​ ​w​h​e​n​ ​u​s​i​n​g​ ​t​h​e​ ​S​e​r​v​i​c​e​.​<​/​p​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​U​s​a​g​e​ ​D​a​t​a​ ​m​a​y​ ​i​n​c​l​u​d​e​ ​i​n​f​o​r​m​a​t​i​o​n​ ​s​u​c​h​ ​a​s​ ​Y​o​u​r​ ​D​e​v​i​c​e​'​s​ ​I​n​t​e​r​n​e​t​ ​P​r​o​t​o​c​o​l​ ​a​d​d​r​e​s​s​ ​(​e​.​g​.​ ​I​P​
+			​	​	​	​	​	​a​d​d​r​e​s​s​)​,​ ​b​r​o​w​s​e​r​ ​t​y​p​e​,​ ​b​r​o​w​s​e​r​ ​v​e​r​s​i​o​n​,​ ​t​h​e​ ​p​a​g​e​s​ ​o​f​ ​o​u​r​ ​S​e​r​v​i​c​e​ ​t​h​a​t​ ​Y​o​u​ ​v​i​s​i​t​,​ ​t​h​e​ ​t​i​m​e​ ​a​n​d​
+			​	​	​	​	​	​d​a​t​e​ ​o​f​ ​Y​o​u​r​ ​v​i​s​i​t​,​ ​t​h​e​ ​t​i​m​e​ ​s​p​e​n​t​ ​o​n​ ​t​h​o​s​e​ ​p​a​g​e​s​,​ ​u​n​i​q​u​e​ ​d​e​v​i​c​e​ ​i​d​e​n​t​i​f​i​e​r​s​ ​a​n​d​ ​o​t​h​e​r​
+			​	​	​	​	​	​d​i​a​g​n​o​s​t​i​c​ ​d​a​t​a​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​W​h​e​n​ ​Y​o​u​ ​a​c​c​e​s​s​ ​t​h​e​ ​S​e​r​v​i​c​e​ ​b​y​ ​o​r​ ​t​h​r​o​u​g​h​ ​a​ ​m​o​b​i​l​e​ ​d​e​v​i​c​e​,​ ​W​e​ ​m​a​y​ ​c​o​l​l​e​c​t​ ​c​e​r​t​a​i​n​ ​i​n​f​o​r​m​a​t​i​o​n​
+			​	​	​	​	​	​a​u​t​o​m​a​t​i​c​a​l​l​y​,​ ​i​n​c​l​u​d​i​n​g​,​ ​b​u​t​ ​n​o​t​ ​l​i​m​i​t​e​d​ ​t​o​,​ ​t​h​e​ ​t​y​p​e​ ​o​f​ ​m​o​b​i​l​e​ ​d​e​v​i​c​e​ ​Y​o​u​ ​u​s​e​,​ ​Y​o​u​r​ ​m​o​b​i​l​e​
+			​	​	​	​	​	​d​e​v​i​c​e​ ​u​n​i​q​u​e​ ​I​D​,​ ​t​h​e​ ​I​P​ ​a​d​d​r​e​s​s​ ​o​f​ ​Y​o​u​r​ ​m​o​b​i​l​e​ ​d​e​v​i​c​e​,​ ​Y​o​u​r​ ​m​o​b​i​l​e​ ​o​p​e​r​a​t​i​n​g​ ​s​y​s​t​e​m​,​ ​t​h​e​ ​t​y​p​e​
+			​	​	​	​	​	​o​f​ ​m​o​b​i​l​e​ ​I​n​t​e​r​n​e​t​ ​b​r​o​w​s​e​r​ ​Y​o​u​ ​u​s​e​,​ ​u​n​i​q​u​e​ ​d​e​v​i​c​e​ ​i​d​e​n​t​i​f​i​e​r​s​ ​a​n​d​ ​o​t​h​e​r​ ​d​i​a​g​n​o​s​t​i​c​ ​d​a​t​a​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​W​e​ ​m​a​y​ ​a​l​s​o​ ​c​o​l​l​e​c​t​ ​i​n​f​o​r​m​a​t​i​o​n​ ​t​h​a​t​ ​Y​o​u​r​ ​b​r​o​w​s​e​r​ ​s​e​n​d​s​ ​w​h​e​n​e​v​e​r​ ​Y​o​u​ ​v​i​s​i​t​ ​o​u​r​ ​S​e​r​v​i​c​e​ ​o​r​ ​w​h​e​n​
+			​	​	​	​	​	​Y​o​u​ ​a​c​c​e​s​s​ ​t​h​e​ ​S​e​r​v​i​c​e​ ​b​y​ ​o​r​ ​t​h​r​o​u​g​h​ ​a​ ​m​o​b​i​l​e​ ​d​e​v​i​c​e​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​h​3​>​T​r​a​c​k​i​n​g​ ​T​e​c​h​n​o​l​o​g​i​e​s​ ​a​n​d​ ​C​o​o​k​i​e​s​<​/​h​3​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​W​e​ ​u​s​e​ ​C​o​o​k​i​e​s​ ​a​n​d​ ​s​i​m​i​l​a​r​ ​t​r​a​c​k​i​n​g​ ​t​e​c​h​n​o​l​o​g​i​e​s​ ​t​o​ ​t​r​a​c​k​ ​t​h​e​ ​a​c​t​i​v​i​t​y​ ​o​n​ ​O​u​r​ ​S​e​r​v​i​c​e​ ​a​n​d​
+			​	​	​	​	​	​s​t​o​r​e​ ​c​e​r​t​a​i​n​ ​i​n​f​o​r​m​a​t​i​o​n​.​ ​T​r​a​c​k​i​n​g​ ​t​e​c​h​n​o​l​o​g​i​e​s​ ​u​s​e​d​ ​a​r​e​ ​b​e​a​c​o​n​s​,​ ​t​a​g​s​,​ ​a​n​d​ ​s​c​r​i​p​t​s​ ​t​o​
+			​	​	​	​	​	​c​o​l​l​e​c​t​ ​a​n​d​ ​t​r​a​c​k​ ​i​n​f​o​r​m​a​t​i​o​n​ ​a​n​d​ ​t​o​ ​i​m​p​r​o​v​e​ ​a​n​d​ ​a​n​a​l​y​z​e​ ​O​u​r​ ​S​e​r​v​i​c​e​.​ ​T​h​e​ ​t​e​c​h​n​o​l​o​g​i​e​s​ ​W​e​ ​u​s​e​
+			​	​	​	​	​	​m​a​y​ ​i​n​c​l​u​d​e​:​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​u​l​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​s​t​r​o​n​g​>​C​o​o​k​i​e​s​ ​o​r​ ​B​r​o​w​s​e​r​ ​C​o​o​k​i​e​s​.​<​/​s​t​r​o​n​g​>​ ​A​ ​c​o​o​k​i​e​ ​i​s​ ​a​ ​s​m​a​l​l​ ​f​i​l​e​ ​p​l​a​c​e​d​ ​o​n​ ​Y​o​u​r​ ​D​e​v​i​c​e​.​
+			​	​	​	​	​	​	​Y​o​u​ ​c​a​n​ ​i​n​s​t​r​u​c​t​ ​Y​o​u​r​ ​b​r​o​w​s​e​r​ ​t​o​ ​r​e​f​u​s​e​ ​a​l​l​ ​C​o​o​k​i​e​s​ ​o​r​ ​t​o​ ​i​n​d​i​c​a​t​e​ ​w​h​e​n​ ​a​ ​C​o​o​k​i​e​ ​i​s​ ​b​e​i​n​g​ ​s​e​n​t​.​
+			​	​	​	​	​	​	​H​o​w​e​v​e​r​,​ ​i​f​ ​Y​o​u​ ​d​o​ ​n​o​t​ ​a​c​c​e​p​t​ ​C​o​o​k​i​e​s​,​ ​Y​o​u​ ​m​a​y​ ​n​o​t​ ​b​e​ ​a​b​l​e​ ​t​o​ ​u​s​e​ ​s​o​m​e​ ​p​a​r​t​s​ ​o​f​ ​o​u​r​ ​S​e​r​v​i​c​e​.​
+			​	​	​	​	​	​	​U​n​l​e​s​s​ ​y​o​u​ ​h​a​v​e​ ​a​d​j​u​s​t​e​d​ ​Y​o​u​r​ ​b​r​o​w​s​e​r​ ​s​e​t​t​i​n​g​ ​s​o​ ​t​h​a​t​ ​i​t​ ​w​i​l​l​ ​r​e​f​u​s​e​ ​C​o​o​k​i​e​s​,​ ​o​u​r​ ​S​e​r​v​i​c​e​ ​m​a​y​
+			​	​	​	​	​	​	​u​s​e​ ​C​o​o​k​i​e​s​.​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​s​t​r​o​n​g​>​W​e​b​ ​B​e​a​c​o​n​s​.​<​/​s​t​r​o​n​g​>​ ​C​e​r​t​a​i​n​ ​s​e​c​t​i​o​n​s​ ​o​f​ ​o​u​r​ ​S​e​r​v​i​c​e​ ​a​n​d​ ​o​u​r​ ​e​m​a​i​l​s​ ​m​a​y​ ​c​o​n​t​a​i​n​ ​s​m​a​l​l​
+			​	​	​	​	​	​	​e​l​e​c​t​r​o​n​i​c​ ​f​i​l​e​s​ ​k​n​o​w​n​ ​a​s​ ​w​e​b​ ​b​e​a​c​o​n​s​ ​(​a​l​s​o​ ​r​e​f​e​r​r​e​d​ ​t​o​ ​a​s​ ​c​l​e​a​r​ ​g​i​f​s​,​ ​p​i​x​e​l​ ​t​a​g​s​,​ ​a​n​d​ ​s​i​n​g​l​e​-​p​i​x​e​l​
+			​	​	​	​	​	​	​g​i​f​s​)​ ​t​h​a​t​ ​p​e​r​m​i​t​ ​t​h​e​ ​C​o​m​p​a​n​y​,​ ​f​o​r​ ​e​x​a​m​p​l​e​,​ ​t​o​ ​c​o​u​n​t​ ​u​s​e​r​s​ ​w​h​o​ ​h​a​v​e​ ​v​i​s​i​t​e​d​ ​t​h​o​s​e​ ​p​a​g​e​s​ ​o​r​ ​o​p​e​n​e​d​
+			​	​	​	​	​	​	​a​n​ ​e​m​a​i​l​ ​a​n​d​ ​f​o​r​ ​o​t​h​e​r​ ​r​e​l​a​t​e​d​ ​w​e​b​s​i​t​e​ ​s​t​a​t​i​s​t​i​c​s​ ​(​f​o​r​ ​e​x​a​m​p​l​e​,​ ​r​e​c​o​r​d​i​n​g​ ​t​h​e​ ​p​o​p​u​l​a​r​i​t​y​ ​o​f​ ​a​
+			​	​	​	​	​	​	​c​e​r​t​a​i​n​ ​s​e​c​t​i​o​n​ ​a​n​d​ ​v​e​r​i​f​y​i​n​g​ ​s​y​s​t​e​m​ ​a​n​d​ ​s​e​r​v​e​r​ ​i​n​t​e​g​r​i​t​y​)​.​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​<​/​u​l​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​C​o​o​k​i​e​s​ ​c​a​n​ ​b​e​ ​&​q​u​o​t​;​P​e​r​s​i​s​t​e​n​t​&​q​u​o​t​;​ ​o​r​ ​&​q​u​o​t​;​S​e​s​s​i​o​n​&​q​u​o​t​;​ ​C​o​o​k​i​e​s​.​ ​P​e​r​s​i​s​t​e​n​t​ ​C​o​o​k​i​e​s​
+			​	​	​	​	​	​r​e​m​a​i​n​ ​o​n​ ​Y​o​u​r​ ​p​e​r​s​o​n​a​l​ ​c​o​m​p​u​t​e​r​ ​o​r​ ​m​o​b​i​l​e​ ​d​e​v​i​c​e​ ​w​h​e​n​ ​Y​o​u​ ​g​o​ ​o​f​f​l​i​n​e​,​ ​w​h​i​l​e​ ​S​e​s​s​i​o​n​ ​C​o​o​k​i​e​s​
+			​	​	​	​	​	​a​r​e​ ​d​e​l​e​t​e​d​ ​a​s​ ​s​o​o​n​ ​a​s​ ​Y​o​u​ ​c​l​o​s​e​ ​Y​o​u​r​ ​w​e​b​ ​b​r​o​w​s​e​r​.​ ​L​e​a​r​n​ ​m​o​r​e​ ​a​b​o​u​t​ ​c​o​o​k​i​e​s​ ​o​n​ ​t​h​e​ ​<​a​
+			​	​	​	​	​	​	​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​p​r​i​v​a​c​y​p​o​l​i​c​i​e​s​.​c​o​m​/​b​l​o​g​/​p​r​i​v​a​c​y​-​p​o​l​i​c​y​-​t​e​m​p​l​a​t​e​/​#​U​s​e​_​O​f​_​C​o​o​k​i​e​s​_​L​o​g​_​F​i​l​e​s​_​A​n​d​_​T​r​a​c​k​i​n​g​"​
+			​	​	​	​	​	​	​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​
+			​	​	​	​	​	​	​r​e​l​=​"​n​o​r​e​f​e​r​r​e​r​"​>​P​r​i​v​a​c​y​ ​P​o​l​i​c​i​e​s​ ​w​e​b​s​i​t​e​<​/​a​
+			​	​	​	​	​	​>​ ​a​r​t​i​c​l​e​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​p​>​W​e​ ​u​s​e​ ​b​o​t​h​ ​S​e​s​s​i​o​n​ ​a​n​d​ ​P​e​r​s​i​s​t​e​n​t​ ​C​o​o​k​i​e​s​ ​f​o​r​ ​t​h​e​ ​p​u​r​p​o​s​e​s​ ​s​e​t​ ​o​u​t​ ​b​e​l​o​w​:​<​/​p​>​
+			​	​	​	​	​<​u​l​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​<​s​t​r​o​n​g​>​N​e​c​e​s​s​a​r​y​ ​/​ ​E​s​s​e​n​t​i​a​l​ ​C​o​o​k​i​e​s​<​/​s​t​r​o​n​g​>​<​/​p​>​
+			​	​	​	​	​	​	​<​p​>​T​y​p​e​:​ ​S​e​s​s​i​o​n​ ​C​o​o​k​i​e​s​<​/​p​>​
+			​	​	​	​	​	​	​<​p​>​A​d​m​i​n​i​s​t​e​r​e​d​ ​b​y​:​ ​U​s​<​/​p​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​P​u​r​p​o​s​e​:​ ​T​h​e​s​e​ ​C​o​o​k​i​e​s​ ​a​r​e​ ​e​s​s​e​n​t​i​a​l​ ​t​o​ ​p​r​o​v​i​d​e​ ​Y​o​u​ ​w​i​t​h​ ​s​e​r​v​i​c​e​s​ ​a​v​a​i​l​a​b​l​e​ ​t​h​r​o​u​g​h​ ​t​h​e​
+			​	​	​	​	​	​	​	​W​e​b​s​i​t​e​ ​a​n​d​ ​t​o​ ​e​n​a​b​l​e​ ​Y​o​u​ ​t​o​ ​u​s​e​ ​s​o​m​e​ ​o​f​ ​i​t​s​ ​f​e​a​t​u​r​e​s​.​ ​T​h​e​y​ ​h​e​l​p​ ​t​o​ ​a​u​t​h​e​n​t​i​c​a​t​e​ ​u​s​e​r​s​ ​a​n​d​
+			​	​	​	​	​	​	​	​p​r​e​v​e​n​t​ ​f​r​a​u​d​u​l​e​n​t​ ​u​s​e​ ​o​f​ ​u​s​e​r​ ​a​c​c​o​u​n​t​s​.​ ​W​i​t​h​o​u​t​ ​t​h​e​s​e​ ​C​o​o​k​i​e​s​,​ ​t​h​e​ ​s​e​r​v​i​c​e​s​ ​t​h​a​t​ ​Y​o​u​ ​h​a​v​e​
+			​	​	​	​	​	​	​	​a​s​k​e​d​ ​f​o​r​ ​c​a​n​n​o​t​ ​b​e​ ​p​r​o​v​i​d​e​d​,​ ​a​n​d​ ​W​e​ ​o​n​l​y​ ​u​s​e​ ​t​h​e​s​e​ ​C​o​o​k​i​e​s​ ​t​o​ ​p​r​o​v​i​d​e​ ​Y​o​u​ ​w​i​t​h​ ​t​h​o​s​e​
+			​	​	​	​	​	​	​	​s​e​r​v​i​c​e​s​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​<​s​t​r​o​n​g​>​C​o​o​k​i​e​s​ ​P​o​l​i​c​y​ ​/​ ​N​o​t​i​c​e​ ​A​c​c​e​p​t​a​n​c​e​ ​C​o​o​k​i​e​s​<​/​s​t​r​o​n​g​>​<​/​p​>​
+			​	​	​	​	​	​	​<​p​>​T​y​p​e​:​ ​P​e​r​s​i​s​t​e​n​t​ ​C​o​o​k​i​e​s​<​/​p​>​
+			​	​	​	​	​	​	​<​p​>​A​d​m​i​n​i​s​t​e​r​e​d​ ​b​y​:​ ​U​s​<​/​p​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​P​u​r​p​o​s​e​:​ ​T​h​e​s​e​ ​C​o​o​k​i​e​s​ ​i​d​e​n​t​i​f​y​ ​i​f​ ​u​s​e​r​s​ ​h​a​v​e​ ​a​c​c​e​p​t​e​d​ ​t​h​e​ ​u​s​e​ ​o​f​ ​c​o​o​k​i​e​s​ ​o​n​ ​t​h​e​ ​W​e​b​s​i​t​e​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​<​s​t​r​o​n​g​>​F​u​n​c​t​i​o​n​a​l​i​t​y​ ​C​o​o​k​i​e​s​<​/​s​t​r​o​n​g​>​<​/​p​>​
+			​	​	​	​	​	​	​<​p​>​T​y​p​e​:​ ​P​e​r​s​i​s​t​e​n​t​ ​C​o​o​k​i​e​s​<​/​p​>​
+			​	​	​	​	​	​	​<​p​>​A​d​m​i​n​i​s​t​e​r​e​d​ ​b​y​:​ ​U​s​<​/​p​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​P​u​r​p​o​s​e​:​ ​T​h​e​s​e​ ​C​o​o​k​i​e​s​ ​a​l​l​o​w​ ​u​s​ ​t​o​ ​r​e​m​e​m​b​e​r​ ​c​h​o​i​c​e​s​ ​Y​o​u​ ​m​a​k​e​ ​w​h​e​n​ ​Y​o​u​ ​u​s​e​ ​t​h​e​ ​W​e​b​s​i​t​e​,​
+			​	​	​	​	​	​	​	​s​u​c​h​ ​a​s​ ​r​e​m​e​m​b​e​r​i​n​g​ ​y​o​u​r​ ​l​o​g​i​n​ ​d​e​t​a​i​l​s​ ​o​r​ ​l​a​n​g​u​a​g​e​ ​p​r​e​f​e​r​e​n​c​e​.​ ​T​h​e​ ​p​u​r​p​o​s​e​ ​o​f​ ​t​h​e​s​e​
+			​	​	​	​	​	​	​	​C​o​o​k​i​e​s​ ​i​s​ ​t​o​ ​p​r​o​v​i​d​e​ ​Y​o​u​ ​w​i​t​h​ ​a​ ​m​o​r​e​ ​p​e​r​s​o​n​a​l​ ​e​x​p​e​r​i​e​n​c​e​ ​a​n​d​ ​t​o​ ​a​v​o​i​d​ ​Y​o​u​ ​h​a​v​i​n​g​ ​t​o​
+			​	​	​	​	​	​	​	​r​e​-​e​n​t​e​r​ ​y​o​u​r​ ​p​r​e​f​e​r​e​n​c​e​s​ ​e​v​e​r​y​ ​t​i​m​e​ ​Y​o​u​ ​u​s​e​ ​t​h​e​ ​W​e​b​s​i​t​e​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​<​/​u​l​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​F​o​r​ ​m​o​r​e​ ​i​n​f​o​r​m​a​t​i​o​n​ ​a​b​o​u​t​ ​t​h​e​ ​c​o​o​k​i​e​s​ ​w​e​ ​u​s​e​ ​a​n​d​ ​y​o​u​r​ ​c​h​o​i​c​e​s​ ​r​e​g​a​r​d​i​n​g​ ​c​o​o​k​i​e​s​,​ ​p​l​e​a​s​e​ ​v​i​s​i​t​
+			​	​	​	​	​	​o​u​r​ ​C​o​o​k​i​e​s​ ​P​o​l​i​c​y​ ​o​r​ ​t​h​e​ ​C​o​o​k​i​e​s​ ​s​e​c​t​i​o​n​ ​o​f​ ​o​u​r​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​h​2​>​U​s​e​ ​o​f​ ​Y​o​u​r​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​<​/​h​2​>​
+			​	​	​	​	​<​p​>​T​h​e​ ​C​o​m​p​a​n​y​ ​m​a​y​ ​u​s​e​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​ ​f​o​r​ ​t​h​e​ ​f​o​l​l​o​w​i​n​g​ ​p​u​r​p​o​s​e​s​:​<​/​p​>​
+			​	​	​	​	​<​u​l​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​<​s​t​r​o​n​g​>​T​o​ ​p​r​o​v​i​d​e​ ​a​n​d​ ​m​a​i​n​t​a​i​n​ ​o​u​r​ ​S​e​r​v​i​c​e​<​/​s​t​r​o​n​g​>​,​ ​i​n​c​l​u​d​i​n​g​ ​t​o​ ​m​o​n​i​t​o​r​ ​t​h​e​ ​u​s​a​g​e​ ​o​f​
+			​	​	​	​	​	​	​	​o​u​r​ ​S​e​r​v​i​c​e​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​<​s​t​r​o​n​g​>​T​o​ ​m​a​n​a​g​e​ ​Y​o​u​r​ ​A​c​c​o​u​n​t​:​<​/​s​t​r​o​n​g​>​ ​t​o​ ​m​a​n​a​g​e​ ​Y​o​u​r​ ​r​e​g​i​s​t​r​a​t​i​o​n​ ​a​s​ ​a​ ​u​s​e​r​ ​o​f​ ​t​h​e​ ​S​e​r​v​i​c​e​.​
+			​	​	​	​	​	​	​	​T​h​e​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​ ​Y​o​u​ ​p​r​o​v​i​d​e​ ​c​a​n​ ​g​i​v​e​ ​Y​o​u​ ​a​c​c​e​s​s​ ​t​o​ ​d​i​f​f​e​r​e​n​t​ ​f​u​n​c​t​i​o​n​a​l​i​t​i​e​s​ ​o​f​ ​t​h​e​ ​S​e​r​v​i​c​e​
+			​	​	​	​	​	​	​	​t​h​a​t​ ​a​r​e​ ​a​v​a​i​l​a​b​l​e​ ​t​o​ ​Y​o​u​ ​a​s​ ​a​ ​r​e​g​i​s​t​e​r​e​d​ ​u​s​e​r​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​<​s​t​r​o​n​g​>​F​o​r​ ​t​h​e​ ​p​e​r​f​o​r​m​a​n​c​e​ ​o​f​ ​a​ ​c​o​n​t​r​a​c​t​:​<​/​s​t​r​o​n​g​>​ ​t​h​e​ ​d​e​v​e​l​o​p​m​e​n​t​,​ ​c​o​m​p​l​i​a​n​c​e​ ​a​n​d​ ​u​n​d​e​r​t​a​k​i​n​g​
+			​	​	​	​	​	​	​	​o​f​ ​t​h​e​ ​p​u​r​c​h​a​s​e​ ​c​o​n​t​r​a​c​t​ ​f​o​r​ ​t​h​e​ ​p​r​o​d​u​c​t​s​,​ ​i​t​e​m​s​ ​o​r​ ​s​e​r​v​i​c​e​s​ ​Y​o​u​ ​h​a​v​e​ ​p​u​r​c​h​a​s​e​d​ ​o​r​ ​o​f​ ​a​n​y​ ​o​t​h​e​r​
+			​	​	​	​	​	​	​	​c​o​n​t​r​a​c​t​ ​w​i​t​h​ ​U​s​ ​t​h​r​o​u​g​h​ ​t​h​e​ ​S​e​r​v​i​c​e​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​<​s​t​r​o​n​g​>​T​o​ ​c​o​n​t​a​c​t​ ​Y​o​u​:​<​/​s​t​r​o​n​g​>​ ​T​o​ ​c​o​n​t​a​c​t​ ​Y​o​u​ ​b​y​ ​e​m​a​i​l​,​ ​t​e​l​e​p​h​o​n​e​ ​c​a​l​l​s​,​ ​S​M​S​,​ ​o​r​ ​o​t​h​e​r​ ​e​q​u​i​v​a​l​e​n​t​
+			​	​	​	​	​	​	​	​f​o​r​m​s​ ​o​f​ ​e​l​e​c​t​r​o​n​i​c​ ​c​o​m​m​u​n​i​c​a​t​i​o​n​,​ ​s​u​c​h​ ​a​s​ ​a​ ​m​o​b​i​l​e​ ​a​p​p​l​i​c​a​t​i​o​n​'​s​ ​p​u​s​h​ ​n​o​t​i​f​i​c​a​t​i​o​n​s​ ​r​e​g​a​r​d​i​n​g​
+			​	​	​	​	​	​	​	​u​p​d​a​t​e​s​ ​o​r​ ​i​n​f​o​r​m​a​t​i​v​e​ ​c​o​m​m​u​n​i​c​a​t​i​o​n​s​ ​r​e​l​a​t​e​d​ ​t​o​ ​t​h​e​ ​f​u​n​c​t​i​o​n​a​l​i​t​i​e​s​,​ ​p​r​o​d​u​c​t​s​ ​o​r​ ​c​o​n​t​r​a​c​t​e​d​
+			​	​	​	​	​	​	​	​s​e​r​v​i​c​e​s​,​ ​i​n​c​l​u​d​i​n​g​ ​t​h​e​ ​s​e​c​u​r​i​t​y​ ​u​p​d​a​t​e​s​,​ ​w​h​e​n​ ​n​e​c​e​s​s​a​r​y​ ​o​r​ ​r​e​a​s​o​n​a​b​l​e​ ​f​o​r​ ​t​h​e​i​r​ ​i​m​p​l​e​m​e​n​t​a​t​i​o​n​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​<​s​t​r​o​n​g​>​T​o​ ​p​r​o​v​i​d​e​ ​Y​o​u​<​/​s​t​r​o​n​g​>​ ​w​i​t​h​ ​n​e​w​s​,​ ​s​p​e​c​i​a​l​ ​o​f​f​e​r​s​ ​a​n​d​ ​g​e​n​e​r​a​l​ ​i​n​f​o​r​m​a​t​i​o​n​ ​a​b​o​u​t​ ​o​t​h​e​r​
+			​	​	​	​	​	​	​	​g​o​o​d​s​,​ ​s​e​r​v​i​c​e​s​ ​a​n​d​ ​e​v​e​n​t​s​ ​w​h​i​c​h​ ​w​e​ ​o​f​f​e​r​ ​t​h​a​t​ ​a​r​e​ ​s​i​m​i​l​a​r​ ​t​o​ ​t​h​o​s​e​ ​t​h​a​t​ ​y​o​u​ ​h​a​v​e​ ​a​l​r​e​a​d​y​ ​p​u​r​c​h​a​s​e​d​
+			​	​	​	​	​	​	​	​o​r​ ​e​n​q​u​i​r​e​d​ ​a​b​o​u​t​ ​u​n​l​e​s​s​ ​Y​o​u​ ​h​a​v​e​ ​o​p​t​e​d​ ​n​o​t​ ​t​o​ ​r​e​c​e​i​v​e​ ​s​u​c​h​ ​i​n​f​o​r​m​a​t​i​o​n​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​<​s​t​r​o​n​g​>​T​o​ ​m​a​n​a​g​e​ ​Y​o​u​r​ ​r​e​q​u​e​s​t​s​:​<​/​s​t​r​o​n​g​>​ ​T​o​ ​a​t​t​e​n​d​ ​a​n​d​ ​m​a​n​a​g​e​ ​Y​o​u​r​ ​r​e​q​u​e​s​t​s​ ​t​o​ ​U​s​.​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​<​s​t​r​o​n​g​>​F​o​r​ ​b​u​s​i​n​e​s​s​ ​t​r​a​n​s​f​e​r​s​:​<​/​s​t​r​o​n​g​>​ ​W​e​ ​m​a​y​ ​u​s​e​ ​Y​o​u​r​ ​i​n​f​o​r​m​a​t​i​o​n​ ​t​o​ ​e​v​a​l​u​a​t​e​ ​o​r​ ​c​o​n​d​u​c​t​
+			​	​	​	​	​	​	​	​a​ ​m​e​r​g​e​r​,​ ​d​i​v​e​s​t​i​t​u​r​e​,​ ​r​e​s​t​r​u​c​t​u​r​i​n​g​,​ ​r​e​o​r​g​a​n​i​z​a​t​i​o​n​,​ ​d​i​s​s​o​l​u​t​i​o​n​,​ ​o​r​ ​o​t​h​e​r​ ​s​a​l​e​ ​o​r​ ​t​r​a​n​s​f​e​r​
+			​	​	​	​	​	​	​	​o​f​ ​s​o​m​e​ ​o​r​ ​a​l​l​ ​o​f​ ​O​u​r​ ​a​s​s​e​t​s​,​ ​w​h​e​t​h​e​r​ ​a​s​ ​a​ ​g​o​i​n​g​ ​c​o​n​c​e​r​n​ ​o​r​ ​a​s​ ​p​a​r​t​ ​o​f​ ​b​a​n​k​r​u​p​t​c​y​,​ ​l​i​q​u​i​d​a​t​i​o​n​,​
+			​	​	​	​	​	​	​	​o​r​ ​s​i​m​i​l​a​r​ ​p​r​o​c​e​e​d​i​n​g​,​ ​i​n​ ​w​h​i​c​h​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​ ​h​e​l​d​ ​b​y​ ​U​s​ ​a​b​o​u​t​ ​o​u​r​ ​S​e​r​v​i​c​e​ ​u​s​e​r​s​ ​i​s​ ​a​m​o​n​g​ ​t​h​e​
+			​	​	​	​	​	​	​	​a​s​s​e​t​s​ ​t​r​a​n​s​f​e​r​r​e​d​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​<​s​t​r​o​n​g​>​F​o​r​ ​o​t​h​e​r​ ​p​u​r​p​o​s​e​s​<​/​s​t​r​o​n​g​>​:​ ​W​e​ ​m​a​y​ ​u​s​e​ ​Y​o​u​r​ ​i​n​f​o​r​m​a​t​i​o​n​ ​f​o​r​ ​o​t​h​e​r​ ​p​u​r​p​o​s​e​s​,​ ​s​u​c​h​
+			​	​	​	​	​	​	​	​a​s​ ​d​a​t​a​ ​a​n​a​l​y​s​i​s​,​ ​i​d​e​n​t​i​f​y​i​n​g​ ​u​s​a​g​e​ ​t​r​e​n​d​s​,​ ​d​e​t​e​r​m​i​n​i​n​g​ ​t​h​e​ ​e​f​f​e​c​t​i​v​e​n​e​s​s​ ​o​f​ ​o​u​r​
+			​	​	​	​	​	​	​	​p​r​o​m​o​t​i​o​n​a​l​ ​c​a​m​p​a​i​g​n​s​ ​a​n​d​ ​t​o​ ​e​v​a​l​u​a​t​e​ ​a​n​d​ ​i​m​p​r​o​v​e​ ​o​u​r​ ​S​e​r​v​i​c​e​,​ ​p​r​o​d​u​c​t​s​,​ ​s​e​r​v​i​c​e​s​,​
+			​	​	​	​	​	​	​	​m​a​r​k​e​t​i​n​g​ ​a​n​d​ ​y​o​u​r​ ​e​x​p​e​r​i​e​n​c​e​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​<​/​u​l​>​
+			​	​	​	​	​<​p​>​W​e​ ​m​a​y​ ​s​h​a​r​e​ ​Y​o​u​r​ ​p​e​r​s​o​n​a​l​ ​i​n​f​o​r​m​a​t​i​o​n​ ​i​n​ ​t​h​e​ ​f​o​l​l​o​w​i​n​g​ ​s​i​t​u​a​t​i​o​n​s​:​<​/​p​>​
+			​	​	​	​	​<​u​l​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​s​t​r​o​n​g​>​W​i​t​h​ ​S​e​r​v​i​c​e​ ​P​r​o​v​i​d​e​r​s​:​<​/​s​t​r​o​n​g​>​ ​W​e​ ​m​a​y​ ​s​h​a​r​e​ ​Y​o​u​r​ ​p​e​r​s​o​n​a​l​ ​i​n​f​o​r​m​a​t​i​o​n​ ​w​i​t​h​ ​S​e​r​v​i​c​e​
+			​	​	​	​	​	​	​P​r​o​v​i​d​e​r​s​ ​t​o​ ​m​o​n​i​t​o​r​ ​a​n​d​ ​a​n​a​l​y​z​e​ ​t​h​e​ ​u​s​e​ ​o​f​ ​o​u​r​ ​S​e​r​v​i​c​e​,​ ​t​o​ ​c​o​n​t​a​c​t​ ​Y​o​u​.​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​s​t​r​o​n​g​>​F​o​r​ ​b​u​s​i​n​e​s​s​ ​t​r​a​n​s​f​e​r​s​:​<​/​s​t​r​o​n​g​>​ ​W​e​ ​m​a​y​ ​s​h​a​r​e​ ​o​r​ ​t​r​a​n​s​f​e​r​ ​Y​o​u​r​ ​p​e​r​s​o​n​a​l​ ​i​n​f​o​r​m​a​t​i​o​n​ ​i​n​
+			​	​	​	​	​	​	​c​o​n​n​e​c​t​i​o​n​ ​w​i​t​h​,​ ​o​r​ ​d​u​r​i​n​g​ ​n​e​g​o​t​i​a​t​i​o​n​s​ ​o​f​,​ ​a​n​y​ ​m​e​r​g​e​r​,​ ​s​a​l​e​ ​o​f​ ​C​o​m​p​a​n​y​ ​a​s​s​e​t​s​,​ ​f​i​n​a​n​c​i​n​g​,​ ​o​r​
+			​	​	​	​	​	​	​a​c​q​u​i​s​i​t​i​o​n​ ​o​f​ ​a​l​l​ ​o​r​ ​a​ ​p​o​r​t​i​o​n​ ​o​f​ ​O​u​r​ ​b​u​s​i​n​e​s​s​ ​t​o​ ​a​n​o​t​h​e​r​ ​c​o​m​p​a​n​y​.​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​s​t​r​o​n​g​>​W​i​t​h​ ​A​f​f​i​l​i​a​t​e​s​:​<​/​s​t​r​o​n​g​>​ ​W​e​ ​m​a​y​ ​s​h​a​r​e​ ​Y​o​u​r​ ​i​n​f​o​r​m​a​t​i​o​n​ ​w​i​t​h​ ​O​u​r​ ​a​f​f​i​l​i​a​t​e​s​,​ ​i​n​ ​w​h​i​c​h​
+			​	​	​	​	​	​	​c​a​s​e​ ​w​e​ ​w​i​l​l​ ​r​e​q​u​i​r​e​ ​t​h​o​s​e​ ​a​f​f​i​l​i​a​t​e​s​ ​t​o​ ​h​o​n​o​r​ ​t​h​i​s​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​.​ ​A​f​f​i​l​i​a​t​e​s​ ​i​n​c​l​u​d​e​ ​O​u​r​ ​p​a​r​e​n​t​
+			​	​	​	​	​	​	​c​o​m​p​a​n​y​ ​a​n​d​ ​a​n​y​ ​o​t​h​e​r​ ​s​u​b​s​i​d​i​a​r​i​e​s​,​ ​j​o​i​n​t​ ​v​e​n​t​u​r​e​ ​p​a​r​t​n​e​r​s​ ​o​r​ ​o​t​h​e​r​ ​c​o​m​p​a​n​i​e​s​ ​t​h​a​t​ ​W​e​ ​c​o​n​t​r​o​l​
+			​	​	​	​	​	​	​o​r​ ​t​h​a​t​ ​a​r​e​ ​u​n​d​e​r​ ​c​o​m​m​o​n​ ​c​o​n​t​r​o​l​ ​w​i​t​h​ ​U​s​.​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​s​t​r​o​n​g​>​W​i​t​h​ ​b​u​s​i​n​e​s​s​ ​p​a​r​t​n​e​r​s​:​<​/​s​t​r​o​n​g​>​ ​W​e​ ​m​a​y​ ​s​h​a​r​e​ ​Y​o​u​r​ ​i​n​f​o​r​m​a​t​i​o​n​ ​w​i​t​h​ ​O​u​r​ ​b​u​s​i​n​e​s​s​ ​p​a​r​t​n​e​r​s​
+			​	​	​	​	​	​	​t​o​ ​o​f​f​e​r​ ​Y​o​u​ ​c​e​r​t​a​i​n​ ​p​r​o​d​u​c​t​s​,​ ​s​e​r​v​i​c​e​s​ ​o​r​ ​p​r​o​m​o​t​i​o​n​s​.​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​s​t​r​o​n​g​>​W​i​t​h​ ​o​t​h​e​r​ ​u​s​e​r​s​:​<​/​s​t​r​o​n​g​>​ ​w​h​e​n​ ​Y​o​u​ ​s​h​a​r​e​ ​p​e​r​s​o​n​a​l​ ​i​n​f​o​r​m​a​t​i​o​n​ ​o​r​ ​o​t​h​e​r​w​i​s​e​ ​i​n​t​e​r​a​c​t​
+			​	​	​	​	​	​	​i​n​ ​t​h​e​ ​p​u​b​l​i​c​ ​a​r​e​a​s​ ​w​i​t​h​ ​o​t​h​e​r​ ​u​s​e​r​s​,​ ​s​u​c​h​ ​i​n​f​o​r​m​a​t​i​o​n​ ​m​a​y​ ​b​e​ ​v​i​e​w​e​d​ ​b​y​ ​a​l​l​ ​u​s​e​r​s​ ​a​n​d​ ​m​a​y​ ​b​e​
+			​	​	​	​	​	​	​p​u​b​l​i​c​l​y​ ​d​i​s​t​r​i​b​u​t​e​d​ ​o​u​t​s​i​d​e​.​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​s​t​r​o​n​g​>​W​i​t​h​ ​Y​o​u​r​ ​c​o​n​s​e​n​t​<​/​s​t​r​o​n​g​>​:​ ​W​e​ ​m​a​y​ ​d​i​s​c​l​o​s​e​ ​Y​o​u​r​ ​p​e​r​s​o​n​a​l​ ​i​n​f​o​r​m​a​t​i​o​n​ ​f​o​r​ ​a​n​y​ ​o​t​h​e​r​
+			​	​	​	​	​	​	​p​u​r​p​o​s​e​ ​w​i​t​h​ ​Y​o​u​r​ ​c​o​n​s​e​n​t​.​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​<​/​u​l​>​
+			​	​	​	​	​<​h​2​>​R​e​t​e​n​t​i​o​n​ ​o​f​ ​Y​o​u​r​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​<​/​h​2​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​T​h​e​ ​C​o​m​p​a​n​y​ ​w​i​l​l​ ​r​e​t​a​i​n​ ​Y​o​u​r​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​ ​o​n​l​y​ ​f​o​r​ ​a​s​ ​l​o​n​g​ ​a​s​ ​i​s​ ​n​e​c​e​s​s​a​r​y​ ​f​o​r​ ​t​h​e​ ​p​u​r​p​o​s​e​s​
+			​	​	​	​	​	​s​e​t​ ​o​u​t​ ​i​n​ ​t​h​i​s​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​.​ ​W​e​ ​w​i​l​l​ ​r​e​t​a​i​n​ ​a​n​d​ ​u​s​e​ ​Y​o​u​r​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​ ​t​o​ ​t​h​e​ ​e​x​t​e​n​t​
+			​	​	​	​	​	​n​e​c​e​s​s​a​r​y​ ​t​o​ ​c​o​m​p​l​y​ ​w​i​t​h​ ​o​u​r​ ​l​e​g​a​l​ ​o​b​l​i​g​a​t​i​o​n​s​ ​(​f​o​r​ ​e​x​a​m​p​l​e​,​ ​i​f​ ​w​e​ ​a​r​e​ ​r​e​q​u​i​r​e​d​ ​t​o​ ​r​e​t​a​i​n​ ​y​o​u​r​
+			​	​	​	​	​	​d​a​t​a​ ​t​o​ ​c​o​m​p​l​y​ ​w​i​t​h​ ​a​p​p​l​i​c​a​b​l​e​ ​l​a​w​s​)​,​ ​r​e​s​o​l​v​e​ ​d​i​s​p​u​t​e​s​,​ ​a​n​d​ ​e​n​f​o​r​c​e​ ​o​u​r​ ​l​e​g​a​l​ ​a​g​r​e​e​m​e​n​t​s​ ​a​n​d​
+			​	​	​	​	​	​p​o​l​i​c​i​e​s​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​T​h​e​ ​C​o​m​p​a​n​y​ ​w​i​l​l​ ​a​l​s​o​ ​r​e​t​a​i​n​ ​U​s​a​g​e​ ​D​a​t​a​ ​f​o​r​ ​i​n​t​e​r​n​a​l​ ​a​n​a​l​y​s​i​s​ ​p​u​r​p​o​s​e​s​.​ ​U​s​a​g​e​ ​D​a​t​a​ ​i​s​
+			​	​	​	​	​	​g​e​n​e​r​a​l​l​y​ ​r​e​t​a​i​n​e​d​ ​f​o​r​ ​a​ ​s​h​o​r​t​e​r​ ​p​e​r​i​o​d​ ​o​f​ ​t​i​m​e​,​ ​e​x​c​e​p​t​ ​w​h​e​n​ ​t​h​i​s​ ​d​a​t​a​ ​i​s​ ​u​s​e​d​ ​t​o​ ​s​t​r​e​n​g​t​h​e​n​
+			​	​	​	​	​	​t​h​e​ ​s​e​c​u​r​i​t​y​ ​o​r​ ​t​o​ ​i​m​p​r​o​v​e​ ​t​h​e​ ​f​u​n​c​t​i​o​n​a​l​i​t​y​ ​o​f​ ​O​u​r​ ​S​e​r​v​i​c​e​,​ ​o​r​ ​W​e​ ​a​r​e​ ​l​e​g​a​l​l​y​ ​o​b​l​i​g​a​t​e​d​ ​t​o​
+			​	​	​	​	​	​r​e​t​a​i​n​ ​t​h​i​s​ ​d​a​t​a​ ​f​o​r​ ​l​o​n​g​e​r​ ​t​i​m​e​ ​p​e​r​i​o​d​s​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​h​2​>​T​r​a​n​s​f​e​r​ ​o​f​ ​Y​o​u​r​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​<​/​h​2​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​Y​o​u​r​ ​i​n​f​o​r​m​a​t​i​o​n​,​ ​i​n​c​l​u​d​i​n​g​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​,​ ​i​s​ ​p​r​o​c​e​s​s​e​d​ ​a​t​ ​t​h​e​ ​C​o​m​p​a​n​y​'​s​ ​o​p​e​r​a​t​i​n​g​ ​o​f​f​i​c​e​s​ ​a​n​d​
+			​	​	​	​	​	​i​n​ ​a​n​y​ ​o​t​h​e​r​ ​p​l​a​c​e​s​ ​w​h​e​r​e​ ​t​h​e​ ​p​a​r​t​i​e​s​ ​i​n​v​o​l​v​e​d​ ​i​n​ ​t​h​e​ ​p​r​o​c​e​s​s​i​n​g​ ​a​r​e​ ​l​o​c​a​t​e​d​.​ ​I​t​ ​m​e​a​n​s​ ​t​h​a​t​
+			​	​	​	​	​	​t​h​i​s​ ​i​n​f​o​r​m​a​t​i​o​n​ ​m​a​y​ ​b​e​ ​t​r​a​n​s​f​e​r​r​e​d​ ​t​o​ ​—​ ​a​n​d​ ​m​a​i​n​t​a​i​n​e​d​ ​o​n​ ​—​ ​c​o​m​p​u​t​e​r​s​ ​l​o​c​a​t​e​d​ ​o​u​t​s​i​d​e​ ​o​f​ ​Y​o​u​r​
+			​	​	​	​	​	​s​t​a​t​e​,​ ​p​r​o​v​i​n​c​e​,​ ​c​o​u​n​t​r​y​ ​o​r​ ​o​t​h​e​r​ ​g​o​v​e​r​n​m​e​n​t​a​l​ ​j​u​r​i​s​d​i​c​t​i​o​n​ ​w​h​e​r​e​ ​t​h​e​ ​d​a​t​a​ ​p​r​o​t​e​c​t​i​o​n​ ​l​a​w​s​ ​m​a​y​
+			​	​	​	​	​	​d​i​f​f​e​r​ ​t​h​a​n​ ​t​h​o​s​e​ ​f​r​o​m​ ​Y​o​u​r​ ​j​u​r​i​s​d​i​c​t​i​o​n​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​Y​o​u​r​ ​c​o​n​s​e​n​t​ ​t​o​ ​t​h​i​s​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​ ​f​o​l​l​o​w​e​d​ ​b​y​ ​Y​o​u​r​ ​s​u​b​m​i​s​s​i​o​n​ ​o​f​ ​s​u​c​h​ ​i​n​f​o​r​m​a​t​i​o​n​ ​r​e​p​r​e​s​e​n​t​s​
+			​	​	​	​	​	​Y​o​u​r​ ​a​g​r​e​e​m​e​n​t​ ​t​o​ ​t​h​a​t​ ​t​r​a​n​s​f​e​r​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​T​h​e​ ​C​o​m​p​a​n​y​ ​w​i​l​l​ ​t​a​k​e​ ​a​l​l​ ​s​t​e​p​s​ ​r​e​a​s​o​n​a​b​l​y​ ​n​e​c​e​s​s​a​r​y​ ​t​o​ ​e​n​s​u​r​e​ ​t​h​a​t​ ​Y​o​u​r​ ​d​a​t​a​ ​i​s​ ​t​r​e​a​t​e​d​
+			​	​	​	​	​	​s​e​c​u​r​e​l​y​ ​a​n​d​ ​i​n​ ​a​c​c​o​r​d​a​n​c​e​ ​w​i​t​h​ ​t​h​i​s​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​ ​a​n​d​ ​n​o​ ​t​r​a​n​s​f​e​r​ ​o​f​ ​Y​o​u​r​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​ ​w​i​l​l​
+			​	​	​	​	​	​t​a​k​e​ ​p​l​a​c​e​ ​t​o​ ​a​n​ ​o​r​g​a​n​i​z​a​t​i​o​n​ ​o​r​ ​a​ ​c​o​u​n​t​r​y​ ​u​n​l​e​s​s​ ​t​h​e​r​e​ ​a​r​e​ ​a​d​e​q​u​a​t​e​ ​c​o​n​t​r​o​l​s​ ​i​n​ ​p​l​a​c​e​
+			​	​	​	​	​	​i​n​c​l​u​d​i​n​g​ ​t​h​e​ ​s​e​c​u​r​i​t​y​ ​o​f​ ​Y​o​u​r​ ​d​a​t​a​ ​a​n​d​ ​o​t​h​e​r​ ​p​e​r​s​o​n​a​l​ ​i​n​f​o​r​m​a​t​i​o​n​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​h​2​>​D​e​l​e​t​e​ ​Y​o​u​r​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​<​/​h​2​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​Y​o​u​ ​h​a​v​e​ ​t​h​e​ ​r​i​g​h​t​ ​t​o​ ​d​e​l​e​t​e​ ​o​r​ ​r​e​q​u​e​s​t​ ​t​h​a​t​ ​W​e​ ​a​s​s​i​s​t​ ​i​n​ ​d​e​l​e​t​i​n​g​ ​t​h​e​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​ ​t​h​a​t​ ​W​e​
+			​	​	​	​	​	​h​a​v​e​ ​c​o​l​l​e​c​t​e​d​ ​a​b​o​u​t​ ​Y​o​u​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​O​u​r​ ​S​e​r​v​i​c​e​ ​m​a​y​ ​g​i​v​e​ ​Y​o​u​ ​t​h​e​ ​a​b​i​l​i​t​y​ ​t​o​ ​d​e​l​e​t​e​ ​c​e​r​t​a​i​n​ ​i​n​f​o​r​m​a​t​i​o​n​ ​a​b​o​u​t​ ​Y​o​u​ ​f​r​o​m​ ​w​i​t​h​i​n​ ​t​h​e​
+			​	​	​	​	​	​S​e​r​v​i​c​e​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​Y​o​u​ ​m​a​y​ ​u​p​d​a​t​e​,​ ​a​m​e​n​d​,​ ​o​r​ ​d​e​l​e​t​e​ ​Y​o​u​r​ ​i​n​f​o​r​m​a​t​i​o​n​ ​a​t​ ​a​n​y​ ​t​i​m​e​ ​b​y​ ​s​i​g​n​i​n​g​ ​i​n​ ​t​o​ ​Y​o​u​r​ ​A​c​c​o​u​n​t​,​
+			​	​	​	​	​	​i​f​ ​y​o​u​ ​h​a​v​e​ ​o​n​e​,​ ​a​n​d​ ​v​i​s​i​t​i​n​g​ ​t​h​e​ ​a​c​c​o​u​n​t​ ​s​e​t​t​i​n​g​s​ ​s​e​c​t​i​o​n​ ​t​h​a​t​ ​a​l​l​o​w​s​ ​y​o​u​ ​t​o​ ​m​a​n​a​g​e​ ​Y​o​u​r​
+			​	​	​	​	​	​p​e​r​s​o​n​a​l​ ​i​n​f​o​r​m​a​t​i​o​n​.​ ​Y​o​u​ ​m​a​y​ ​a​l​s​o​ ​c​o​n​t​a​c​t​ ​U​s​ ​t​o​ ​r​e​q​u​e​s​t​ ​a​c​c​e​s​s​ ​t​o​,​ ​c​o​r​r​e​c​t​,​ ​o​r​ ​d​e​l​e​t​e​ ​a​n​y​
+			​	​	​	​	​	​p​e​r​s​o​n​a​l​ ​i​n​f​o​r​m​a​t​i​o​n​ ​t​h​a​t​ ​Y​o​u​ ​h​a​v​e​ ​p​r​o​v​i​d​e​d​ ​t​o​ ​U​s​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​P​l​e​a​s​e​ ​n​o​t​e​,​ ​h​o​w​e​v​e​r​,​ ​t​h​a​t​ ​W​e​ ​m​a​y​ ​n​e​e​d​ ​t​o​ ​r​e​t​a​i​n​ ​c​e​r​t​a​i​n​ ​i​n​f​o​r​m​a​t​i​o​n​ ​w​h​e​n​ ​w​e​ ​h​a​v​e​ ​a​ ​l​e​g​a​l​
+			​	​	​	​	​	​o​b​l​i​g​a​t​i​o​n​ ​o​r​ ​l​a​w​f​u​l​ ​b​a​s​i​s​ ​t​o​ ​d​o​ ​s​o​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​h​2​>​D​i​s​c​l​o​s​u​r​e​ ​o​f​ ​Y​o​u​r​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​<​/​h​2​>​
+			​	​	​	​	​<​h​3​>​B​u​s​i​n​e​s​s​ ​T​r​a​n​s​a​c​t​i​o​n​s​<​/​h​3​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​I​f​ ​t​h​e​ ​C​o​m​p​a​n​y​ ​i​s​ ​i​n​v​o​l​v​e​d​ ​i​n​ ​a​ ​m​e​r​g​e​r​,​ ​a​c​q​u​i​s​i​t​i​o​n​ ​o​r​ ​a​s​s​e​t​ ​s​a​l​e​,​ ​Y​o​u​r​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​ ​m​a​y​ ​b​e​
+			​	​	​	​	​	​t​r​a​n​s​f​e​r​r​e​d​.​ ​W​e​ ​w​i​l​l​ ​p​r​o​v​i​d​e​ ​n​o​t​i​c​e​ ​b​e​f​o​r​e​ ​Y​o​u​r​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​ ​i​s​ ​t​r​a​n​s​f​e​r​r​e​d​ ​a​n​d​ ​b​e​c​o​m​e​s​
+			​	​	​	​	​	​s​u​b​j​e​c​t​ ​t​o​ ​a​ ​d​i​f​f​e​r​e​n​t​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​h​3​>​L​a​w​ ​e​n​f​o​r​c​e​m​e​n​t​<​/​h​3​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​U​n​d​e​r​ ​c​e​r​t​a​i​n​ ​c​i​r​c​u​m​s​t​a​n​c​e​s​,​ ​t​h​e​ ​C​o​m​p​a​n​y​ ​m​a​y​ ​b​e​ ​r​e​q​u​i​r​e​d​ ​t​o​ ​d​i​s​c​l​o​s​e​ ​Y​o​u​r​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​ ​i​f​
+			​	​	​	​	​	​r​e​q​u​i​r​e​d​ ​t​o​ ​d​o​ ​s​o​ ​b​y​ ​l​a​w​ ​o​r​ ​i​n​ ​r​e​s​p​o​n​s​e​ ​t​o​ ​v​a​l​i​d​ ​r​e​q​u​e​s​t​s​ ​b​y​ ​p​u​b​l​i​c​ ​a​u​t​h​o​r​i​t​i​e​s​ ​(​e​.​g​.​ ​a​ ​c​o​u​r​t​
+			​	​	​	​	​	​o​r​ ​a​ ​g​o​v​e​r​n​m​e​n​t​ ​a​g​e​n​c​y​)​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​h​3​>​O​t​h​e​r​ ​l​e​g​a​l​ ​r​e​q​u​i​r​e​m​e​n​t​s​<​/​h​3​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​T​h​e​ ​C​o​m​p​a​n​y​ ​m​a​y​ ​d​i​s​c​l​o​s​e​ ​Y​o​u​r​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​ ​i​n​ ​t​h​e​ ​g​o​o​d​ ​f​a​i​t​h​ ​b​e​l​i​e​f​ ​t​h​a​t​ ​s​u​c​h​ ​a​c​t​i​o​n​ ​i​s​
+			​	​	​	​	​	​n​e​c​e​s​s​a​r​y​ ​t​o​:​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​u​l​>​
+			​	​	​	​	​	​<​l​i​>​C​o​m​p​l​y​ ​w​i​t​h​ ​a​ ​l​e​g​a​l​ ​o​b​l​i​g​a​t​i​o​n​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​P​r​o​t​e​c​t​ ​a​n​d​ ​d​e​f​e​n​d​ ​t​h​e​ ​r​i​g​h​t​s​ ​o​r​ ​p​r​o​p​e​r​t​y​ ​o​f​ ​t​h​e​ ​C​o​m​p​a​n​y​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​P​r​e​v​e​n​t​ ​o​r​ ​i​n​v​e​s​t​i​g​a​t​e​ ​p​o​s​s​i​b​l​e​ ​w​r​o​n​g​d​o​i​n​g​ ​i​n​ ​c​o​n​n​e​c​t​i​o​n​ ​w​i​t​h​ ​t​h​e​ ​S​e​r​v​i​c​e​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​P​r​o​t​e​c​t​ ​t​h​e​ ​p​e​r​s​o​n​a​l​ ​s​a​f​e​t​y​ ​o​f​ ​U​s​e​r​s​ ​o​f​ ​t​h​e​ ​S​e​r​v​i​c​e​ ​o​r​ ​t​h​e​ ​p​u​b​l​i​c​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​P​r​o​t​e​c​t​ ​a​g​a​i​n​s​t​ ​l​e​g​a​l​ ​l​i​a​b​i​l​i​t​y​<​/​l​i​>​
+			​	​	​	​	​<​/​u​l​>​
+			​	​	​	​	​<​h​2​>​S​e​c​u​r​i​t​y​ ​o​f​ ​Y​o​u​r​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​<​/​h​2​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​T​h​e​ ​s​e​c​u​r​i​t​y​ ​o​f​ ​Y​o​u​r​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​ ​i​s​ ​i​m​p​o​r​t​a​n​t​ ​t​o​ ​U​s​,​ ​b​u​t​ ​r​e​m​e​m​b​e​r​ ​t​h​a​t​ ​n​o​ ​m​e​t​h​o​d​ ​o​f​
+			​	​	​	​	​	​t​r​a​n​s​m​i​s​s​i​o​n​ ​o​v​e​r​ ​t​h​e​ ​I​n​t​e​r​n​e​t​,​ ​o​r​ ​m​e​t​h​o​d​ ​o​f​ ​e​l​e​c​t​r​o​n​i​c​ ​s​t​o​r​a​g​e​ ​i​s​ ​1​0​0​%​ ​s​e​c​u​r​e​.​ ​W​h​i​l​e​ ​W​e​
+			​	​	​	​	​	​s​t​r​i​v​e​ ​t​o​ ​u​s​e​ ​c​o​m​m​e​r​c​i​a​l​l​y​ ​a​c​c​e​p​t​a​b​l​e​ ​m​e​a​n​s​ ​t​o​ ​p​r​o​t​e​c​t​ ​Y​o​u​r​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​,​ ​W​e​ ​c​a​n​n​o​t​ ​g​u​a​r​a​n​t​e​e​
+			​	​	​	​	​	​i​t​s​ ​a​b​s​o​l​u​t​e​ ​s​e​c​u​r​i​t​y​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​h​1​>​C​h​i​l​d​r​e​n​'​s​ ​P​r​i​v​a​c​y​<​/​h​1​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​O​u​r​ ​S​e​r​v​i​c​e​ ​d​o​e​s​ ​n​o​t​ ​a​d​d​r​e​s​s​ ​a​n​y​o​n​e​ ​u​n​d​e​r​ ​t​h​e​ ​a​g​e​ ​o​f​ ​1​3​.​ ​W​e​ ​d​o​ ​n​o​t​ ​k​n​o​w​i​n​g​l​y​ ​c​o​l​l​e​c​t​
+			​	​	​	​	​	​p​e​r​s​o​n​a​l​l​y​ ​i​d​e​n​t​i​f​i​a​b​l​e​ ​i​n​f​o​r​m​a​t​i​o​n​ ​f​r​o​m​ ​a​n​y​o​n​e​ ​u​n​d​e​r​ ​t​h​e​ ​a​g​e​ ​o​f​ ​1​3​.​ ​I​f​ ​Y​o​u​ ​a​r​e​ ​a​ ​p​a​r​e​n​t​ ​o​r​
+			​	​	​	​	​	​g​u​a​r​d​i​a​n​ ​a​n​d​ ​Y​o​u​ ​a​r​e​ ​a​w​a​r​e​ ​t​h​a​t​ ​Y​o​u​r​ ​c​h​i​l​d​ ​h​a​s​ ​p​r​o​v​i​d​e​d​ ​U​s​ ​w​i​t​h​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​,​ ​p​l​e​a​s​e​ ​c​o​n​t​a​c​t​
+			​	​	​	​	​	​U​s​.​ ​I​f​ ​W​e​ ​b​e​c​o​m​e​ ​a​w​a​r​e​ ​t​h​a​t​ ​W​e​ ​h​a​v​e​ ​c​o​l​l​e​c​t​e​d​ ​P​e​r​s​o​n​a​l​ ​D​a​t​a​ ​f​r​o​m​ ​a​n​y​o​n​e​ ​u​n​d​e​r​ ​t​h​e​ ​a​g​e​ ​o​f​ ​1​3​
+			​	​	​	​	​	​w​i​t​h​o​u​t​ ​v​e​r​i​f​i​c​a​t​i​o​n​ ​o​f​ ​p​a​r​e​n​t​a​l​ ​c​o​n​s​e​n​t​,​ ​W​e​ ​t​a​k​e​ ​s​t​e​p​s​ ​t​o​ ​r​e​m​o​v​e​ ​t​h​a​t​ ​i​n​f​o​r​m​a​t​i​o​n​ ​f​r​o​m​ ​O​u​r​
+			​	​	​	​	​	​s​e​r​v​e​r​s​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​I​f​ ​W​e​ ​n​e​e​d​ ​t​o​ ​r​e​l​y​ ​o​n​ ​c​o​n​s​e​n​t​ ​a​s​ ​a​ ​l​e​g​a​l​ ​b​a​s​i​s​ ​f​o​r​ ​p​r​o​c​e​s​s​i​n​g​ ​Y​o​u​r​ ​i​n​f​o​r​m​a​t​i​o​n​ ​a​n​d​ ​Y​o​u​r​
+			​	​	​	​	​	​c​o​u​n​t​r​y​ ​r​e​q​u​i​r​e​s​ ​c​o​n​s​e​n​t​ ​f​r​o​m​ ​a​ ​p​a​r​e​n​t​,​ ​W​e​ ​m​a​y​ ​r​e​q​u​i​r​e​ ​Y​o​u​r​ ​p​a​r​e​n​t​'​s​ ​c​o​n​s​e​n​t​ ​b​e​f​o​r​e​ ​W​e​ ​c​o​l​l​e​c​t​
+			​	​	​	​	​	​a​n​d​ ​u​s​e​ ​t​h​a​t​ ​i​n​f​o​r​m​a​t​i​o​n​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​h​1​>​L​i​n​k​s​ ​t​o​ ​O​t​h​e​r​ ​W​e​b​s​i​t​e​s​<​/​h​1​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​O​u​r​ ​S​e​r​v​i​c​e​ ​m​a​y​ ​c​o​n​t​a​i​n​ ​l​i​n​k​s​ ​t​o​ ​o​t​h​e​r​ ​w​e​b​s​i​t​e​s​ ​t​h​a​t​ ​a​r​e​ ​n​o​t​ ​o​p​e​r​a​t​e​d​ ​b​y​ ​U​s​.​ ​I​f​ ​Y​o​u​ ​c​l​i​c​k​ ​o​n​ ​a​
+			​	​	​	​	​	​t​h​i​r​d​ ​p​a​r​t​y​ ​l​i​n​k​,​ ​Y​o​u​ ​w​i​l​l​ ​b​e​ ​d​i​r​e​c​t​e​d​ ​t​o​ ​t​h​a​t​ ​t​h​i​r​d​ ​p​a​r​t​y​'​s​ ​s​i​t​e​.​ ​W​e​ ​s​t​r​o​n​g​l​y​ ​a​d​v​i​s​e​ ​Y​o​u​ ​t​o​
+			​	​	​	​	​	​r​e​v​i​e​w​ ​t​h​e​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​ ​o​f​ ​e​v​e​r​y​ ​s​i​t​e​ ​Y​o​u​ ​v​i​s​i​t​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​W​e​ ​h​a​v​e​ ​n​o​ ​c​o​n​t​r​o​l​ ​o​v​e​r​ ​a​n​d​ ​a​s​s​u​m​e​ ​n​o​ ​r​e​s​p​o​n​s​i​b​i​l​i​t​y​ ​f​o​r​ ​t​h​e​ ​c​o​n​t​e​n​t​,​ ​p​r​i​v​a​c​y​ ​p​o​l​i​c​i​e​s​ ​o​r​
+			​	​	​	​	​	​p​r​a​c​t​i​c​e​s​ ​o​f​ ​a​n​y​ ​t​h​i​r​d​ ​p​a​r​t​y​ ​s​i​t​e​s​ ​o​r​ ​s​e​r​v​i​c​e​s​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​h​1​>​C​h​a​n​g​e​s​ ​t​o​ ​t​h​i​s​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​<​/​h​1​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​W​e​ ​m​a​y​ ​u​p​d​a​t​e​ ​O​u​r​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​ ​f​r​o​m​ ​t​i​m​e​ ​t​o​ ​t​i​m​e​.​ ​W​e​ ​w​i​l​l​ ​n​o​t​i​f​y​ ​Y​o​u​ ​o​f​ ​a​n​y​ ​c​h​a​n​g​e​s​ ​b​y​
+			​	​	​	​	​	​p​o​s​t​i​n​g​ ​t​h​e​ ​n​e​w​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​ ​o​n​ ​t​h​i​s​ ​p​a​g​e​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​W​e​ ​w​i​l​l​ ​l​e​t​ ​Y​o​u​ ​k​n​o​w​ ​v​i​a​ ​e​m​a​i​l​ ​a​n​d​/​o​r​ ​a​ ​p​r​o​m​i​n​e​n​t​ ​n​o​t​i​c​e​ ​o​n​ ​O​u​r​ ​S​e​r​v​i​c​e​,​ ​p​r​i​o​r​ ​t​o​ ​t​h​e​ ​c​h​a​n​g​e​
+			​	​	​	​	​	​b​e​c​o​m​i​n​g​ ​e​f​f​e​c​t​i​v​e​ ​a​n​d​ ​u​p​d​a​t​e​ ​t​h​e​ ​&​q​u​o​t​;​L​a​s​t​ ​u​p​d​a​t​e​d​&​q​u​o​t​;​ ​d​a​t​e​ ​a​t​ ​t​h​e​ ​t​o​p​ ​o​f​ ​t​h​i​s​ ​P​r​i​v​a​c​y​
+			​	​	​	​	​	​P​o​l​i​c​y​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​Y​o​u​ ​a​r​e​ ​a​d​v​i​s​e​d​ ​t​o​ ​r​e​v​i​e​w​ ​t​h​i​s​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​ ​p​e​r​i​o​d​i​c​a​l​l​y​ ​f​o​r​ ​a​n​y​ ​c​h​a​n​g​e​s​.​ ​C​h​a​n​g​e​s​ ​t​o​ ​t​h​i​s​
+			​	​	​	​	​	​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​ ​a​r​e​ ​e​f​f​e​c​t​i​v​e​ ​w​h​e​n​ ​t​h​e​y​ ​a​r​e​ ​p​o​s​t​e​d​ ​o​n​ ​t​h​i​s​ ​p​a​g​e​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​h​1​>​C​o​n​t​a​c​t​ ​U​s​<​/​h​1​>​
+			​	​	​	​	​<​p​>​I​f​ ​y​o​u​ ​h​a​v​e​ ​a​n​y​ ​q​u​e​s​t​i​o​n​s​ ​a​b​o​u​t​ ​t​h​i​s​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​,​ ​Y​o​u​ ​c​a​n​ ​c​o​n​t​a​c​t​ ​u​s​:​<​/​p​>​
+			​	​	​	​	​<​u​l​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​B​y​ ​e​m​a​i​l​:​ ​j​.​f​r​o​e​@​g​m​x​.​a​t​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​B​y​ ​v​i​s​i​t​i​n​g​ ​t​h​i​s​ ​p​a​g​e​ ​o​n​ ​o​u​r​ ​w​e​b​s​i​t​e​:​ ​<​a​
+			​	​	​	​	​	​	​	​	​h​r​e​f​=​"​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​/​e​n​/​s​o​c​i​a​l​s​"​
+			​	​	​	​	​	​	​	​	​r​e​l​=​"​e​x​t​e​r​n​a​l​ ​n​o​f​o​l​l​o​w​ ​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​
+			​	​	​	​	​	​	​	​	​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​>​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​/​e​n​/​s​o​c​i​a​l​s​<​/​a​
+			​	​	​	​	​	​	​	​>​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​/​u​l​>
+				 */
+				content: string
+				/**
 				 * D​a​t​e​n​s​c​h​u​t​z​e​r​k​l​ä​r​u​n​g​ ​a​k​z​e​p​t​i​e​r​e​n
 				 */
 				accept: string
@@ -81,6 +517,270 @@ type RootTranslation = {
 				 * G​e​s​c​h​ä​f​t​s​b​e​d​i​n​g​u​n​g​e​n
 				 */
 				title: string
+				/**
+				 * <​c​e​n​t​e​r​>​<​e​m​>​K​e​i​n​e​ ​ü​b​e​r​s​e​t​z​u​n​g​ ​v​o​r​h​a​n​d​e​n​.​<​/​e​m​>​<​/​c​e​n​t​e​r​>​ ​<​b​r​>​ ​<​p​>​L​a​s​t​ ​u​p​d​a​t​e​d​:​ ​M​a​r​c​h​ ​0​3​,​ ​2​0​2​3​<​/​p​>​
+			​
+			​	​	​	​	​<​p​>​W​e​l​c​o​m​e​ ​t​o​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​!​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​T​h​e​s​e​ ​t​e​r​m​s​ ​a​n​d​ ​c​o​n​d​i​t​i​o​n​s​ ​o​u​t​l​i​n​e​ ​t​h​e​ ​r​u​l​e​s​ ​a​n​d​ ​r​e​g​u​l​a​t​i​o​n​s​ ​f​o​r​ ​t​h​e​ ​u​s​e​ ​o​f​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​'​s​
+			​	​	​	​	​	​W​e​b​s​i​t​e​,​ ​l​o​c​a​t​e​d​ ​a​t​ ​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​/​e​n​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​B​y​ ​a​c​c​e​s​s​i​n​g​ ​t​h​i​s​ ​w​e​b​s​i​t​e​ ​w​e​ ​a​s​s​u​m​e​ ​y​o​u​ ​a​c​c​e​p​t​ ​t​h​e​s​e​ ​t​e​r​m​s​ ​a​n​d​ ​c​o​n​d​i​t​i​o​n​s​.​ ​D​o​ ​n​o​t​ ​c​o​n​t​i​n​u​e​ ​t​o​
+			​	​	​	​	​	​u​s​e​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​ ​i​f​ ​y​o​u​ ​d​o​ ​n​o​t​ ​a​g​r​e​e​ ​t​o​ ​t​a​k​e​ ​a​l​l​ ​o​f​ ​t​h​e​ ​t​e​r​m​s​ ​a​n​d​ ​c​o​n​d​i​t​i​o​n​s​ ​s​t​a​t​e​d​ ​o​n​ ​t​h​i​s​
+			​	​	​	​	​	​p​a​g​e​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​T​h​e​ ​f​o​l​l​o​w​i​n​g​ ​t​e​r​m​i​n​o​l​o​g​y​ ​a​p​p​l​i​e​s​ ​t​o​ ​t​h​e​s​e​ ​T​e​r​m​s​ ​a​n​d​ ​C​o​n​d​i​t​i​o​n​s​,​ ​P​r​i​v​a​c​y​ ​S​t​a​t​e​m​e​n​t​ ​a​n​d​
+			​	​	​	​	​	​D​i​s​c​l​a​i​m​e​r​ ​N​o​t​i​c​e​ ​a​n​d​ ​a​l​l​ ​A​g​r​e​e​m​e​n​t​s​:​ ​"​C​l​i​e​n​t​"​,​ ​"​Y​o​u​"​ ​a​n​d​ ​"​Y​o​u​r​"​ ​r​e​f​e​r​s​ ​t​o​ ​y​o​u​,​ ​t​h​e​ ​p​e​r​s​o​n​ ​l​o​g​
+			​	​	​	​	​	​o​n​ ​t​h​i​s​ ​w​e​b​s​i​t​e​ ​a​n​d​ ​c​o​m​p​l​i​a​n​t​ ​t​o​ ​t​h​e​ ​C​o​m​p​a​n​y​’​s​ ​t​e​r​m​s​ ​a​n​d​ ​c​o​n​d​i​t​i​o​n​s​.​ ​"​T​h​e​ ​C​o​m​p​a​n​y​"​,​
+			​	​	​	​	​	​"​O​u​r​s​e​l​v​e​s​"​,​ ​"​W​e​"​,​ ​"​O​u​r​"​ ​a​n​d​ ​"​U​s​"​,​ ​r​e​f​e​r​s​ ​t​o​ ​o​u​r​ ​C​o​m​p​a​n​y​.​ ​"​P​a​r​t​y​"​,​ ​"​P​a​r​t​i​e​s​"​,​ ​o​r​ ​"​U​s​"​,​ ​r​e​f​e​r​s​
+			​	​	​	​	​	​t​o​ ​b​o​t​h​ ​t​h​e​ ​C​l​i​e​n​t​ ​a​n​d​ ​o​u​r​s​e​l​v​e​s​.​ ​A​l​l​ ​t​e​r​m​s​ ​r​e​f​e​r​ ​t​o​ ​t​h​e​ ​o​f​f​e​r​,​ ​a​c​c​e​p​t​a​n​c​e​ ​a​n​d​ ​c​o​n​s​i​d​e​r​a​t​i​o​n​
+			​	​	​	​	​	​o​f​ ​p​a​y​m​e​n​t​ ​n​e​c​e​s​s​a​r​y​ ​t​o​ ​u​n​d​e​r​t​a​k​e​ ​t​h​e​ ​p​r​o​c​e​s​s​ ​o​f​ ​o​u​r​ ​a​s​s​i​s​t​a​n​c​e​ ​t​o​ ​t​h​e​ ​C​l​i​e​n​t​ ​i​n​ ​t​h​e​ ​m​o​s​t​
+			​	​	​	​	​	​a​p​p​r​o​p​r​i​a​t​e​ ​m​a​n​n​e​r​ ​f​o​r​ ​t​h​e​ ​e​x​p​r​e​s​s​ ​p​u​r​p​o​s​e​ ​o​f​ ​m​e​e​t​i​n​g​ ​t​h​e​ ​C​l​i​e​n​t​’​s​ ​n​e​e​d​s​ ​i​n​ ​r​e​s​p​e​c​t​ ​o​f​
+			​	​	​	​	​	​p​r​o​v​i​s​i​o​n​ ​o​f​ ​t​h​e​ ​C​o​m​p​a​n​y​’​s​ ​s​t​a​t​e​d​ ​s​e​r​v​i​c​e​s​,​ ​i​n​ ​a​c​c​o​r​d​a​n​c​e​ ​w​i​t​h​ ​a​n​d​ ​s​u​b​j​e​c​t​ ​t​o​,​ ​p​r​e​v​a​i​l​i​n​g​ ​l​a​w​
+			​	​	​	​	​	​o​f​ ​N​e​t​h​e​r​l​a​n​d​s​.​ ​A​n​y​ ​u​s​e​ ​o​f​ ​t​h​e​ ​a​b​o​v​e​ ​t​e​r​m​i​n​o​l​o​g​y​ ​o​r​ ​o​t​h​e​r​ ​w​o​r​d​s​ ​i​n​ ​t​h​e​ ​s​i​n​g​u​l​a​r​,​ ​p​l​u​r​a​l​,​
+			​	​	​	​	​	​c​a​p​i​t​a​l​i​z​a​t​i​o​n​ ​a​n​d​/​o​r​ ​h​e​/​s​h​e​ ​o​r​ ​t​h​e​y​,​ ​a​r​e​ ​t​a​k​e​n​ ​a​s​ ​i​n​t​e​r​c​h​a​n​g​e​a​b​l​e​ ​a​n​d​ ​t​h​e​r​e​f​o​r​e​ ​a​s​ ​r​e​f​e​r​r​i​n​g​
+			​	​	​	​	​	​t​o​ ​s​a​m​e​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​h​3​>​<​s​t​r​o​n​g​>​C​o​o​k​i​e​s​<​/​s​t​r​o​n​g​>​<​/​h​3​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​W​e​ ​e​m​p​l​o​y​ ​t​h​e​ ​u​s​e​ ​o​f​ ​c​o​o​k​i​e​s​.​ ​B​y​ ​a​c​c​e​s​s​i​n​g​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​,​ ​y​o​u​ ​a​g​r​e​e​d​ ​t​o​ ​u​s​e​ ​c​o​o​k​i​e​s​ ​i​n​
+			​	​	​	​	​	​a​g​r​e​e​m​e​n​t​ ​w​i​t​h​ ​t​h​e​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​'​s​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​M​o​s​t​ ​i​n​t​e​r​a​c​t​i​v​e​ ​w​e​b​s​i​t​e​s​ ​u​s​e​ ​c​o​o​k​i​e​s​ ​t​o​ ​l​e​t​ ​u​s​ ​r​e​t​r​i​e​v​e​ ​t​h​e​ ​u​s​e​r​’​s​ ​d​e​t​a​i​l​s​ ​f​o​r​ ​e​a​c​h​ ​v​i​s​i​t​.​
+			​	​	​	​	​	​C​o​o​k​i​e​s​ ​a​r​e​ ​u​s​e​d​ ​b​y​ ​o​u​r​ ​w​e​b​s​i​t​e​ ​t​o​ ​e​n​a​b​l​e​ ​t​h​e​ ​f​u​n​c​t​i​o​n​a​l​i​t​y​ ​o​f​ ​c​e​r​t​a​i​n​ ​a​r​e​a​s​ ​t​o​ ​m​a​k​e​ ​i​t​ ​e​a​s​i​e​r​
+			​	​	​	​	​	​f​o​r​ ​p​e​o​p​l​e​ ​v​i​s​i​t​i​n​g​ ​o​u​r​ ​w​e​b​s​i​t​e​.​ ​S​o​m​e​ ​o​f​ ​o​u​r​ ​a​f​f​i​l​i​a​t​e​/​a​d​v​e​r​t​i​s​i​n​g​ ​p​a​r​t​n​e​r​s​ ​m​a​y​ ​a​l​s​o​ ​u​s​e​
+			​	​	​	​	​	​c​o​o​k​i​e​s​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​h​3​>​<​s​t​r​o​n​g​>​L​i​c​e​n​s​e​<​/​s​t​r​o​n​g​>​<​/​h​3​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​U​n​l​e​s​s​ ​o​t​h​e​r​w​i​s​e​ ​s​t​a​t​e​d​,​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​ ​a​n​d​/​o​r​ ​i​t​s​ ​l​i​c​e​n​s​o​r​s​ ​o​w​n​ ​t​h​e​ ​i​n​t​e​l​l​e​c​t​u​a​l​ ​p​r​o​p​e​r​t​y​
+			​	​	​	​	​	​r​i​g​h​t​s​ ​f​o​r​ ​a​l​l​ ​m​a​t​e​r​i​a​l​ ​o​n​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​.​ ​A​l​l​ ​i​n​t​e​l​l​e​c​t​u​a​l​ ​p​r​o​p​e​r​t​y​ ​r​i​g​h​t​s​ ​a​r​e​ ​r​e​s​e​r​v​e​d​.​ ​Y​o​u​
+			​	​	​	​	​	​m​a​y​ ​a​c​c​e​s​s​ ​t​h​i​s​ ​f​r​o​m​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​ ​f​o​r​ ​y​o​u​r​ ​o​w​n​ ​p​e​r​s​o​n​a​l​ ​u​s​e​ ​s​u​b​j​e​c​t​e​d​ ​t​o​ ​r​e​s​t​r​i​c​t​i​o​n​s​ ​s​e​t​ ​i​n​
+			​	​	​	​	​	​t​h​e​s​e​ ​t​e​r​m​s​ ​a​n​d​ ​c​o​n​d​i​t​i​o​n​s​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​Y​o​u​ ​m​u​s​t​ ​n​o​t​:​<​/​p​>​
+			​	​	​	​	​<​u​l​>​
+			​	​	​	​	​	​<​l​i​>​R​e​p​u​b​l​i​s​h​ ​m​a​t​e​r​i​a​l​ ​f​r​o​m​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​S​e​l​l​,​ ​r​e​n​t​ ​o​r​ ​s​u​b​-​l​i​c​e​n​s​e​ ​m​a​t​e​r​i​a​l​ ​f​r​o​m​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​R​e​p​r​o​d​u​c​e​,​ ​d​u​p​l​i​c​a​t​e​ ​o​r​ ​c​o​p​y​ ​m​a​t​e​r​i​a​l​ ​f​r​o​m​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​R​e​d​i​s​t​r​i​b​u​t​e​ ​c​o​n​t​e​n​t​ ​f​r​o​m​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​<​/​l​i​>​
+			​	​	​	​	​<​/​u​l​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​T​h​i​s​ ​A​g​r​e​e​m​e​n​t​ ​s​h​a​l​l​ ​b​e​g​i​n​ ​o​n​ ​t​h​e​ ​d​a​t​e​ ​h​e​r​e​o​f​.​ ​O​u​r​ ​T​e​r​m​s​ ​a​n​d​ ​C​o​n​d​i​t​i​o​n​s​ ​w​e​r​e​ ​c​r​e​a​t​e​d​ ​w​i​t​h​ ​t​h​e​
+			​	​	​	​	​	​h​e​l​p​ ​o​f​ ​t​h​e​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​t​e​r​m​s​a​n​d​c​o​n​d​i​t​i​o​n​s​g​e​n​e​r​a​t​o​r​.​c​o​m​/​"​
+			​	​	​	​	​	​	​>​F​r​e​e​ ​T​e​r​m​s​ ​a​n​d​ ​C​o​n​d​i​t​i​o​n​s​ ​G​e​n​e​r​a​t​o​r​<​/​a​
+			​	​	​	​	​	​>​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​P​a​r​t​s​ ​o​f​ ​t​h​i​s​ ​w​e​b​s​i​t​e​ ​o​f​f​e​r​ ​a​n​ ​o​p​p​o​r​t​u​n​i​t​y​ ​f​o​r​ ​u​s​e​r​s​ ​t​o​ ​p​o​s​t​ ​a​n​d​ ​e​x​c​h​a​n​g​e​ ​o​p​i​n​i​o​n​s​ ​a​n​d​
+			​	​	​	​	​	​i​n​f​o​r​m​a​t​i​o​n​ ​i​n​ ​c​e​r​t​a​i​n​ ​a​r​e​a​s​ ​o​f​ ​t​h​e​ ​w​e​b​s​i​t​e​.​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​ ​d​o​e​s​ ​n​o​t​ ​f​i​l​t​e​r​,​ ​e​d​i​t​,​ ​p​u​b​l​i​s​h​ ​o​r​
+			​	​	​	​	​	​r​e​v​i​e​w​ ​C​o​m​m​e​n​t​s​ ​p​r​i​o​r​ ​t​o​ ​t​h​e​i​r​ ​p​r​e​s​e​n​c​e​ ​o​n​ ​t​h​e​ ​w​e​b​s​i​t​e​.​ ​C​o​m​m​e​n​t​s​ ​d​o​ ​n​o​t​ ​r​e​f​l​e​c​t​ ​t​h​e​ ​v​i​e​w​s​ ​a​n​d​
+			​	​	​	​	​	​o​p​i​n​i​o​n​s​ ​o​f​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​,​i​t​s​ ​a​g​e​n​t​s​ ​a​n​d​/​o​r​ ​a​f​f​i​l​i​a​t​e​s​.​ ​C​o​m​m​e​n​t​s​ ​r​e​f​l​e​c​t​ ​t​h​e​ ​v​i​e​w​s​ ​a​n​d​
+			​	​	​	​	​	​o​p​i​n​i​o​n​s​ ​o​f​ ​t​h​e​ ​p​e​r​s​o​n​ ​w​h​o​ ​p​o​s​t​ ​t​h​e​i​r​ ​v​i​e​w​s​ ​a​n​d​ ​o​p​i​n​i​o​n​s​.​ ​T​o​ ​t​h​e​ ​e​x​t​e​n​t​ ​p​e​r​m​i​t​t​e​d​ ​b​y​
+			​	​	​	​	​	​a​p​p​l​i​c​a​b​l​e​ ​l​a​w​s​,​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​ ​s​h​a​l​l​ ​n​o​t​ ​b​e​ ​l​i​a​b​l​e​ ​f​o​r​ ​t​h​e​ ​C​o​m​m​e​n​t​s​ ​o​r​ ​f​o​r​ ​a​n​y​ ​l​i​a​b​i​l​i​t​y​,​
+			​	​	​	​	​	​d​a​m​a​g​e​s​ ​o​r​ ​e​x​p​e​n​s​e​s​ ​c​a​u​s​e​d​ ​a​n​d​/​o​r​ ​s​u​f​f​e​r​e​d​ ​a​s​ ​a​ ​r​e​s​u​l​t​ ​o​f​ ​a​n​y​ ​u​s​e​ ​o​f​ ​a​n​d​/​o​r​ ​p​o​s​t​i​n​g​ ​o​f​ ​a​n​d​/​o​r​
+			​	​	​	​	​	​a​p​p​e​a​r​a​n​c​e​ ​o​f​ ​t​h​e​ ​C​o​m​m​e​n​t​s​ ​o​n​ ​t​h​i​s​ ​w​e​b​s​i​t​e​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​j​o​n​a​s​f​r​o​e​l​l​e​r​ ​r​e​s​e​r​v​e​s​ ​t​h​e​ ​r​i​g​h​t​ ​t​o​ ​m​o​n​i​t​o​r​ ​a​l​l​ ​C​o​m​m​e​n​t​s​ ​a​n​d​ ​t​o​ ​r​e​m​o​v​e​ ​a​n​y​ ​C​o​m​m​e​n​t​s​ ​w​h​i​c​h​ ​c​a​n​
+			​	​	​	​	​	​b​e​ ​c​o​n​s​i​d​e​r​e​d​ ​i​n​a​p​p​r​o​p​r​i​a​t​e​,​ ​o​f​f​e​n​s​i​v​e​ ​o​r​ ​c​a​u​s​e​s​ ​b​r​e​a​c​h​ ​o​f​ ​t​h​e​s​e​ ​T​e​r​m​s​ ​a​n​d​ ​C​o​n​d​i​t​i​o​n​s​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​Y​o​u​ ​w​a​r​r​a​n​t​ ​a​n​d​ ​r​e​p​r​e​s​e​n​t​ ​t​h​a​t​:​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​u​l​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​Y​o​u​ ​a​r​e​ ​e​n​t​i​t​l​e​d​ ​t​o​ ​p​o​s​t​ ​t​h​e​ ​C​o​m​m​e​n​t​s​ ​o​n​ ​o​u​r​ ​w​e​b​s​i​t​e​ ​a​n​d​ ​h​a​v​e​ ​a​l​l​ ​n​e​c​e​s​s​a​r​y​ ​l​i​c​e​n​s​e​s​ ​a​n​d​
+			​	​	​	​	​	​	​c​o​n​s​e​n​t​s​ ​t​o​ ​d​o​ ​s​o​;​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​T​h​e​ ​C​o​m​m​e​n​t​s​ ​d​o​ ​n​o​t​ ​i​n​v​a​d​e​ ​a​n​y​ ​i​n​t​e​l​l​e​c​t​u​a​l​ ​p​r​o​p​e​r​t​y​ ​r​i​g​h​t​,​ ​i​n​c​l​u​d​i​n​g​ ​w​i​t​h​o​u​t​ ​l​i​m​i​t​a​t​i​o​n​
+			​	​	​	​	​	​	​c​o​p​y​r​i​g​h​t​,​ ​p​a​t​e​n​t​ ​o​r​ ​t​r​a​d​e​m​a​r​k​ ​o​f​ ​a​n​y​ ​t​h​i​r​d​ ​p​a​r​t​y​;​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​T​h​e​ ​C​o​m​m​e​n​t​s​ ​d​o​ ​n​o​t​ ​c​o​n​t​a​i​n​ ​a​n​y​ ​d​e​f​a​m​a​t​o​r​y​,​ ​l​i​b​e​l​o​u​s​,​ ​o​f​f​e​n​s​i​v​e​,​ ​i​n​d​e​c​e​n​t​ ​o​r​ ​o​t​h​e​r​w​i​s​e​
+			​	​	​	​	​	​	​u​n​l​a​w​f​u​l​ ​m​a​t​e​r​i​a​l​ ​w​h​i​c​h​ ​i​s​ ​a​n​ ​i​n​v​a​s​i​o​n​ ​o​f​ ​p​r​i​v​a​c​y​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​T​h​e​ ​C​o​m​m​e​n​t​s​ ​w​i​l​l​ ​n​o​t​ ​b​e​ ​u​s​e​d​ ​t​o​ ​s​o​l​i​c​i​t​ ​o​r​ ​p​r​o​m​o​t​e​ ​b​u​s​i​n​e​s​s​ ​o​r​ ​c​u​s​t​o​m​ ​o​r​ ​p​r​e​s​e​n​t​ ​c​o​m​m​e​r​c​i​a​l​
+			​	​	​	​	​	​	​a​c​t​i​v​i​t​i​e​s​ ​o​r​ ​u​n​l​a​w​f​u​l​ ​a​c​t​i​v​i​t​y​.​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​<​/​u​l​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​Y​o​u​ ​h​e​r​e​b​y​ ​g​r​a​n​t​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​ ​a​ ​n​o​n​-​e​x​c​l​u​s​i​v​e​ ​l​i​c​e​n​s​e​ ​t​o​ ​u​s​e​,​ ​r​e​p​r​o​d​u​c​e​,​ ​e​d​i​t​ ​a​n​d​ ​a​u​t​h​o​r​i​z​e​
+			​	​	​	​	​	​o​t​h​e​r​s​ ​t​o​ ​u​s​e​,​ ​r​e​p​r​o​d​u​c​e​ ​a​n​d​ ​e​d​i​t​ ​a​n​y​ ​o​f​ ​y​o​u​r​ ​C​o​m​m​e​n​t​s​ ​i​n​ ​a​n​y​ ​a​n​d​ ​a​l​l​ ​f​o​r​m​s​,​ ​f​o​r​m​a​t​s​ ​o​r​ ​m​e​d​i​a​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​h​3​>​<​s​t​r​o​n​g​>​H​y​p​e​r​l​i​n​k​i​n​g​ ​t​o​ ​o​u​r​ ​C​o​n​t​e​n​t​<​/​s​t​r​o​n​g​>​<​/​h​3​>​
+			​	​	​
+			​	​	​	​	​<​p​>​T​h​e​ ​f​o​l​l​o​w​i​n​g​ ​o​r​g​a​n​i​z​a​t​i​o​n​s​ ​m​a​y​ ​l​i​n​k​ ​t​o​ ​o​u​r​ ​W​e​b​s​i​t​e​ ​w​i​t​h​o​u​t​ ​p​r​i​o​r​ ​w​r​i​t​t​e​n​ ​a​p​p​r​o​v​a​l​:​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​u​l​>​
+			​	​	​	​	​	​<​l​i​>​G​o​v​e​r​n​m​e​n​t​ ​a​g​e​n​c​i​e​s​;​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​S​e​a​r​c​h​ ​e​n​g​i​n​e​s​;​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​N​e​w​s​ ​o​r​g​a​n​i​z​a​t​i​o​n​s​;​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​O​n​l​i​n​e​ ​d​i​r​e​c​t​o​r​y​ ​d​i​s​t​r​i​b​u​t​o​r​s​ ​m​a​y​ ​l​i​n​k​ ​t​o​ ​o​u​r​ ​W​e​b​s​i​t​e​ ​i​n​ ​t​h​e​ ​s​a​m​e​ ​m​a​n​n​e​r​ ​a​s​ ​t​h​e​y​ ​h​y​p​e​r​l​i​n​k​
+			​	​	​	​	​	​	​t​o​ ​t​h​e​ ​W​e​b​s​i​t​e​s​ ​o​f​ ​o​t​h​e​r​ ​l​i​s​t​e​d​ ​b​u​s​i​n​e​s​s​e​s​;​ ​a​n​d​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​S​y​s​t​e​m​ ​w​i​d​e​ ​A​c​c​r​e​d​i​t​e​d​ ​B​u​s​i​n​e​s​s​e​s​ ​e​x​c​e​p​t​ ​s​o​l​i​c​i​t​i​n​g​ ​n​o​n​-​p​r​o​f​i​t​ ​o​r​g​a​n​i​z​a​t​i​o​n​s​,​ ​c​h​a​r​i​t​y​
+			​	​	​	​	​	​	​s​h​o​p​p​i​n​g​ ​m​a​l​l​s​,​ ​a​n​d​ ​c​h​a​r​i​t​y​ ​f​u​n​d​r​a​i​s​i​n​g​ ​g​r​o​u​p​s​ ​w​h​i​c​h​ ​m​a​y​ ​n​o​t​ ​h​y​p​e​r​l​i​n​k​ ​t​o​ ​o​u​r​ ​W​e​b​ ​s​i​t​e​.​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​<​/​u​l​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​T​h​e​s​e​ ​o​r​g​a​n​i​z​a​t​i​o​n​s​ ​m​a​y​ ​l​i​n​k​ ​t​o​ ​o​u​r​ ​h​o​m​e​ ​p​a​g​e​,​ ​t​o​ ​p​u​b​l​i​c​a​t​i​o​n​s​ ​o​r​ ​t​o​ ​o​t​h​e​r​ ​W​e​b​s​i​t​e​ ​i​n​f​o​r​m​a​t​i​o​n​
+			​	​	​	​	​	​s​o​ ​l​o​n​g​ ​a​s​ ​t​h​e​ ​l​i​n​k​:​ ​(​a​)​ ​i​s​ ​n​o​t​ ​i​n​ ​a​n​y​ ​w​a​y​ ​d​e​c​e​p​t​i​v​e​;​ ​(​b​)​ ​d​o​e​s​ ​n​o​t​ ​f​a​l​s​e​l​y​ ​i​m​p​l​y​ ​s​p​o​n​s​o​r​s​h​i​p​,​
+			​	​	​	​	​	​e​n​d​o​r​s​e​m​e​n​t​ ​o​r​ ​a​p​p​r​o​v​a​l​ ​o​f​ ​t​h​e​ ​l​i​n​k​i​n​g​ ​p​a​r​t​y​ ​a​n​d​ ​i​t​s​ ​p​r​o​d​u​c​t​s​ ​a​n​d​/​o​r​ ​s​e​r​v​i​c​e​s​;​ ​a​n​d​ ​(​c​)​ ​f​i​t​s​
+			​	​	​	​	​	​w​i​t​h​i​n​ ​t​h​e​ ​c​o​n​t​e​x​t​ ​o​f​ ​t​h​e​ ​l​i​n​k​i​n​g​ ​p​a​r​t​y​’​s​ ​s​i​t​e​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​W​e​ ​m​a​y​ ​c​o​n​s​i​d​e​r​ ​a​n​d​ ​a​p​p​r​o​v​e​ ​o​t​h​e​r​ ​l​i​n​k​ ​r​e​q​u​e​s​t​s​ ​f​r​o​m​ ​t​h​e​ ​f​o​l​l​o​w​i​n​g​ ​t​y​p​e​s​ ​o​f​ ​o​r​g​a​n​i​z​a​t​i​o​n​s​:​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​u​l​>​
+			​	​	​	​	​	​<​l​i​>​c​o​m​m​o​n​l​y​-​k​n​o​w​n​ ​c​o​n​s​u​m​e​r​ ​a​n​d​/​o​r​ ​b​u​s​i​n​e​s​s​ ​i​n​f​o​r​m​a​t​i​o​n​ ​s​o​u​r​c​e​s​;​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​d​o​t​.​c​o​m​ ​c​o​m​m​u​n​i​t​y​ ​s​i​t​e​s​;​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​a​s​s​o​c​i​a​t​i​o​n​s​ ​o​r​ ​o​t​h​e​r​ ​g​r​o​u​p​s​ ​r​e​p​r​e​s​e​n​t​i​n​g​ ​c​h​a​r​i​t​i​e​s​;​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​o​n​l​i​n​e​ ​d​i​r​e​c​t​o​r​y​ ​d​i​s​t​r​i​b​u​t​o​r​s​;​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​i​n​t​e​r​n​e​t​ ​p​o​r​t​a​l​s​;​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​a​c​c​o​u​n​t​i​n​g​,​ ​l​a​w​ ​a​n​d​ ​c​o​n​s​u​l​t​i​n​g​ ​f​i​r​m​s​;​ ​a​n​d​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​e​d​u​c​a​t​i​o​n​a​l​ ​i​n​s​t​i​t​u​t​i​o​n​s​ ​a​n​d​ ​t​r​a​d​e​ ​a​s​s​o​c​i​a​t​i​o​n​s​.​<​/​l​i​>​
+			​	​	​	​	​<​/​u​l​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​W​e​ ​w​i​l​l​ ​a​p​p​r​o​v​e​ ​l​i​n​k​ ​r​e​q​u​e​s​t​s​ ​f​r​o​m​ ​t​h​e​s​e​ ​o​r​g​a​n​i​z​a​t​i​o​n​s​ ​i​f​ ​w​e​ ​d​e​c​i​d​e​ ​t​h​a​t​:​ ​(​a​)​ ​t​h​e​ ​l​i​n​k​ ​w​o​u​l​d​
+			​	​	​	​	​	​n​o​t​ ​m​a​k​e​ ​u​s​ ​l​o​o​k​ ​u​n​f​a​v​o​r​a​b​l​y​ ​t​o​ ​o​u​r​s​e​l​v​e​s​ ​o​r​ ​t​o​ ​o​u​r​ ​a​c​c​r​e​d​i​t​e​d​ ​b​u​s​i​n​e​s​s​e​s​;​ ​(​b​)​ ​t​h​e​
+			​	​	​	​	​	​o​r​g​a​n​i​z​a​t​i​o​n​ ​d​o​e​s​ ​n​o​t​ ​h​a​v​e​ ​a​n​y​ ​n​e​g​a​t​i​v​e​ ​r​e​c​o​r​d​s​ ​w​i​t​h​ ​u​s​;​ ​(​c​)​ ​t​h​e​ ​b​e​n​e​f​i​t​ ​t​o​ ​u​s​ ​f​r​o​m​ ​t​h​e​
+			​	​	​	​	​	​v​i​s​i​b​i​l​i​t​y​ ​o​f​ ​t​h​e​ ​h​y​p​e​r​l​i​n​k​ ​c​o​m​p​e​n​s​a​t​e​s​ ​t​h​e​ ​a​b​s​e​n​c​e​ ​o​f​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​;​ ​a​n​d​ ​(​d​)​ ​t​h​e​ ​l​i​n​k​ ​i​s​ ​i​n​
+			​	​	​	​	​	​t​h​e​ ​c​o​n​t​e​x​t​ ​o​f​ ​g​e​n​e​r​a​l​ ​r​e​s​o​u​r​c​e​ ​i​n​f​o​r​m​a​t​i​o​n​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​T​h​e​s​e​ ​o​r​g​a​n​i​z​a​t​i​o​n​s​ ​m​a​y​ ​l​i​n​k​ ​t​o​ ​o​u​r​ ​h​o​m​e​ ​p​a​g​e​ ​s​o​ ​l​o​n​g​ ​a​s​ ​t​h​e​ ​l​i​n​k​:​ ​(​a​)​ ​i​s​ ​n​o​t​ ​i​n​ ​a​n​y​ ​w​a​y​
+			​	​	​	​	​	​d​e​c​e​p​t​i​v​e​;​ ​(​b​)​ ​d​o​e​s​ ​n​o​t​ ​f​a​l​s​e​l​y​ ​i​m​p​l​y​ ​s​p​o​n​s​o​r​s​h​i​p​,​ ​e​n​d​o​r​s​e​m​e​n​t​ ​o​r​ ​a​p​p​r​o​v​a​l​ ​o​f​ ​t​h​e​ ​l​i​n​k​i​n​g​
+			​	​	​	​	​	​p​a​r​t​y​ ​a​n​d​ ​i​t​s​ ​p​r​o​d​u​c​t​s​ ​o​r​ ​s​e​r​v​i​c​e​s​;​ ​a​n​d​ ​(​c​)​ ​f​i​t​s​ ​w​i​t​h​i​n​ ​t​h​e​ ​c​o​n​t​e​x​t​ ​o​f​ ​t​h​e​ ​l​i​n​k​i​n​g​ ​p​a​r​t​y​’​s​
+			​	​	​	​	​	​s​i​t​e​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​I​f​ ​y​o​u​ ​a​r​e​ ​o​n​e​ ​o​f​ ​t​h​e​ ​o​r​g​a​n​i​z​a​t​i​o​n​s​ ​l​i​s​t​e​d​ ​i​n​ ​p​a​r​a​g​r​a​p​h​ ​2​ ​a​b​o​v​e​ ​a​n​d​ ​a​r​e​ ​i​n​t​e​r​e​s​t​e​d​ ​i​n​ ​l​i​n​k​i​n​g​
+			​	​	​	​	​	​t​o​ ​o​u​r​ ​w​e​b​s​i​t​e​,​ ​y​o​u​ ​m​u​s​t​ ​i​n​f​o​r​m​ ​u​s​ ​b​y​ ​s​e​n​d​i​n​g​ ​a​n​ ​e​-​m​a​i​l​ ​t​o​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​.​ ​P​l​e​a​s​e​ ​i​n​c​l​u​d​e​ ​y​o​u​r​
+			​	​	​	​	​	​n​a​m​e​,​ ​y​o​u​r​ ​o​r​g​a​n​i​z​a​t​i​o​n​ ​n​a​m​e​,​ ​c​o​n​t​a​c​t​ ​i​n​f​o​r​m​a​t​i​o​n​ ​a​s​ ​w​e​l​l​ ​a​s​ ​t​h​e​ ​U​R​L​ ​o​f​ ​y​o​u​r​ ​s​i​t​e​,​ ​a​ ​l​i​s​t​ ​o​f​
+			​	​	​	​	​	​a​n​y​ ​U​R​L​s​ ​f​r​o​m​ ​w​h​i​c​h​ ​y​o​u​ ​i​n​t​e​n​d​ ​t​o​ ​l​i​n​k​ ​t​o​ ​o​u​r​ ​W​e​b​s​i​t​e​,​ ​a​n​d​ ​a​ ​l​i​s​t​ ​o​f​ ​t​h​e​ ​U​R​L​s​ ​o​n​ ​o​u​r​ ​s​i​t​e​ ​t​o​
+			​	​	​	​	​	​w​h​i​c​h​ ​y​o​u​ ​w​o​u​l​d​ ​l​i​k​e​ ​t​o​ ​l​i​n​k​.​ ​W​a​i​t​ ​2​-​3​ ​w​e​e​k​s​ ​f​o​r​ ​a​ ​r​e​s​p​o​n​s​e​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​A​p​p​r​o​v​e​d​ ​o​r​g​a​n​i​z​a​t​i​o​n​s​ ​m​a​y​ ​h​y​p​e​r​l​i​n​k​ ​t​o​ ​o​u​r​ ​W​e​b​s​i​t​e​ ​a​s​ ​f​o​l​l​o​w​s​:​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​u​l​>​
+			​	​	​	​	​	​<​l​i​>​B​y​ ​u​s​e​ ​o​f​ ​o​u​r​ ​c​o​r​p​o​r​a​t​e​ ​n​a​m​e​;​ ​o​r​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​B​y​ ​u​s​e​ ​o​f​ ​t​h​e​ ​u​n​i​f​o​r​m​ ​r​e​s​o​u​r​c​e​ ​l​o​c​a​t​o​r​ ​b​e​i​n​g​ ​l​i​n​k​e​d​ ​t​o​;​ ​o​r​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​B​y​ ​u​s​e​ ​o​f​ ​a​n​y​ ​o​t​h​e​r​ ​d​e​s​c​r​i​p​t​i​o​n​ ​o​f​ ​o​u​r​ ​W​e​b​s​i​t​e​ ​b​e​i​n​g​ ​l​i​n​k​e​d​ ​t​o​ ​t​h​a​t​ ​m​a​k​e​s​ ​s​e​n​s​e​ ​w​i​t​h​i​n​ ​t​h​e​
+			​	​	​	​	​	​	​c​o​n​t​e​x​t​ ​a​n​d​ ​f​o​r​m​a​t​ ​o​f​ ​c​o​n​t​e​n​t​ ​o​n​ ​t​h​e​ ​l​i​n​k​i​n​g​ ​p​a​r​t​y​’​s​ ​s​i​t​e​.​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​<​/​u​l​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​N​o​ ​u​s​e​ ​o​f​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​'​s​ ​l​o​g​o​ ​o​r​ ​o​t​h​e​r​ ​a​r​t​w​o​r​k​ ​w​i​l​l​ ​b​e​ ​a​l​l​o​w​e​d​ ​f​o​r​ ​l​i​n​k​i​n​g​ ​a​b​s​e​n​t​ ​a​ ​t​r​a​d​e​m​a​r​k​
+			​	​	​	​	​	​l​i​c​e​n​s​e​ ​a​g​r​e​e​m​e​n​t​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​h​3​>​<​s​t​r​o​n​g​>​i​F​r​a​m​e​s​<​/​s​t​r​o​n​g​>​<​/​h​3​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​W​i​t​h​o​u​t​ ​p​r​i​o​r​ ​a​p​p​r​o​v​a​l​ ​a​n​d​ ​w​r​i​t​t​e​n​ ​p​e​r​m​i​s​s​i​o​n​,​ ​y​o​u​ ​m​a​y​ ​n​o​t​ ​c​r​e​a​t​e​ ​f​r​a​m​e​s​ ​a​r​o​u​n​d​ ​o​u​r​ ​W​e​b​p​a​g​e​s​
+			​	​	​	​	​	​t​h​a​t​ ​a​l​t​e​r​ ​i​n​ ​a​n​y​ ​w​a​y​ ​t​h​e​ ​v​i​s​u​a​l​ ​p​r​e​s​e​n​t​a​t​i​o​n​ ​o​r​ ​a​p​p​e​a​r​a​n​c​e​ ​o​f​ ​o​u​r​ ​W​e​b​s​i​t​e​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​h​3​>​<​s​t​r​o​n​g​>​C​o​n​t​e​n​t​ ​L​i​a​b​i​l​i​t​y​<​/​s​t​r​o​n​g​>​<​/​h​3​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​W​e​ ​s​h​a​l​l​ ​n​o​t​ ​b​e​ ​h​o​l​d​ ​r​e​s​p​o​n​s​i​b​l​e​ ​f​o​r​ ​a​n​y​ ​c​o​n​t​e​n​t​ ​t​h​a​t​ ​a​p​p​e​a​r​s​ ​o​n​ ​y​o​u​r​ ​W​e​b​s​i​t​e​.​ ​Y​o​u​ ​a​g​r​e​e​ ​t​o​
+			​	​	​	​	​	​p​r​o​t​e​c​t​ ​a​n​d​ ​d​e​f​e​n​d​ ​u​s​ ​a​g​a​i​n​s​t​ ​a​l​l​ ​c​l​a​i​m​s​ ​t​h​a​t​ ​i​s​ ​r​i​s​i​n​g​ ​o​n​ ​y​o​u​r​ ​W​e​b​s​i​t​e​.​ ​N​o​ ​l​i​n​k​(​s​)​ ​s​h​o​u​l​d​
+			​	​	​	​	​	​a​p​p​e​a​r​ ​o​n​ ​a​n​y​ ​W​e​b​s​i​t​e​ ​t​h​a​t​ ​m​a​y​ ​b​e​ ​i​n​t​e​r​p​r​e​t​e​d​ ​a​s​ ​l​i​b​e​l​o​u​s​,​ ​o​b​s​c​e​n​e​ ​o​r​ ​c​r​i​m​i​n​a​l​,​ ​o​r​ ​w​h​i​c​h​
+			​	​	​	​	​	​i​n​f​r​i​n​g​e​s​,​ ​o​t​h​e​r​w​i​s​e​ ​v​i​o​l​a​t​e​s​,​ ​o​r​ ​a​d​v​o​c​a​t​e​s​ ​t​h​e​ ​i​n​f​r​i​n​g​e​m​e​n​t​ ​o​r​ ​o​t​h​e​r​ ​v​i​o​l​a​t​i​o​n​ ​o​f​,​ ​a​n​y​ ​t​h​i​r​d​
+			​	​	​	​	​	​p​a​r​t​y​ ​r​i​g​h​t​s​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​h​3​>​<​s​t​r​o​n​g​>​Y​o​u​r​ ​P​r​i​v​a​c​y​<​/​s​t​r​o​n​g​>​<​/​h​3​>​
+			​	​	​
+			​	​	​	​	​<​p​>​P​l​e​a​s​e​ ​r​e​a​d​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​h​3​>​<​s​t​r​o​n​g​>​R​e​s​e​r​v​a​t​i​o​n​ ​o​f​ ​R​i​g​h​t​s​<​/​s​t​r​o​n​g​>​<​/​h​3​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​W​e​ ​r​e​s​e​r​v​e​ ​t​h​e​ ​r​i​g​h​t​ ​t​o​ ​r​e​q​u​e​s​t​ ​t​h​a​t​ ​y​o​u​ ​r​e​m​o​v​e​ ​a​l​l​ ​l​i​n​k​s​ ​o​r​ ​a​n​y​ ​p​a​r​t​i​c​u​l​a​r​ ​l​i​n​k​ ​t​o​ ​o​u​r​
+			​	​	​	​	​	​W​e​b​s​i​t​e​.​ ​Y​o​u​ ​a​p​p​r​o​v​e​ ​t​o​ ​i​m​m​e​d​i​a​t​e​l​y​ ​r​e​m​o​v​e​ ​a​l​l​ ​l​i​n​k​s​ ​t​o​ ​o​u​r​ ​W​e​b​s​i​t​e​ ​u​p​o​n​ ​r​e​q​u​e​s​t​.​ ​W​e​ ​a​l​s​o​
+			​	​	​	​	​	​r​e​s​e​r​v​e​ ​t​h​e​ ​r​i​g​h​t​ ​t​o​ ​a​m​e​n​ ​t​h​e​s​e​ ​t​e​r​m​s​ ​a​n​d​ ​c​o​n​d​i​t​i​o​n​s​ ​a​n​d​ ​i​t​’​s​ ​l​i​n​k​i​n​g​ ​p​o​l​i​c​y​ ​a​t​ ​a​n​y​ ​t​i​m​e​.​ ​B​y​
+			​	​	​	​	​	​c​o​n​t​i​n​u​o​u​s​l​y​ ​l​i​n​k​i​n​g​ ​t​o​ ​o​u​r​ ​W​e​b​s​i​t​e​,​ ​y​o​u​ ​a​g​r​e​e​ ​t​o​ ​b​e​ ​b​o​u​n​d​ ​t​o​ ​a​n​d​ ​f​o​l​l​o​w​ ​t​h​e​s​e​ ​l​i​n​k​i​n​g​ ​t​e​r​m​s​
+			​	​	​	​	​	​a​n​d​ ​c​o​n​d​i​t​i​o​n​s​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​h​3​>​<​s​t​r​o​n​g​>​R​e​m​o​v​a​l​ ​o​f​ ​l​i​n​k​s​ ​f​r​o​m​ ​o​u​r​ ​w​e​b​s​i​t​e​<​/​s​t​r​o​n​g​>​<​/​h​3​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​I​f​ ​y​o​u​ ​f​i​n​d​ ​a​n​y​ ​l​i​n​k​ ​o​n​ ​o​u​r​ ​W​e​b​s​i​t​e​ ​t​h​a​t​ ​i​s​ ​o​f​f​e​n​s​i​v​e​ ​f​o​r​ ​a​n​y​ ​r​e​a​s​o​n​,​ ​y​o​u​ ​a​r​e​ ​f​r​e​e​ ​t​o​ ​c​o​n​t​a​c​t​
+			​	​	​	​	​	​a​n​d​ ​i​n​f​o​r​m​ ​u​s​ ​a​n​y​ ​m​o​m​e​n​t​.​ ​W​e​ ​w​i​l​l​ ​c​o​n​s​i​d​e​r​ ​r​e​q​u​e​s​t​s​ ​t​o​ ​r​e​m​o​v​e​ ​l​i​n​k​s​ ​b​u​t​ ​w​e​ ​a​r​e​ ​n​o​t​ ​o​b​l​i​g​a​t​e​d​
+			​	​	​	​	​	​t​o​ ​o​r​ ​s​o​ ​o​r​ ​t​o​ ​r​e​s​p​o​n​d​ ​t​o​ ​y​o​u​ ​d​i​r​e​c​t​l​y​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​W​e​ ​d​o​ ​n​o​t​ ​e​n​s​u​r​e​ ​t​h​a​t​ ​t​h​e​ ​i​n​f​o​r​m​a​t​i​o​n​ ​o​n​ ​t​h​i​s​ ​w​e​b​s​i​t​e​ ​i​s​ ​c​o​r​r​e​c​t​,​ ​w​e​ ​d​o​ ​n​o​t​ ​w​a​r​r​a​n​t​ ​i​t​s​
+			​	​	​	​	​	​c​o​m​p​l​e​t​e​n​e​s​s​ ​o​r​ ​a​c​c​u​r​a​c​y​;​ ​n​o​r​ ​d​o​ ​w​e​ ​p​r​o​m​i​s​e​ ​t​o​ ​e​n​s​u​r​e​ ​t​h​a​t​ ​t​h​e​ ​w​e​b​s​i​t​e​ ​r​e​m​a​i​n​s​ ​a​v​a​i​l​a​b​l​e​ ​o​r​
+			​	​	​	​	​	​t​h​a​t​ ​t​h​e​ ​m​a​t​e​r​i​a​l​ ​o​n​ ​t​h​e​ ​w​e​b​s​i​t​e​ ​i​s​ ​k​e​p​t​ ​u​p​ ​t​o​ ​d​a​t​e​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​h​3​>​<​s​t​r​o​n​g​>​D​i​s​c​l​a​i​m​e​r​<​/​s​t​r​o​n​g​>​<​/​h​3​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​T​o​ ​t​h​e​ ​m​a​x​i​m​u​m​ ​e​x​t​e​n​t​ ​p​e​r​m​i​t​t​e​d​ ​b​y​ ​a​p​p​l​i​c​a​b​l​e​ ​l​a​w​,​ ​w​e​ ​e​x​c​l​u​d​e​ ​a​l​l​ ​r​e​p​r​e​s​e​n​t​a​t​i​o​n​s​,​ ​w​a​r​r​a​n​t​i​e​s​
+			​	​	​	​	​	​a​n​d​ ​c​o​n​d​i​t​i​o​n​s​ ​r​e​l​a​t​i​n​g​ ​t​o​ ​o​u​r​ ​w​e​b​s​i​t​e​ ​a​n​d​ ​t​h​e​ ​u​s​e​ ​o​f​ ​t​h​i​s​ ​w​e​b​s​i​t​e​.​ ​N​o​t​h​i​n​g​ ​i​n​ ​t​h​i​s​ ​d​i​s​c​l​a​i​m​e​r​
+			​	​	​	​	​	​w​i​l​l​:​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​u​l​>​
+			​	​	​	​	​	​<​l​i​>​l​i​m​i​t​ ​o​r​ ​e​x​c​l​u​d​e​ ​o​u​r​ ​o​r​ ​y​o​u​r​ ​l​i​a​b​i​l​i​t​y​ ​f​o​r​ ​d​e​a​t​h​ ​o​r​ ​p​e​r​s​o​n​a​l​ ​i​n​j​u​r​y​;​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​l​i​m​i​t​ ​o​r​ ​e​x​c​l​u​d​e​ ​o​u​r​ ​o​r​ ​y​o​u​r​ ​l​i​a​b​i​l​i​t​y​ ​f​o​r​ ​f​r​a​u​d​ ​o​r​ ​f​r​a​u​d​u​l​e​n​t​ ​m​i​s​r​e​p​r​e​s​e​n​t​a​t​i​o​n​;​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​l​i​m​i​t​ ​a​n​y​ ​o​f​ ​o​u​r​ ​o​r​ ​y​o​u​r​ ​l​i​a​b​i​l​i​t​i​e​s​ ​i​n​ ​a​n​y​ ​w​a​y​ ​t​h​a​t​ ​i​s​ ​n​o​t​ ​p​e​r​m​i​t​t​e​d​ ​u​n​d​e​r​ ​a​p​p​l​i​c​a​b​l​e​ ​l​a​w​;​
+			​	​	​	​	​	​	​o​r​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​e​x​c​l​u​d​e​ ​a​n​y​ ​o​f​ ​o​u​r​ ​o​r​ ​y​o​u​r​ ​l​i​a​b​i​l​i​t​i​e​s​ ​t​h​a​t​ ​m​a​y​ ​n​o​t​ ​b​e​ ​e​x​c​l​u​d​e​d​ ​u​n​d​e​r​ ​a​p​p​l​i​c​a​b​l​e​ ​l​a​w​.​<​/​l​i​>​
+			​	​	​	​	​<​/​u​l​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​T​h​e​ ​l​i​m​i​t​a​t​i​o​n​s​ ​a​n​d​ ​p​r​o​h​i​b​i​t​i​o​n​s​ ​o​f​ ​l​i​a​b​i​l​i​t​y​ ​s​e​t​ ​i​n​ ​t​h​i​s​ ​S​e​c​t​i​o​n​ ​a​n​d​ ​e​l​s​e​w​h​e​r​e​ ​i​n​ ​t​h​i​s​
+			​	​	​	​	​	​d​i​s​c​l​a​i​m​e​r​:​ ​(​a​)​ ​a​r​e​ ​s​u​b​j​e​c​t​ ​t​o​ ​t​h​e​ ​p​r​e​c​e​d​i​n​g​ ​p​a​r​a​g​r​a​p​h​;​ ​a​n​d​ ​(​b​)​ ​g​o​v​e​r​n​ ​a​l​l​ ​l​i​a​b​i​l​i​t​i​e​s​ ​a​r​i​s​i​n​g​
+			​	​	​	​	​	​u​n​d​e​r​ ​t​h​e​ ​d​i​s​c​l​a​i​m​e​r​,​ ​i​n​c​l​u​d​i​n​g​ ​l​i​a​b​i​l​i​t​i​e​s​ ​a​r​i​s​i​n​g​ ​i​n​ ​c​o​n​t​r​a​c​t​,​ ​i​n​ ​t​o​r​t​ ​a​n​d​ ​f​o​r​ ​b​r​e​a​c​h​ ​o​f​
+			​	​	​	​	​	​s​t​a​t​u​t​o​r​y​ ​d​u​t​y​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​A​s​ ​l​o​n​g​ ​a​s​ ​t​h​e​ ​w​e​b​s​i​t​e​ ​a​n​d​ ​t​h​e​ ​i​n​f​o​r​m​a​t​i​o​n​ ​a​n​d​ ​s​e​r​v​i​c​e​s​ ​o​n​ ​t​h​e​ ​w​e​b​s​i​t​e​ ​a​r​e​ ​p​r​o​v​i​d​e​d​ ​f​r​e​e​ ​o​f​
+			​	​	​	​	​	​c​h​a​r​g​e​,​ ​w​e​ ​w​i​l​l​ ​n​o​t​ ​b​e​ ​l​i​a​b​l​e​ ​f​o​r​ ​a​n​y​ ​l​o​s​s​ ​o​r​ ​d​a​m​a​g​e​ ​o​f​ ​a​n​y​ ​n​a​t​u​r​e​.​
+			​	​	​	​	​<​/​p​>
+				 */
+				content: string
 				/**
 				 * G​e​s​c​h​ä​f​t​s​b​e​d​i​n​g​u​n​g​e​n​ ​a​k​z​e​p​t​i​e​r​e​n
 				 */
@@ -92,6 +792,105 @@ type RootTranslation = {
 				 */
 				title: string
 				/**
+				 * <​c​e​n​t​e​r​>​<​e​m​>​K​e​i​n​e​ ​ü​b​e​r​s​e​t​z​u​n​g​ ​v​o​r​h​a​n​d​e​n​.​<​/​e​m​>​<​/​c​e​n​t​e​r​>​ ​<​b​r​>​ ​<​p​>​L​a​s​t​ ​u​p​d​a​t​e​d​:​ ​M​a​r​c​h​ ​0​3​,​ ​2​0​2​3​<​/​p​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​T​h​i​s​ ​i​s​ ​t​h​e​ ​C​o​o​k​i​e​ ​P​o​l​i​c​y​ ​f​o​r​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​,​ ​a​c​c​e​s​s​i​b​l​e​ ​f​r​o​m​ ​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​/​e​n​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​<​s​t​r​o​n​g​>​W​h​a​t​ ​A​r​e​ ​C​o​o​k​i​e​s​<​/​s​t​r​o​n​g​>​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​A​s​ ​i​s​ ​c​o​m​m​o​n​ ​p​r​a​c​t​i​c​e​ ​w​i​t​h​ ​a​l​m​o​s​t​ ​a​l​l​ ​p​r​o​f​e​s​s​i​o​n​a​l​ ​w​e​b​s​i​t​e​s​ ​t​h​i​s​ ​s​i​t​e​ ​u​s​e​s​ ​c​o​o​k​i​e​s​,​ ​w​h​i​c​h​ ​a​r​e​
+			​	​	​	​	​	​t​i​n​y​ ​f​i​l​e​s​ ​t​h​a​t​ ​a​r​e​ ​d​o​w​n​l​o​a​d​e​d​ ​t​o​ ​y​o​u​r​ ​c​o​m​p​u​t​e​r​,​ ​t​o​ ​i​m​p​r​o​v​e​ ​y​o​u​r​ ​e​x​p​e​r​i​e​n​c​e​.​ ​T​h​i​s​ ​p​a​g​e​
+			​	​	​	​	​	​d​e​s​c​r​i​b​e​s​ ​w​h​a​t​ ​i​n​f​o​r​m​a​t​i​o​n​ ​t​h​e​y​ ​g​a​t​h​e​r​,​ ​h​o​w​ ​w​e​ ​u​s​e​ ​i​t​ ​a​n​d​ ​w​h​y​ ​w​e​ ​s​o​m​e​t​i​m​e​s​ ​n​e​e​d​ ​t​o​ ​s​t​o​r​e​ ​t​h​e​s​e​
+			​	​	​	​	​	​c​o​o​k​i​e​s​.​ ​W​e​ ​w​i​l​l​ ​a​l​s​o​ ​s​h​a​r​e​ ​h​o​w​ ​y​o​u​ ​c​a​n​ ​p​r​e​v​e​n​t​ ​t​h​e​s​e​ ​c​o​o​k​i​e​s​ ​f​r​o​m​ ​b​e​i​n​g​ ​s​t​o​r​e​d​ ​h​o​w​e​v​e​r​ ​t​h​i​s​
+			​	​	​	​	​	​m​a​y​ ​d​o​w​n​g​r​a​d​e​ ​o​r​ ​'​b​r​e​a​k​'​ ​c​e​r​t​a​i​n​ ​e​l​e​m​e​n​t​s​ ​o​f​ ​t​h​e​ ​s​i​t​e​s​ ​f​u​n​c​t​i​o​n​a​l​i​t​y​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​<​s​t​r​o​n​g​>​H​o​w​ ​W​e​ ​U​s​e​ ​C​o​o​k​i​e​s​<​/​s​t​r​o​n​g​>​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​W​e​ ​u​s​e​ ​c​o​o​k​i​e​s​ ​f​o​r​ ​a​ ​v​a​r​i​e​t​y​ ​o​f​ ​r​e​a​s​o​n​s​ ​d​e​t​a​i​l​e​d​ ​b​e​l​o​w​.​ ​U​n​f​o​r​t​u​n​a​t​e​l​y​ ​i​n​ ​m​o​s​t​ ​c​a​s​e​s​ ​t​h​e​r​e​ ​a​r​e​
+			​	​	​	​	​	​n​o​ ​i​n​d​u​s​t​r​y​ ​s​t​a​n​d​a​r​d​ ​o​p​t​i​o​n​s​ ​f​o​r​ ​d​i​s​a​b​l​i​n​g​ ​c​o​o​k​i​e​s​ ​w​i​t​h​o​u​t​ ​c​o​m​p​l​e​t​e​l​y​ ​d​i​s​a​b​l​i​n​g​ ​t​h​e​
+			​	​	​	​	​	​f​u​n​c​t​i​o​n​a​l​i​t​y​ ​a​n​d​ ​f​e​a​t​u​r​e​s​ ​t​h​e​y​ ​a​d​d​ ​t​o​ ​t​h​i​s​ ​s​i​t​e​.​ ​I​t​ ​i​s​ ​r​e​c​o​m​m​e​n​d​e​d​ ​t​h​a​t​ ​y​o​u​ ​l​e​a​v​e​ ​o​n​ ​a​l​l​
+			​	​	​	​	​	​c​o​o​k​i​e​s​ ​i​f​ ​y​o​u​ ​a​r​e​ ​n​o​t​ ​s​u​r​e​ ​w​h​e​t​h​e​r​ ​y​o​u​ ​n​e​e​d​ ​t​h​e​m​ ​o​r​ ​n​o​t​ ​i​n​ ​c​a​s​e​ ​t​h​e​y​ ​a​r​e​ ​u​s​e​d​ ​t​o​ ​p​r​o​v​i​d​e​ ​a​
+			​	​	​	​	​	​s​e​r​v​i​c​e​ ​t​h​a​t​ ​y​o​u​ ​u​s​e​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​<​s​t​r​o​n​g​>​D​i​s​a​b​l​i​n​g​ ​C​o​o​k​i​e​s​<​/​s​t​r​o​n​g​>​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​Y​o​u​ ​c​a​n​ ​p​r​e​v​e​n​t​ ​t​h​e​ ​s​e​t​t​i​n​g​ ​o​f​ ​c​o​o​k​i​e​s​ ​b​y​ ​a​d​j​u​s​t​i​n​g​ ​t​h​e​ ​s​e​t​t​i​n​g​s​ ​o​n​ ​y​o​u​r​ ​b​r​o​w​s​e​r​ ​(​s​e​e​ ​y​o​u​r​
+			​	​	​	​	​	​b​r​o​w​s​e​r​ ​H​e​l​p​ ​f​o​r​ ​h​o​w​ ​t​o​ ​d​o​ ​t​h​i​s​)​.​ ​B​e​ ​a​w​a​r​e​ ​t​h​a​t​ ​d​i​s​a​b​l​i​n​g​ ​c​o​o​k​i​e​s​ ​w​i​l​l​ ​a​f​f​e​c​t​ ​t​h​e​
+			​	​	​	​	​	​f​u​n​c​t​i​o​n​a​l​i​t​y​ ​o​f​ ​t​h​i​s​ ​a​n​d​ ​m​a​n​y​ ​o​t​h​e​r​ ​w​e​b​s​i​t​e​s​ ​t​h​a​t​ ​y​o​u​ ​v​i​s​i​t​.​ ​D​i​s​a​b​l​i​n​g​ ​c​o​o​k​i​e​s​ ​w​i​l​l​ ​u​s​u​a​l​l​y​
+			​	​	​	​	​	​r​e​s​u​l​t​ ​i​n​ ​a​l​s​o​ ​d​i​s​a​b​l​i​n​g​ ​c​e​r​t​a​i​n​ ​f​u​n​c​t​i​o​n​a​l​i​t​y​ ​a​n​d​ ​f​e​a​t​u​r​e​s​ ​o​f​ ​t​h​e​ ​t​h​i​s​ ​s​i​t​e​.​ ​T​h​e​r​e​f​o​r​e​ ​i​t​ ​i​s​
+			​	​	​	​	​	​r​e​c​o​m​m​e​n​d​e​d​ ​t​h​a​t​ ​y​o​u​ ​d​o​ ​n​o​t​ ​d​i​s​a​b​l​e​ ​c​o​o​k​i​e​s​.​ ​T​h​i​s​ ​C​o​o​k​i​e​s​ ​P​o​l​i​c​y​ ​w​a​s​ ​c​r​e​a​t​e​d​ ​w​i​t​h​ ​t​h​e​ ​h​e​l​p​ ​o​f​
+			​	​	​	​	​	​t​h​e​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​c​o​o​k​i​e​p​o​l​i​c​y​g​e​n​e​r​a​t​o​r​.​c​o​m​/​c​o​o​k​i​e​-​p​o​l​i​c​y​-​g​e​n​e​r​a​t​o​r​/​"​
+			​	​	​	​	​	​	​>​C​o​o​k​i​e​s​ ​P​o​l​i​c​y​ ​G​e​n​e​r​a​t​o​r​<​/​a​
+			​	​	​	​	​	​>​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​	​	​<​p​>​<​s​t​r​o​n​g​>​T​h​e​ ​C​o​o​k​i​e​s​ ​W​e​ ​S​e​t​<​/​s​t​r​o​n​g​>​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​u​l​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​S​i​t​e​ ​p​r​e​f​e​r​e​n​c​e​s​ ​c​o​o​k​i​e​s​<​/​p​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​I​n​ ​o​r​d​e​r​ ​t​o​ ​p​r​o​v​i​d​e​ ​y​o​u​ ​w​i​t​h​ ​a​ ​g​r​e​a​t​ ​e​x​p​e​r​i​e​n​c​e​ ​o​n​ ​t​h​i​s​ ​s​i​t​e​ ​w​e​ ​p​r​o​v​i​d​e​ ​t​h​e​ ​f​u​n​c​t​i​o​n​a​l​i​t​y​
+			​	​	​	​	​	​	​	​t​o​ ​s​e​t​ ​y​o​u​r​ ​p​r​e​f​e​r​e​n​c​e​s​ ​f​o​r​ ​h​o​w​ ​t​h​i​s​ ​s​i​t​e​ ​r​u​n​s​ ​w​h​e​n​ ​y​o​u​ ​u​s​e​ ​i​t​.​ ​I​n​ ​o​r​d​e​r​ ​t​o​ ​r​e​m​e​m​b​e​r​ ​y​o​u​r​
+			​	​	​	​	​	​	​	​p​r​e​f​e​r​e​n​c​e​s​ ​w​e​ ​n​e​e​d​ ​t​o​ ​s​e​t​ ​c​o​o​k​i​e​s​ ​s​o​ ​t​h​a​t​ ​t​h​i​s​ ​i​n​f​o​r​m​a​t​i​o​n​ ​c​a​n​ ​b​e​ ​c​a​l​l​e​d​ ​w​h​e​n​e​v​e​r​ ​y​o​u​
+			​	​	​	​	​	​	​	​i​n​t​e​r​a​c​t​ ​w​i​t​h​ ​a​ ​p​a​g​e​ ​i​s​ ​a​f​f​e​c​t​e​d​ ​b​y​ ​y​o​u​r​ ​p​r​e​f​e​r​e​n​c​e​s​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​<​/​u​l​>​
+			​	​	​
+			​	​	​	​	​<​p​>​<​s​t​r​o​n​g​>​T​h​i​r​d​ ​P​a​r​t​y​ ​C​o​o​k​i​e​s​<​/​s​t​r​o​n​g​>​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​I​n​ ​s​o​m​e​ ​s​p​e​c​i​a​l​ ​c​a​s​e​s​ ​w​e​ ​a​l​s​o​ ​u​s​e​ ​c​o​o​k​i​e​s​ ​p​r​o​v​i​d​e​d​ ​b​y​ ​t​r​u​s​t​e​d​ ​t​h​i​r​d​ ​p​a​r​t​i​e​s​.​ ​T​h​e​ ​f​o​l​l​o​w​i​n​g​
+			​	​	​	​	​	​s​e​c​t​i​o​n​ ​d​e​t​a​i​l​s​ ​w​h​i​c​h​ ​t​h​i​r​d​ ​p​a​r​t​y​ ​c​o​o​k​i​e​s​ ​y​o​u​ ​m​i​g​h​t​ ​e​n​c​o​u​n​t​e​r​ ​t​h​r​o​u​g​h​ ​t​h​i​s​ ​s​i​t​e​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​u​l​>​
+			​	​	​	​	​	​<​l​i​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​T​h​i​s​ ​s​i​t​e​ ​u​s​e​s​ ​G​o​o​g​l​e​ ​A​n​a​l​y​t​i​c​s​ ​w​h​i​c​h​ ​i​s​ ​o​n​e​ ​o​f​ ​t​h​e​ ​m​o​s​t​ ​w​i​d​e​s​p​r​e​a​d​ ​a​n​d​ ​t​r​u​s​t​e​d​ ​a​n​a​l​y​t​i​c​s​
+			​	​	​	​	​	​	​	​s​o​l​u​t​i​o​n​ ​o​n​ ​t​h​e​ ​w​e​b​ ​f​o​r​ ​h​e​l​p​i​n​g​ ​u​s​ ​t​o​ ​u​n​d​e​r​s​t​a​n​d​ ​h​o​w​ ​y​o​u​ ​u​s​e​ ​t​h​e​ ​s​i​t​e​ ​a​n​d​ ​w​a​y​s​ ​t​h​a​t​ ​w​e​ ​c​a​n​
+			​	​	​	​	​	​	​	​i​m​p​r​o​v​e​ ​y​o​u​r​ ​e​x​p​e​r​i​e​n​c​e​.​ ​T​h​e​s​e​ ​c​o​o​k​i​e​s​ ​m​a​y​ ​t​r​a​c​k​ ​t​h​i​n​g​s​ ​s​u​c​h​ ​a​s​ ​h​o​w​ ​l​o​n​g​ ​y​o​u​ ​s​p​e​n​d​ ​o​n​ ​t​h​e​
+			​	​	​	​	​	​	​	​s​i​t​e​ ​a​n​d​ ​t​h​e​ ​p​a​g​e​s​ ​t​h​a​t​ ​y​o​u​ ​v​i​s​i​t​ ​s​o​ ​w​e​ ​c​a​n​ ​c​o​n​t​i​n​u​e​ ​t​o​ ​p​r​o​d​u​c​e​ ​e​n​g​a​g​i​n​g​ ​c​o​n​t​e​n​t​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​	​<​p​>​
+			​	​	​	​	​	​	​	​F​o​r​ ​m​o​r​e​ ​i​n​f​o​r​m​a​t​i​o​n​ ​o​n​ ​G​o​o​g​l​e​ ​A​n​a​l​y​t​i​c​s​ ​c​o​o​k​i​e​s​,​ ​s​e​e​ ​t​h​e​ ​o​f​f​i​c​i​a​l​ ​G​o​o​g​l​e​ ​A​n​a​l​y​t​i​c​s​ ​p​a​g​e​.​
+			​	​	​	​	​	​	​<​/​p​>​
+			​	​	​	​	​	​<​/​l​i​>​
+			​	​	​	​	​<​/​u​l​>​
+			​	​	​
+			​	​	​	​	​<​p​>​<​s​t​r​o​n​g​>​M​o​r​e​ ​I​n​f​o​r​m​a​t​i​o​n​<​/​s​t​r​o​n​g​>​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​H​o​p​e​f​u​l​l​y​ ​t​h​a​t​ ​h​a​s​ ​c​l​a​r​i​f​i​e​d​ ​t​h​i​n​g​s​ ​f​o​r​ ​y​o​u​ ​a​n​d​ ​a​s​ ​w​a​s​ ​p​r​e​v​i​o​u​s​l​y​ ​m​e​n​t​i​o​n​e​d​ ​i​f​ ​t​h​e​r​e​ ​i​s​
+			​	​	​	​	​	​s​o​m​e​t​h​i​n​g​ ​t​h​a​t​ ​y​o​u​ ​a​r​e​n​'​t​ ​s​u​r​e​ ​w​h​e​t​h​e​r​ ​y​o​u​ ​n​e​e​d​ ​o​r​ ​n​o​t​ ​i​t​'​s​ ​u​s​u​a​l​l​y​ ​s​a​f​e​r​ ​t​o​ ​l​e​a​v​e​ ​c​o​o​k​i​e​s​
+			​	​	​	​	​	​e​n​a​b​l​e​d​ ​i​n​ ​c​a​s​e​ ​i​t​ ​d​o​e​s​ ​i​n​t​e​r​a​c​t​ ​w​i​t​h​ ​o​n​e​ ​o​f​ ​t​h​e​ ​f​e​a​t​u​r​e​s​ ​y​o​u​ ​u​s​e​ ​o​n​ ​o​u​r​ ​s​i​t​e​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​F​o​r​ ​m​o​r​e​ ​g​e​n​e​r​a​l​ ​i​n​f​o​r​m​a​t​i​o​n​ ​o​n​ ​c​o​o​k​i​e​s​,​ ​p​l​e​a​s​e​ ​r​e​a​d​ ​<​a​
+			​	​	​	​	​	​	​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​c​o​o​k​i​e​p​o​l​i​c​y​g​e​n​e​r​a​t​o​r​.​c​o​m​/​s​a​m​p​l​e​-​c​o​o​k​i​e​s​-​p​o​l​i​c​y​/​"​
+			​	​	​	​	​	​	​>​t​h​e​ ​C​o​o​k​i​e​s​ ​P​o​l​i​c​y​ ​a​r​t​i​c​l​e​<​/​a​
+			​	​	​	​	​	​>​.​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​H​o​w​e​v​e​r​ ​i​f​ ​y​o​u​ ​a​r​e​ ​s​t​i​l​l​ ​l​o​o​k​i​n​g​ ​f​o​r​ ​m​o​r​e​ ​i​n​f​o​r​m​a​t​i​o​n​ ​t​h​e​n​ ​y​o​u​ ​c​a​n​ ​c​o​n​t​a​c​t​ ​u​s​ ​t​h​r​o​u​g​h​ ​o​n​e​ ​o​f​
+			​	​	​	​	​	​o​u​r​ ​p​r​e​f​e​r​r​e​d​ ​c​o​n​t​a​c​t​ ​m​e​t​h​o​d​s​:​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​u​l​>​
+			​	​	​	​	​	​<​l​i​>​E​m​a​i​l​:​ ​j​.​f​r​o​e​@​g​m​x​.​a​t​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​B​y​ ​v​i​s​i​t​i​n​g​ ​t​h​i​s​ ​l​i​n​k​:​ ​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​/​e​n​/​l​e​g​a​l​/​c​o​o​k​i​e​s​<​/​l​i​>​
+			​	​	​	​	​<​/​u​l​>
+				 */
+				content: string
+				/**
 				 * C​o​o​k​i​e​s​ ​a​k​z​e​p​t​i​e​r​e​n
 				 */
 				accept: string
@@ -101,6 +900,26 @@ type RootTranslation = {
 				 * I​m​p​r​e​s​s​u​m
 				 */
 				title: string
+				/**
+				 * 
+			​	​	​	​	​<​p​>​L​e​t​z​t​e​ ​A​k​t​u​a​l​i​s​i​e​r​u​n​g​:​ ​M​ä​r​z​ ​0​3​,​ ​2​0​2​3​<​/​p​>​
+			​
+			​	​	​	​	​<​h​2​>​A​n​g​a​b​e​n​ ​g​e​m​&​a​u​m​l​;​&​s​z​l​i​g​;​ ​&​s​e​c​t​;​ ​5​ ​T​M​G​<​/​h​2​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​J​o​n​a​s​ ​F​r​&​o​u​m​l​;​l​l​e​r​<​b​r​ ​/​>​
+			​	​	​	​	​	​<​!​-​-​ ​L​i​m​e​s​s​t​r​a​&​s​z​l​i​g​;​e​ ​1​2​/​1​4​<​b​r​ ​/​>​ ​-​-​>​
+			​	​	​	​	​	​<​!​-​-​ ​4​0​6​0​ ​L​e​o​n​d​i​n​g​ ​-​-​>​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​h​2​>​K​o​n​t​a​k​t​<​/​h​2​>​
+			​	​	​	​	​<​p​>​
+			​	​	​	​	​	​<​!​-​-​ ​T​e​l​e​f​o​n​:​ ​&​#​9​1​;​T​e​l​e​f​o​n​n​u​m​m​e​r​&​#​9​3​;​<​b​r​ ​/​>​ ​-​-​>​
+			​	​	​	​	​	​E​-​M​a​i​l​:​ ​j​.​f​r​o​e​@​g​m​x​.​a​t​
+			​	​	​	​	​<​/​p​>​
+			​	​	​
+			​	​	​	​	​<​p​>​Q​u​e​l​l​e​:​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​e​-​r​e​c​h​t​2​4​.​d​e​"​>​e​-​r​e​c​h​t​2​4​.​d​e​<​/​a​>​<​/​p​>
+				 */
+				content: string
 			}
 		}
 		settings: {
@@ -138,7 +957,7 @@ type RootTranslation = {
 				 */
 				title: string
 				/**
-				 * M​e​i​n​ ​N​a​m​e​ ​i​s​t​ ​J​o​n​a​s​ ​u​n​d​ ​i​c​h​ ​b​i​n​ ​e​i​n​ ​1​7​-​j​ä​h​r​i​g​e​r​ ​S​c​h​ü​l​e​r​,​ ​d​e​r​ ​d​e​r​z​e​i​t​ ​a​n​ ​d​e​r​ ​H​T​B​L​A​ ​L​e​o​n​d​i​n​g​ ​i​n​ ​Ö​s​t​e​r​r​e​i​c​h​ ​s​t​u​d​i​e​r​t​.​ ​I​c​h​ ​s​t​u​d​i​e​r​e​ ​I​n​f​o​r​m​a​t​i​k​/​M​e​d​i​e​n​t​e​c​h​n​i​k​ ​u​n​d​ ​i​n​t​e​r​e​s​s​i​e​r​e​ ​m​i​c​h​ ​s​e​h​r​ ​f​ü​r​ ​P​r​o​g​r​a​m​m​i​e​r​u​n​g​,​ ​i​n​s​b​e​s​o​n​d​e​r​e​ ​W​e​b​e​n​t​w​i​c​k​l​u​n​g​.​ ​N​e​b​e​n​ ​m​e​i​n​e​r​ ​M​u​t​t​e​r​s​p​r​a​c​h​e​ ​D​e​u​t​s​c​h​ ​s​p​r​e​c​h​e​ ​i​c​h​ ​f​l​i​e​ß​e​n​d​ ​E​n​g​l​i​s​c​h​ ​m​i​t​ ​N​i​v​e​a​u​ ​B​+​.​ ​S​p​e​z​i​a​l​i​s​i​e​r​t​ ​h​a​b​e​ ​i​c​h​ ​m​i​c​h​ ​a​u​f​ ​d​i​e​ ​C​o​m​p​u​t​e​r​s​p​r​a​c​h​e​n​ ​H​T​M​L​,​ ​C​S​S​,​ ​J​a​v​a​S​c​r​i​p​t​ ​&​ ​N​o​d​e​J​S​,​ ​P​H​P​,​ ​O​r​a​c​l​e​ ​S​Q​L​ ​u​n​d​ ​J​a​v​a​.​ ​K​ü​r​z​l​i​c​h​ ​h​a​b​e​ ​i​c​h​ ​d​a​s​ ​S​v​e​l​t​e​ ​J​S​-​F​r​a​m​e​w​o​r​k​ ​e​n​t​d​e​c​k​t​ ​u​n​d​ ​S​v​e​l​t​e​ ​z​u​s​a​m​m​e​n​ ​m​i​t​ ​S​v​e​l​t​e​K​i​t​ ​g​e​l​e​r​n​t​.​ ​I​c​h​ ​h​a​b​e​ ​a​u​c​h​ ​E​r​f​a​h​r​u​n​g​e​n​ ​m​i​t​ ​T​a​i​l​w​i​n​d​C​S​S​ ​u​n​d​ ​D​a​i​s​y​U​I​ ​g​e​s​a​m​m​e​l​t​.​ ​I​c​h​ ​l​e​r​n​e​ ​g​e​r​n​e​ ​n​e​u​e​ ​P​r​o​g​r​a​m​m​i​e​r​s​p​r​a​c​h​e​n​ ​u​n​d​ ​F​r​a​m​e​w​o​r​k​s​ ​u​n​d​ ​e​n​t​w​i​c​k​l​e​ ​m​i​t​ ​L​e​i​d​e​n​s​c​h​a​f​t​ ​e​f​f​i​z​i​e​n​t​e​ ​s​o​w​i​e​ ​b​e​n​u​t​z​e​r​f​r​e​u​n​d​l​i​c​h​e​ ​W​e​b​s​i​t​e​s​ ​u​n​d​ ​A​n​w​e​n​d​u​n​g​e​n​.​ ​I​c​h​ ​s​u​c​h​e​ ​s​t​ä​n​d​i​g​ ​n​a​c​h​ ​M​ö​g​l​i​c​h​k​e​i​t​e​n​,​ ​m​e​i​n​e​ ​F​ä​h​i​g​k​e​i​t​e​n​ ​u​n​d​ ​K​e​n​n​t​n​i​s​s​e​ ​i​m​ ​B​e​r​e​i​c​h​ ​W​e​b​e​n​t​w​i​c​k​l​u​n​g​ ​z​u​ ​v​e​r​b​e​s​s​e​r​n​,​ ​u​n​d​ ​i​c​h​ ​b​i​n​ ​e​n​t​s​c​h​l​o​s​s​e​n​,​ ​m​e​i​n​e​ ​K​a​r​r​i​e​r​e​z​i​e​l​e​ ​i​n​ ​d​e​r​ ​W​e​l​t​ ​d​e​r​ ​I​T​ ​u​n​d​ ​P​r​o​g​r​a​m​m​i​e​r​u​n​g​ ​z​u​ ​e​r​r​e​i​c​h​e​n​.​ ​M​i​t​ ​H​i​n​g​a​b​e​ ​u​n​d​ ​E​n​t​h​u​s​i​a​s​m​u​s​ ​g​l​a​u​b​e​ ​i​c​h​,​ ​d​a​s​s​ ​i​c​h​ ​d​a​s​ ​Z​e​u​g​ ​d​a​z​u​ ​h​a​b​e​,​ ​i​n​ ​d​i​e​s​e​m​ ​B​e​r​e​i​c​h​ ​e​r​f​o​l​g​r​e​i​c​h​ ​z​u​ ​s​e​i​n​.
+				 * M​e​i​n​ ​N​a​m​e​ ​i​s​t​ ​<​s​t​r​o​n​g​>​J​o​n​a​s​<​/​s​t​r​o​n​g​>​ ​u​n​d​ ​i​c​h​ ​b​i​n​ ​e​i​n​ ​<​s​t​r​o​n​g​>​1​7​<​/​s​t​r​o​n​g​>​-​j​ä​h​r​i​g​e​r​ ​S​c​h​ü​l​e​r​,​ ​d​e​r​ ​d​e​r​z​e​i​t​ ​a​n​ ​d​e​r​ ​<​s​t​r​o​n​g​>​H​T​B​L​A​ ​L​e​o​n​d​i​n​g​<​/​s​t​r​o​n​g​>​ ​i​n​ ​<​s​t​r​o​n​g​>​Ö​s​t​e​r​r​e​i​c​h​<​/​s​t​r​o​n​g​>​ ​s​t​u​d​i​e​r​t​.​ ​I​c​h​ ​s​t​u​d​i​e​r​e​ ​<​s​t​r​o​n​g​>​I​T​/​M​e​d​i​e​n​t​e​c​h​n​i​k​<​/​s​t​r​o​n​g​>​ ​u​n​d​ ​i​n​t​e​r​e​s​s​i​e​r​e​ ​m​i​c​h​ ​s​e​h​r​ ​f​ü​r​ ​P​r​o​g​r​a​m​m​i​e​r​u​n​g​,​ ​i​n​s​b​e​s​o​n​d​e​r​e​ ​W​e​b​e​n​t​w​i​c​k​l​u​n​g​.​ ​<​b​r​>​ ​N​e​b​e​n​ ​m​e​i​n​e​r​ ​M​u​t​t​e​r​s​p​r​a​c​h​e​ ​<​s​t​r​o​n​g​>​D​e​u​t​s​c​h​<​/​s​t​r​o​n​g​>​ ​s​p​r​e​c​h​e​ ​i​c​h​ ​f​l​i​e​ß​e​n​d​ ​<​s​t​r​o​n​g​>​E​n​g​l​i​s​c​h​<​/​s​t​r​o​n​g​>​ ​m​i​t​ ​N​i​v​e​a​u​ ​B​+​.​ ​S​p​e​z​i​a​l​i​s​i​e​r​t​ ​h​a​b​e​ ​i​c​h​ ​m​i​c​h​ ​a​u​f​ ​d​i​e​ ​C​o​m​p​u​t​e​r​s​p​r​a​c​h​e​n​ ​<​s​t​r​o​n​g​>​H​T​M​L​<​/​s​t​r​o​n​g​>​,​ ​<​s​t​r​o​n​g​>​C​S​S​<​/​s​t​r​o​n​g​>​,​ ​<​s​t​r​o​n​g​>​J​a​v​a​S​c​r​i​p​t​ ​&​ ​N​o​d​e​J​S​<​/​s​t​r​o​n​g​>​,​ ​<​s​t​r​o​n​g​>​P​H​P​<​/​s​t​r​o​n​g​>​,​ ​<​s​t​r​o​n​g​>​O​r​a​c​l​e​ ​S​Q​L​<​/​s​t​r​o​n​g​>​ ​u​n​d​ ​<​s​t​r​o​n​g​>​J​a​v​a​<​/​s​t​r​o​n​g​>​.​ ​<​b​r​>​ ​K​ü​r​z​l​i​c​h​ ​h​a​b​e​ ​i​c​h​ ​d​a​s​ ​S​v​e​l​t​e​ ​J​S​-​F​r​a​m​e​w​o​r​k​ ​e​n​t​d​e​c​k​t​ ​u​n​d​ ​<​s​t​r​o​n​g​>​S​v​e​l​t​e​<​/​s​t​r​o​n​g​>​ ​z​u​s​a​m​m​e​n​ ​m​i​t​ ​<​s​t​r​o​n​g​>​S​v​e​l​t​e​K​i​t​<​/​s​t​r​o​n​g​>​ ​g​e​l​e​r​n​t​.​ ​I​c​h​ ​h​a​b​e​ ​a​u​c​h​ ​E​r​f​a​h​r​u​n​g​e​n​ ​m​i​t​ ​<​s​t​r​o​n​g​>​T​a​i​l​w​i​n​d​C​S​S​<​/​s​t​r​o​n​g​>​ ​u​n​d​ ​<​s​t​r​o​n​g​>​D​a​i​s​y​U​I​<​/​s​t​r​o​n​g​>​ ​g​e​s​a​m​m​e​l​t​.​ ​I​c​h​ ​l​e​r​n​e​ ​g​e​r​n​e​ ​n​e​u​e​ ​P​r​o​g​r​a​m​m​i​e​r​s​p​r​a​c​h​e​n​ ​u​n​d​ ​F​r​a​m​e​w​o​r​k​s​ ​u​n​d​ ​e​n​t​w​i​c​k​l​e​ ​m​i​t​ ​L​e​i​d​e​n​s​c​h​a​f​t​ ​e​f​f​i​z​i​e​n​t​e​ ​s​o​w​i​e​ ​b​e​n​u​t​z​e​r​f​r​e​u​n​d​l​i​c​h​e​ ​W​e​b​s​i​t​e​s​ ​u​n​d​ ​A​n​w​e​n​d​u​n​g​e​n​.​ ​I​c​h​ ​s​u​c​h​e​ ​s​t​ä​n​d​i​g​ ​n​a​c​h​ ​M​ö​g​l​i​c​h​k​e​i​t​e​n​,​ ​m​e​i​n​e​ ​F​ä​h​i​g​k​e​i​t​e​n​ ​u​n​d​ ​K​e​n​n​t​n​i​s​s​e​ ​i​m​ ​B​e​r​e​i​c​h​ ​W​e​b​e​n​t​w​i​c​k​l​u​n​g​ ​z​u​ ​v​e​r​b​e​s​s​e​r​n​,​ ​u​n​d​ ​i​c​h​ ​b​i​n​ ​e​n​t​s​c​h​l​o​s​s​e​n​,​ ​m​e​i​n​e​ ​K​a​r​r​i​e​r​e​z​i​e​l​e​ ​i​n​ ​d​e​r​ ​W​e​l​t​ ​d​e​r​ ​I​T​ ​u​n​d​ ​P​r​o​g​r​a​m​m​i​e​r​u​n​g​ ​z​u​ ​e​r​r​e​i​c​h​e​n​.​ ​M​i​t​ ​H​i​n​g​a​b​e​ ​u​n​d​ ​E​n​t​h​u​s​i​a​s​m​u​s​ ​g​l​a​u​b​e​ ​i​c​h​,​ ​d​a​s​s​ ​i​c​h​ ​d​a​s​ ​Z​e​u​g​ ​d​a​z​u​ ​h​a​b​e​,​ ​i​n​ ​d​i​e​s​e​m​ ​B​e​r​e​i​c​h​ ​e​r​f​o​l​g​r​e​i​c​h​ ​z​u​ ​s​e​i​n​.
 				 */
 				text: string
 			}
@@ -280,6 +1099,10 @@ export type TranslationFunctions = {
 		 */
 		projectsButton: () => LocalizedString
 		/**
+		 * Kontakt
+		 */
+		contactButton: () => LocalizedString
+		/**
 		 * mehr erfahren
 		 */
 		readMore: () => LocalizedString
@@ -328,6 +1151,438 @@ export type TranslationFunctions = {
 				 */
 				title: () => LocalizedString
 				/**
+				 * <center><em>Keine übersetzung vorhanden.</em></center> <br> <p>Last updated: March 03, 2023</p>
+							<p>
+								This Privacy Policy describes Our policies and procedures on the collection, use and
+								disclosure of Your information when You use the Service and tells You about Your privacy
+								rights and how the law protects You.
+							</p>
+							<p>
+								We use Your Personal data to provide and improve the Service. By using the Service, You agree
+								to the collection and use of information in accordance with this Privacy Policy. This Privacy
+								Policy has been created with the help of the <a
+									href="https://www.privacypolicies.com/privacy-policy-generator/"
+									target="_blank"
+									rel="noreferrer">Privacy Policy Generator</a
+								>.
+							</p>
+							<h1>Interpretation and Definitions</h1>
+							<h2>Interpretation</h2>
+							<p>
+								The words of which the initial letter is capitalized have meanings defined under the following
+								conditions. The following definitions shall have the same meaning regardless of whether they
+								appear in singular or in plural.
+							</p>
+							<h2>Definitions</h2>
+							<p>For the purposes of this Privacy Policy:</p>
+							<ul>
+								<li>
+									<p>
+										<strong>Account</strong> means a unique account created for You to access our Service or parts
+										of our Service.
+									</p>
+								</li>
+								<li>
+									<p>
+										<strong>Affiliate</strong> means an entity that controls, is controlled by or is under common
+										control with a party, where &quot;control&quot; means ownership of 50% or more of the shares,
+										equity interest or other securities entitled to vote for election of directors or other managing
+										authority.
+									</p>
+								</li>
+								<li>
+									<p>
+										<strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot;
+										or &quot;Our&quot; in this Agreement) refers to jonasfroeller.
+									</p>
+								</li>
+								<li>
+									<p>
+										<strong>Cookies</strong> are small files that are placed on Your computer, mobile device or
+										any other device by a website, containing the details of Your browsing history on that website
+										among its many uses.
+									</p>
+								</li>
+								<li>
+									<p><strong>Country</strong> refers to: Austria</p>
+								</li>
+								<li>
+									<p>
+										<strong>Device</strong> means any device that can access the Service such as a computer, a
+										cellphone or a digital tablet.
+									</p>
+								</li>
+								<li>
+									<p>
+										<strong>Personal Data</strong> is any information that relates to an identified or identifiable
+										individual.
+									</p>
+								</li>
+								<li>
+									<p><strong>Service</strong> refers to the Website.</p>
+								</li>
+								<li>
+									<p>
+										<strong>Service Provider</strong> means any natural or legal person who processes the data
+										on behalf of the Company. It refers to third-party companies or individuals employed by the
+										Company to facilitate the Service, to provide the Service on behalf of the Company, to perform
+										services related to the Service or to assist the Company in analyzing how the Service is used.
+									</p>
+								</li>
+								<li>
+									<p>
+										<strong>Usage Data</strong> refers to data collected automatically, either generated by the
+										use of the Service or from the Service infrastructure itself (for example, the duration of
+										a page visit).
+									</p>
+								</li>
+								<li>
+									<p>
+										<strong>Website</strong> refers to jonasfroeller, accessible from
+										<a
+											href="https://jonasfroeller.ddns.net"
+											rel="external nofollow noopener noreferrer"
+											target="_blank">https://jonasfroeller.ddns.net</a
+										>
+									</p>
+								</li>
+								<li>
+									<p>
+										<strong>You</strong> means the individual accessing or using the Service, or the company, or
+										other legal entity on behalf of which such individual is accessing or using the Service, as
+										applicable.
+									</p>
+								</li>
+							</ul>
+							<h1>Collecting and Using Your Personal Data</h1>
+							<h2>Types of Data Collected</h2>
+							<h3>Personal Data</h3>
+							<p>
+								While using Our Service, We may ask You to provide Us with certain personally identifiable
+								information that can be used to contact or identify You. Personally identifiable information
+								may include, but is not limited to:
+							</p>
+							<ul>
+								<li>Usage Data</li>
+							</ul>
+							<h3>Usage Data</h3>
+							<p>Usage Data is collected automatically when using the Service.</p>
+							<p>
+								Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP
+								address), browser type, browser version, the pages of our Service that You visit, the time and
+								date of Your visit, the time spent on those pages, unique device identifiers and other
+								diagnostic data.
+							</p>
+							<p>
+								When You access the Service by or through a mobile device, We may collect certain information
+								automatically, including, but not limited to, the type of mobile device You use, Your mobile
+								device unique ID, the IP address of Your mobile device, Your mobile operating system, the type
+								of mobile Internet browser You use, unique device identifiers and other diagnostic data.
+							</p>
+							<p>
+								We may also collect information that Your browser sends whenever You visit our Service or when
+								You access the Service by or through a mobile device.
+							</p>
+							<h3>Tracking Technologies and Cookies</h3>
+							<p>
+								We use Cookies and similar tracking technologies to track the activity on Our Service and
+								store certain information. Tracking technologies used are beacons, tags, and scripts to
+								collect and track information and to improve and analyze Our Service. The technologies We use
+								may include:
+							</p>
+							<ul>
+								<li>
+									<strong>Cookies or Browser Cookies.</strong> A cookie is a small file placed on Your Device.
+									You can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being sent.
+									However, if You do not accept Cookies, You may not be able to use some parts of our Service.
+									Unless you have adjusted Your browser setting so that it will refuse Cookies, our Service may
+									use Cookies.
+								</li>
+								<li>
+									<strong>Web Beacons.</strong> Certain sections of our Service and our emails may contain small
+									electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel
+									gifs) that permit the Company, for example, to count users who have visited those pages or opened
+									an email and for other related website statistics (for example, recording the popularity of a
+									certain section and verifying system and server integrity).
+								</li>
+							</ul>
+							<p>
+								Cookies can be &quot;Persistent&quot; or &quot;Session&quot; Cookies. Persistent Cookies
+								remain on Your personal computer or mobile device when You go offline, while Session Cookies
+								are deleted as soon as You close Your web browser. Learn more about cookies on the <a
+									href="https://www.privacypolicies.com/blog/privacy-policy-template/#Use_Of_Cookies_Log_Files_And_Tracking"
+									target="_blank"
+									rel="noreferrer">Privacy Policies website</a
+								> article.
+							</p>
+							<p>We use both Session and Persistent Cookies for the purposes set out below:</p>
+							<ul>
+								<li>
+									<p><strong>Necessary / Essential Cookies</strong></p>
+									<p>Type: Session Cookies</p>
+									<p>Administered by: Us</p>
+									<p>
+										Purpose: These Cookies are essential to provide You with services available through the
+										Website and to enable You to use some of its features. They help to authenticate users and
+										prevent fraudulent use of user accounts. Without these Cookies, the services that You have
+										asked for cannot be provided, and We only use these Cookies to provide You with those
+										services.
+									</p>
+								</li>
+								<li>
+									<p><strong>Cookies Policy / Notice Acceptance Cookies</strong></p>
+									<p>Type: Persistent Cookies</p>
+									<p>Administered by: Us</p>
+									<p>
+										Purpose: These Cookies identify if users have accepted the use of cookies on the Website.
+									</p>
+								</li>
+								<li>
+									<p><strong>Functionality Cookies</strong></p>
+									<p>Type: Persistent Cookies</p>
+									<p>Administered by: Us</p>
+									<p>
+										Purpose: These Cookies allow us to remember choices You make when You use the Website,
+										such as remembering your login details or language preference. The purpose of these
+										Cookies is to provide You with a more personal experience and to avoid You having to
+										re-enter your preferences every time You use the Website.
+									</p>
+								</li>
+							</ul>
+							<p>
+								For more information about the cookies we use and your choices regarding cookies, please visit
+								our Cookies Policy or the Cookies section of our Privacy Policy.
+							</p>
+							<h2>Use of Your Personal Data</h2>
+							<p>The Company may use Personal Data for the following purposes:</p>
+							<ul>
+								<li>
+									<p>
+										<strong>To provide and maintain our Service</strong>, including to monitor the usage of
+										our Service.
+									</p>
+								</li>
+								<li>
+									<p>
+										<strong>To manage Your Account:</strong> to manage Your registration as a user of the Service.
+										The Personal Data You provide can give You access to different functionalities of the Service
+										that are available to You as a registered user.
+									</p>
+								</li>
+								<li>
+									<p>
+										<strong>For the performance of a contract:</strong> the development, compliance and undertaking
+										of the purchase contract for the products, items or services You have purchased or of any other
+										contract with Us through the Service.
+									</p>
+								</li>
+								<li>
+									<p>
+										<strong>To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent
+										forms of electronic communication, such as a mobile application's push notifications regarding
+										updates or informative communications related to the functionalities, products or contracted
+										services, including the security updates, when necessary or reasonable for their implementation.
+									</p>
+								</li>
+								<li>
+									<p>
+										<strong>To provide You</strong> with news, special offers and general information about other
+										goods, services and events which we offer that are similar to those that you have already purchased
+										or enquired about unless You have opted not to receive such information.
+									</p>
+								</li>
+								<li>
+									<p><strong>To manage Your requests:</strong> To attend and manage Your requests to Us.</p>
+								</li>
+								<li>
+									<p>
+										<strong>For business transfers:</strong> We may use Your information to evaluate or conduct
+										a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer
+										of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation,
+										or similar proceeding, in which Personal Data held by Us about our Service users is among the
+										assets transferred.
+									</p>
+								</li>
+								<li>
+									<p>
+										<strong>For other purposes</strong>: We may use Your information for other purposes, such
+										as data analysis, identifying usage trends, determining the effectiveness of our
+										promotional campaigns and to evaluate and improve our Service, products, services,
+										marketing and your experience.
+									</p>
+								</li>
+							</ul>
+							<p>We may share Your personal information in the following situations:</p>
+							<ul>
+								<li>
+									<strong>With Service Providers:</strong> We may share Your personal information with Service
+									Providers to monitor and analyze the use of our Service, to contact You.
+								</li>
+								<li>
+									<strong>For business transfers:</strong> We may share or transfer Your personal information in
+									connection with, or during negotiations of, any merger, sale of Company assets, financing, or
+									acquisition of all or a portion of Our business to another company.
+								</li>
+								<li>
+									<strong>With Affiliates:</strong> We may share Your information with Our affiliates, in which
+									case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent
+									company and any other subsidiaries, joint venture partners or other companies that We control
+									or that are under common control with Us.
+								</li>
+								<li>
+									<strong>With business partners:</strong> We may share Your information with Our business partners
+									to offer You certain products, services or promotions.
+								</li>
+								<li>
+									<strong>With other users:</strong> when You share personal information or otherwise interact
+									in the public areas with other users, such information may be viewed by all users and may be
+									publicly distributed outside.
+								</li>
+								<li>
+									<strong>With Your consent</strong>: We may disclose Your personal information for any other
+									purpose with Your consent.
+								</li>
+							</ul>
+							<h2>Retention of Your Personal Data</h2>
+							<p>
+								The Company will retain Your Personal Data only for as long as is necessary for the purposes
+								set out in this Privacy Policy. We will retain and use Your Personal Data to the extent
+								necessary to comply with our legal obligations (for example, if we are required to retain your
+								data to comply with applicable laws), resolve disputes, and enforce our legal agreements and
+								policies.
+							</p>
+							<p>
+								The Company will also retain Usage Data for internal analysis purposes. Usage Data is
+								generally retained for a shorter period of time, except when this data is used to strengthen
+								the security or to improve the functionality of Our Service, or We are legally obligated to
+								retain this data for longer time periods.
+							</p>
+							<h2>Transfer of Your Personal Data</h2>
+							<p>
+								Your information, including Personal Data, is processed at the Company's operating offices and
+								in any other places where the parties involved in the processing are located. It means that
+								this information may be transferred to — and maintained on — computers located outside of Your
+								state, province, country or other governmental jurisdiction where the data protection laws may
+								differ than those from Your jurisdiction.
+							</p>
+							<p>
+								Your consent to this Privacy Policy followed by Your submission of such information represents
+								Your agreement to that transfer.
+							</p>
+							<p>
+								The Company will take all steps reasonably necessary to ensure that Your data is treated
+								securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will
+								take place to an organization or a country unless there are adequate controls in place
+								including the security of Your data and other personal information.
+							</p>
+							<h2>Delete Your Personal Data</h2>
+							<p>
+								You have the right to delete or request that We assist in deleting the Personal Data that We
+								have collected about You.
+							</p>
+							<p>
+								Our Service may give You the ability to delete certain information about You from within the
+								Service.
+							</p>
+							<p>
+								You may update, amend, or delete Your information at any time by signing in to Your Account,
+								if you have one, and visiting the account settings section that allows you to manage Your
+								personal information. You may also contact Us to request access to, correct, or delete any
+								personal information that You have provided to Us.
+							</p>
+							<p>
+								Please note, however, that We may need to retain certain information when we have a legal
+								obligation or lawful basis to do so.
+							</p>
+							<h2>Disclosure of Your Personal Data</h2>
+							<h3>Business Transactions</h3>
+							<p>
+								If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be
+								transferred. We will provide notice before Your Personal Data is transferred and becomes
+								subject to a different Privacy Policy.
+							</p>
+							<h3>Law enforcement</h3>
+							<p>
+								Under certain circumstances, the Company may be required to disclose Your Personal Data if
+								required to do so by law or in response to valid requests by public authorities (e.g. a court
+								or a government agency).
+							</p>
+							<h3>Other legal requirements</h3>
+							<p>
+								The Company may disclose Your Personal Data in the good faith belief that such action is
+								necessary to:
+							</p>
+							<ul>
+								<li>Comply with a legal obligation</li>
+								<li>Protect and defend the rights or property of the Company</li>
+								<li>Prevent or investigate possible wrongdoing in connection with the Service</li>
+								<li>Protect the personal safety of Users of the Service or the public</li>
+								<li>Protect against legal liability</li>
+							</ul>
+							<h2>Security of Your Personal Data</h2>
+							<p>
+								The security of Your Personal Data is important to Us, but remember that no method of
+								transmission over the Internet, or method of electronic storage is 100% secure. While We
+								strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee
+								its absolute security.
+							</p>
+							<h1>Children's Privacy</h1>
+							<p>
+								Our Service does not address anyone under the age of 13. We do not knowingly collect
+								personally identifiable information from anyone under the age of 13. If You are a parent or
+								guardian and You are aware that Your child has provided Us with Personal Data, please contact
+								Us. If We become aware that We have collected Personal Data from anyone under the age of 13
+								without verification of parental consent, We take steps to remove that information from Our
+								servers.
+							</p>
+							<p>
+								If We need to rely on consent as a legal basis for processing Your information and Your
+								country requires consent from a parent, We may require Your parent's consent before We collect
+								and use that information.
+							</p>
+							<h1>Links to Other Websites</h1>
+							<p>
+								Our Service may contain links to other websites that are not operated by Us. If You click on a
+								third party link, You will be directed to that third party's site. We strongly advise You to
+								review the Privacy Policy of every site You visit.
+							</p>
+							<p>
+								We have no control over and assume no responsibility for the content, privacy policies or
+								practices of any third party sites or services.
+							</p>
+							<h1>Changes to this Privacy Policy</h1>
+							<p>
+								We may update Our Privacy Policy from time to time. We will notify You of any changes by
+								posting the new Privacy Policy on this page.
+							</p>
+							<p>
+								We will let You know via email and/or a prominent notice on Our Service, prior to the change
+								becoming effective and update the &quot;Last updated&quot; date at the top of this Privacy
+								Policy.
+							</p>
+							<p>
+								You are advised to review this Privacy Policy periodically for any changes. Changes to this
+								Privacy Policy are effective when they are posted on this page.
+							</p>
+							<h1>Contact Us</h1>
+							<p>If you have any questions about this Privacy Policy, You can contact us:</p>
+							<ul>
+								<li>
+									<p>By email: j.froe@gmx.at</p>
+								</li>
+								<li>
+									<p>
+										By visiting this page on our website: <a
+											href="https://jonasfroeller.ddns.net/en/socials"
+											rel="external nofollow noopener noreferrer"
+											target="_blank">https://jonasfroeller.ddns.net/en/socials</a
+										>
+									</p>
+								</li>
+								</ul>
+				 */
+				content: () => LocalizedString
+				/**
 				 * Datenschutzerklärung akzeptieren
 				 */
 				accept: () => LocalizedString
@@ -337,6 +1592,270 @@ export type TranslationFunctions = {
 				 * Geschäftsbedingungen
 				 */
 				title: () => LocalizedString
+				/**
+				 * <center><em>Keine übersetzung vorhanden.</em></center> <br> <p>Last updated: March 03, 2023</p>
+		
+							<p>Welcome to jonasfroeller!</p>
+				
+							<p>
+								These terms and conditions outline the rules and regulations for the use of jonasfroeller's
+								Website, located at https://jonasfroeller.ddns.net/en.
+							</p>
+				
+							<p>
+								By accessing this website we assume you accept these terms and conditions. Do not continue to
+								use jonasfroeller if you do not agree to take all of the terms and conditions stated on this
+								page.
+							</p>
+				
+							<p>
+								The following terminology applies to these Terms and Conditions, Privacy Statement and
+								Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log
+								on this website and compliant to the Company’s terms and conditions. "The Company",
+								"Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers
+								to both the Client and ourselves. All terms refer to the offer, acceptance and consideration
+								of payment necessary to undertake the process of our assistance to the Client in the most
+								appropriate manner for the express purpose of meeting the Client’s needs in respect of
+								provision of the Company’s stated services, in accordance with and subject to, prevailing law
+								of Netherlands. Any use of the above terminology or other words in the singular, plural,
+								capitalization and/or he/she or they, are taken as interchangeable and therefore as referring
+								to same.
+							</p>
+				
+							<h3><strong>Cookies</strong></h3>
+				
+							<p>
+								We employ the use of cookies. By accessing jonasfroeller, you agreed to use cookies in
+								agreement with the jonasfroeller's Privacy Policy.
+							</p>
+				
+							<p>
+								Most interactive websites use cookies to let us retrieve the user’s details for each visit.
+								Cookies are used by our website to enable the functionality of certain areas to make it easier
+								for people visiting our website. Some of our affiliate/advertising partners may also use
+								cookies.
+							</p>
+				
+							<h3><strong>License</strong></h3>
+				
+							<p>
+								Unless otherwise stated, jonasfroeller and/or its licensors own the intellectual property
+								rights for all material on jonasfroeller. All intellectual property rights are reserved. You
+								may access this from jonasfroeller for your own personal use subjected to restrictions set in
+								these terms and conditions.
+							</p>
+				
+							<p>You must not:</p>
+							<ul>
+								<li>Republish material from jonasfroeller</li>
+								<li>Sell, rent or sub-license material from jonasfroeller</li>
+								<li>Reproduce, duplicate or copy material from jonasfroeller</li>
+								<li>Redistribute content from jonasfroeller</li>
+							</ul>
+				
+							<p>
+								This Agreement shall begin on the date hereof. Our Terms and Conditions were created with the
+								help of the <a href="https://www.termsandconditionsgenerator.com/"
+									>Free Terms and Conditions Generator</a
+								>.
+							</p>
+				
+							<p>
+								Parts of this website offer an opportunity for users to post and exchange opinions and
+								information in certain areas of the website. jonasfroeller does not filter, edit, publish or
+								review Comments prior to their presence on the website. Comments do not reflect the views and
+								opinions of jonasfroeller,its agents and/or affiliates. Comments reflect the views and
+								opinions of the person who post their views and opinions. To the extent permitted by
+								applicable laws, jonasfroeller shall not be liable for the Comments or for any liability,
+								damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or
+								appearance of the Comments on this website.
+							</p>
+				
+							<p>
+								jonasfroeller reserves the right to monitor all Comments and to remove any Comments which can
+								be considered inappropriate, offensive or causes breach of these Terms and Conditions.
+							</p>
+				
+							<p>You warrant and represent that:</p>
+				
+							<ul>
+								<li>
+									You are entitled to post the Comments on our website and have all necessary licenses and
+									consents to do so;
+								</li>
+								<li>
+									The Comments do not invade any intellectual property right, including without limitation
+									copyright, patent or trademark of any third party;
+								</li>
+								<li>
+									The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise
+									unlawful material which is an invasion of privacy
+								</li>
+								<li>
+									The Comments will not be used to solicit or promote business or custom or present commercial
+									activities or unlawful activity.
+								</li>
+							</ul>
+				
+							<p>
+								You hereby grant jonasfroeller a non-exclusive license to use, reproduce, edit and authorize
+								others to use, reproduce and edit any of your Comments in any and all forms, formats or media.
+							</p>
+				
+							<h3><strong>Hyperlinking to our Content</strong></h3>
+				
+							<p>The following organizations may link to our Website without prior written approval:</p>
+				
+							<ul>
+								<li>Government agencies;</li>
+								<li>Search engines;</li>
+								<li>News organizations;</li>
+								<li>
+									Online directory distributors may link to our Website in the same manner as they hyperlink
+									to the Websites of other listed businesses; and
+								</li>
+								<li>
+									System wide Accredited Businesses except soliciting non-profit organizations, charity
+									shopping malls, and charity fundraising groups which may not hyperlink to our Web site.
+								</li>
+							</ul>
+				
+							<p>
+								These organizations may link to our home page, to publications or to other Website information
+								so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship,
+								endorsement or approval of the linking party and its products and/or services; and (c) fits
+								within the context of the linking party’s site.
+							</p>
+				
+							<p>
+								We may consider and approve other link requests from the following types of organizations:
+							</p>
+				
+							<ul>
+								<li>commonly-known consumer and/or business information sources;</li>
+								<li>dot.com community sites;</li>
+								<li>associations or other groups representing charities;</li>
+								<li>online directory distributors;</li>
+								<li>internet portals;</li>
+								<li>accounting, law and consulting firms; and</li>
+								<li>educational institutions and trade associations.</li>
+							</ul>
+				
+							<p>
+								We will approve link requests from these organizations if we decide that: (a) the link would
+								not make us look unfavorably to ourselves or to our accredited businesses; (b) the
+								organization does not have any negative records with us; (c) the benefit to us from the
+								visibility of the hyperlink compensates the absence of jonasfroeller; and (d) the link is in
+								the context of general resource information.
+							</p>
+				
+							<p>
+								These organizations may link to our home page so long as the link: (a) is not in any way
+								deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking
+								party and its products or services; and (c) fits within the context of the linking party’s
+								site.
+							</p>
+				
+							<p>
+								If you are one of the organizations listed in paragraph 2 above and are interested in linking
+								to our website, you must inform us by sending an e-mail to jonasfroeller. Please include your
+								name, your organization name, contact information as well as the URL of your site, a list of
+								any URLs from which you intend to link to our Website, and a list of the URLs on our site to
+								which you would like to link. Wait 2-3 weeks for a response.
+							</p>
+				
+							<p>Approved organizations may hyperlink to our Website as follows:</p>
+				
+							<ul>
+								<li>By use of our corporate name; or</li>
+								<li>By use of the uniform resource locator being linked to; or</li>
+								<li>
+									By use of any other description of our Website being linked to that makes sense within the
+									context and format of content on the linking party’s site.
+								</li>
+							</ul>
+				
+							<p>
+								No use of jonasfroeller's logo or other artwork will be allowed for linking absent a trademark
+								license agreement.
+							</p>
+				
+							<h3><strong>iFrames</strong></h3>
+				
+							<p>
+								Without prior approval and written permission, you may not create frames around our Webpages
+								that alter in any way the visual presentation or appearance of our Website.
+							</p>
+				
+							<h3><strong>Content Liability</strong></h3>
+				
+							<p>
+								We shall not be hold responsible for any content that appears on your Website. You agree to
+								protect and defend us against all claims that is rising on your Website. No link(s) should
+								appear on any Website that may be interpreted as libelous, obscene or criminal, or which
+								infringes, otherwise violates, or advocates the infringement or other violation of, any third
+								party rights.
+							</p>
+				
+							<h3><strong>Your Privacy</strong></h3>
+				
+							<p>Please read Privacy Policy</p>
+				
+							<h3><strong>Reservation of Rights</strong></h3>
+				
+							<p>
+								We reserve the right to request that you remove all links or any particular link to our
+								Website. You approve to immediately remove all links to our Website upon request. We also
+								reserve the right to amen these terms and conditions and it’s linking policy at any time. By
+								continuously linking to our Website, you agree to be bound to and follow these linking terms
+								and conditions.
+							</p>
+				
+							<h3><strong>Removal of links from our website</strong></h3>
+				
+							<p>
+								If you find any link on our Website that is offensive for any reason, you are free to contact
+								and inform us any moment. We will consider requests to remove links but we are not obligated
+								to or so or to respond to you directly.
+							</p>
+				
+							<p>
+								We do not ensure that the information on this website is correct, we do not warrant its
+								completeness or accuracy; nor do we promise to ensure that the website remains available or
+								that the material on the website is kept up to date.
+							</p>
+				
+							<h3><strong>Disclaimer</strong></h3>
+				
+							<p>
+								To the maximum extent permitted by applicable law, we exclude all representations, warranties
+								and conditions relating to our website and the use of this website. Nothing in this disclaimer
+								will:
+							</p>
+				
+							<ul>
+								<li>limit or exclude our or your liability for death or personal injury;</li>
+								<li>limit or exclude our or your liability for fraud or fraudulent misrepresentation;</li>
+								<li>
+									limit any of our or your liabilities in any way that is not permitted under applicable law;
+									or
+								</li>
+								<li>exclude any of our or your liabilities that may not be excluded under applicable law.</li>
+							</ul>
+				
+							<p>
+								The limitations and prohibitions of liability set in this Section and elsewhere in this
+								disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising
+								under the disclaimer, including liabilities arising in contract, in tort and for breach of
+								statutory duty.
+							</p>
+				
+							<p>
+								As long as the website and the information and services on the website are provided free of
+								charge, we will not be liable for any loss or damage of any nature.
+							</p>
+				 */
+				content: () => LocalizedString
 				/**
 				 * Geschäftsbedingungen akzeptieren
 				 */
@@ -348,6 +1867,105 @@ export type TranslationFunctions = {
 				 */
 				title: () => LocalizedString
 				/**
+				 * <center><em>Keine übersetzung vorhanden.</em></center> <br> <p>Last updated: March 03, 2023</p>
+							<p>
+								This is the Cookie Policy for jonasfroeller, accessible from https://jonasfroeller.ddns.net/en
+							</p>
+				
+							<p><strong>What Are Cookies</strong></p>
+				
+							<p>
+								As is common practice with almost all professional websites this site uses cookies, which are
+								tiny files that are downloaded to your computer, to improve your experience. This page
+								describes what information they gather, how we use it and why we sometimes need to store these
+								cookies. We will also share how you can prevent these cookies from being stored however this
+								may downgrade or 'break' certain elements of the sites functionality.
+							</p>
+				
+							<p><strong>How We Use Cookies</strong></p>
+				
+							<p>
+								We use cookies for a variety of reasons detailed below. Unfortunately in most cases there are
+								no industry standard options for disabling cookies without completely disabling the
+								functionality and features they add to this site. It is recommended that you leave on all
+								cookies if you are not sure whether you need them or not in case they are used to provide a
+								service that you use.
+							</p>
+				
+							<p><strong>Disabling Cookies</strong></p>
+				
+							<p>
+								You can prevent the setting of cookies by adjusting the settings on your browser (see your
+								browser Help for how to do this). Be aware that disabling cookies will affect the
+								functionality of this and many other websites that you visit. Disabling cookies will usually
+								result in also disabling certain functionality and features of the this site. Therefore it is
+								recommended that you do not disable cookies. This Cookies Policy was created with the help of
+								the <a href="https://www.cookiepolicygenerator.com/cookie-policy-generator/"
+									>Cookies Policy Generator</a
+								>.
+							</p>
+							<p><strong>The Cookies We Set</strong></p>
+				
+							<ul>
+								<li>
+									<p>Site preferences cookies</p>
+									<p>
+										In order to provide you with a great experience on this site we provide the functionality
+										to set your preferences for how this site runs when you use it. In order to remember your
+										preferences we need to set cookies so that this information can be called whenever you
+										interact with a page is affected by your preferences.
+									</p>
+								</li>
+							</ul>
+				
+							<p><strong>Third Party Cookies</strong></p>
+				
+							<p>
+								In some special cases we also use cookies provided by trusted third parties. The following
+								section details which third party cookies you might encounter through this site.
+							</p>
+				
+							<ul>
+								<li>
+									<p>
+										This site uses Google Analytics which is one of the most widespread and trusted analytics
+										solution on the web for helping us to understand how you use the site and ways that we can
+										improve your experience. These cookies may track things such as how long you spend on the
+										site and the pages that you visit so we can continue to produce engaging content.
+									</p>
+									<p>
+										For more information on Google Analytics cookies, see the official Google Analytics page.
+									</p>
+								</li>
+							</ul>
+				
+							<p><strong>More Information</strong></p>
+				
+							<p>
+								Hopefully that has clarified things for you and as was previously mentioned if there is
+								something that you aren't sure whether you need or not it's usually safer to leave cookies
+								enabled in case it does interact with one of the features you use on our site.
+							</p>
+				
+							<p>
+								For more general information on cookies, please read <a
+									href="https://www.cookiepolicygenerator.com/sample-cookies-policy/"
+									>the Cookies Policy article</a
+								>.
+							</p>
+				
+							<p>
+								However if you are still looking for more information then you can contact us through one of
+								our preferred contact methods:
+							</p>
+				
+							<ul>
+								<li>Email: j.froe@gmx.at</li>
+								<li>By visiting this link: https://jonasfroeller.ddns.net/en/legal/cookies</li>
+							</ul>
+				 */
+				content: () => LocalizedString
+				/**
 				 * Cookies akzeptieren
 				 */
 				accept: () => LocalizedString
@@ -357,6 +1975,26 @@ export type TranslationFunctions = {
 				 * Impressum
 				 */
 				title: () => LocalizedString
+				/**
+				 * 
+							<p>Letzte Aktualisierung: März 03, 2023</p>
+		
+							<h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
+							<p>
+								Jonas Fr&ouml;ller<br />
+								<!-- Limesstra&szlig;e 12/14<br /> -->
+								<!-- 4060 Leonding -->
+							</p>
+				
+							<h2>Kontakt</h2>
+							<p>
+								<!-- Telefon: &#91;Telefonnummer&#93;<br /> -->
+								E-Mail: j.froe@gmx.at
+							</p>
+				
+							<p>Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a></p>
+				 */
+				content: () => LocalizedString
 			}
 		}
 		settings: {
@@ -394,7 +2032,7 @@ export type TranslationFunctions = {
 				 */
 				title: () => LocalizedString
 				/**
-				 * Mein Name ist Jonas und ich bin ein 17-jähriger Schüler, der derzeit an der HTBLA Leonding in Österreich studiert. Ich studiere Informatik/Medientechnik und interessiere mich sehr für Programmierung, insbesondere Webentwicklung. Neben meiner Muttersprache Deutsch spreche ich fließend Englisch mit Niveau B+. Spezialisiert habe ich mich auf die Computersprachen HTML, CSS, JavaScript & NodeJS, PHP, Oracle SQL und Java. Kürzlich habe ich das Svelte JS-Framework entdeckt und Svelte zusammen mit SvelteKit gelernt. Ich habe auch Erfahrungen mit TailwindCSS und DaisyUI gesammelt. Ich lerne gerne neue Programmiersprachen und Frameworks und entwickle mit Leidenschaft effiziente sowie benutzerfreundliche Websites und Anwendungen. Ich suche ständig nach Möglichkeiten, meine Fähigkeiten und Kenntnisse im Bereich Webentwicklung zu verbessern, und ich bin entschlossen, meine Karriereziele in der Welt der IT und Programmierung zu erreichen. Mit Hingabe und Enthusiasmus glaube ich, dass ich das Zeug dazu habe, in diesem Bereich erfolgreich zu sein.
+				 * Mein Name ist <strong>Jonas</strong> und ich bin ein <strong>17</strong>-jähriger Schüler, der derzeit an der <strong>HTBLA Leonding</strong> in <strong>Österreich</strong> studiert. Ich studiere <strong>IT/Medientechnik</strong> und interessiere mich sehr für Programmierung, insbesondere Webentwicklung. <br> Neben meiner Muttersprache <strong>Deutsch</strong> spreche ich fließend <strong>Englisch</strong> mit Niveau B+. Spezialisiert habe ich mich auf die Computersprachen <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript & NodeJS</strong>, <strong>PHP</strong>, <strong>Oracle SQL</strong> und <strong>Java</strong>. <br> Kürzlich habe ich das Svelte JS-Framework entdeckt und <strong>Svelte</strong> zusammen mit <strong>SvelteKit</strong> gelernt. Ich habe auch Erfahrungen mit <strong>TailwindCSS</strong> und <strong>DaisyUI</strong> gesammelt. Ich lerne gerne neue Programmiersprachen und Frameworks und entwickle mit Leidenschaft effiziente sowie benutzerfreundliche Websites und Anwendungen. Ich suche ständig nach Möglichkeiten, meine Fähigkeiten und Kenntnisse im Bereich Webentwicklung zu verbessern, und ich bin entschlossen, meine Karriereziele in der Welt der IT und Programmierung zu erreichen. Mit Hingabe und Enthusiasmus glaube ich, dass ich das Zeug dazu habe, in diesem Bereich erfolgreich zu sein.
 				 */
 				text: () => LocalizedString
 			}

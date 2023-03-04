@@ -43,7 +43,7 @@
 		<div class="collapse collapse-plus rounded-lg">
 			<input type="checkbox" class="peer" />
 			<div
-				class="collapse-title border-2 border-neutral-content rounded-lg peer-checked:rounded-[0px] peer-checked:rounded-t-lg peer-checked:border-neutral"
+				class="collapse-title border-2 border-neutral rounded-lg peer-checked:rounded-[0px] peer-checked:rounded-t-lg peer-checked:border-neutral"
 			>
 				{$translation.Pages.settings.options()}
 			</div>

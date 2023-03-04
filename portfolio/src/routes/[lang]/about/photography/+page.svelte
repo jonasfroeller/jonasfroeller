@@ -33,6 +33,8 @@
 		photo12
 	];
 
+	$: currentPhoto = '#photography-1';
+
 	let parent = 'about';
 	let parentCapitalized = parent.charAt(0).toUpperCase() + parent.slice(1);
 	let name = 'photography';
@@ -55,7 +57,7 @@
 	<div class="w-[60dvw] w-[60vw]">
 		<div class="carousel rounded-2xl mt-4">
 			{#each photos as photo, i}
-				<div id="item-{i + 1}" class="carousel-item w-full rounded-2xl pt-4">
+				<div id="photography-{i + 1}" class="carousel-item w-full rounded-2xl pt-4">
 					<img src={photo} alt="photography-{i + 1}" class="w-full object-cover rounded-2xl" />
 				</div>
 			{:else}
@@ -65,9 +67,21 @@
 		<div class="flex justify-center flex-wrap w-full py-2 gap-2">
 			{#each photos as photo, i}
 				{#if i % 2 == 0}
-					<a href="#item-{i + 1}" class="btn btn-s text-lg text-primary">{i + 1}</a>
+					<a
+						href="#photography-{i + 1}"
+						on:click={() => (currentPhoto = `#photography-${i + 1}`)}
+						class="btn btn-s text-lg text-primary {currentPhoto == '#photography-' + (i + 1)
+							? 'border border-white hover:border-primary'
+							: ''}">{i + 1}</a
+					>
 				{:else}
-					<a href="#item-{i + 1}" class="btn btn-s text-lg text-secondary">{i + 1}</a>
+					<a
+						href="#photography-{i + 1}"
+						on:click={() => (currentPhoto = `#photography-${i + 1}`)}
+						class="btn btn-s text-lg text-secondary {currentPhoto == '#photography-' + (i + 1)
+							? 'border border-white hover:border-secondary'
+							: ''}">{i + 1}</a
+					>
 				{/if}
 			{/each}
 		</div>
@@ -76,6 +90,6 @@
 
 <section class="flex justify-center mt-4">
 	<div class="prose">
-		<p><em>{$translation.Pages.about.photography.note()}</em></p>
+		<p><em>~ {$translation.Pages.about.photography.note()}</em></p>
 	</div>
 </section>

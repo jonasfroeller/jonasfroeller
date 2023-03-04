@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static';
+import adapterStatic from '@sveltejs/adapter-static'; // import adapterNode from '@sveltejs/adapter-node'; https://kit.svelte.dev/docs/adapter-node
 import preprocess from 'svelte-preprocess';
 const dev = process.argv.includes('dev'); // || const dev = process.env.NODE_ENV === 'developement' || const dev = base === '' ? true : false; || https://kit.svelte.dev/docs/modules#$app-environment => import { browser, building, dev, version } from '$app/environment';
 
@@ -12,24 +12,25 @@ console.log('buildDir:', buildDir);
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter({
+		adapter: adapterStatic({
 			pages: buildDir,
 			assets: buildDir,
-			fallback: null,
+			fallback: null /* 'error.html' */,
 			precompress: false,
 			strict: true
 		}),
+		appDir: 'portfolio',
 		paths: {
 			base: basePath
 		},
-		appDir: 'portfolio',
 		alias: {
 			$main: 'src',
 			$translation: 'src/lib/translations',
 			$image: 'src/lib/assets/imgs',
 			$component: 'src/lib/components',
 			$store: 'src/lib/stores',
-			$script: 'src/lib/scripts'
+			$script: 'src/lib/scripts',
+			$server: 'src/lib/server'
 		},
 		prerender: {
 			entries: [

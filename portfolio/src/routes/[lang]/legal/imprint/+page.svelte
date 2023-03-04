@@ -20,19 +20,7 @@
 		<h1 class="text-center mb-0 break-all">
 			{$translation.Pages.legal.imprint.title()}
 		</h1>
-		<h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
-		<p>
-			Jonas Fr&ouml;ller<br />
-			<!-- Limesstra&szlig;e 12/14<br /> -->
-			<!-- 4060 Leonding -->
-		</p>
 
-		<h2>Kontakt</h2>
-		<p>
-			<!-- Telefon: &#91;Telefonnummer&#93;<br /> -->
-			E-Mail: j.froe@gmx.at
-		</p>
-
-		<p>Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a></p>
+		{@html $translation.Pages.legal.imprint.content()}
 	</div>
 </section>

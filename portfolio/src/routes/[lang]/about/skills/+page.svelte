@@ -8,6 +8,7 @@
 	// Assets
 	import SubCategory from '$component/SubCategory.svelte';
 	import AboutNav from '$component/AboutNav.svelte';
+
 	import asciidoctor from '$image/skills/asciidoctor.svg';
 	import docker from '$image/skills/docker.svg';
 	import git from '$image/skills/git.svg';
@@ -21,34 +22,67 @@
 	import vscode from '$image/skills/vscode-dark.svg';
 	import xd from '$image/skills/xd.svg';
 
-	const images = [
-		asciidoctor,
-		docker,
-		git,
-		github,
-		illustrator,
-		json,
-		photoshop,
-		svelte,
-		svg,
-		vite,
-		vscode,
-		xd
-	];
-
-	const urls = [
-		'https://asciidoctor.org/',
-		'https://www.docker.com/',
-		'https://git-scm.com/',
-		'https://github.com/',
-		'https://helpx.adobe.com/at/illustrator/get-started.html',
-		'https://www.json.org/json-de.html',
-		'https://helpx.adobe.com/at/photoshop/get-started.html',
-		'https://svelte.dev/',
-		'https://www.w3.org/TR/SVG2/',
-		'https://vitejs.dev/',
-		'https://code.visualstudio.com/',
-		'https://helpx.adobe.com/at/xd/get-started.html'
+	const software = [
+		{
+			img: asciidoctor,
+			name: 'asciidoctor',
+			url: 'https://asciidoctor.org/'
+		},
+		{
+			img: docker,
+			name: 'docker',
+			url: 'https://www.docker.com/'
+		},
+		{
+			img: git,
+			name: 'git',
+			url: 'https://git-scm.com/'
+		},
+		{
+			img: github,
+			name: 'github',
+			url: 'https://github.com/'
+		},
+		{
+			img: illustrator,
+			name: 'illustrator',
+			url: 'https://helpx.adobe.com/at/illustrator/get-started.html'
+		},
+		{
+			img: json,
+			name: 'json',
+			url: 'https://www.json.org/json-de.html'
+		},
+		{
+			img: photoshop,
+			name: 'photoshop',
+			url: 'https://helpx.adobe.com/at/photoshop/get-started.html'
+		},
+		{
+			img: svelte,
+			name: 'svelte',
+			url: 'https://svelte.dev/'
+		},
+		{
+			img: svg,
+			name: 'svg',
+			url: 'https://www.w3.org/TR/SVG2/'
+		},
+		{
+			img: vite,
+			name: 'vite',
+			url: 'https://vitejs.dev/'
+		},
+		{
+			img: vscode,
+			name: 'vscode',
+			url: 'https://code.visualstudio.com/'
+		},
+		{
+			img: xd,
+			name: 'xd',
+			url: 'https://helpx.adobe.com/at/xd/get-started.html'
+		}
 	];
 
 	let parent = 'about';
@@ -108,11 +142,11 @@
 	<section class="flex justify-center mt-4">
 		<div id="skill-circle">
 			<ul class="skills">
-				{#each images as image, i}
+				{#each software as sw, i}
 					<!-- svelte-ignore a11y-click-events-have-key-events -->
-					<li on:click={() => window.open(urls[i], '_blank').focus()}>
+					<li on:click={() => window.open(sw.url, '_blank').focus()}>
 						<span>
-							<img class="app" src={image} alt={image} />
+							<img class="app" src={sw.img} alt={`software-${i}-${sw.name}`} />
 						</span>
 					</li>
 				{:else}
@@ -121,16 +155,21 @@
 			</ul>
 			<div class="prose">
 				<h1
-					class="absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] text-center mb-0"
+					class="absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] text-center mb-0 text-2xl sm:text-5xl"
 				>
 					{$translation.Pages.about.skills.appCircle()}
 				</h1>
 			</div>
 		</div>
 	</section>
-	<a href="{base}/{$locale}/projects">
-		<button class="btn btn-md lg:btn-lg">{$translation.Pages.projectsButton()}</button>
-	</a>
+	<div class="flex sm:flex-col gap-3">
+		<a href="{base}/{$locale}/projects">
+			<button class="btn btn-md lg:btn-lg">{$translation.Pages.projectsButton()}</button>
+		</a>
+		<a href="{base}/{$locale}/socials">
+			<button class="btn btn-md lg:btn-lg">{$translation.Pages.contactButton()}</button>
+		</a>
+	</div>
 </section>
 
 <style>

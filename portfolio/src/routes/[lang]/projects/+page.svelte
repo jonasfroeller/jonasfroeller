@@ -27,7 +27,7 @@
 				<span class="absolute top-2 right-2 badge badge-secondary"
 					>{element.language.toUpperCase()}</span
 				>
-				<div class="card-body">
+				<div class="card-body p-7">
 					<h2 class="card-title">
 						{element.name}
 					</h2>
