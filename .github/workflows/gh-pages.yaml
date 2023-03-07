@@ -18,7 +18,7 @@ jobs:
         run: |
           cd ./portfolio
           npm ci
-          set prefixFolder=true && npm run build
+          export prefixFolder=true && npm run build || set prefixFolder=true && npm run build
           ls ../jonasfroeller
 
       - name: Deploy 🚀
