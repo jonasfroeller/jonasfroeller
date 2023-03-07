@@ -3228,9 +3228,8 @@ html {
   --tw-border-opacity: 1;
   border-color: hsl(var(--s) / var(--tw-border-opacity));
 }
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+.border-transparent {
+  border-color: transparent;
 }
 .bg-base-100 {
   --tw-bg-opacity: 1;
@@ -3357,29 +3356,6 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-
-/* html {
-    color-scheme: dark light;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    font: inherit;
-}
-
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-img, picture, svg, video {
-    display: block;
-    max-width: 100%;
-}
-
-input, textarea, button, select {
-    font: inherit;
-} */
 
 a, button {
     text-decoration: none !important;

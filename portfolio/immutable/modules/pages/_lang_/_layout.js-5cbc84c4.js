@@ -1,1 +1,0 @@
-import{l as p,p as t,s as e,t as i}from"../../../chunks/_layout-2b09f720.js";import"../../../chunks/utils-896afac9.js";import"../../../chunks/i18n-util-9de3611c.js";export{p as load,t as prerender,e as ssr,i as trailingSlash};

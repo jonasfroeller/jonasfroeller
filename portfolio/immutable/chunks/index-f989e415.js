@@ -1,4 +1,4 @@
-const e={Pages:{aboutButton:"About",projectsButton:"Projects",contactButton:"Contact",readMore:"read more",home:{info:"Hi, I am Jonas!"},socials:{headline01:"Coding",headline02:"Social Media",headline03:"Contact",availabilityNoticeWeek:"checked weekly",availabilityNoticeDay:"checked daily",copyNotice:{copy:"copy E-Mail",copied:"copied E-Mail"}},legal:{privacy_policy:{title:"Privacy Policy",content:`<p>Last updated: March 03, 2023</p>
+const e={Pages:{aboutButton:"Über",projectsButton:"Projekte",contactButton:"Kontakt",readMore:"mehr erfahren",home:{info:"Hi, Ich bin Jonas!"},socials:{headline01:"Programmieren",headline02:"Soziale Medien",headline03:"Kontakt",availabilityNoticeWeek:"wöchentlich eingesehen",availabilityNoticeDay:"täglich eingesehen",copyNotice:{copy:"E-Mail kopieren",copied:"E-Mail kopiert"}},legal:{privacy_policy:{title:"Datenschutz",content:`<center><em>Keine übersetzung vorhanden.</em></center> <br> <p>Last updated: March 03, 2023</p>
 				<p>
 					This Privacy Policy describes Our policies and procedures on the collection, use and
 					disclosure of Your information when You use the Service and tells You about Your privacy
@@ -426,7 +426,7 @@ const e={Pages:{aboutButton:"About",projectsButton:"Projects",contactButton:"Con
 							>
 						</p>
 					</li>
-					</ul>`,accept:"accept Privacy Policy"},terms_and_conditions:{title:"Terms and Conditions",content:`<p>Last updated: March 03, 2023</p>
+					</ul>`,accept:"Datenschutzerklärung akzeptieren"},terms_and_conditions:{title:"Geschäftsbedingungen",content:`<center><em>Keine übersetzung vorhanden.</em></center> <br> <p>Last updated: March 03, 2023</p>
 
 				<p>Welcome to jonasfroeller!</p>
 		
@@ -686,7 +686,7 @@ const e={Pages:{aboutButton:"About",projectsButton:"Projects",contactButton:"Con
 				<p>
 					As long as the website and the information and services on the website are provided free of
 					charge, we will not be liable for any loss or damage of any nature.
-				</p>`,accept:"accept Terms and Conditions"},cookies:{title:"Cookies",content:`<p>Last updated: March 03, 2023</p>
+				</p>`,accept:"Geschäftsbedingungen akzeptieren"},cookies:{title:"Cookies",content:`<center><em>Keine übersetzung vorhanden.</em></center> <br> <p>Last updated: March 03, 2023</p>
 				<p>
 					This is the Cookie Policy for jonasfroeller, accessible from https://jonasfroeller.ddns.net/en
 				</p>
@@ -781,24 +781,20 @@ const e={Pages:{aboutButton:"About",projectsButton:"Projects",contactButton:"Con
 				<ul>
 					<li>Email: j.froe@gmx.at</li>
 					<li>By visiting this link: https://jonasfroeller.ddns.net/en/legal/cookies</li>
-				</ul>`,accept:"accept Cookies"},imprint:{title:"Imprint",content:`<p>Last updated: March 03, 2023</p>
+				</ul>`,accept:"Cookies akzeptieren"},imprint:{title:"Impressum",content:`
+				<p>Letzte Aktualisierung: März 03, 2023</p>
 
-				<h2>Information according to &sect; 5TMG</h2>
-				
+				<h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
 				<p>
 					Jonas Fr&ouml;ller<br />
-				
-					<!-- Limesstraße 12/14<br /> -->
-				
+					<!-- Limesstra&szlig;e 12/14<br /> -->
 					<!-- 4060 Leonding -->
 				</p>
-				
-				<h2>Contact</h2>
-				
+		
+				<h2>Kontakt</h2>
 				<p>
-					<!-- Phone: &#91;phone number&#93;<br /> -->
-				
-					Email: j.froe@gmx.at
+					<!-- Telefon: &#91;Telefonnummer&#93;<br /> -->
+					E-Mail: j.froe@gmx.at
 				</p>
-				
-				<p>Source: <a href="https://www.e-recht24.de">e-recht24.de</a></p>`}},settings:{title:"Settings",headline01:"Legal",headline02:"Style",headline03:"Language",options:"Options",cookieOptions:{necessary:"Necessary so that the website can save the selected language, the selected style, already loaded icons and the scroll position (will be deleted after closing the tab) of each page on your device!"}},about:{profile:{title:"Profile",text:"My name is <strong>Jonas</strong>, and I am a <strong>17</strong>-year-old student currently studying at <strong>HTBLA Leonding</strong> in <strong>Austria</strong>. I am pursuing a field of study in <strong>IT/Mediatechnology</strong>, and I have a keen interest in programming, especially web development. <br> Aside from my native language, <strong>German</strong>, I am also fluent in <strong>English</strong>, with a B+ level of proficiency. I have experience working with various programming languages, including <strong>HTML</strong>, <strong>CSS</strong>, <strong>Java</strong>, <strong>ShellScript</strong>, <strong>JavaScript & NodeJS</strong>, <strong>PHP</strong>, and <strong>Oracle SQL</strong>. <br> Recently, I have discovered the Svelte JS-framework and learned Svelte along with <strong>SvelteKit</strong>. I have also gained expertise in working with <strong>TailwindCSS</strong> and <strong>DaisyUI</strong>. I am always eager to learn new programming languages and frameworks, and I am passionate about developing efficient, user-friendly websites and applications. I am constantly exploring ways to improve my skills and knowledge in the field of web development, and I am determined to achieve my career goals in the world of IT and programming. With dedication and enthusiasm, I believe that I have what it takes to succeed in this field."},skills:{title:"Languages I Write In",appCircle:"TechStack",navTitle:"Skills"},photography:{title:"Photography",note:"photographing since 2020"}}},Error:{error:"{error} Error",action:"back to homepage"},Header:{home:"Home",about:"About",contact:"Contact",projects:"Projects",legal:"Legal",settings:"Settings"},Footer:{about:{title:"About",list:{skills:"Skills",photography:"Photography",profile:"Profile"}},contact:{title:"Contact"},projects:{title:"Projects"},legal:{title:"Legal",list:{privacy_policy:"Privacy Policy",terms_and_conditions:"Terms and Conditions",cookies:"Cookies",imprint:"Imprint"}},quote:"quality web developement"}};export{e as default};
+		
+				<p>Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a></p>`}},settings:{title:"Einstellungen",headline01:"Rechtliches",headline02:"Stil",headline03:"Sprache",options:"Optionen",cookieOptions:{necessary:"Erforderlich, damit die Website die gewählte Sprache, den gewählten Stil, bereits geladene Icons und die Scrollposition (wird nach schließen des Tabs gelöscht) jeder Seite auf Ihrem Gerät speichern kann!"}},about:{profile:{title:"Profil",text:'Mein Name ist <strong>Jonas</strong> und ich bin ein <strong>17</strong>-jähriger Schüler, der derzeit an der <strong><a href="https://www.htl-leonding.at/" target="_blank">HTBLA Leonding</a></strong> in <strong>Österreich</strong> studiert. Ich studiere <strong><a href="https://www.htl-leonding.at/bildungsangebot/medientechnik/" target="_blank">IT/Medientechnik</a></strong> und interessiere mich sehr für Programmierung, insbesondere Webentwicklung. <br> Neben meiner Muttersprache <strong>Deutsch</strong> spreche ich fließend <strong>Englisch</strong> mit Niveau B+. Spezialisiert habe ich mich auf die Computersprachen <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript & NodeJS</strong>, <strong>PHP</strong>, <strong>Oracle SQL</strong> und <strong>Java</strong>. <br> Kürzlich habe ich das Svelte JS-Framework entdeckt und <strong>Svelte</strong> zusammen mit <strong>SvelteKit</strong> gelernt. Ich habe auch Erfahrungen mit <strong>TailwindCSS</strong> und <strong>DaisyUI</strong> gesammelt. Ich lerne gerne neue Programmiersprachen und Frameworks und entwickle mit Leidenschaft effiziente sowie benutzerfreundliche Websites und Anwendungen. Ich suche ständig nach Möglichkeiten, meine Fähigkeiten und Kenntnisse im Bereich Webentwicklung zu verbessern, und ich bin entschlossen, meine Karriereziele in der Welt der IT und Programmierung zu erreichen. Mit Hingabe und Enthusiasmus glaube ich, dass ich das Zeug dazu habe, in diesem Bereich erfolgreich zu sein.'},skills:{title:"Sprachen in meinem Arsenal",navTitle:"Fähigkeiten",appCircle:"Apps"},photography:{title:"Fotografie",note:"seit 2020 fotografiere ich"}}},Error:{error:"{error:number} Fehler",action:"zurück zur homepage"},Header:{home:"Startseite",about:"Über",contact:"Kontakt",projects:"Projekte",legal:"Rechtliches",settings:"Einstellungen"},Footer:{about:{title:"Über",list:{skills:"Fähigkeiten",photography:"Fotografie",profile:"Profil"}},contact:{title:"Kontakt"},projects:{title:"Projekte"},legal:{title:"Rechtliches",list:{privacy_policy:"Datenschutz",terms_and_conditions:"Geschäftsbedingungen",cookies:"Cookies",imprint:"Impressum"}},quote:"hochwertige Webentwicklung"}};export{e as default};
