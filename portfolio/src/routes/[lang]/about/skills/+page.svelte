@@ -1,6 +1,7 @@
 <script>
 	// @ts-nocheck
 	// Svelte
+	import { browser } from '$app/environment';
 	import { base } from '$app/paths';
 	// Translation
 	import { locale } from '$translation/i18n-svelte';
@@ -150,7 +151,14 @@
 						</span>
 					</li>
 				{:else}
-					<p><em>Couldn't load Images!</em></p>
+					{#if browser && navigator && navigator.userAgent && !navigator.userAgent.includes('js_disabled')}
+						<p><em>Couldn't load images!</em></p>
+					{:else}
+						<noscript
+							>Sorry, your browser does not support JavaScript or you deactivated it! Features of
+							the website that do not work without JS: style-mode, language-change, settings save...
+						</noscript>
+					{/if}
 				{/each}
 			</ul>
 			<div class="prose">

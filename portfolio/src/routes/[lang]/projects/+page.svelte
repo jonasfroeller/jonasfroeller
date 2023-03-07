@@ -1,4 +1,6 @@
 <script>
+	// Svelte
+	import { browser } from '$app/environment';
 	// Components
 	import Category from '$component/Category.svelte';
 
@@ -18,7 +20,14 @@
 
 <section class="flex justify-center gap-4 flex-wrap max-w-full break-all">
 	{#await loadData()}
-		<p>loading data...</p>
+		{#if browser && navigator && navigator.userAgent && !navigator.userAgent.includes('js_disabled')}
+			<p><em>loading data...</em></p>
+		{:else}
+			<noscript
+				>Sorry, your browser does not support JavaScript or you deactivated it! Features of the
+				website that do not work without JS: style-mode, language-change, settings save...
+			</noscript>
+		{/if}
 	{:then data}
 		{#each data as element}
 			<div
@@ -66,7 +75,14 @@
 			</div>
 		{/each}
 	{:catch error}
-		<p>{error} - couldn't load data...</p>
+		{#if browser && navigator && navigator.userAgent && !navigator.userAgent.includes('js_disabled')}
+			<p><em>{error} - couldn't load data...</em></p>
+		{:else}
+			<noscript
+				>Sorry, your browser does not support JavaScript or you deactivated it! Features of the
+				website that do not work without JS: style-mode, language-change, settings save...
+			</noscript>
+		{/if}
 	{/await}
 	<!-- projects/[projectID]/ -->
 	<!-- https://api.github.com/repos/jonasfroeller/jonasfroeller/git/trees/master?recursive=true // GET REPO -->

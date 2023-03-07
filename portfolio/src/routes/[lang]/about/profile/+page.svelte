@@ -23,14 +23,6 @@
 		<article>
 			{@html $translation.Pages.about.profile.text()}
 			<br /> <em>~ ChatGPT</em>
-			<!-- https://www.htl-leonding.at/ | https://www.htl-leonding.at/bildungsangebot/medientechnik/ -->
 		</article>
 	</div>
 </section>
-
-<!-- <style>
-	.article-part::first-letter {
-		initial-letter: 2;
-		margin-right: 0.5rem;
-	}
-</style> -->

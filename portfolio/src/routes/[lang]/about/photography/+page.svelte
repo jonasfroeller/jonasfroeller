@@ -1,4 +1,6 @@
 <script>
+	// Svelte
+	import { browser } from '$app/environment';
 	// Components
 	import SubCategory from '$component/SubCategory.svelte';
 	import AboutNav from '$component/AboutNav.svelte';
@@ -61,7 +63,14 @@
 					<img src={photo} alt="photography-{i + 1}" class="w-full object-cover rounded-2xl" />
 				</div>
 			{:else}
-				<p><em>Couldn't load images!</em></p>
+				{#if browser && navigator && navigator.userAgent && !navigator.userAgent.includes('js_disabled')}
+					<p><em>Couldn't load images!</em></p>
+				{:else}
+					<noscript
+						>Sorry, your browser does not support JavaScript or you deactivated it! Features of the
+						website that do not work without JS: style-mode, language-change, settings save...
+					</noscript>
+				{/if}
 			{/each}
 		</div>
 		<div class="flex justify-center flex-wrap w-full py-2 gap-2">
@@ -71,7 +80,7 @@
 						href="#photography-{i + 1}"
 						on:click={() => (currentPhoto = `#photography-${i + 1}`)}
 						class="btn btn-s text-lg text-primary {currentPhoto == '#photography-' + (i + 1)
-							? 'border border-white hover:border-primary'
+							? 'border border-transparent night:border-white cmyk:border-black hover:border-primary'
 							: ''}">{i + 1}</a
 					>
 				{:else}
@@ -79,7 +88,7 @@
 						href="#photography-{i + 1}"
 						on:click={() => (currentPhoto = `#photography-${i + 1}`)}
 						class="btn btn-s text-lg text-secondary {currentPhoto == '#photography-' + (i + 1)
-							? 'border border-white hover:border-secondary'
+							? 'border border-transparent night:border-white cmyk:border-black hover:border-secondary'
 							: ''}">{i + 1}</a
 					>
 				{/if}

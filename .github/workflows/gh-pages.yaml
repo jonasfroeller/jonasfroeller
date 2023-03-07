@@ -1,8 +1,9 @@
 name: Build and Deploy
-on: 
+on:
   push:
-    branches: 
+    branches:
       - master
+      - main
 permissions:
   contents: write
 jobs:
@@ -17,7 +18,7 @@ jobs:
         run: |
           cd ./portfolio
           npm ci
-          npm run build
+          set prefixFolder=true && npm run build
           ls ../jonasfroeller
 
       - name: Deploy 🚀
