@@ -3314,6 +3314,9 @@ html {
 .font-bold {
   font-weight: 700;
 }
+.uppercase {
+  text-transform: uppercase;
+}
 .lowercase {
   text-transform: lowercase;
 }
