@@ -33,8 +33,8 @@
 			<div
 				class="card max-w-full w-96 bg-base-100 hover:border-primary border-2 transition hover:transition"
 			>
-				<span class="absolute top-2 right-2 badge badge-secondary"
-					>{element.language.toUpperCase()}</span
+				<span class="absolute top-2 right-2 badge badge-secondary uppercase"
+					>{element.language ?? 'text'}</span
 				>
 				<div class="card-body p-7">
 					<h2 class="card-title">
