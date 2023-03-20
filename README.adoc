@@ -1,7 +1,6 @@
 :imagesdir: ./imgs
 :source-highlighter: highlight.js
 :doctype: book
-:toc: left
 :toclevels: 5
 :icons: font
 :hide-uri-scheme:
