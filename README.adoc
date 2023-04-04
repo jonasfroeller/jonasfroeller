@@ -55,6 +55,11 @@ image:json.svg[static,50,50,link="https://www.json.org/json-de.html",window=_bla
 [TIP] 
 link:https://github.com/jonasfroeller/jonasfroeller[portfolio,window=_blank] 
 
+
+:tip-caption: pass:[🌐]
+[TIP] 
+link:https://github.com/jonasfroeller/SvelteKit_VidSlide[streaming-platform,window=_blank] 
+
 == stats
 
 image::https://github-readme-streak-stats.herokuapp.com/?user=jonasfroeller&theme=dark&hide_border=true&date_format=j%2Fn%5B%2FY%5D[]
