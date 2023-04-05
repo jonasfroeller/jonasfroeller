@@ -11,10 +11,11 @@ const basePath = prefixFolder == true ? (dev ? '' : '/jonasfroeller') : ''; // b
 let buildDir = prefixFolder == true ? '../jonasfroeller' : '../jonasfroeller-noprefix'; // folder: jonasfroeller (gh-pages) || folder:jonasfroeller - noprefix(any other static hosting service) (STATIC)
 buildDir = staticBuild ? buildDir : "../jonasfroeller-node"; // (NODE)
 
-let vercel = process.env.vercelBuild ? JSON.parse(process.env.vercelBuild.toLowerCase()) : false; // (VERCEL build: set vercelBuild=true && npm run build || export vercelBuild=true && npm run build)
+let vercel = process.env.vercelBuild ? JSON.parse(process.env.vercelBuild.toLowerCase()) : false; // (VERCEL build: set staticBuild=false vercelBuild=true && npm run build || export staticBuild=false vercelBuild=true && npm run build)
 
 console.log(`basePath: '${basePath}'`);
 console.log('buildDir:', vercel ? "public" : buildDir);
+// console.log('env:', process.env);
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
