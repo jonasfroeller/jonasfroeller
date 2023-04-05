@@ -8,20 +8,19 @@ const staticBuild = process.env.staticBuild ? JSON.parse(process.env.staticBuild
 // BUILD: set prefixFolder=true/false && npm run build || npm run build => false
 const prefixFolder = process.env.prefixFolder ? JSON.parse(process.env.prefixFolder.toLowerCase()) : false; // prefix (repo name) needed if hosted on GitHub (default = false => for: netlify, vercel, 000webhost, oracleCloud...) 
 const basePath = prefixFolder == true ? (dev ? '' : '/jonasfroeller') : ''; // base: <prefix> | domain/repo/de/<search> (true) || domain/de/<search> (false)
-const buildDir = prefixFolder == true ? '../jonasfroeller' : '../jonasfroeller-noprefix'; // folder: jonasfroeller (gh-pages) || folder:jonasfroeller - noprefix(any other static hosting service) (STATIC)
+let buildDir = prefixFolder == true ? '../jonasfroeller' : '../jonasfroeller-noprefix'; // folder: jonasfroeller (gh-pages) || folder:jonasfroeller - noprefix(any other static hosting service) (STATIC)
 buildDir = staticBuild ? buildDir : "../jonasfroeller-node"; // (NODE)
 
-let vercel = process.env.vercelBuild ? JSON.parse(process.env.vercelBuild.toLowerCase()) : false; // (VERCEL build: set prefixFolder=true vercelBuild=true && npm run build || export prefixFolder=true vercelBuild=true && npm run build)
-
+let vercel = process.env.vercelBuild ? JSON.parse(process.env.vercelBuild.toLowerCase()) : false; // (VERCEL build: set vercelBuild=true && npm run build || export vercelBuild=true && npm run build)
 
 console.log(`basePath: '${basePath}'`);
-console.log('buildDir:', buildDir);
+console.log('buildDir:', vercel ? "public" : buildDir);
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
 		adapter:
-			vercel ? adapterVercel() :
+		vercel ? adapterVercel() :
 			staticBuild ?
 			adapterStatic({
 				pages: buildDir,

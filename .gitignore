@@ -49,3 +49,5 @@
 
 jonasfroeller/
 jonasfroeller-noprefix/
+jonasfroeller-node/
+**/node_modules
