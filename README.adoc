@@ -53,7 +53,7 @@ image:json.svg[static,50,50,link="https://www.json.org/json-de.html",window=_bla
 
 :tip-caption: pass:[🌐]
 [TIP] 
-link:https://github.com/jonasfroeller/jonasfroeller[portfolio,window=_blank] 
+link:https://github.com/jonasfroeller/jonasfroeller/tree/master/portfolio[portfolio,window=_blank] 
 
 
 :tip-caption: pass:[🌐]
