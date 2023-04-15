@@ -86,5 +86,5 @@ image:https://img.shields.io/badge/Xing-green?logo=xing&logoColor=white[link="ht
 
 == links
 
-image:https://img.shields.io/badge/CodePen-white?style=for-the-badge&logo=codepen&logoColor=black[static,150,link="https://codepen.io/jonasfroeller",window=_blank]
-image:https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white[static,150,link="https://dev.to/jonasfroeller",window=_blank]
+image:https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white[static,100,link="https://dev.to/jonasfroeller",window=_blank]
+image:https://img.shields.io/badge/CodePen-white?style=for-the-badge&logo=codepen&logoColor=black[static,100,link="https://codepen.io/jonasfroeller",window=_blank]
