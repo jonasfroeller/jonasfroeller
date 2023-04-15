@@ -47,7 +47,21 @@ image:asciidoctor.svg[static,50,50,link="https://asciidoctor.org/",window=_blank
 image:svg-dark.svg[static,50,50,link="https://www.w3.org/TR/SVG2/",window=_blank] 
 image:json.svg[static,50,50,link="https://www.json.org/json-de.html",window=_blank] 
 
-// source: iconify.design -> search: skill-icons:<name>
+image:https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white[static,link="https://www.java.com/",window=_blank]
+image:https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white[static,link="",window=_blank]
+image:https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white[static,link="",window=_blank]
+image:https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E[static,link="",window=_blank]
+image:https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white[static,link="https://nodejs.org",window=_blank]
+image:https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white[static,link="https://www.typescriptlang.org/",window=_blank]
+image:https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white[static,link="https://www.php.net/",window=_blank]
+image:https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white[static,link="https://www.mysql.com/",window=_blank]
+image:https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white[static,link="",window=_blank]
+
+image:https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white[static,link="https://pages.github.com/",window=_blank]
+image:https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white[static,link="https://vercel.com/",window=_blank]
+image:https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7[static,link="https://www.netlify.com/",window=_blank]
+image:https://img.shields.io/badge/glitch-%233333FF.svg?style=for-the-badge&logo=glitch&logoColor=white[static,link="https://glitch.com/",window=_blank]
+image:https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white[static,link="https://www.oracle.com/de/cloud/",window=_blank]
 
 == currently working on
 
@@ -69,3 +83,8 @@ image::https://github-readme-stats-sigma-five.vercel.app/api/top-langs?username=
 == contact (not checked daily)
 image:https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white[link="https://www.linkedin.com/in/jonas-fr%C3%B6ller-8b4986235/"]
 image:https://img.shields.io/badge/Xing-green?logo=xing&logoColor=white[link="https://www.xing.com/profile/Jonas_Froeller/cv"]
+
+== links
+
+image:https://img.shields.io/badge/CodePen-white?style=for-the-badge&logo=codepen&logoColor=black[static,150,link="https://codepen.io/jonasfroeller",window=_blank]
+image:https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white[static,150,link="https://dev.to/jonasfroeller",window=_blank]
