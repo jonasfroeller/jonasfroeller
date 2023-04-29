@@ -21,6 +21,7 @@ Hey! I am Jonas, a developer living in upper Austria.
         "HyperTextMarkupLanguage [.html]",
         "CascadingStyleSheets [.css]",
         "JavaScript (ES) [.js]",
+        "TypeScript [.ts]",
         "NodeJS [.js]",
         "PersonalHomePage [.php]",
         "StructuredQueryLanguage [.sql]",
@@ -58,6 +59,7 @@ image:https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mys
 image:https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white[static,link="",window=_blank]
 
 image:https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white[static,link="https://pages.github.com/",window=_blank]
+image:https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white[static,link="https://pages.cloudflare.com/",window=_blank]
 image:https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white[static,link="https://vercel.com/",window=_blank]
 image:https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7[static,link="https://www.netlify.com/",window=_blank]
 image:https://img.shields.io/badge/glitch-%233333FF.svg?style=for-the-badge&logo=glitch&logoColor=white[static,link="https://glitch.com/",window=_blank]
@@ -84,7 +86,7 @@ image::https://github-readme-stats-sigma-five.vercel.app/api/top-langs?username=
 image:https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white[link="https://www.linkedin.com/in/jonas-fr%C3%B6ller-8b4986235/"]
 image:https://img.shields.io/badge/Xing-green?logo=xing&logoColor=white[link="https://www.xing.com/profile/Jonas_Froeller/cv"]
 
-== links
+== more
 
-* link:https://dev.to/jonasfroeller[dev.to ,window=_blank] 
-* link:https://codepen.io/jonasfroeller[codepen.to ,window=_blank] 
+image::https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white[static,link="https://dev.to/",window=_blank]
+image::https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white[static,link="https://codepen.io/",window=_blank]
