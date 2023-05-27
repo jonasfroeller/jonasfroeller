@@ -10,6 +10,8 @@
 	import Footer from '$component/Footer.svelte';
 	// Translation
 	import { setLocale } from '$translation/i18n-svelte';
+	// Stores
+	import { themeState } from '$store/styleConfig';
 	// Svelte
 	import { onMount } from 'svelte';
 
@@ -24,6 +26,15 @@
 		); // https://patorjk.com/software/taag/#p=display&f=Big&t=Jonas%20Froeller && https://www.freeformatter.com/javascript-escape.html#before-output
 	});
 </script>
+
+<svelte:head>
+	<link
+		rel="icon"
+		type="image/ico"
+		href={$themeState ? '/favicon-dark.ico' : '/favicon-light.ico'}
+	/>
+	<meta property="og:image" content={$themeState ? '/favicon-dark.png' : '/favicon-light.png'} />
+</svelte:head>
 
 <Header />
 
