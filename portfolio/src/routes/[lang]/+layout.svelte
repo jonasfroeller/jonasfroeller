@@ -14,6 +14,7 @@
 	import { themeState } from '$store/styleConfig';
 	// Svelte
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 
 	/** @type { import('./$types').LayoutData } */
 	export let data;
@@ -31,9 +32,9 @@
 	<link
 		rel="icon"
 		type="image/ico"
-		href={$themeState ? '/favicon-dark.ico' : '/favicon-light.ico'}
+		href={$themeState ? `${base}/favicon-dark.ico` : `${base}/favicon-light.ico`}
 	/>
-	<meta property="og:image" content={$themeState ? '/favicon-dark.png' : '/favicon-light.png'} />
+	<meta property="og:image" content={$themeState ? `${base}/favicon-dark.png` : `${base}/favicon-light.png`} />
 </svelte:head>
 
 <Header />
