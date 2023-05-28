@@ -71,10 +71,17 @@ image:https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle
 [TIP] 
 link:https://github.com/jonasfroeller/jonasfroeller/tree/master/portfolio[portfolio,window=_blank] 
 
+:tip-caption: pass:[🌐]
+[TIP] 
+link:https://github.com/jonasfroeller/SvelteKit_Markdown-Blog[markdown-blog,window=_blank] 
 
 :tip-caption: pass:[🌐]
 [TIP] 
-link:https://github.com/jonasfroeller/SvelteKit_VidSlide[streaming-platform,window=_blank] 
+link:https://github.com/jonasfroeller/Vue_TechDepot[tech-depot,window=_blank] 
+
+:tip-caption: pass:[🌐]
+[TIP] 
+link:https://github.com/jonasfroeller/SvelteKit_VidSlide[vidslide-social-media,window=_blank] 
 
 == stats
 
