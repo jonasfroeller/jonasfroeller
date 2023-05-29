@@ -1,3 +1,4 @@
+// @ts-nocheck
 // the way the language gets changed in the url
 import { dev } from '$app/environment'; // const dev = process.argv.includes('dev'); doesn't work with static hosting, args only filled on node start!
 
@@ -8,9 +9,9 @@ import { base } from '$app/paths';
 /** @type { import('@sveltejs/kit').Handle } */
 export const handle = async ({ event, resolve }) => {
 	// read language slug
-	// @ts-ignore
+
 	let [, , lang] = event.url.pathname.split('/'); // ip||domain/prefix/[lang]
-	// @ts-ignore
+
 	if (dev || base == '') {
 		// [, lang];
 		[, lang] = event.url.pathname.split('/'); // ip||domain/[lang]
@@ -26,7 +27,6 @@ export const handle = async ({ event, resolve }) => {
 	}
 
 	// replace html lang attribute with correct language
-	// @ts-ignore
 	return resolve(event, { transformPageChunk: ({ html }) => html.replace('%lang%', lang) });
 };
 

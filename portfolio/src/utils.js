@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { base } from '$app/paths';
 
 /**
@@ -7,6 +8,9 @@ import { base } from '$app/paths';
  * @returns string
  */
 export const replaceLocaleInUrl = ({ pathname, search }, locale, defaultGen) => {
+	pathname = pathname ?? `/${locale}/home`;
+	search = typeof search === "string" ? search : '';
+	
 	let [, , ...rest] = pathname?.split('/') ?? ''; // => /
 	if (!defaultGen) {
 		[, , , ...rest] = pathname?.split('/') ?? ''; // => prefix/
