@@ -8,7 +8,7 @@ import { base } from '$app/paths';
  * @returns string
  */
 export const replaceLocaleInUrl = ({ pathname, search }, locale, defaultGen) => {
-	pathname = pathname ?? `/${locale}/home`;
+	pathname = pathname ?? `/${locale}`;
 	search = typeof search === "string" ? search : '';
 	
 	let [, , ...rest] = pathname?.split('/') ?? ''; // => /
