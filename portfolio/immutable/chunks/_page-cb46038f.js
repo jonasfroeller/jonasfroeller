@@ -1,1 +1,0 @@
-function l({params:e}){return{lang:e.lang.includes(".html")?e.lang.replace(".html",""):e.lang}}const n=Object.freeze(Object.defineProperty({__proto__:null,load:l},Symbol.toStringTag,{value:"Module"}));export{n as _,l};
