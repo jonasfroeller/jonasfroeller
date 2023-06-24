@@ -10,6 +10,10 @@ const en = {
 		aboutButton: 'About',
 		projectsButton: 'Projects',
 		contactButton: 'Contact',
+		linksButton: 'Links',
+		codeSnippetsButton: 'Code Snippets',
+		supportButton: 'Support',
+		buyButton: 'Book me on fivver',
 		readMore: 'read more',
 		home: {
 			info: 'Hi, I am Jonas!'
@@ -865,10 +869,14 @@ const en = {
 				title: 'Profile',
 				text: 'My name is <strong>Jonas</strong>, and I am a <strong>17</strong>-year-old student currently studying at <strong><a href="https://www.htl-leonding.at/" target="_blank">HTBLA Leonding</a></strong> in <strong>Austria</strong>. I am pursuing a field of study in <strong><a href="https://www.htl-leonding.at/bildungsangebot/medientechnik/" target="_blank">IT/Mediatechnology</a></strong>, and I have a keen interest in programming, especially web development. <br> Aside from my native language, <strong>German</strong>, I am also fluent in <strong>English</strong>, with a B+ level of proficiency. I have experience working with various programming languages, including <strong>HTML</strong>, <strong>CSS</strong>, <strong>Java</strong>, <strong>ShellScript</strong>, <strong>JavaScript & NodeJS</strong>, <strong>PHP</strong>, and <strong>Oracle SQL</strong>. <br> Recently, I have discovered the Svelte JS-framework and learned Svelte along with <strong>SvelteKit</strong>. I have also gained expertise in working with <strong>TailwindCSS</strong> and <strong>DaisyUI</strong>. I am always eager to learn new programming languages and frameworks, and I am passionate about developing efficient, user-friendly websites and applications. I am constantly exploring ways to improve my skills and knowledge in the field of web development, and I am determined to achieve my career goals in the world of IT and programming. With dedication and enthusiasm, I believe that I have what it takes to succeed in this field.'
 			},
-			skills: {
-				title: 'Languages I Write In',
-				appCircle: 'TechStack',
-				navTitle: 'Skills'
+			languages: {
+				navTitle: 'Languages',
+				title: 'Languages I Speak'
+			},
+			technologies: {
+				navTitle: 'Technologies',
+				title: 'Technologies I Use',
+				appCircle: 'Technology'
 			},
 			photography: {
 				title: 'Photography',
@@ -892,9 +900,11 @@ const en = {
 		about: {
 			title: 'About',
 			list: {
-				skills: 'Skills',
 				photography: 'Photography',
-				profile: 'Profile'
+				profile: 'Profile',
+				languages: 'Languages',
+				technologies: 'Technologies',
+				links: 'Links'
 			}
 		},
 		contact: {

@@ -28,6 +28,22 @@ type RootTranslation = {
 		 */
 		contactButton: string
 		/**
+		 * L​i​n​k​s
+		 */
+		linksButton: string
+		/**
+		 * C​o​d​e​ ​S​n​i​p​p​e​t​s
+		 */
+		codeSnippetsButton: string
+		/**
+		 * U​n​t​e​r​s​t​ü​t​z​e​n
+		 */
+		supportButton: string
+		/**
+		 * A​u​f​ ​F​i​v​v​e​r​ ​b​e​s​t​e​l​l​e​n
+		 */
+		buyButton: string
+		/**
 		 * m​e​h​r​ ​e​r​f​a​h​r​e​n
 		 */
 		readMore: string
@@ -961,17 +977,27 @@ type RootTranslation = {
 				 */
 				text: string
 			}
-			skills: {
+			languages: {
+				/**
+				 * S​p​r​a​c​h​e​n
+				 */
+				navTitle: string
 				/**
 				 * S​p​r​a​c​h​e​n​ ​i​n​ ​m​e​i​n​e​m​ ​A​r​s​e​n​a​l
 				 */
 				title: string
+			}
+			technologies: {
 				/**
-				 * F​ä​h​i​g​k​e​i​t​e​n
+				 * T​e​c​h​n​o​l​o​g​i​e​n
 				 */
 				navTitle: string
 				/**
-				 * A​p​p​s
+				 * T​e​c​h​n​o​l​o​g​i​e​n​ ​d​i​e​ ​I​c​h​ ​v​e​r​w​e​n​d​e
+				 */
+				title: string
+				/**
+				 * S​o​f​t​w​a​r​e
 				 */
 				appCircle: string
 			}
@@ -1032,10 +1058,6 @@ type RootTranslation = {
 			title: string
 			list: {
 				/**
-				 * F​ä​h​i​g​k​e​i​t​e​n
-				 */
-				skills: string
-				/**
 				 * F​o​t​o​g​r​a​f​i​e
 				 */
 				photography: string
@@ -1043,6 +1065,18 @@ type RootTranslation = {
 				 * P​r​o​f​i​l
 				 */
 				profile: string
+				/**
+				 * S​p​r​a​c​h​e​n
+				 */
+				languages: string
+				/**
+				 * T​e​c​h​n​o​l​o​g​i​e​n
+				 */
+				technologies: string
+				/**
+				 * L​i​n​k​s
+				 */
+				links: string
 			}
 		}
 		contact: {
@@ -1102,6 +1136,22 @@ export type TranslationFunctions = {
 		 * Kontakt
 		 */
 		contactButton: () => LocalizedString
+		/**
+		 * Links
+		 */
+		linksButton: () => LocalizedString
+		/**
+		 * Code Snippets
+		 */
+		codeSnippetsButton: () => LocalizedString
+		/**
+		 * Unterstützen
+		 */
+		supportButton: () => LocalizedString
+		/**
+		 * Auf Fivver bestellen
+		 */
+		buyButton: () => LocalizedString
 		/**
 		 * mehr erfahren
 		 */
@@ -2036,17 +2086,27 @@ export type TranslationFunctions = {
 				 */
 				text: () => LocalizedString
 			}
-			skills: {
+			languages: {
+				/**
+				 * Sprachen
+				 */
+				navTitle: () => LocalizedString
 				/**
 				 * Sprachen in meinem Arsenal
 				 */
 				title: () => LocalizedString
+			}
+			technologies: {
 				/**
-				 * Fähigkeiten
+				 * Technologien
 				 */
 				navTitle: () => LocalizedString
 				/**
-				 * Apps
+				 * Technologien die Ich verwende
+				 */
+				title: () => LocalizedString
+				/**
+				 * Software
 				 */
 				appCircle: () => LocalizedString
 			}
@@ -2106,10 +2166,6 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			list: {
 				/**
-				 * Fähigkeiten
-				 */
-				skills: () => LocalizedString
-				/**
 				 * Fotografie
 				 */
 				photography: () => LocalizedString
@@ -2117,6 +2173,18 @@ export type TranslationFunctions = {
 				 * Profil
 				 */
 				profile: () => LocalizedString
+				/**
+				 * Sprachen
+				 */
+				languages: () => LocalizedString
+				/**
+				 * Technologien
+				 */
+				technologies: () => LocalizedString
+				/**
+				 * Links
+				 */
+				links: () => LocalizedString
 			}
 		}
 		contact: {

@@ -88,7 +88,7 @@
 
 	let parent = 'about';
 	let parentCapitalized = parent.charAt(0).toUpperCase() + parent.slice(1);
-	let name = 'skills';
+	let name = 'technologies';
 	let nameCapitalized = name.replaceAll('-', ' ').replace(/\b(\w)/g, (s) => s.toUpperCase());
 </script>
 
@@ -98,56 +98,19 @@
 
 <div class="flex justify-center mb-4 mt-4">
 	<div class="prose">
-		<h1 class="text-center">{$translation.Pages.about.skills.title()}</h1>
-	</div>
-</div>
-
-<div class="flex justify-center">
-	<div class="mockup-code min-w-0">
-		<pre data-prefix="1"><code
-				>&lt;p&gt;&lt;strong&gt;<strong>HTML</strong
-				>&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;since 2020&lt;/p&gt; &lt;p&gt;{new Date().getFullYear() -
-					2020}&lt;/p&gt;</code
-			></pre>
-		<pre data-prefix="2"><code
-				>&lt;p class='css'&gt;<strong>CSS</strong
-				>&lt;/p&gt; .css:before {`{content: "CSS"; font-weight: bold;}`} .since:before {'{content: "2020";}'} .years:before {`{content: "${
-					new Date().getFullYear() - 2020
-				}";}`} </code></pre>
-
-		<pre data-prefix="3"><code
-				>System.out.println("<strong>Java</strong
-				>"); int since = 2020; int years = {new Date().getFullYear() - 2020};</code
-			></pre>
-		<pre data-prefix="6"><code
-				>echo "<strong>ShellScript</strong>" since=2021 years={new Date().getFullYear() -
-					2021}</code
-			></pre>
-		<pre data-prefix="4"><code
-				>console.log("<strong>JS & NodeJS</strong
-				>"); let since = 2021; let years = {new Date().getFullYear() - 2021};</code
-			></pre>
-		<pre data-prefix="5"><code
-				>echo "<strong>PHP</strong>"; $since = 2022; $years = {new Date().getFullYear() -
-					2022};</code
-			></pre>
-		<pre data-prefix="6"><code
-				>SELECT '<strong>Oracle SQL</strong
-				>' FROM dual; VARIABLE since NUMBER; BEGIN :since := 2022; END; / VARIABLE years NUMBER; BEGIN :years := {new Date().getFullYear() -
-					2022}; END; /</code
-			></pre>
+		<h1 class="text-center">{$translation.Pages.about.technologies.title()}</h1>
 	</div>
 </div>
 
 <section class="flex justify-center items-center flex-wrap gap-4 mt-4">
 	<section class="flex justify-center mt-4">
-		<div id="skill-circle">
-			<ul class="skills">
+		<div id="tech-circle">
+			<ul class="technologies">
 				{#each software as sw, i}
 					<!-- svelte-ignore a11y-click-events-have-key-events -->
 					<li on:click={() => window.open(sw.url, '_blank').focus()}>
 						<span>
-							<img class="app" src={sw.img} alt={`software-${i}-${sw.name}`} />
+							<img class="technology" src={sw.img} alt={`software-${i}-${sw.name}`} />
 						</span>
 					</li>
 				{:else}
@@ -163,63 +126,55 @@
 			</ul>
 			<div class="prose">
 				<h1
-					class="absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] text-center mb-0 text-2xl sm:text-5xl"
+					class="absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] text-center mb-0 text-lg sm:text-2xl md:text-4xl"
 				>
-					{$translation.Pages.about.skills.appCircle()}
+					{$translation.Pages.about.technologies.appCircle()}
 				</h1>
 			</div>
 		</div>
 	</section>
-	<div class="flex sm:flex-col gap-3">
-		<a href="{base}/{$locale}/projects">
-			<button class="btn btn-md lg:btn-lg">{$translation.Pages.projectsButton()}</button>
-		</a>
-		<a href="{base}/{$locale}/socials">
-			<button class="btn btn-md lg:btn-lg">{$translation.Pages.contactButton()}</button>
-		</a>
-	</div>
 </section>
 
 <style>
 	@media (max-width: 485px) {
-		#skill-circle {
+		#tech-circle {
 			width: 20rem !important;
 			height: 20rem !important;
 		}
 
-		.skills {
+		.technologies {
 			left: calc(10rem - 2rem) !important;
 		}
-		.skills li {
+		.technologies li {
 			height: 10rem !important;
 			width: 76px !important;
 		}
 	}
 
 	@media (max-width: 375px) {
-		#skill-circle {
+		#tech-circle {
 			width: 14rem !important;
 			height: 14rem !important;
 		}
 
-		.skills {
+		.technologies {
 			left: calc(7rem - 1rem) !important;
 		}
-		.skills li {
+		.technologies li {
 			height: 7rem !important;
 			width: 28px !important;
 		}
 
-		.app {
+		.technology {
 			width: 40px !important;
 		}
 	}
 
-	.app {
+	.technology {
 		width: 50px;
 		aspect-ration: 1/1;
 	}
-	#skill-circle {
+	#tech-circle {
 		width: 26rem;
 		height: 26rem;
 		padding: 1rem;
@@ -227,7 +182,7 @@
 		position: relative;
 	}
 
-	.skills {
+	.technologies {
 		list-style: none;
 		top: 0;
 		margin: 0;
@@ -236,88 +191,88 @@
 		text-align: center;
 		left: calc(13rem - 4rem);
 	}
-	.skills li {
+	.technologies li {
 		height: 13rem;
 		position: absolute;
 		transform-origin: 50% 100%;
 		font-weight: bold;
 		width: 120px;
 	}
-	.skills span {
+	.technologies span {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-	.skills li:nth-of-type(1) {
+	.technologies li:nth-of-type(1) {
 		transform: rotate(30deg);
 	}
-	.skills li:nth-of-type(1) span {
+	.technologies li:nth-of-type(1) span {
 		transform: rotate(-30deg);
 	}
-	.skills li:nth-of-type(2) {
+	.technologies li:nth-of-type(2) {
 		transform: rotate(60deg);
 	}
-	.skills li:nth-of-type(2) span {
+	.technologies li:nth-of-type(2) span {
 		transform: rotate(-60deg);
 	}
-	.skills li:nth-of-type(3) {
+	.technologies li:nth-of-type(3) {
 		transform: rotate(90deg);
 	}
-	.skills li:nth-of-type(3) span {
+	.technologies li:nth-of-type(3) span {
 		transform: rotate(-90deg);
 	}
-	.skills li:nth-of-type(4) {
+	.technologies li:nth-of-type(4) {
 		transform: rotate(120deg);
 	}
-	.skills li:nth-of-type(4) span {
+	.technologies li:nth-of-type(4) span {
 		transform: rotate(-120deg);
 	}
-	.skills li:nth-of-type(5) {
+	.technologies li:nth-of-type(5) {
 		transform: rotate(150deg);
 	}
-	.skills li:nth-of-type(5) span {
+	.technologies li:nth-of-type(5) span {
 		transform: rotate(-150deg);
 	}
-	.skills li:nth-of-type(6) {
+	.technologies li:nth-of-type(6) {
 		transform: rotate(180deg);
 	}
-	.skills li:nth-of-type(6) span {
+	.technologies li:nth-of-type(6) span {
 		transform: rotate(-180deg);
 	}
-	.skills li:nth-of-type(7) {
+	.technologies li:nth-of-type(7) {
 		transform: rotate(210deg);
 	}
-	.skills li:nth-of-type(7) span {
+	.technologies li:nth-of-type(7) span {
 		transform: rotate(-210deg);
 	}
-	.skills li:nth-of-type(8) {
+	.technologies li:nth-of-type(8) {
 		transform: rotate(240deg);
 	}
-	.skills li:nth-of-type(8) span {
+	.technologies li:nth-of-type(8) span {
 		transform: rotate(-240deg);
 	}
-	.skills li:nth-of-type(9) {
+	.technologies li:nth-of-type(9) {
 		transform: rotate(270deg);
 	}
-	.skills li:nth-of-type(9) span {
+	.technologies li:nth-of-type(9) span {
 		transform: rotate(-270deg);
 	}
-	.skills li:nth-of-type(10) {
+	.technologies li:nth-of-type(10) {
 		transform: rotate(300deg);
 	}
-	.skills li:nth-of-type(10) span {
+	.technologies li:nth-of-type(10) span {
 		transform: rotate(-300deg);
 	}
-	.skills li:nth-of-type(11) {
+	.technologies li:nth-of-type(11) {
 		transform: rotate(330deg);
 	}
-	.skills li:nth-of-type(11) span {
+	.technologies li:nth-of-type(11) span {
 		transform: rotate(-330deg);
 	}
-	.skills li:nth-of-type(12) {
+	.technologies li:nth-of-type(12) {
 		transform: rotate(360deg);
 	}
-	.skills li:nth-of-type(12) span {
+	.technologies li:nth-of-type(12) span {
 		transform: rotate(-360deg);
 	}
 </style>

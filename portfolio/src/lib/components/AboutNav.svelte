@@ -15,9 +15,14 @@
 		>{$translation.Pages.about.profile.title()}</a
 	>
 	<a
-		href="{base}/{$locale}/about/skills"
-		class="tab tab-bordered {name === 'skills' ? 'tab-active' : ''}"
-		>{$translation.Pages.about.skills.navTitle()}</a
+		href="{base}/{$locale}/about/languages"
+		class="tab tab-bordered {name === 'languages' ? 'tab-active' : ''}"
+		>{$translation.Pages.about.languages.navTitle()}</a
+	>
+	<a
+		href="{base}/{$locale}/about/technologies"
+		class="tab tab-bordered {name === 'technologies' ? 'tab-active' : ''}"
+		>{$translation.Pages.about.technologies.navTitle()}</a
 	>
 	<a
 		href="{base}/{$locale}/about/photography"

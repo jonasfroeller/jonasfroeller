@@ -11,14 +11,20 @@
 		<span class="footer-title"
 			><a href="{base}/{$locale}/about/profile">{$translation.Footer.about.title()}</a></span
 		>
-		<a class="link after:bg-primary" href="{base}/{$locale}/about/skills"
-			>{$translation.Footer.about.list.skills()}</a
+		<a class="link after:bg-primary" href="{base}/{$locale}/about/profile"
+			>{$translation.Footer.about.list.profile()}</a
+		>
+		<a class="link after:bg-primary" href="{base}/{$locale}/about/languages"
+			>{$translation.Footer.about.list.languages()}</a
+		>
+		<a class="link after:bg-primary" href="{base}/{$locale}/about/technologies"
+			>{$translation.Footer.about.list.technologies()}</a
 		>
 		<a class="link after:bg-primary" href="{base}/{$locale}/about/photography"
 			>{$translation.Footer.about.list.photography()}</a
 		>
-		<a class="link after:bg-primary" href="{base}/{$locale}/about/profile"
-			>{$translation.Footer.about.list.profile()}</a
+		<a class="link after:bg-primary" href="https://qwik-link-tree.vercel.app" target="_blank"
+			>{$translation.Footer.about.list.links()}</a
 		>
 	</div>
 	<div>
