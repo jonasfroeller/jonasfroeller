@@ -121,9 +121,9 @@ const en = {
 						<p>
 							<strong>Website</strong> refers to jonasfroeller, accessible from
 							<a
-								href="https://jonasfroeller.ddns.net"
+								href="/en"
 								rel="external nofollow noopener noreferrer"
-								target="_blank">https://jonasfroeller.ddns.net</a
+								target="_blank">https://jonasfroeller.ddns.net/en</a
 							>
 						</p>
 					</li>
@@ -454,7 +454,7 @@ const en = {
 					<li>
 						<p>
 							By visiting this page on our website: <a
-								href="https://jonasfroeller.ddns.net/en/socials"
+								href="/en/socials"
 								rel="external nofollow noopener noreferrer"
 								target="_blank">https://jonasfroeller.ddns.net/en/socials</a
 							>
@@ -471,7 +471,10 @@ const en = {
 		
 				<p>
 					These terms and conditions outline the rules and regulations for the use of jonasfroeller's
-					Website, located at https://jonasfroeller.ddns.net/en.
+					Website, located at <a
+					href="/en"
+					rel="external nofollow noopener noreferrer"
+					target="_blank">https://jonasfroeller.ddns.net/en</a>.
 				</p>
 		
 				<p>
@@ -732,7 +735,10 @@ const en = {
 				title: 'Cookies',
 				content: `<p>Last updated: March 03, 2023</p>
 				<p>
-					This is the Cookie Policy for jonasfroeller, accessible from https://jonasfroeller.ddns.net/en
+					This is the Cookie Policy for jonasfroeller, accessible from <a
+					href="/en/legal/cookies"
+					rel="external nofollow noopener noreferrer"
+					target="_blank">https://jonasfroeller.ddns.net/en/legal/cookies</a>
 				</p>
 		
 				<p><strong>What Are Cookies</strong></p>
@@ -824,7 +830,10 @@ const en = {
 		
 				<ul>
 					<li>Email: j.froe@gmx.at</li>
-					<li>By visiting this link: https://jonasfroeller.ddns.net/en/legal/cookies</li>
+					<li>By visiting this link: <a
+					href="/en/socials"
+					rel="external nofollow noopener noreferrer"
+					target="_blank">https://jonasfroeller.ddns.net/en/socials</a></li>
 				</ul>`,
 				accept: 'accept Cookies'
 			},

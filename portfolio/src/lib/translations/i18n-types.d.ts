@@ -181,9 +181,9 @@ type RootTranslation = {
 			​	​	​	​	​	​	​<​p​>​
 			​	​	​	​	​	​	​	​<​s​t​r​o​n​g​>​W​e​b​s​i​t​e​<​/​s​t​r​o​n​g​>​ ​r​e​f​e​r​s​ ​t​o​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​,​ ​a​c​c​e​s​s​i​b​l​e​ ​f​r​o​m​
 			​	​	​	​	​	​	​	​<​a​
-			​	​	​	​	​	​	​	​	​h​r​e​f​=​"​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​"​
+			​	​	​	​	​	​	​	​	​h​r​e​f​=​"​/​e​n​"​
 			​	​	​	​	​	​	​	​	​r​e​l​=​"​e​x​t​e​r​n​a​l​ ​n​o​f​o​l​l​o​w​ ​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​
-			​	​	​	​	​	​	​	​	​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​>​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​<​/​a​
+			​	​	​	​	​	​	​	​	​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​>​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​/​e​n​<​/​a​
 			​	​	​	​	​	​	​	​>​
 			​	​	​	​	​	​	​<​/​p​>​
 			​	​	​	​	​	​<​/​l​i​>​
@@ -514,7 +514,7 @@ type RootTranslation = {
 			​	​	​	​	​	​<​l​i​>​
 			​	​	​	​	​	​	​<​p​>​
 			​	​	​	​	​	​	​	​B​y​ ​v​i​s​i​t​i​n​g​ ​t​h​i​s​ ​p​a​g​e​ ​o​n​ ​o​u​r​ ​w​e​b​s​i​t​e​:​ ​<​a​
-			​	​	​	​	​	​	​	​	​h​r​e​f​=​"​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​/​e​n​/​s​o​c​i​a​l​s​"​
+			​	​	​	​	​	​	​	​	​h​r​e​f​=​"​/​e​n​/​s​o​c​i​a​l​s​"​
 			​	​	​	​	​	​	​	​	​r​e​l​=​"​e​x​t​e​r​n​a​l​ ​n​o​f​o​l​l​o​w​ ​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​
 			​	​	​	​	​	​	​	​	​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​>​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​/​e​n​/​s​o​c​i​a​l​s​<​/​a​
 			​	​	​	​	​	​	​	​>​
@@ -540,7 +540,10 @@ type RootTranslation = {
 			​	​	​
 			​	​	​	​	​<​p​>​
 			​	​	​	​	​	​T​h​e​s​e​ ​t​e​r​m​s​ ​a​n​d​ ​c​o​n​d​i​t​i​o​n​s​ ​o​u​t​l​i​n​e​ ​t​h​e​ ​r​u​l​e​s​ ​a​n​d​ ​r​e​g​u​l​a​t​i​o​n​s​ ​f​o​r​ ​t​h​e​ ​u​s​e​ ​o​f​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​'​s​
-			​	​	​	​	​	​W​e​b​s​i​t​e​,​ ​l​o​c​a​t​e​d​ ​a​t​ ​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​/​e​n​.​
+			​	​	​	​	​	​W​e​b​s​i​t​e​,​ ​l​o​c​a​t​e​d​ ​a​t​ ​<​a​
+			​	​	​	​	​	​h​r​e​f​=​"​/​e​n​"​
+			​	​	​	​	​	​r​e​l​=​"​e​x​t​e​r​n​a​l​ ​n​o​f​o​l​l​o​w​ ​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​
+			​	​	​	​	​	​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​>​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​/​e​n​<​/​a​>​.​
 			​	​	​	​	​<​/​p​>​
 			​	​	​
 			​	​	​	​	​<​p​>​
@@ -810,7 +813,10 @@ type RootTranslation = {
 				/**
 				 * <​p​>​L​a​s​t​ ​u​p​d​a​t​e​d​:​ ​M​a​r​c​h​ ​0​3​,​ ​2​0​2​3​<​/​p​>​
 			​	​	​	​	​<​p​>​
-			​	​	​	​	​	​T​h​i​s​ ​i​s​ ​t​h​e​ ​C​o​o​k​i​e​ ​P​o​l​i​c​y​ ​f​o​r​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​,​ ​a​c​c​e​s​s​i​b​l​e​ ​f​r​o​m​ ​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​/​e​n​
+			​	​	​	​	​	​T​h​i​s​ ​i​s​ ​t​h​e​ ​C​o​o​k​i​e​ ​P​o​l​i​c​y​ ​f​o​r​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​,​ ​a​c​c​e​s​s​i​b​l​e​ ​f​r​o​m​ ​<​a​
+			​	​	​	​	​	​h​r​e​f​=​"​/​e​n​/​l​e​g​a​l​/​c​o​o​k​i​e​s​"​
+			​	​	​	​	​	​r​e​l​=​"​e​x​t​e​r​n​a​l​ ​n​o​f​o​l​l​o​w​ ​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​
+			​	​	​	​	​	​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​>​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​/​e​n​/​l​e​g​a​l​/​c​o​o​k​i​e​s​<​/​a​>​
 			​	​	​	​	​<​/​p​>​
 			​	​	​
 			​	​	​	​	​<​p​>​<​s​t​r​o​n​g​>​W​h​a​t​ ​A​r​e​ ​C​o​o​k​i​e​s​<​/​s​t​r​o​n​g​>​<​/​p​>​
@@ -902,7 +908,10 @@ type RootTranslation = {
 			​	​	​
 			​	​	​	​	​<​u​l​>​
 			​	​	​	​	​	​<​l​i​>​E​m​a​i​l​:​ ​j​.​f​r​o​e​@​g​m​x​.​a​t​<​/​l​i​>​
-			​	​	​	​	​	​<​l​i​>​B​y​ ​v​i​s​i​t​i​n​g​ ​t​h​i​s​ ​l​i​n​k​:​ ​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​/​e​n​/​l​e​g​a​l​/​c​o​o​k​i​e​s​<​/​l​i​>​
+			​	​	​	​	​	​<​l​i​>​B​y​ ​v​i​s​i​t​i​n​g​ ​t​h​i​s​ ​l​i​n​k​:​ ​<​a​
+			​	​	​	​	​	​h​r​e​f​=​"​/​e​n​/​s​o​c​i​a​l​s​"​
+			​	​	​	​	​	​r​e​l​=​"​e​x​t​e​r​n​a​l​ ​n​o​f​o​l​l​o​w​ ​n​o​o​p​e​n​e​r​ ​n​o​r​e​f​e​r​r​e​r​"​
+			​	​	​	​	​	​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​>​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​/​e​n​/​s​o​c​i​a​l​s​<​/​a​>​<​/​l​i​>​
 			​	​	​	​	​<​/​u​l​>
 				 */
 				content: string
@@ -1294,9 +1303,9 @@ export type TranslationFunctions = {
 									<p>
 										<strong>Website</strong> refers to jonasfroeller, accessible from
 										<a
-											href="https://jonasfroeller.ddns.net"
+											href="/en"
 											rel="external nofollow noopener noreferrer"
-											target="_blank">https://jonasfroeller.ddns.net</a
+											target="_blank">https://jonasfroeller.ddns.net/en</a
 										>
 									</p>
 								</li>
@@ -1627,7 +1636,7 @@ export type TranslationFunctions = {
 								<li>
 									<p>
 										By visiting this page on our website: <a
-											href="https://jonasfroeller.ddns.net/en/socials"
+											href="/en/socials"
 											rel="external nofollow noopener noreferrer"
 											target="_blank">https://jonasfroeller.ddns.net/en/socials</a
 										>
@@ -1653,7 +1662,10 @@ export type TranslationFunctions = {
 				
 							<p>
 								These terms and conditions outline the rules and regulations for the use of jonasfroeller's
-								Website, located at https://jonasfroeller.ddns.net/en.
+								Website, located at <a
+								href="/en"
+								rel="external nofollow noopener noreferrer"
+								target="_blank">https://jonasfroeller.ddns.net/en</a>.
 							</p>
 				
 							<p>
@@ -1923,7 +1935,10 @@ export type TranslationFunctions = {
 				/**
 				 * <p>Last updated: March 03, 2023</p>
 							<p>
-								This is the Cookie Policy for jonasfroeller, accessible from https://jonasfroeller.ddns.net/en
+								This is the Cookie Policy for jonasfroeller, accessible from <a
+								href="/en/legal/cookies"
+								rel="external nofollow noopener noreferrer"
+								target="_blank">https://jonasfroeller.ddns.net/en/legal/cookies</a>
 							</p>
 				
 							<p><strong>What Are Cookies</strong></p>
@@ -2015,7 +2030,10 @@ export type TranslationFunctions = {
 				
 							<ul>
 								<li>Email: j.froe@gmx.at</li>
-								<li>By visiting this link: https://jonasfroeller.ddns.net/en/legal/cookies</li>
+								<li>By visiting this link: <a
+								href="/en/socials"
+								rel="external nofollow noopener noreferrer"
+								target="_blank">https://jonasfroeller.ddns.net/en/socials</a></li>
 							</ul>
 				 */
 				content: () => LocalizedString

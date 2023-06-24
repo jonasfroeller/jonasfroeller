@@ -6,6 +6,10 @@ a, button {
     text-decoration: none !important;
 }
 
+a {
+    word-break: break-word;
+}
+
 .link {
     display: inline-block;
     position: relative;
