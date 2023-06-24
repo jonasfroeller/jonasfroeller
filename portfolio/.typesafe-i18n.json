@@ -1,5 +1,5 @@
 {
-   "baseLocale": "de",
+   "baseLocale": "en",
    "adapter": "svelte",
    "outputFormat": "JavaScript",
    "outputPath": "./src/lib/translations",

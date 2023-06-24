@@ -1,10 +1,10 @@
 // @ts-check
 
 /**
- * @typedef { import('../i18n-types').Translation } Translation
+ * @typedef { import('../i18n-types').BaseTranslation } BaseTranslation
  */
 
-/** @type { Translation } */
+/** @type { BaseTranslation } */
 const en = {
 	Pages: {
 		aboutButton: 'About',
@@ -885,7 +885,7 @@ const en = {
 		}
 	},
 	Error: {
-		error: '{error} Error',
+		error: '{error:number} Error',
 		action: 'back to homepage'
 	},
 	Header: {

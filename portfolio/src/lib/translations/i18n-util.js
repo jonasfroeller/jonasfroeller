@@ -19,7 +19,7 @@ import { detectLocale as detectLocaleFn } from 'typesafe-i18n/detectors'
 import { initExtendDictionary } from 'typesafe-i18n/utils'
 
 /** @type { Locales } */
-export const baseLocale = 'de'
+export const baseLocale = 'en'
 
 /** @type { Locales[] } */
 export const locales = [

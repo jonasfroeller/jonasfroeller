@@ -3,7 +3,7 @@
 import type { BaseTranslation as BaseTranslationType, LocalizedString, RequiredParams } from 'typesafe-i18n'
 
 export type BaseTranslation = BaseTranslationType
-export type BaseLocale = 'de'
+export type BaseLocale = 'en'
 
 export type Locales =
 	| 'de'
@@ -16,15 +16,15 @@ export type Translations = RootTranslation
 type RootTranslation = {
 	Pages: {
 		/**
-		 * Ü​b​e​r
+		 * A​b​o​u​t
 		 */
 		aboutButton: string
 		/**
-		 * P​r​o​j​e​k​t​e
+		 * P​r​o​j​e​c​t​s
 		 */
 		projectsButton: string
 		/**
-		 * K​o​n​t​a​k​t
+		 * C​o​n​t​a​c​t
 		 */
 		contactButton: string
 		/**
@@ -36,51 +36,51 @@ type RootTranslation = {
 		 */
 		codeSnippetsButton: string
 		/**
-		 * U​n​t​e​r​s​t​ü​t​z​e​n
+		 * S​u​p​p​o​r​t
 		 */
 		supportButton: string
 		/**
-		 * A​u​f​ ​F​i​v​v​e​r​ ​b​e​s​t​e​l​l​e​n
+		 * B​o​o​k​ ​m​e​ ​o​n​ ​f​i​v​v​e​r
 		 */
 		buyButton: string
 		/**
-		 * m​e​h​r​ ​e​r​f​a​h​r​e​n
+		 * r​e​a​d​ ​m​o​r​e
 		 */
 		readMore: string
 		home: {
 			/**
-			 * H​i​,​ ​I​c​h​ ​b​i​n​ ​J​o​n​a​s​!
+			 * H​i​,​ ​I​ ​a​m​ ​J​o​n​a​s​!
 			 */
 			info: string
 		}
 		socials: {
 			/**
-			 * P​r​o​g​r​a​m​m​i​e​r​e​n
+			 * C​o​d​i​n​g
 			 */
 			headline01: string
 			/**
-			 * S​o​z​i​a​l​e​ ​M​e​d​i​e​n
+			 * S​o​c​i​a​l​ ​M​e​d​i​a
 			 */
 			headline02: string
 			/**
-			 * K​o​n​t​a​k​t
+			 * C​o​n​t​a​c​t
 			 */
 			headline03: string
 			/**
-			 * w​ö​c​h​e​n​t​l​i​c​h​ ​e​i​n​g​e​s​e​h​e​n
+			 * c​h​e​c​k​e​d​ ​w​e​e​k​l​y
 			 */
 			availabilityNoticeWeek: string
 			/**
-			 * t​ä​g​l​i​c​h​ ​e​i​n​g​e​s​e​h​e​n
+			 * c​h​e​c​k​e​d​ ​d​a​i​l​y
 			 */
 			availabilityNoticeDay: string
 			copyNotice: {
 				/**
-				 * E​-​M​a​i​l​ ​k​o​p​i​e​r​e​n
+				 * c​o​p​y​ ​E​-​M​a​i​l
 				 */
 				copy: string
 				/**
-				 * E​-​M​a​i​l​ ​k​o​p​i​e​r​t
+				 * c​o​p​i​e​d​ ​E​-​M​a​i​l
 				 */
 				copied: string
 			}
@@ -88,11 +88,11 @@ type RootTranslation = {
 		legal: {
 			privacy_policy: {
 				/**
-				 * D​a​t​e​n​s​c​h​u​t​z
+				 * P​r​i​v​a​c​y​ ​P​o​l​i​c​y
 				 */
 				title: string
 				/**
-				 * <​c​e​n​t​e​r​>​<​e​m​>​K​e​i​n​e​ ​ü​b​e​r​s​e​t​z​u​n​g​ ​v​o​r​h​a​n​d​e​n​.​<​/​e​m​>​<​/​c​e​n​t​e​r​>​ ​<​b​r​>​ ​<​p​>​L​a​s​t​ ​u​p​d​a​t​e​d​:​ ​M​a​r​c​h​ ​0​3​,​ ​2​0​2​3​<​/​p​>​
+				 * <​p​>​L​a​s​t​ ​u​p​d​a​t​e​d​:​ ​M​a​r​c​h​ ​0​3​,​ ​2​0​2​3​<​/​p​>​
 			​	​	​	​	​<​p​>​
 			​	​	​	​	​	​T​h​i​s​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y​ ​d​e​s​c​r​i​b​e​s​ ​O​u​r​ ​p​o​l​i​c​i​e​s​ ​a​n​d​ ​p​r​o​c​e​d​u​r​e​s​ ​o​n​ ​t​h​e​ ​c​o​l​l​e​c​t​i​o​n​,​ ​u​s​e​ ​a​n​d​
 			​	​	​	​	​	​d​i​s​c​l​o​s​u​r​e​ ​o​f​ ​Y​o​u​r​ ​i​n​f​o​r​m​a​t​i​o​n​ ​w​h​e​n​ ​Y​o​u​ ​u​s​e​ ​t​h​e​ ​S​e​r​v​i​c​e​ ​a​n​d​ ​t​e​l​l​s​ ​Y​o​u​ ​a​b​o​u​t​ ​Y​o​u​r​ ​p​r​i​v​a​c​y​
@@ -524,17 +524,17 @@ type RootTranslation = {
 				 */
 				content: string
 				/**
-				 * D​a​t​e​n​s​c​h​u​t​z​e​r​k​l​ä​r​u​n​g​ ​a​k​z​e​p​t​i​e​r​e​n
+				 * a​c​c​e​p​t​ ​P​r​i​v​a​c​y​ ​P​o​l​i​c​y
 				 */
 				accept: string
 			}
 			terms_and_conditions: {
 				/**
-				 * G​e​s​c​h​ä​f​t​s​b​e​d​i​n​g​u​n​g​e​n
+				 * T​e​r​m​s​ ​a​n​d​ ​C​o​n​d​i​t​i​o​n​s
 				 */
 				title: string
 				/**
-				 * <​c​e​n​t​e​r​>​<​e​m​>​K​e​i​n​e​ ​ü​b​e​r​s​e​t​z​u​n​g​ ​v​o​r​h​a​n​d​e​n​.​<​/​e​m​>​<​/​c​e​n​t​e​r​>​ ​<​b​r​>​ ​<​p​>​L​a​s​t​ ​u​p​d​a​t​e​d​:​ ​M​a​r​c​h​ ​0​3​,​ ​2​0​2​3​<​/​p​>​
+				 * <​p​>​L​a​s​t​ ​u​p​d​a​t​e​d​:​ ​M​a​r​c​h​ ​0​3​,​ ​2​0​2​3​<​/​p​>​
 			​
 			​	​	​	​	​<​p​>​W​e​l​c​o​m​e​ ​t​o​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​!​<​/​p​>​
 			​	​	​
@@ -798,7 +798,7 @@ type RootTranslation = {
 				 */
 				content: string
 				/**
-				 * G​e​s​c​h​ä​f​t​s​b​e​d​i​n​g​u​n​g​e​n​ ​a​k​z​e​p​t​i​e​r​e​n
+				 * a​c​c​e​p​t​ ​T​e​r​m​s​ ​a​n​d​ ​C​o​n​d​i​t​i​o​n​s
 				 */
 				accept: string
 			}
@@ -808,7 +808,7 @@ type RootTranslation = {
 				 */
 				title: string
 				/**
-				 * <​c​e​n​t​e​r​>​<​e​m​>​K​e​i​n​e​ ​ü​b​e​r​s​e​t​z​u​n​g​ ​v​o​r​h​a​n​d​e​n​.​<​/​e​m​>​<​/​c​e​n​t​e​r​>​ ​<​b​r​>​ ​<​p​>​L​a​s​t​ ​u​p​d​a​t​e​d​:​ ​M​a​r​c​h​ ​0​3​,​ ​2​0​2​3​<​/​p​>​
+				 * <​p​>​L​a​s​t​ ​u​p​d​a​t​e​d​:​ ​M​a​r​c​h​ ​0​3​,​ ​2​0​2​3​<​/​p​>​
 			​	​	​	​	​<​p​>​
 			​	​	​	​	​	​T​h​i​s​ ​i​s​ ​t​h​e​ ​C​o​o​k​i​e​ ​P​o​l​i​c​y​ ​f​o​r​ ​j​o​n​a​s​f​r​o​e​l​l​e​r​,​ ​a​c​c​e​s​s​i​b​l​e​ ​f​r​o​m​ ​h​t​t​p​s​:​/​/​j​o​n​a​s​f​r​o​e​l​l​e​r​.​d​d​n​s​.​n​e​t​/​e​n​
 			​	​	​	​	​<​/​p​>​
@@ -907,61 +907,65 @@ type RootTranslation = {
 				 */
 				content: string
 				/**
-				 * C​o​o​k​i​e​s​ ​a​k​z​e​p​t​i​e​r​e​n
+				 * a​c​c​e​p​t​ ​C​o​o​k​i​e​s
 				 */
 				accept: string
 			}
 			imprint: {
 				/**
-				 * I​m​p​r​e​s​s​u​m
+				 * I​m​p​r​i​n​t
 				 */
 				title: string
 				/**
-				 * 
-			​	​	​	​	​<​p​>​L​e​t​z​t​e​ ​A​k​t​u​a​l​i​s​i​e​r​u​n​g​:​ ​M​ä​r​z​ ​0​3​,​ ​2​0​2​3​<​/​p​>​
+				 * <​p​>​L​a​s​t​ ​u​p​d​a​t​e​d​:​ ​M​a​r​c​h​ ​0​3​,​ ​2​0​2​3​<​/​p​>​
 			​
-			​	​	​	​	​<​h​2​>​A​n​g​a​b​e​n​ ​g​e​m​&​a​u​m​l​;​&​s​z​l​i​g​;​ ​&​s​e​c​t​;​ ​5​ ​T​M​G​<​/​h​2​>​
+			​	​	​	​	​<​h​2​>​I​n​f​o​r​m​a​t​i​o​n​ ​a​c​c​o​r​d​i​n​g​ ​t​o​ ​&​s​e​c​t​;​ ​5​T​M​G​<​/​h​2​>​
+			​	​	​	​	​
 			​	​	​	​	​<​p​>​
 			​	​	​	​	​	​J​o​n​a​s​ ​F​r​&​o​u​m​l​;​l​l​e​r​<​b​r​ ​/​>​
-			​	​	​	​	​	​<​!​-​-​ ​L​i​m​e​s​s​t​r​a​&​s​z​l​i​g​;​e​ ​1​2​/​1​4​<​b​r​ ​/​>​ ​-​-​>​
+			​	​	​	​	​
+			​	​	​	​	​	​<​!​-​-​ ​L​i​m​e​s​s​t​r​a​ß​e​ ​1​2​/​1​4​<​b​r​ ​/​>​ ​-​-​>​
+			​	​	​	​	​
 			​	​	​	​	​	​<​!​-​-​ ​4​0​6​0​ ​L​e​o​n​d​i​n​g​ ​-​-​>​
 			​	​	​	​	​<​/​p​>​
-			​	​	​
-			​	​	​	​	​<​h​2​>​K​o​n​t​a​k​t​<​/​h​2​>​
+			​	​	​	​	​
+			​	​	​	​	​<​h​2​>​C​o​n​t​a​c​t​<​/​h​2​>​
+			​	​	​	​	​
 			​	​	​	​	​<​p​>​
-			​	​	​	​	​	​<​!​-​-​ ​T​e​l​e​f​o​n​:​ ​&​#​9​1​;​T​e​l​e​f​o​n​n​u​m​m​e​r​&​#​9​3​;​<​b​r​ ​/​>​ ​-​-​>​
-			​	​	​	​	​	​E​-​M​a​i​l​:​ ​j​.​f​r​o​e​@​g​m​x​.​a​t​
+			​	​	​	​	​	​<​!​-​-​ ​P​h​o​n​e​:​ ​&​#​9​1​;​p​h​o​n​e​ ​n​u​m​b​e​r​&​#​9​3​;​<​b​r​ ​/​>​ ​-​-​>​
+			​	​	​	​	​
+			​	​	​	​	​	​E​m​a​i​l​:​ ​j​.​f​r​o​e​@​g​m​x​.​a​t​
 			​	​	​	​	​<​/​p​>​
-			​	​	​
-			​	​	​	​	​<​p​>​Q​u​e​l​l​e​:​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​e​-​r​e​c​h​t​2​4​.​d​e​"​>​e​-​r​e​c​h​t​2​4​.​d​e​<​/​a​>​<​/​p​>
+			​	​	​	​	​
+			​	​	​	​	​<​p​>​S​o​u​r​c​e​:​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​e​-​r​e​c​h​t​2​4​.​d​e​"​>​e​-​r​e​c​h​t​2​4​.​d​e​<​/​a​>​<​/​p​>
 				 */
 				content: string
 			}
 		}
 		settings: {
 			/**
-			 * E​i​n​s​t​e​l​l​u​n​g​e​n
+			 * S​e​t​t​i​n​g​s
 			 */
 			title: string
 			/**
-			 * R​e​c​h​t​l​i​c​h​e​s
+			 * L​e​g​a​l
 			 */
 			headline01: string
 			/**
-			 * S​t​i​l
+			 * S​t​y​l​e
 			 */
 			headline02: string
 			/**
-			 * S​p​r​a​c​h​e
+			 * L​a​n​g​u​a​g​e
 			 */
 			headline03: string
 			/**
-			 * O​p​t​i​o​n​e​n
+			 * O​p​t​i​o​n​s
 			 */
 			options: string
 			cookieOptions: {
 				/**
-				 * E​r​f​o​r​d​e​r​l​i​c​h​,​ ​d​a​m​i​t​ ​d​i​e​ ​W​e​b​s​i​t​e​ ​d​i​e​ ​g​e​w​ä​h​l​t​e​ ​S​p​r​a​c​h​e​,​ ​d​e​n​ ​g​e​w​ä​h​l​t​e​n​ ​S​t​i​l​,​ ​b​e​r​e​i​t​s​ ​g​e​l​a​d​e​n​e​ ​I​c​o​n​s​ ​u​n​d​ ​d​i​e​ ​S​c​r​o​l​l​p​o​s​i​t​i​o​n​ ​(​w​i​r​d​ ​n​a​c​h​ ​s​c​h​l​i​e​ß​e​n​ ​d​e​s​ ​T​a​b​s​ ​g​e​l​ö​s​c​h​t​)​ ​j​e​d​e​r​ ​S​e​i​t​e​ ​a​u​f​ ​I​h​r​e​m​ ​G​e​r​ä​t​ ​s​p​e​i​c​h​e​r​n​ ​k​a​n​n​!
+				 * N​e​c​e​s​s​a​r​y​ ​s​o​ ​t​h​a​t​ ​t​h​e​ ​w​e​b​s​i​t​e​ ​c​a​n​ ​s​a​v​e​ ​t​h​e​ ​s​e​l​e​c​t​e​d​ ​l​a​n​g​u​a​g​e​,​ ​t​h​e​ ​s​e​l​e​c​t​e​d​ ​s​t​y​l​e​,​ ​a​l​r​e​a​d​y​ ​l​o​a​d​e​d​ ​i​c​o​n​s​ ​a​n​d​ ​t​h​e​ ​s​c​r​o​l​l​ ​p​o​s​i​t​i​o​n​ ​(​w​i​l​l​ ​b​e​ ​d​e​l​e​t​e​d​ ​a​f​t​e​r​ ​c​l​o​s​i​n​g​ ​t​h​e​ ​t​a​b​)​ ​o​f​ ​e​a​c​h​ ​p​a​g​e​ ​o​n​ ​y​o​u​r​ ​d​e​v​i​c​e​!
 				 */
 				necessary: string
 			}
@@ -969,45 +973,45 @@ type RootTranslation = {
 		about: {
 			profile: {
 				/**
-				 * P​r​o​f​i​l
+				 * P​r​o​f​i​l​e
 				 */
 				title: string
 				/**
-				 * M​e​i​n​ ​N​a​m​e​ ​i​s​t​ ​<​s​t​r​o​n​g​>​J​o​n​a​s​<​/​s​t​r​o​n​g​>​ ​u​n​d​ ​i​c​h​ ​b​i​n​ ​e​i​n​ ​<​s​t​r​o​n​g​>​1​7​<​/​s​t​r​o​n​g​>​-​j​ä​h​r​i​g​e​r​ ​S​c​h​ü​l​e​r​,​ ​d​e​r​ ​d​e​r​z​e​i​t​ ​a​n​ ​d​e​r​ ​<​s​t​r​o​n​g​>​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​h​t​l​-​l​e​o​n​d​i​n​g​.​a​t​/​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​>​H​T​B​L​A​ ​L​e​o​n​d​i​n​g​<​/​a​>​<​/​s​t​r​o​n​g​>​ ​i​n​ ​<​s​t​r​o​n​g​>​Ö​s​t​e​r​r​e​i​c​h​<​/​s​t​r​o​n​g​>​ ​s​t​u​d​i​e​r​t​.​ ​I​c​h​ ​s​t​u​d​i​e​r​e​ ​<​s​t​r​o​n​g​>​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​h​t​l​-​l​e​o​n​d​i​n​g​.​a​t​/​b​i​l​d​u​n​g​s​a​n​g​e​b​o​t​/​m​e​d​i​e​n​t​e​c​h​n​i​k​/​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​>​I​T​/​M​e​d​i​e​n​t​e​c​h​n​i​k​<​/​a​>​<​/​s​t​r​o​n​g​>​ ​u​n​d​ ​i​n​t​e​r​e​s​s​i​e​r​e​ ​m​i​c​h​ ​s​e​h​r​ ​f​ü​r​ ​P​r​o​g​r​a​m​m​i​e​r​u​n​g​,​ ​i​n​s​b​e​s​o​n​d​e​r​e​ ​W​e​b​e​n​t​w​i​c​k​l​u​n​g​.​ ​<​b​r​>​ ​N​e​b​e​n​ ​m​e​i​n​e​r​ ​M​u​t​t​e​r​s​p​r​a​c​h​e​ ​<​s​t​r​o​n​g​>​D​e​u​t​s​c​h​<​/​s​t​r​o​n​g​>​ ​s​p​r​e​c​h​e​ ​i​c​h​ ​f​l​i​e​ß​e​n​d​ ​<​s​t​r​o​n​g​>​E​n​g​l​i​s​c​h​<​/​s​t​r​o​n​g​>​ ​m​i​t​ ​N​i​v​e​a​u​ ​B​+​.​ ​S​p​e​z​i​a​l​i​s​i​e​r​t​ ​h​a​b​e​ ​i​c​h​ ​m​i​c​h​ ​a​u​f​ ​d​i​e​ ​C​o​m​p​u​t​e​r​s​p​r​a​c​h​e​n​ ​<​s​t​r​o​n​g​>​H​T​M​L​<​/​s​t​r​o​n​g​>​,​ ​<​s​t​r​o​n​g​>​C​S​S​<​/​s​t​r​o​n​g​>​,​ ​<​s​t​r​o​n​g​>​J​a​v​a​S​c​r​i​p​t​ ​&​ ​N​o​d​e​J​S​<​/​s​t​r​o​n​g​>​,​ ​<​s​t​r​o​n​g​>​P​H​P​<​/​s​t​r​o​n​g​>​,​ ​<​s​t​r​o​n​g​>​O​r​a​c​l​e​ ​S​Q​L​<​/​s​t​r​o​n​g​>​ ​u​n​d​ ​<​s​t​r​o​n​g​>​J​a​v​a​<​/​s​t​r​o​n​g​>​.​ ​<​b​r​>​ ​K​ü​r​z​l​i​c​h​ ​h​a​b​e​ ​i​c​h​ ​d​a​s​ ​S​v​e​l​t​e​ ​J​S​-​F​r​a​m​e​w​o​r​k​ ​e​n​t​d​e​c​k​t​ ​u​n​d​ ​<​s​t​r​o​n​g​>​S​v​e​l​t​e​<​/​s​t​r​o​n​g​>​ ​z​u​s​a​m​m​e​n​ ​m​i​t​ ​<​s​t​r​o​n​g​>​S​v​e​l​t​e​K​i​t​<​/​s​t​r​o​n​g​>​ ​g​e​l​e​r​n​t​.​ ​I​c​h​ ​h​a​b​e​ ​a​u​c​h​ ​E​r​f​a​h​r​u​n​g​e​n​ ​m​i​t​ ​<​s​t​r​o​n​g​>​T​a​i​l​w​i​n​d​C​S​S​<​/​s​t​r​o​n​g​>​ ​u​n​d​ ​<​s​t​r​o​n​g​>​D​a​i​s​y​U​I​<​/​s​t​r​o​n​g​>​ ​g​e​s​a​m​m​e​l​t​.​ ​I​c​h​ ​l​e​r​n​e​ ​g​e​r​n​e​ ​n​e​u​e​ ​P​r​o​g​r​a​m​m​i​e​r​s​p​r​a​c​h​e​n​ ​u​n​d​ ​F​r​a​m​e​w​o​r​k​s​ ​u​n​d​ ​e​n​t​w​i​c​k​l​e​ ​m​i​t​ ​L​e​i​d​e​n​s​c​h​a​f​t​ ​e​f​f​i​z​i​e​n​t​e​ ​s​o​w​i​e​ ​b​e​n​u​t​z​e​r​f​r​e​u​n​d​l​i​c​h​e​ ​W​e​b​s​i​t​e​s​ ​u​n​d​ ​A​n​w​e​n​d​u​n​g​e​n​.​ ​I​c​h​ ​s​u​c​h​e​ ​s​t​ä​n​d​i​g​ ​n​a​c​h​ ​M​ö​g​l​i​c​h​k​e​i​t​e​n​,​ ​m​e​i​n​e​ ​F​ä​h​i​g​k​e​i​t​e​n​ ​u​n​d​ ​K​e​n​n​t​n​i​s​s​e​ ​i​m​ ​B​e​r​e​i​c​h​ ​W​e​b​e​n​t​w​i​c​k​l​u​n​g​ ​z​u​ ​v​e​r​b​e​s​s​e​r​n​,​ ​u​n​d​ ​i​c​h​ ​b​i​n​ ​e​n​t​s​c​h​l​o​s​s​e​n​,​ ​m​e​i​n​e​ ​K​a​r​r​i​e​r​e​z​i​e​l​e​ ​i​n​ ​d​e​r​ ​W​e​l​t​ ​d​e​r​ ​I​T​ ​u​n​d​ ​P​r​o​g​r​a​m​m​i​e​r​u​n​g​ ​z​u​ ​e​r​r​e​i​c​h​e​n​.​ ​M​i​t​ ​H​i​n​g​a​b​e​ ​u​n​d​ ​E​n​t​h​u​s​i​a​s​m​u​s​ ​g​l​a​u​b​e​ ​i​c​h​,​ ​d​a​s​s​ ​i​c​h​ ​d​a​s​ ​Z​e​u​g​ ​d​a​z​u​ ​h​a​b​e​,​ ​i​n​ ​d​i​e​s​e​m​ ​B​e​r​e​i​c​h​ ​e​r​f​o​l​g​r​e​i​c​h​ ​z​u​ ​s​e​i​n​.
+				 * M​y​ ​n​a​m​e​ ​i​s​ ​<​s​t​r​o​n​g​>​J​o​n​a​s​<​/​s​t​r​o​n​g​>​,​ ​a​n​d​ ​I​ ​a​m​ ​a​ ​<​s​t​r​o​n​g​>​1​7​<​/​s​t​r​o​n​g​>​-​y​e​a​r​-​o​l​d​ ​s​t​u​d​e​n​t​ ​c​u​r​r​e​n​t​l​y​ ​s​t​u​d​y​i​n​g​ ​a​t​ ​<​s​t​r​o​n​g​>​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​h​t​l​-​l​e​o​n​d​i​n​g​.​a​t​/​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​>​H​T​B​L​A​ ​L​e​o​n​d​i​n​g​<​/​a​>​<​/​s​t​r​o​n​g​>​ ​i​n​ ​<​s​t​r​o​n​g​>​A​u​s​t​r​i​a​<​/​s​t​r​o​n​g​>​.​ ​I​ ​a​m​ ​p​u​r​s​u​i​n​g​ ​a​ ​f​i​e​l​d​ ​o​f​ ​s​t​u​d​y​ ​i​n​ ​<​s​t​r​o​n​g​>​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​h​t​l​-​l​e​o​n​d​i​n​g​.​a​t​/​b​i​l​d​u​n​g​s​a​n​g​e​b​o​t​/​m​e​d​i​e​n​t​e​c​h​n​i​k​/​"​ ​t​a​r​g​e​t​=​"​_​b​l​a​n​k​"​>​I​T​/​M​e​d​i​a​t​e​c​h​n​o​l​o​g​y​<​/​a​>​<​/​s​t​r​o​n​g​>​,​ ​a​n​d​ ​I​ ​h​a​v​e​ ​a​ ​k​e​e​n​ ​i​n​t​e​r​e​s​t​ ​i​n​ ​p​r​o​g​r​a​m​m​i​n​g​,​ ​e​s​p​e​c​i​a​l​l​y​ ​w​e​b​ ​d​e​v​e​l​o​p​m​e​n​t​.​ ​<​b​r​>​ ​A​s​i​d​e​ ​f​r​o​m​ ​m​y​ ​n​a​t​i​v​e​ ​l​a​n​g​u​a​g​e​,​ ​<​s​t​r​o​n​g​>​G​e​r​m​a​n​<​/​s​t​r​o​n​g​>​,​ ​I​ ​a​m​ ​a​l​s​o​ ​f​l​u​e​n​t​ ​i​n​ ​<​s​t​r​o​n​g​>​E​n​g​l​i​s​h​<​/​s​t​r​o​n​g​>​,​ ​w​i​t​h​ ​a​ ​B​+​ ​l​e​v​e​l​ ​o​f​ ​p​r​o​f​i​c​i​e​n​c​y​.​ ​I​ ​h​a​v​e​ ​e​x​p​e​r​i​e​n​c​e​ ​w​o​r​k​i​n​g​ ​w​i​t​h​ ​v​a​r​i​o​u​s​ ​p​r​o​g​r​a​m​m​i​n​g​ ​l​a​n​g​u​a​g​e​s​,​ ​i​n​c​l​u​d​i​n​g​ ​<​s​t​r​o​n​g​>​H​T​M​L​<​/​s​t​r​o​n​g​>​,​ ​<​s​t​r​o​n​g​>​C​S​S​<​/​s​t​r​o​n​g​>​,​ ​<​s​t​r​o​n​g​>​J​a​v​a​<​/​s​t​r​o​n​g​>​,​ ​<​s​t​r​o​n​g​>​S​h​e​l​l​S​c​r​i​p​t​<​/​s​t​r​o​n​g​>​,​ ​<​s​t​r​o​n​g​>​J​a​v​a​S​c​r​i​p​t​ ​&​ ​N​o​d​e​J​S​<​/​s​t​r​o​n​g​>​,​ ​<​s​t​r​o​n​g​>​P​H​P​<​/​s​t​r​o​n​g​>​,​ ​a​n​d​ ​<​s​t​r​o​n​g​>​O​r​a​c​l​e​ ​S​Q​L​<​/​s​t​r​o​n​g​>​.​ ​<​b​r​>​ ​R​e​c​e​n​t​l​y​,​ ​I​ ​h​a​v​e​ ​d​i​s​c​o​v​e​r​e​d​ ​t​h​e​ ​S​v​e​l​t​e​ ​J​S​-​f​r​a​m​e​w​o​r​k​ ​a​n​d​ ​l​e​a​r​n​e​d​ ​S​v​e​l​t​e​ ​a​l​o​n​g​ ​w​i​t​h​ ​<​s​t​r​o​n​g​>​S​v​e​l​t​e​K​i​t​<​/​s​t​r​o​n​g​>​.​ ​I​ ​h​a​v​e​ ​a​l​s​o​ ​g​a​i​n​e​d​ ​e​x​p​e​r​t​i​s​e​ ​i​n​ ​w​o​r​k​i​n​g​ ​w​i​t​h​ ​<​s​t​r​o​n​g​>​T​a​i​l​w​i​n​d​C​S​S​<​/​s​t​r​o​n​g​>​ ​a​n​d​ ​<​s​t​r​o​n​g​>​D​a​i​s​y​U​I​<​/​s​t​r​o​n​g​>​.​ ​I​ ​a​m​ ​a​l​w​a​y​s​ ​e​a​g​e​r​ ​t​o​ ​l​e​a​r​n​ ​n​e​w​ ​p​r​o​g​r​a​m​m​i​n​g​ ​l​a​n​g​u​a​g​e​s​ ​a​n​d​ ​f​r​a​m​e​w​o​r​k​s​,​ ​a​n​d​ ​I​ ​a​m​ ​p​a​s​s​i​o​n​a​t​e​ ​a​b​o​u​t​ ​d​e​v​e​l​o​p​i​n​g​ ​e​f​f​i​c​i​e​n​t​,​ ​u​s​e​r​-​f​r​i​e​n​d​l​y​ ​w​e​b​s​i​t​e​s​ ​a​n​d​ ​a​p​p​l​i​c​a​t​i​o​n​s​.​ ​I​ ​a​m​ ​c​o​n​s​t​a​n​t​l​y​ ​e​x​p​l​o​r​i​n​g​ ​w​a​y​s​ ​t​o​ ​i​m​p​r​o​v​e​ ​m​y​ ​s​k​i​l​l​s​ ​a​n​d​ ​k​n​o​w​l​e​d​g​e​ ​i​n​ ​t​h​e​ ​f​i​e​l​d​ ​o​f​ ​w​e​b​ ​d​e​v​e​l​o​p​m​e​n​t​,​ ​a​n​d​ ​I​ ​a​m​ ​d​e​t​e​r​m​i​n​e​d​ ​t​o​ ​a​c​h​i​e​v​e​ ​m​y​ ​c​a​r​e​e​r​ ​g​o​a​l​s​ ​i​n​ ​t​h​e​ ​w​o​r​l​d​ ​o​f​ ​I​T​ ​a​n​d​ ​p​r​o​g​r​a​m​m​i​n​g​.​ ​W​i​t​h​ ​d​e​d​i​c​a​t​i​o​n​ ​a​n​d​ ​e​n​t​h​u​s​i​a​s​m​,​ ​I​ ​b​e​l​i​e​v​e​ ​t​h​a​t​ ​I​ ​h​a​v​e​ ​w​h​a​t​ ​i​t​ ​t​a​k​e​s​ ​t​o​ ​s​u​c​c​e​e​d​ ​i​n​ ​t​h​i​s​ ​f​i​e​l​d​.
 				 */
 				text: string
 			}
 			languages: {
 				/**
-				 * S​p​r​a​c​h​e​n
+				 * L​a​n​g​u​a​g​e​s
 				 */
 				navTitle: string
 				/**
-				 * S​p​r​a​c​h​e​n​ ​i​n​ ​m​e​i​n​e​m​ ​A​r​s​e​n​a​l
+				 * L​a​n​g​u​a​g​e​s​ ​I​ ​S​p​e​a​k
 				 */
 				title: string
 			}
 			technologies: {
 				/**
-				 * T​e​c​h​n​o​l​o​g​i​e​n
+				 * T​e​c​h​n​o​l​o​g​i​e​s
 				 */
 				navTitle: string
 				/**
-				 * T​e​c​h​n​o​l​o​g​i​e​n​ ​d​i​e​ ​I​c​h​ ​v​e​r​w​e​n​d​e
+				 * T​e​c​h​n​o​l​o​g​i​e​s​ ​I​ ​U​s​e
 				 */
 				title: string
 				/**
-				 * S​o​f​t​w​a​r​e
+				 * T​e​c​h​n​o​l​o​g​y
 				 */
 				appCircle: string
 			}
 			photography: {
 				/**
-				 * F​o​t​o​g​r​a​f​i​e
+				 * P​h​o​t​o​g​r​a​p​h​y
 				 */
 				title: string
 				/**
-				 * s​e​i​t​ ​2​0​2​0​ ​f​o​t​o​g​r​a​f​i​e​r​e​ ​i​c​h
+				 * p​h​o​t​o​g​r​a​p​h​i​n​g​ ​s​i​n​c​e​ ​2​0​2​0
 				 */
 				note: string
 			}
@@ -1015,62 +1019,62 @@ type RootTranslation = {
 	}
 	Error: {
 		/**
-		 * {​e​r​r​o​r​}​ ​F​e​h​l​e​r
+		 * {​e​r​r​o​r​}​ ​E​r​r​o​r
 		 * @param {number} error
 		 */
 		error: RequiredParams<'error'>
 		/**
-		 * z​u​r​ü​c​k​ ​z​u​r​ ​h​o​m​e​p​a​g​e
+		 * b​a​c​k​ ​t​o​ ​h​o​m​e​p​a​g​e
 		 */
 		action: string
 	}
 	Header: {
 		/**
-		 * S​t​a​r​t​s​e​i​t​e
+		 * H​o​m​e
 		 */
 		home: string
 		/**
-		 * Ü​b​e​r
+		 * A​b​o​u​t
 		 */
 		about: string
 		/**
-		 * K​o​n​t​a​k​t
+		 * C​o​n​t​a​c​t
 		 */
 		contact: string
 		/**
-		 * P​r​o​j​e​k​t​e
+		 * P​r​o​j​e​c​t​s
 		 */
 		projects: string
 		/**
-		 * R​e​c​h​t​l​i​c​h​e​s
+		 * L​e​g​a​l
 		 */
 		legal: string
 		/**
-		 * E​i​n​s​t​e​l​l​u​n​g​e​n
+		 * S​e​t​t​i​n​g​s
 		 */
 		settings: string
 	}
 	Footer: {
 		about: {
 			/**
-			 * Ü​b​e​r
+			 * A​b​o​u​t
 			 */
 			title: string
 			list: {
 				/**
-				 * F​o​t​o​g​r​a​f​i​e
+				 * P​h​o​t​o​g​r​a​p​h​y
 				 */
 				photography: string
 				/**
-				 * P​r​o​f​i​l
+				 * P​r​o​f​i​l​e
 				 */
 				profile: string
 				/**
-				 * S​p​r​a​c​h​e​n
+				 * L​a​n​g​u​a​g​e​s
 				 */
 				languages: string
 				/**
-				 * T​e​c​h​n​o​l​o​g​i​e​n
+				 * T​e​c​h​n​o​l​o​g​i​e​s
 				 */
 				technologies: string
 				/**
@@ -1081,28 +1085,28 @@ type RootTranslation = {
 		}
 		contact: {
 			/**
-			 * K​o​n​t​a​k​t
+			 * C​o​n​t​a​c​t
 			 */
 			title: string
 		}
 		projects: {
 			/**
-			 * P​r​o​j​e​k​t​e
+			 * P​r​o​j​e​c​t​s
 			 */
 			title: string
 		}
 		legal: {
 			/**
-			 * R​e​c​h​t​l​i​c​h​e​s
+			 * L​e​g​a​l
 			 */
 			title: string
 			list: {
 				/**
-				 * D​a​t​e​n​s​c​h​u​t​z
+				 * P​r​i​v​a​c​y​ ​P​o​l​i​c​y
 				 */
 				privacy_policy: string
 				/**
-				 * G​e​s​c​h​ä​f​t​s​b​e​d​i​n​g​u​n​g​e​n
+				 * T​e​r​m​s​ ​a​n​d​ ​C​o​n​d​i​t​i​o​n​s
 				 */
 				terms_and_conditions: string
 				/**
@@ -1110,13 +1114,13 @@ type RootTranslation = {
 				 */
 				cookies: string
 				/**
-				 * I​m​p​r​e​s​s​u​m
+				 * I​m​p​r​i​n​t
 				 */
 				imprint: string
 			}
 		}
 		/**
-		 * h​o​c​h​w​e​r​t​i​g​e​ ​W​e​b​e​n​t​w​i​c​k​l​u​n​g
+		 * q​u​a​l​i​t​y​ ​w​e​b​ ​d​e​v​e​l​o​p​e​m​e​n​t
 		 */
 		quote: string
 	}
@@ -1125,15 +1129,15 @@ type RootTranslation = {
 export type TranslationFunctions = {
 	Pages: {
 		/**
-		 * Über
+		 * About
 		 */
 		aboutButton: () => LocalizedString
 		/**
-		 * Projekte
+		 * Projects
 		 */
 		projectsButton: () => LocalizedString
 		/**
-		 * Kontakt
+		 * Contact
 		 */
 		contactButton: () => LocalizedString
 		/**
@@ -1145,51 +1149,51 @@ export type TranslationFunctions = {
 		 */
 		codeSnippetsButton: () => LocalizedString
 		/**
-		 * Unterstützen
+		 * Support
 		 */
 		supportButton: () => LocalizedString
 		/**
-		 * Auf Fivver bestellen
+		 * Book me on fivver
 		 */
 		buyButton: () => LocalizedString
 		/**
-		 * mehr erfahren
+		 * read more
 		 */
 		readMore: () => LocalizedString
 		home: {
 			/**
-			 * Hi, Ich bin Jonas!
+			 * Hi, I am Jonas!
 			 */
 			info: () => LocalizedString
 		}
 		socials: {
 			/**
-			 * Programmieren
+			 * Coding
 			 */
 			headline01: () => LocalizedString
 			/**
-			 * Soziale Medien
+			 * Social Media
 			 */
 			headline02: () => LocalizedString
 			/**
-			 * Kontakt
+			 * Contact
 			 */
 			headline03: () => LocalizedString
 			/**
-			 * wöchentlich eingesehen
+			 * checked weekly
 			 */
 			availabilityNoticeWeek: () => LocalizedString
 			/**
-			 * täglich eingesehen
+			 * checked daily
 			 */
 			availabilityNoticeDay: () => LocalizedString
 			copyNotice: {
 				/**
-				 * E-Mail kopieren
+				 * copy E-Mail
 				 */
 				copy: () => LocalizedString
 				/**
-				 * E-Mail kopiert
+				 * copied E-Mail
 				 */
 				copied: () => LocalizedString
 			}
@@ -1197,11 +1201,11 @@ export type TranslationFunctions = {
 		legal: {
 			privacy_policy: {
 				/**
-				 * Datenschutz
+				 * Privacy Policy
 				 */
 				title: () => LocalizedString
 				/**
-				 * <center><em>Keine übersetzung vorhanden.</em></center> <br> <p>Last updated: March 03, 2023</p>
+				 * <p>Last updated: March 03, 2023</p>
 							<p>
 								This Privacy Policy describes Our policies and procedures on the collection, use and
 								disclosure of Your information when You use the Service and tells You about Your privacy
@@ -1633,17 +1637,17 @@ export type TranslationFunctions = {
 				 */
 				content: () => LocalizedString
 				/**
-				 * Datenschutzerklärung akzeptieren
+				 * accept Privacy Policy
 				 */
 				accept: () => LocalizedString
 			}
 			terms_and_conditions: {
 				/**
-				 * Geschäftsbedingungen
+				 * Terms and Conditions
 				 */
 				title: () => LocalizedString
 				/**
-				 * <center><em>Keine übersetzung vorhanden.</em></center> <br> <p>Last updated: March 03, 2023</p>
+				 * <p>Last updated: March 03, 2023</p>
 		
 							<p>Welcome to jonasfroeller!</p>
 				
@@ -1907,7 +1911,7 @@ export type TranslationFunctions = {
 				 */
 				content: () => LocalizedString
 				/**
-				 * Geschäftsbedingungen akzeptieren
+				 * accept Terms and Conditions
 				 */
 				accept: () => LocalizedString
 			}
@@ -1917,7 +1921,7 @@ export type TranslationFunctions = {
 				 */
 				title: () => LocalizedString
 				/**
-				 * <center><em>Keine übersetzung vorhanden.</em></center> <br> <p>Last updated: March 03, 2023</p>
+				 * <p>Last updated: March 03, 2023</p>
 							<p>
 								This is the Cookie Policy for jonasfroeller, accessible from https://jonasfroeller.ddns.net/en
 							</p>
@@ -2016,61 +2020,65 @@ export type TranslationFunctions = {
 				 */
 				content: () => LocalizedString
 				/**
-				 * Cookies akzeptieren
+				 * accept Cookies
 				 */
 				accept: () => LocalizedString
 			}
 			imprint: {
 				/**
-				 * Impressum
+				 * Imprint
 				 */
 				title: () => LocalizedString
 				/**
-				 * 
-							<p>Letzte Aktualisierung: März 03, 2023</p>
+				 * <p>Last updated: March 03, 2023</p>
 		
-							<h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
+							<h2>Information according to &sect; 5TMG</h2>
+						
 							<p>
 								Jonas Fr&ouml;ller<br />
-								<!-- Limesstra&szlig;e 12/14<br /> -->
+						
+								<!-- Limesstraße 12/14<br /> -->
+						
 								<!-- 4060 Leonding -->
 							</p>
-				
-							<h2>Kontakt</h2>
+						
+							<h2>Contact</h2>
+						
 							<p>
-								<!-- Telefon: &#91;Telefonnummer&#93;<br /> -->
-								E-Mail: j.froe@gmx.at
+								<!-- Phone: &#91;phone number&#93;<br /> -->
+						
+								Email: j.froe@gmx.at
 							</p>
-				
-							<p>Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a></p>
+						
+							<p>Source: <a href="https://www.e-recht24.de">e-recht24.de</a></p>
 				 */
 				content: () => LocalizedString
 			}
 		}
 		settings: {
 			/**
-			 * Einstellungen
+			 * Settings
 			 */
 			title: () => LocalizedString
 			/**
-			 * Rechtliches
+			 * Legal
 			 */
 			headline01: () => LocalizedString
 			/**
-			 * Stil
+			 * Style
 			 */
 			headline02: () => LocalizedString
 			/**
-			 * Sprache
+			 * Language
 			 */
 			headline03: () => LocalizedString
 			/**
-			 * Optionen
+			 * Options
 			 */
 			options: () => LocalizedString
 			cookieOptions: {
 				/**
-				 * Erforderlich, damit die Website die gewählte Sprache, den gewählten Stil, bereits geladene Icons und die Scrollposition (wird nach schließen des Tabs gelöscht) jeder Seite auf Ihrem Gerät speichern kann!
+				 * Necessary so that the website can save the selected language, the selected style, already loaded icons and the scroll position (will be deleted after closing the tab) of each page on your device!
 				 */
 				necessary: () => LocalizedString
 			}
@@ -2078,45 +2086,45 @@ export type TranslationFunctions = {
 		about: {
 			profile: {
 				/**
-				 * Profil
+				 * Profile
 				 */
 				title: () => LocalizedString
 				/**
-				 * Mein Name ist <strong>Jonas</strong> und ich bin ein <strong>17</strong>-jähriger Schüler, der derzeit an der <strong><a href="https://www.htl-leonding.at/" target="_blank">HTBLA Leonding</a></strong> in <strong>Österreich</strong> studiert. Ich studiere <strong><a href="https://www.htl-leonding.at/bildungsangebot/medientechnik/" target="_blank">IT/Medientechnik</a></strong> und interessiere mich sehr für Programmierung, insbesondere Webentwicklung. <br> Neben meiner Muttersprache <strong>Deutsch</strong> spreche ich fließend <strong>Englisch</strong> mit Niveau B+. Spezialisiert habe ich mich auf die Computersprachen <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript & NodeJS</strong>, <strong>PHP</strong>, <strong>Oracle SQL</strong> und <strong>Java</strong>. <br> Kürzlich habe ich das Svelte JS-Framework entdeckt und <strong>Svelte</strong> zusammen mit <strong>SvelteKit</strong> gelernt. Ich habe auch Erfahrungen mit <strong>TailwindCSS</strong> und <strong>DaisyUI</strong> gesammelt. Ich lerne gerne neue Programmiersprachen und Frameworks und entwickle mit Leidenschaft effiziente sowie benutzerfreundliche Websites und Anwendungen. Ich suche ständig nach Möglichkeiten, meine Fähigkeiten und Kenntnisse im Bereich Webentwicklung zu verbessern, und ich bin entschlossen, meine Karriereziele in der Welt der IT und Programmierung zu erreichen. Mit Hingabe und Enthusiasmus glaube ich, dass ich das Zeug dazu habe, in diesem Bereich erfolgreich zu sein.
+				 * My name is <strong>Jonas</strong>, and I am a <strong>17</strong>-year-old student currently studying at <strong><a href="https://www.htl-leonding.at/" target="_blank">HTBLA Leonding</a></strong> in <strong>Austria</strong>. I am pursuing a field of study in <strong><a href="https://www.htl-leonding.at/bildungsangebot/medientechnik/" target="_blank">IT/Mediatechnology</a></strong>, and I have a keen interest in programming, especially web development. <br> Aside from my native language, <strong>German</strong>, I am also fluent in <strong>English</strong>, with a B+ level of proficiency. I have experience working with various programming languages, including <strong>HTML</strong>, <strong>CSS</strong>, <strong>Java</strong>, <strong>ShellScript</strong>, <strong>JavaScript & NodeJS</strong>, <strong>PHP</strong>, and <strong>Oracle SQL</strong>. <br> Recently, I have discovered the Svelte JS-framework and learned Svelte along with <strong>SvelteKit</strong>. I have also gained expertise in working with <strong>TailwindCSS</strong> and <strong>DaisyUI</strong>. I am always eager to learn new programming languages and frameworks, and I am passionate about developing efficient, user-friendly websites and applications. I am constantly exploring ways to improve my skills and knowledge in the field of web development, and I am determined to achieve my career goals in the world of IT and programming. With dedication and enthusiasm, I believe that I have what it takes to succeed in this field.
 				 */
 				text: () => LocalizedString
 			}
 			languages: {
 				/**
-				 * Sprachen
+				 * Languages
 				 */
 				navTitle: () => LocalizedString
 				/**
-				 * Sprachen in meinem Arsenal
+				 * Languages I Speak
 				 */
 				title: () => LocalizedString
 			}
 			technologies: {
 				/**
-				 * Technologien
+				 * Technologies
 				 */
 				navTitle: () => LocalizedString
 				/**
-				 * Technologien die Ich verwende
+				 * Technologies I Use
 				 */
 				title: () => LocalizedString
 				/**
-				 * Software
+				 * Technology
 				 */
 				appCircle: () => LocalizedString
 			}
 			photography: {
 				/**
-				 * Fotografie
+				 * Photography
 				 */
 				title: () => LocalizedString
 				/**
-				 * seit 2020 fotografiere ich
+				 * photographing since 2020
 				 */
 				note: () => LocalizedString
 			}
@@ -2124,61 +2132,61 @@ export type TranslationFunctions = {
 	}
 	Error: {
 		/**
-		 * {error} Fehler
+		 * {error} Error
 		 */
 		error: (arg: { error: number }) => LocalizedString
 		/**
-		 * zurück zur homepage
+		 * back to homepage
 		 */
 		action: () => LocalizedString
 	}
 	Header: {
 		/**
-		 * Startseite
+		 * Home
 		 */
 		home: () => LocalizedString
 		/**
-		 * Über
+		 * About
 		 */
 		about: () => LocalizedString
 		/**
-		 * Kontakt
+		 * Contact
 		 */
 		contact: () => LocalizedString
 		/**
-		 * Projekte
+		 * Projects
 		 */
 		projects: () => LocalizedString
 		/**
-		 * Rechtliches
+		 * Legal
 		 */
 		legal: () => LocalizedString
 		/**
-		 * Einstellungen
+		 * Settings
 		 */
 		settings: () => LocalizedString
 	}
 	Footer: {
 		about: {
 			/**
-			 * Über
+			 * About
 			 */
 			title: () => LocalizedString
 			list: {
 				/**
-				 * Fotografie
+				 * Photography
 				 */
 				photography: () => LocalizedString
 				/**
-				 * Profil
+				 * Profile
 				 */
 				profile: () => LocalizedString
 				/**
-				 * Sprachen
+				 * Languages
 				 */
 				languages: () => LocalizedString
 				/**
-				 * Technologien
+				 * Technologies
 				 */
 				technologies: () => LocalizedString
 				/**
@@ -2189,28 +2197,28 @@ export type TranslationFunctions = {
 		}
 		contact: {
 			/**
-			 * Kontakt
+			 * Contact
 			 */
 			title: () => LocalizedString
 		}
 		projects: {
 			/**
-			 * Projekte
+			 * Projects
 			 */
 			title: () => LocalizedString
 		}
 		legal: {
 			/**
-			 * Rechtliches
+			 * Legal
 			 */
 			title: () => LocalizedString
 			list: {
 				/**
-				 * Datenschutz
+				 * Privacy Policy
 				 */
 				privacy_policy: () => LocalizedString
 				/**
-				 * Geschäftsbedingungen
+				 * Terms and Conditions
 				 */
 				terms_and_conditions: () => LocalizedString
 				/**
@@ -2218,13 +2226,13 @@ export type TranslationFunctions = {
 				 */
 				cookies: () => LocalizedString
 				/**
-				 * Impressum
+				 * Imprint
 				 */
 				imprint: () => LocalizedString
 			}
 		}
 		/**
-		 * hochwertige Webentwicklung
+		 * quality web developement
 		 */
 		quote: () => LocalizedString
 	}
