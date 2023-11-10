@@ -20,12 +20,12 @@ Hey! I am Jonas, a developer living in upper Austria.
     "markup/style/programming/scripting languages (to be politically correct)": [
         "HyperTextMarkupLanguage [.html]",
         "CascadingStyleSheets [.css]",
-        "JavaScript (ES) [.js]",
+        "NodeJS/JavaScript (ES) [.js]",
         "TypeScript [.ts]",
-        "NodeJS [.js]",
         "PersonalHomePage [.php]",
-        "StructuredQueryLanguage [.sql]",
+        "ProceduralLanguage/StructuredQueryLanguage [.sql]",
         "Java [.java]",
+        "Swift [.swift]",
         "ShellScript [.sh]"
     ], "other languages": [
         "german (native)",
