@@ -1,6 +1,4 @@
 <script>
-	// Svelte
-	import { base } from '$app/paths'; // basePath
 	// Translation
 	import { locale } from '$translation/i18n-svelte'; // currentLanguage
 

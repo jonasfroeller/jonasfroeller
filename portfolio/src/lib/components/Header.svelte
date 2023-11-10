@@ -38,18 +38,18 @@
 <header
 	class="flex flex-wrap justify-end p-2 border-b-2 border-secondary min-h-[10dvh] min-h-[10vh] select-none"
 >
-	<nav class="w-full flex justify-between items-center">
+	<nav class="flex items-center justify-between w-full">
 		<ul class="flex">
 			<li>
 				<label
-					class="btn bg-transparent hover:bg-transparent btn-circle swap swap-rotate border-2 text-secondary border-secondary hover:border-primary"
+					class="bg-transparent border-2 btn hover:bg-transparent btn-circle swap swap-rotate text-secondary border-secondary hover:border-primary"
 				>
 					<!-- this hidden checkbox controls the state -->
 					<input type="checkbox" on:click={() => toggleMenu()} />
 
 					<!-- hamburger icon -->
 					<svg
-						class="swap-off fill-current"
+						class="fill-current swap-off"
 						xmlns="http://www.w3.org/2000/svg"
 						width="32"
 						height="32"
@@ -59,7 +59,7 @@
 
 					<!-- close icon -->
 					<svg
-						class="swap-on fill-current"
+						class="fill-current swap-on"
 						xmlns="http://www.w3.org/2000/svg"
 						width="32"
 						height="32"
@@ -84,34 +84,34 @@
 			>
 
 			<input type="checkbox" id="settings" class="modal-toggle" />
-			<label for="settings" class="modal cursor-pointer">
-				<label class="modal-box relative" for="">
+			<label for="settings" class="cursor-pointer modal">
+				<label class="relative modal-box" for="">
 					<!-- disables closing modal on click of modal -->
-					<label for="settings" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-					<h3 class="text-lg font-bold mb-2">{$translation.Pages.settings.title()}</h3>
-					<form class="form-control mb-4">
-						<h4 class="text-base font-bold mb-2">{$translation.Pages.settings.headline01()}</h4>
-						<label class="label cursor-pointer">
+					<label for="settings" class="absolute btn btn-sm btn-circle right-2 top-2">✕</label>
+					<h3 class="mb-2 text-lg font-bold">{$translation.Pages.settings.title()}</h3>
+					<form class="mb-4 form-control">
+						<h4 class="mb-2 text-base font-bold">{$translation.Pages.settings.headline01()}</h4>
+						<label class="cursor-pointer label">
 							<span class="label-text"
 								>{$translation.Pages.legal.terms_and_conditions.accept()}</span
 							>
 							<input type="checkbox" class="checkbox" checked disabled />
 							<!-- alt class: toggle -->
 						</label>
-						<label class="label cursor-pointer">
+						<label class="cursor-pointer label">
 							<span class="label-text">{$translation.Pages.legal.privacy_policy.accept()}</span>
 							<input type="checkbox" class="checkbox" checked disabled />
 						</label>
-						<label class="label cursor-pointer">
+						<label class="cursor-pointer label">
 							<span class="label-text">{$translation.Pages.legal.cookies.accept()}</span>
 							<input type="checkbox" class="checkbox" checked disabled />
 						</label>
-						<h4 class="text-base font-bold mb-2">{$translation.Pages.settings.headline02()}</h4>
+						<h4 class="mb-2 text-base font-bold">{$translation.Pages.settings.headline02()}</h4>
 						<div class="flex items-center justify-between">
 							<ThemeSwitcher asSelect={true} />
 							<ThemeSwitcher asToggle={true} />
 						</div>
-						<h4 class="text-base font-bold mb-2">{$translation.Pages.settings.headline03()}</h4>
+						<h4 class="mb-2 text-base font-bold">{$translation.Pages.settings.headline03()}</h4>
 						<LocaleSwitcher asSelect={true} />
 					</form>
 					<!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -120,7 +120,7 @@
 						<label
 							on:click={() => (location.href = `${base}/${$locale}/settings`)}
 							for="settings"
-							class="btn flex gap-1 rotateChild"
+							class="flex gap-1 btn rotateChild"
 						>
 							<iconify-icon
 								icon="material-symbols:settings-outline-rounded"
@@ -135,7 +135,7 @@
 	</nav>
 </header>
 <aside class="flex justify-center">
-	<div class="cursor-pointer breadcrumbs p-2 rounded-md">
+	<div class="p-2 rounded-md cursor-pointer breadcrumbs">
 		<ul class="flex items-center">
 			<li class="text-xl">
 				<a href="{base}/{$locale}"

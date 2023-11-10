@@ -56,7 +56,7 @@
 
 <section class="flex flex-col justify-center items-center gap-6 w-100 h-[75vh]">
 	<h1
-		class="2xl:text-9xl xl:text-8xl	lg:text-7xl	md:text-6xl	sm:text-5xl text-4xl select-none text-center"
+		class="2xl:text-9xl xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-4xl select-none text-center"
 		id="name"
 		data-value="JONAS FRÖLLER"
 	>

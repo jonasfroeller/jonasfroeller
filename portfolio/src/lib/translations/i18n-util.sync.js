@@ -7,37 +7,38 @@
  * @typedef { import('./i18n-types').Translations } Translations
  */
 
-import { initFormatters } from './formatters'
+import { initFormatters } from './formatters';
 
-import { loadedFormatters, loadedLocales, locales } from './i18n-util'
+import { loadedFormatters, loadedLocales, locales } from './i18n-util';
 
-import de from './de'
-import en from './en'
+import de from './de';
+import en from './en';
 
 const localeTranslations = {
 	de,
-	en,
-}
+	en
+};
 
 /**
  * @param { Locales } locale
  * @return { void }
  */
 export const loadLocale = (locale) => {
-	if (loadedLocales[locale]) return
+	if (loadedLocales[locale]) return;
 
-	loadedLocales[locale] = /** @type { Translations } */ (/** @type { unknown } */ (localeTranslations[locale]))
-	loadFormatters(locale)
-}
+	loadedLocales[locale] = /** @type { Translations } */ (
+		/** @type { unknown } */ (localeTranslations[locale])
+	);
+	loadFormatters(locale);
+};
 
 /**
  * @return { void }
  */
-export const loadAllLocales = () => locales.forEach(loadLocale)
+export const loadAllLocales = () => locales.forEach(loadLocale);
 
 /**
  * @param { Locales } locale
  * @return { void }
  */
-export const loadFormatters = (locale) =>
-	void (loadedFormatters[locale] = initFormatters(locale))
+export const loadFormatters = (locale) => void (loadedFormatters[locale] = initFormatters(locale));

@@ -4,38 +4,42 @@ import adapterVercel from '@sveltejs/adapter-vercel'; // Hosting for Node
 import preprocess from 'svelte-preprocess'; // import { vitePreprocess } from '@sveltejs/kit/vite';
 const dev = process.argv.includes('dev'); // || const dev = process.env.NODE_ENV === 'developement' || const dev = base === '' ? true : false; || https://kit.svelte.dev/docs/modules#$app-environment => import { browser, building, dev, version } from '$app/environment';
 
-const staticBuild = process.env.staticBuild ? JSON.parse(process.env.staticBuild.toLowerCase()) : true;
+const staticBuild = process.env.staticBuild
+	? JSON.parse(process.env.staticBuild.toLowerCase())
+	: true;
 // BUILD: set prefixFolder=true/false && npm run build || npm run build => false
-const prefixFolder = process.env.prefixFolder ? JSON.parse(process.env.prefixFolder.toLowerCase()) : false; // prefix (repo name) needed if hosted on GitHub (default = false => for: netlify, vercel, 000webhost, oracleCloud...) 
+const prefixFolder = process.env.prefixFolder
+	? JSON.parse(process.env.prefixFolder.toLowerCase())
+	: false; // prefix (repo name) needed if hosted on GitHub (default = false => for: netlify, vercel, 000webhost, oracleCloud...)
 const basePath = prefixFolder == true ? (dev ? '' : '/jonasfroeller') : ''; // base: <prefix> | domain/repo/de/<search> (true) || domain/de/<search> (false)
 let buildDir = prefixFolder == true ? '../jonasfroeller' : '../jonasfroeller-noprefix'; // folder: jonasfroeller (gh-pages) || folder:jonasfroeller - noprefix(any other static hosting service) (STATIC)
-buildDir = staticBuild ? buildDir : "../jonasfroeller-node"; // (NODE)
+buildDir = staticBuild ? buildDir : '../jonasfroeller-node'; // (NODE)
 
 let vercel = process.env.vercelBuild ? JSON.parse(process.env.vercelBuild.toLowerCase()) : false; // (VERCEL build: set staticBuild=false vercelBuild=true && npm run build || export staticBuild=false vercelBuild=true && npm run build)
 
 console.log(`basePath: '${basePath}'`);
-console.log('buildDir:', vercel ? "public" : buildDir);
+console.log('buildDir:', vercel ? 'public' : buildDir);
 // console.log('env:', process.env);
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter:
-		vercel ? adapterVercel() :
-			staticBuild ?
-			adapterStatic({
-				pages: buildDir,
-				assets: buildDir,
-				fallback: null /* 'error.html' */,
-				precompress: false,
-				strict: true
-			}) : 
-			adapterNode({
-				out: buildDir,
-				precompress: false,
-				envPrefix: '',
-				polyfill: true
-			}),
+		adapter: vercel
+			? adapterVercel()
+			: staticBuild
+			? adapterStatic({
+					pages: buildDir,
+					assets: buildDir,
+					fallback: null /* 'error.html' */,
+					precompress: false,
+					strict: true
+			  })
+			: adapterNode({
+					out: buildDir,
+					precompress: false,
+					envPrefix: '',
+					polyfill: true
+			  }),
 		appDir: 'portfolio',
 		paths: {
 			base: basePath

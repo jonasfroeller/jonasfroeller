@@ -7,7 +7,7 @@
 	import styleCfg from '$script/styleStorage';
 	// Svelte
 	import { onMount } from 'svelte';
-	import { base } from '$app/paths';
+	import { invalidateAll } from '$app/navigation';
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
 	// Translation
@@ -17,8 +17,6 @@
 	import { replaceLocaleInUrl } from '$main/utils';
 
 	export let asSelect = false;
-
-	const dev = base === '' ? true : false;
 
 	/**
 	 * the way the language gets changed in the url
@@ -37,13 +35,18 @@
 		await loadLocaleAsync(newLocale);
 		// select locale
 		setLocale(newLocale);
-		// update `lang` attribute
-		document.querySelector('html').setAttribute('lang', newLocale);
 		if (updateHistoryState) {
 			// update url to reflect locale changes
-			history.pushState({ locale: newLocale }, '', replaceLocaleInUrl(location, newLocale, dev));
+			history.pushState({ locale: newLocale }, '', replaceLocaleInUrl(location, newLocale));
 		}
+
+		// run the `load` function again
+		invalidateAll();
 	};
+
+	// update `lang` attribute
+	$: browser && document.querySelector('html').setAttribute('lang', $locale);
+
 	// update locale when navigating via browser back/forward buttons
 	/** @param { PopStateEvent } event */
 	const handlePopStateEvent = async ({ state }) => switchLocale(state.locale, false);
@@ -56,7 +59,7 @@
 		history.replaceState(
 			{ ...history.state, locale: lang },
 			'',
-			replaceLocaleInUrl(location, lang, dev)
+			replaceLocaleInUrl(location, lang)
 		);
 	}
 
@@ -70,7 +73,7 @@
 
 {#if asSelect}
 	<select
-		class="select select-bordered w-auto"
+		class="w-auto select select-bordered"
 		bind:value={$langState}
 		on:change={() => {
 			$config.language = $langState;
@@ -91,7 +94,7 @@
 			<li>
 				<button
 					type="button"
-					class="link after:bg-primary text-xl"
+					class="text-xl link after:bg-primary"
 					class:active={l === $locale}
 					on:click={() => switchLocale(l)}
 				>

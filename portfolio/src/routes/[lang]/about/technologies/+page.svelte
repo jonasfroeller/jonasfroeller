@@ -2,9 +2,7 @@
 	// @ts-nocheck
 	// Svelte
 	import { browser } from '$app/environment';
-	import { base } from '$app/paths';
 	// Translation
-	import { locale } from '$translation/i18n-svelte';
 	import translation from '$translation/i18n-svelte'; // translations
 	// Assets
 	import SubCategory from '$component/SubCategory.svelte';
@@ -96,13 +94,13 @@
 
 <AboutNav {name} />
 
-<div class="flex justify-center mb-4 mt-4">
+<div class="flex justify-center mt-4 mb-4">
 	<div class="prose">
 		<h1 class="text-center">{$translation.Pages.about.technologies.title()}</h1>
 	</div>
 </div>
 
-<section class="flex justify-center items-center flex-wrap gap-4 mt-4">
+<section class="flex flex-wrap items-center justify-center gap-4 mt-4">
 	<section class="flex justify-center mt-4">
 		<div id="tech-circle">
 			<ul class="technologies">
