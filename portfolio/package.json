@@ -41,7 +41,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-vercel": "^2.4.3",
+		"@sveltejs/adapter-vercel": "^3.0.3",
 		"@tailwindcss/typography": "^0.5.10",
 		"daisyui": "^2.52.0",
 		"iconify-icon": "^1.0.8",
