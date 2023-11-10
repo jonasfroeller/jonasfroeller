@@ -22,11 +22,15 @@
 
 	/* $: console.log('current lang:', $locale); */
 
-	$: dir = $page.route.id
-		.replace('/jonasfroeller', '')
-		.replace('/[lang]', '')
-		.split('/')
-		.splice(1, 1);
+	$: id = $page.route.id;
+	$: dir =
+		id && typeof id === 'string'
+			? id.includes('jonasfroeller')
+				? id.replace('/jonasfroeller', '')
+				: id.includes('[lang]')
+				? id.replace('/[lang]', '').split('/').splice(1, 1)
+				: ''
+			: '';
 
 	function toggleMenu() {
 		if (browser) {
