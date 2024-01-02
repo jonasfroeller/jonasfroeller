@@ -15,7 +15,6 @@
 	console.log('[lang]', data);
 
 	let name = 'home';
-	let nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
 
 	onMount(async () => {
 		/* src: https://codepen.io/Hyperplexed/pen/rNrJgrd */
@@ -52,7 +51,7 @@
 	});
 </script>
 
-<Category {name} {nameCapitalized} />
+<Category {name} />
 
 <section class="flex flex-col justify-center items-center gap-6 w-100 h-[75vh]">
 	<h1

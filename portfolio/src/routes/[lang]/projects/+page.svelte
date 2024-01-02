@@ -5,18 +5,17 @@
 	import Category from '$component/Category.svelte';
 
 	let name = 'projects';
-	let nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
 
 	async function loadData() {
 		const response = await fetch(
-			'https://api.github.com/users/jonasfroeller/repos?sort=updated&direction=desc' // GET REPOS
+			'https://api.github.com/users/jonasfroeller/repos?per_page=100&sort=updated&direction=desc' // GET REPOS
 		);
 		const data = await response.json();
 		return data;
 	}
 </script>
 
-<Category {name} {nameCapitalized} />
+<Category {name} />
 
 <section class="flex justify-center gap-4 flex-wrap max-w-full break-all">
 	{#await loadData()}

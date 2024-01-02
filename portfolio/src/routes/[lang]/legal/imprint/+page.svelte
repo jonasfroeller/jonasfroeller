@@ -6,12 +6,10 @@
 	import translation from '$translation/i18n-svelte'; // translations
 
 	let parent = 'legal';
-	let parentCapitalized = parent.charAt(0).toUpperCase() + parent.slice(1);
 	let name = 'imprint';
-	let nameCapitalized = name.replaceAll('-', ' ').replace(/\b(\w)/g, (s) => s.toUpperCase());
 </script>
 
-<SubCategory {parent} {parentCapitalized} {name} {nameCapitalized} />
+<SubCategory {parent} {name} />
 
 <LegalNav {name} />
 

@@ -85,12 +85,10 @@
 	];
 
 	let parent = 'about';
-	let parentCapitalized = parent.charAt(0).toUpperCase() + parent.slice(1);
 	let name = 'technologies';
-	let nameCapitalized = name.replaceAll('-', ' ').replace(/\b(\w)/g, (s) => s.toUpperCase());
 </script>
 
-<SubCategory {parent} {parentCapitalized} {name} {nameCapitalized} />
+<SubCategory {parent} {name} />
 
 <AboutNav {name} />
 

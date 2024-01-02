@@ -6,14 +6,12 @@
 	import AboutNav from '$component/AboutNav.svelte';
 
 	let parent = 'about';
-	let parentCapitalized = parent.charAt(0).toUpperCase() + parent.slice(1);
 	let name = 'languages';
-	let nameCapitalized = name.replaceAll('-', ' ').replace(/\b(\w)/g, (s) => s.toUpperCase());
 
 	let year = new Date().getFullYear();
 </script>
 
-<SubCategory {parent} {parentCapitalized} {name} {nameCapitalized} />
+<SubCategory {parent} {name} />
 
 <AboutNav {name} />
 

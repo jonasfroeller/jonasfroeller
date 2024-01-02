@@ -10,10 +10,9 @@
 	import { locale } from '$translation/i18n-svelte'; // currentLanguage
 
 	let name = 'settings';
-	let nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
 </script>
 
-<Category {name} {nameCapitalized} />
+<Category {name} />
 
 <section class="flex justify-center">
 	<form class="form-control mb-4 w-96">

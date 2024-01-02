@@ -9,11 +9,10 @@
 	import Category from '$component/Category.svelte';
 
 	let name = 'legal';
-	let nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
 
 	if (!building) {
 		goto(`${base}/${$locale}/legal/terms-and-conditions`);
 	}
 </script>
 
-<Category {name} {nameCapitalized} referHome={true} />
+<Category {name} referHome={true} />

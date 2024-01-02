@@ -10,12 +10,10 @@
 	import translation from '$translation/i18n-svelte'; // translations
 
 	let parent = 'about';
-	let parentCapitalized = parent.charAt(0).toUpperCase() + parent.slice(1);
 	let name = 'profile';
-	let nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
 </script>
 
-<SubCategory {parent} {parentCapitalized} {name} {nameCapitalized} />
+<SubCategory {parent} {name} />
 
 <AboutNav {name} />
 

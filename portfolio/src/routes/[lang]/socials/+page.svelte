@@ -8,7 +8,6 @@
 	import translation from '$translation/i18n-svelte'; // translations
 
 	let name = 'socials';
-	let nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
 
 	function copyEmail(email) {
 		if (browser) {
@@ -20,7 +19,7 @@
 	}
 </script>
 
-<Category {name} {nameCapitalized} />
+<Category {name} />
 
 <section class="flex justify-center gap-4 flex-wrap">
 	<div class="flex flex-col">

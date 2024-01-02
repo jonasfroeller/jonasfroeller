@@ -5,8 +5,9 @@
 	import { locale } from '$translation/i18n-svelte'; // currentLanguage
 
 	export let name = 'unknown';
-	export let nameCapitalized = 'unknown';
 	export let referHome = false;
+
+	let nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
 </script>
 
 <svelte:head>
