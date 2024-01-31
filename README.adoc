@@ -14,7 +14,6 @@ Hey! I am Jonas, a developer living in upper Austria.
 ----
 {
     "name": "jonas froeller",
-    "age": 18,
     "school": "htbla leonding",
     "branch": "it/mediadesign",
     "markup/style/programming/scripting languages (to be politically correct)": [
