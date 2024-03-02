@@ -19,10 +19,10 @@ jobs:
           cd ./portfolio
           npm ci
           export prefixFolder=true && npm run build || set prefixFolder=true && npm run build
-          ls ../jonasfroeller
+          ls ./jonasfroeller
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: jonasfroeller # The folder the action should deploy.
+          folder: ./portfolio/jonasfroeller # The folder the action should deploy.
           branch: portfolio

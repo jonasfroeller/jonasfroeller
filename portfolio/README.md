@@ -14,6 +14,7 @@ Recently, I have discovered the Svelte JS-framework and learned Svelte along wit
 
 [![gh-pages](https://github.com/jonasfroeller/jonasfroeller/actions/workflows/pages/pages-build-deployment/badge.svg?branch=portfolio)](https://github.com/jonasfroeller/jonasfroeller/actions/workflows/pages/pages-build-deployment)
 [![Netlify](https://api.netlify.com/api/v1/badges/79c2e40b-ea98-43de-91e2-c6e2f21ff7a6/deploy-status)](https://app.netlify.com/sites/jonasfroeller/deploys)
+![CloudflarePages](https://img.shields.io/website/https/jonasfroeller.pages.dev?logo=cloudflarepages&label=cloudlare)
 ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=jonasfroeller)
 
 ## Technologies/Languages
