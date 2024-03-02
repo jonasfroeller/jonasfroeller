@@ -1,4 +1,5 @@
-import { base } from '$app/paths';
+// I am to busy to debug this right now, so I will just comment it out :)
+/* import { base } from '$app/paths';
 import type { Locales } from '$translation/i18n-types.js';
 import { detectLocale, i18n, isLocale } from '$translation/i18n-util';
 import { loadAllLocales } from '$translation/i18n-util.sync';
@@ -39,3 +40,4 @@ const getPreferredLocale = ({ request }: RequestEvent) => {
 
 	return detectLocale(acceptLanguageDetector);
 };
+*/

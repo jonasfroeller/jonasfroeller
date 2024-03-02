@@ -27,19 +27,19 @@ const config = {
 		adapter: vercel
 			? adapterVercel()
 			: staticBuild
-			? adapterStatic({
+				? adapterStatic({
 					pages: buildDir,
 					assets: buildDir,
 					fallback: null /* 'error.html' */,
 					precompress: false,
 					strict: true
-			  })
-			: adapterNode({
+				})
+				: adapterNode({
 					out: buildDir,
 					precompress: false,
 					envPrefix: '',
 					polyfill: true
-			  }),
+				}),
 		appDir: 'portfolio',
 		paths: {
 			base: basePath
@@ -55,6 +55,7 @@ const config = {
 		},
 		prerender: {
 			entries: [
+				'/',
 				'/en/about/profile',
 				'/de/about/profile',
 				'/en/about',
