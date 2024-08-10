@@ -64,24 +64,6 @@ image:https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&log
 image:https://img.shields.io/badge/glitch-%233333FF.svg?style=for-the-badge&logo=glitch&logoColor=white[static,link="https://glitch.com/",window=_blank]
 image:https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white[static,link="https://www.oracle.com/de/cloud/",window=_blank]
 
-== currently working on
-
-:tip-caption: pass:[🌐]
-[TIP] 
-link:https://github.com/jonasfroeller/jonasfroeller/tree/master/portfolio[portfolio,window=_blank] 
-
-:tip-caption: pass:[🌐]
-[TIP] 
-link:https://github.com/jonasfroeller/SvelteKit_Markdown-Blog[markdown-blog,window=_blank] 
-
-:tip-caption: pass:[🌐]
-[TIP] 
-link:https://github.com/jonasfroeller/Vue_TechDepot[tech-depot,window=_blank] 
-
-:tip-caption: pass:[🌐]
-[TIP] 
-link:https://github.com/jonasfroeller/SvelteKit_VidSlide[vidslide-social-media,window=_blank] 
-
 == stats
 
 image::https://github-readme-streak-stats.herokuapp.com/?user=jonasfroeller&theme=dark&hide_border=true[]
