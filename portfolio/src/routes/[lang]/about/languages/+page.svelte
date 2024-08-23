@@ -15,14 +15,14 @@
 
 <AboutNav {name} />
 
-<div class="flex justify-center mb-4 mt-4">
+<div class="flex justify-center mt-4 mb-4">
 	<div class="prose">
 		<h1 class="text-center">{$translation.Pages.about.languages.title()}</h1>
 	</div>
 </div>
 
 <div class="flex justify-center">
-	<div class="mockup-code min-w-0">
+	<div class="min-w-0 mockup-code">
 		<!-- prettier-ignore -->
 		<pre data-prefix="1"><code>&lt;p&gt;&lt;strong&gt;<strong class="text-success">HTML</strong>&lt;/strong&gt;&lt;/p&gt;</code></pre>
 		<!-- prettier-ignore -->
@@ -100,7 +100,7 @@
 		<!-- prettier-ignore -->
 		<pre data-prefix="43"><code>import Foundation</code></pre>
 		<!-- prettier-ignore -->
-		<pre data-prefix="44"><code>print("<strong class="text-success">Swift</strong>)</code></pre>
+		<pre data-prefix="44"><code>print("<strong class="text-success">Swift</strong>")</code></pre>
 		<!-- prettier-ignore -->
 		<pre data-prefix="45"><code>let since = 2023</code></pre>
 		<!-- prettier-ignore -->
