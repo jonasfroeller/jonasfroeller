@@ -118,11 +118,9 @@
 						<h4 class="mb-2 text-base font-bold">{$translation.Pages.settings.headline03()}</h4>
 						<LocaleSwitcher asSelect={true} />
 					</form>
-					<!-- svelte-ignore a11y-click-events-have-key-events -->
 					<a href="{base}/{$locale}/settings">
 						<!-- for ux => because on:click is needed and the user can't see where he will end up -->
 						<label
-							on:click={() => (location.href = `${base}/${$locale}/settings`)}
 							for="settings"
 							class="flex gap-1 btn rotateChild"
 						>
