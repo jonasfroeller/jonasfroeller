@@ -42,7 +42,7 @@
 		content={$themeState ? `${base}/favicon-dark.png` : `${base}/favicon-light.png`}
 	/>
 
-	{#if url.includes('netlify')}
+	<!-- {#if url.includes('netlify')}
 		<script src="https://www.googletagmanager.com/gtag/js?id=G-DXWE3ECH38" async></script>
 		<script>
 			// Google tag (gtag.js) NETLIFY
@@ -66,9 +66,7 @@
 
 			gtag('config', 'G-RRS7TRS879');
 		</script>
-	{:else}
-		<!-- google analytics disabled -->
-	{/if}
+	{/if} -->
 </svelte:head>
 
 <Header />

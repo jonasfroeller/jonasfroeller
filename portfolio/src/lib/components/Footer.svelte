@@ -41,29 +41,14 @@
 		<div class="tooltip tooltip-right" data-tip="j.froe@gmx.at">
 			<a class="link after:bg-primary" href="mailto:j.froe@gmx.at">Email</a>
 		</div>
+		<div class="tooltip tooltip-right" data-tip="MerginIT e.U. - SaaS & Web Development">
+			<a class="link after:bg-primary" href="https://merginit.com" target="_blank" rel="noopener">MerginIT</a>
+		</div>
 	</div>
 	<div>
 		<span class="footer-title"
 			><a href="{base}/{$locale}/projects">{$translation.Footer.projects.title()}</a></span
 		>
-		<div class="flex items-bottom gap-1">
-			<a class="link after:bg-primary" href="https://github.com/jonasfroeller/Svelte_TodoManagement"
-				>SVELTE ToDo App</a
-			>
-			<div class="tooltip" data-tip="GitHub">
-				<a
-					href="https://github.com/jonasfroeller/Svelte_TodoManagement"
-					target="_blank"
-					rel="noreferrer"
-					><iconify-icon icon="radix-icons:open-in-new-window" width="20" height="20" /></a
-				>
-			</div>
-			<div class="tooltip" data-tip="LiveDemo">
-				<a target="_blank" rel="noreferrer" href="https://svelte-rollup-todo-app.netlify.app"
-					><iconify-icon icon="eos-icons:application-outlined" width="20" height="20" /></a
-				>
-			</div>
-		</div>
 		<div class="flex items-bottom gap-1">
 			<a class="link after:bg-primary" href="https://github.com/jonasfroeller/JS_WebComponent-Clock"
 				>JS Clock Components</a

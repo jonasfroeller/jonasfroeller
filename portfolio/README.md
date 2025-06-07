@@ -2,7 +2,7 @@
 
 "**jonasfroeller**" is my personal website, that I created to show off my skills and interests.
 
-My name is **Jonas**, and I am a 17-year-old student currently studying at **HTBLA Leonding** in **Austria**. I am pursuing a field of study in **IT/Mediatechnology**, and I have a keen interest in programming, especially web development.
+My name is **Jonas**, and I am a student currently studying at **HTBLA Leonding** in **Austria**. I am pursuing a field of study in **IT/Mediatechnology**, and I have a keen interest in programming, especially web development.
 Aside from my native language, **German**, I am also fluent in **English**, with a B+ level of proficiency. I have experience working with various programming languages, including **<span style="color: #e54d26">HTML</span>**, **<span style="color: #254de3">CSS</span>**, **<span style="color: #f48311">Java</span>**, **<span style="color: #6a1369">ShellScript</span>**, **<span style="color: #f7df1d">JavaScript</span> & <span style="color: #438640">NodeJS</span>**, **<span style="color: #777cb4">PHP</span>**, and **<span style="color: #00628b">MySQL</span> & <span style="color: #8fa5b0">Oracle SQL</span>**.
 Recently, I have discovered the Svelte JS-framework and learned Svelte along with SvelteKit. I have also gained expertise in working with TailwindCSS. This Portfolio is built with DaisyUI & TailwindCSS and statically hosted on Netlify & GitHub, hosted with NodeJS on Vercel.
 

@@ -26,45 +26,45 @@
 			{@html $translation.Pages.about.profile.text()}
 			<br /> <em>~ ChatGPT</em>
 		</article>
-		<div class="flex flex-col gap-3 justify-between">
-			<div class="flex flex-wrap gap-3">
+		<div class="flex flex-col gap-2 justify-between">
+			<div class="flex flex-wrap gap-2">
 				<a href="{base}/{$locale}/socials">
-					<button class="btn btn-md lg:btn-lg gap-2"
-						><iconify-icon icon="mdi:comment-account" width="20" height="20" />
+					<button class="btn btn-sm gap-2"
+						><iconify-icon icon="mdi:comment-account" width="18" height="18" />
 						{$translation.Pages.contactButton()}</button
 					>
 				</a>
 				<a href="https://qwik-link-tree.vercel.app" target="_blank">
-					<button class="btn btn-md lg:btn-lg gap-2"
-						><iconify-icon icon="mdi:link" width="20" height="20" />
+					<button class="btn btn-sm gap-2"
+						><iconify-icon icon="mdi:link" width="18" height="18" />
 						{$translation.Pages.linksButton()}</button
 					>
 				</a>
 			</div>
-			<div class="flex flex-wrap gap-3">
+			<div class="flex flex-wrap gap-2">
 				<a href="{base}/{$locale}/projects">
-					<button class="btn btn-md lg:btn-lg gap-2"
-						><iconify-icon icon="eos-icons:application-outlined" width="20" height="20" />
+					<button class="btn btn-sm gap-2"
+						><iconify-icon icon="eos-icons:application-outlined" width="18" height="18" />
 						{$translation.Pages.projectsButton()}</button
 					>
 				</a>
 				<a href="https://gist.github.com/jonasfroeller" target="_blank">
-					<button class="btn btn-md lg:btn-lg gap-2"
-						><iconify-icon icon="mdi:code-tags" width="20" height="20" />
+					<button class="btn btn-sm gap-2"
+						><iconify-icon icon="mdi:code-tags" width="18" height="18" />
 						{$translation.Pages.codeSnippetsButton()}</button
 					>
 				</a>
 			</div>
-			<div class="flex flex-wrap gap-3">
+			<div class="flex flex-wrap gap-2">
 				<a href="https://buymeacoffee.com/jonasfroeller" target="_blank">
-					<button class="btn btn-md lg:btn-lg gap-2"
-						><iconify-icon icon="mdi:heart" width="20" height="20" />
+					<button class="btn btn-sm gap-2"
+						><iconify-icon icon="mdi:heart" width="18" height="18" />
 						{$translation.Pages.supportButton()}</button
 					>
 				</a>
 				<a href="https://www.fiverr.com/codedesignmedia" target="_blank">
-					<button class="btn btn-md lg:btn-lg gap-2"
-						><iconify-icon icon="mdi:cart" width="20" height="20" />
+					<button class="btn btn-sm gap-2"
+						><iconify-icon icon="mdi:cart" width="18" height="18" />
 						{$translation.Pages.buyButton()}</button
 					>
 				</a>

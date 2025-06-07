@@ -1307,7 +1307,7 @@ export type TranslationFunctions = {
 										<a
 											href="/en"
 											rel="external nofollow noopener noreferrer"
-											target="_blank">https://jonasfroeller.ddns.net/en</a
+											target="_blank">https://jonasfroeller.is-a.dev/en</a
 										>
 									</p>
 								</li>
@@ -1640,7 +1640,7 @@ export type TranslationFunctions = {
 										By visiting this page on our website: <a
 											href="/en/socials"
 											rel="external nofollow noopener noreferrer"
-											target="_blank">https://jonasfroeller.ddns.net/en/socials</a
+											target="_blank">https://jonasfroeller.is-a.dev/en/socials</a
 										>
 									</p>
 								</li>
@@ -1667,7 +1667,7 @@ export type TranslationFunctions = {
 								Website, located at <a
 								href="/en"
 								rel="external nofollow noopener noreferrer"
-								target="_blank">https://jonasfroeller.ddns.net/en</a>.
+								target="_blank">https://jonasfroeller.is-a.dev/en</a>.
 							</p>
 				
 							<p>
@@ -1940,7 +1940,7 @@ export type TranslationFunctions = {
 								This is the Cookie Policy for jonasfroeller, accessible from <a
 								href="/en/legal/cookies"
 								rel="external nofollow noopener noreferrer"
-								target="_blank">https://jonasfroeller.ddns.net/en/legal/cookies</a>
+								target="_blank">https://jonasfroeller.is-a.dev/en/legal/cookies</a>
 							</p>
 				
 							<p><strong>What Are Cookies</strong></p>
@@ -2035,7 +2035,7 @@ export type TranslationFunctions = {
 								<li>By visiting this link: <a
 								href="/en/socials"
 								rel="external nofollow noopener noreferrer"
-								target="_blank">https://jonasfroeller.ddns.net/en/socials</a></li>
+								target="_blank">https://jonasfroeller.is-a.dev/en/socials</a></li>
 							</ul>
 				 */
 				content: () => LocalizedString;

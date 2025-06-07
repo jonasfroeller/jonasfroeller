@@ -4,6 +4,8 @@
  * @typedef { import('../i18n-types').BaseTranslation } BaseTranslation
  */
 
+const age = new Date(Date.now() - new Date('2005-06-19').getTime()).getUTCFullYear() - 1970;
+
 /** @type { BaseTranslation } */
 const en = {
 	Pages: {
@@ -123,7 +125,7 @@ const en = {
 							<a
 								href="/en"
 								rel="external nofollow noopener noreferrer"
-								target="_blank">https://jonasfroeller.ddns.net/en</a
+								target="_blank">https://jonasfroeller.is-a.dev/en</a
 							>
 						</p>
 					</li>
@@ -456,7 +458,7 @@ const en = {
 							By visiting this page on our website: <a
 								href="/en/socials"
 								rel="external nofollow noopener noreferrer"
-								target="_blank">https://jonasfroeller.ddns.net/en/socials</a
+								target="_blank">https://jonasfroeller.is-a.dev/en/socials</a
 							>
 						</p>
 					</li>
@@ -474,7 +476,7 @@ const en = {
 					Website, located at <a
 					href="/en"
 					rel="external nofollow noopener noreferrer"
-					target="_blank">https://jonasfroeller.ddns.net/en</a>.
+					target="_blank">https://jonasfroeller.is-a.dev/en</a>.
 				</p>
 		
 				<p>
@@ -486,12 +488,12 @@ const en = {
 				<p>
 					The following terminology applies to these Terms and Conditions, Privacy Statement and
 					Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log
-					on this website and compliant to the Company’s terms and conditions. "The Company",
+					on this website and compliant to the Company's terms and conditions. "The Company",
 					"Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers
 					to both the Client and ourselves. All terms refer to the offer, acceptance and consideration
 					of payment necessary to undertake the process of our assistance to the Client in the most
-					appropriate manner for the express purpose of meeting the Client’s needs in respect of
-					provision of the Company’s stated services, in accordance with and subject to, prevailing law
+					appropriate manner for the express purpose of meeting the Client's needs in respect of
+					provision of the Company's stated services, in accordance with and subject to, prevailing law
 					of Netherlands. Any use of the above terminology or other words in the singular, plural,
 					capitalization and/or he/she or they, are taken as interchangeable and therefore as referring
 					to same.
@@ -505,7 +507,7 @@ const en = {
 				</p>
 		
 				<p>
-					Most interactive websites use cookies to let us retrieve the user’s details for each visit.
+					Most interactive websites use cookies to let us retrieve the user's details for each visit.
 					Cookies are used by our website to enable the functionality of certain areas to make it easier
 					for people visiting our website. Some of our affiliate/advertising partners may also use
 					cookies.
@@ -599,7 +601,7 @@ const en = {
 					These organizations may link to our home page, to publications or to other Website information
 					so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship,
 					endorsement or approval of the linking party and its products and/or services; and (c) fits
-					within the context of the linking party’s site.
+					within the context of the linking party's site.
 				</p>
 		
 				<p>
@@ -627,7 +629,7 @@ const en = {
 				<p>
 					These organizations may link to our home page so long as the link: (a) is not in any way
 					deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking
-					party and its products or services; and (c) fits within the context of the linking party’s
+					party and its products or services; and (c) fits within the context of the linking party's
 					site.
 				</p>
 		
@@ -646,7 +648,7 @@ const en = {
 					<li>By use of the uniform resource locator being linked to; or</li>
 					<li>
 						By use of any other description of our Website being linked to that makes sense within the
-						context and format of content on the linking party’s site.
+						context and format of content on the linking party's site.
 					</li>
 				</ul>
 		
@@ -681,7 +683,7 @@ const en = {
 				<p>
 					We reserve the right to request that you remove all links or any particular link to our
 					Website. You approve to immediately remove all links to our Website upon request. We also
-					reserve the right to amen these terms and conditions and it’s linking policy at any time. By
+					reserve the right to amen these terms and conditions and it's linking policy at any time. By
 					continuously linking to our Website, you agree to be bound to and follow these linking terms
 					and conditions.
 				</p>
@@ -738,7 +740,7 @@ const en = {
 					This is the Cookie Policy for jonasfroeller, accessible from <a
 					href="/en/legal/cookies"
 					rel="external nofollow noopener noreferrer"
-					target="_blank">https://jonasfroeller.ddns.net/en/legal/cookies</a>
+					target="_blank">https://jonasfroeller.is-a.dev/en/legal/cookies</a>
 				</p>
 		
 				<p><strong>What Are Cookies</strong></p>
@@ -833,33 +835,53 @@ const en = {
 					<li>By visiting this link: <a
 					href="/en/socials"
 					rel="external nofollow noopener noreferrer"
-					target="_blank">https://jonasfroeller.ddns.net/en/socials</a></li>
+					target="_blank">https://jonasfroeller.is-a.dev/en/socials</a></li>
 				</ul>`,
 				accept: 'accept Cookies'
 			},
 			imprint: {
 				title: 'Imprint',
-				content: `<p>Last updated: March 03, 2023</p>
+				content: `<p><em>Last updated: June 07, 2025</em></p>
 
-				<h2>Information according to &sect; 5TMG</h2>
-				
 				<p>
+					Information obligation according to §5 E-Commerce Act, §14 Trade Act or §63 Trade Act and disclosure obligation according to §25 Media Act
+				</p>
+
+				<p>
+					<strong>Website Purpose:</strong> Personal portfolio<br />- Business activities through MerginIT e.U.
+				</p>
+
+				<h2>Website Operator Information</h2>
+				<p>
+					<strong>MerginIT e.U.</strong><br />
 					Jonas Fr&ouml;ller<br />
-				
-					<!-- Limesstraße 12/14<br /> -->
-				
-					<!-- 4060 Leonding -->
+					Nußböckstraße 92<br />
+					4060 Leonding<br />
+					Austria
+				</p>
+
+				<h2>Company Information</h2>
+				<p>
+					<strong>Company Registration Number:</strong> <a href="https://openfirmenbuch.at/company/?fnr=654298d" target="_blank" rel="noopener">654298 d</a><br />
+					<strong>Commercial Court:</strong> Landesgericht Linz<br />
+					<strong>Business Purpose:</strong> Services in automatic data processing and IT<br />
+					<strong>VAT ID:</strong> VAT exempt due to small business regulation<br />
+					<strong>EUID:</strong> ATBRA.654298-000
 				</p>
 				
 				<h2>Contact</h2>
-				
 				<p>
-					<!-- Phone: &#91;phone number&#93;<br /> -->
-				
-					Email: j.froe@gmx.at
+					<strong>Business:</strong><br />
+					Email: <a href="mailto:jonas@merginit.com">jonas@merginit.com</a><br />
+					Phone: +43 6643279885<br /><br />
+					<strong>Personal:</strong><br />
+					Email: <a href="mailto:j.froe@gmx.at">j.froe@gmx.at</a><br />
+					Phone: +43 6643279885
 				</p>
-				
-				<p>Source: <a href="https://www.e-recht24.de">e-recht24.de</a></p>`
+
+				<p>
+					<strong>Complete Imprint:</strong> <a href="https://merginit.com/legal/imprint" target="_blank" rel="noopener">https://merginit.com/legal/imprint</a>
+				</p>`
 			}
 		},
 		settings: {
@@ -876,7 +898,7 @@ const en = {
 		about: {
 			profile: {
 				title: 'Profile',
-				text: 'My name is <strong>Jonas</strong>, and I am a <strong>17</strong>-year-old student currently studying at <strong><a href="https://www.htl-leonding.at/" target="_blank">HTBLA Leonding</a></strong> in <strong>Austria</strong>. I am pursuing a field of study in <strong><a href="https://www.htl-leonding.at/bildungsangebot/medientechnik/" target="_blank">IT/Mediatechnology</a></strong>, and I have a keen interest in programming, especially web development. <br> Aside from my native language, <strong>German</strong>, I am also fluent in <strong>English</strong>, with a B+ level of proficiency. I have experience working with various programming languages, including <strong>HTML</strong>, <strong>CSS</strong>, <strong>Java</strong>, <strong>ShellScript</strong>, <strong>JavaScript & NodeJS</strong>, <strong>PHP</strong>, and <strong>Oracle SQL</strong>. <br> Recently, I have discovered the Svelte JS-framework and learned Svelte along with <strong>SvelteKit</strong>. I have also gained expertise in working with <strong>TailwindCSS</strong> and <strong>DaisyUI</strong>. I am always eager to learn new programming languages and frameworks, and I am passionate about developing efficient, user-friendly websites and applications. I am constantly exploring ways to improve my skills and knowledge in the field of web development, and I am determined to achieve my career goals in the world of IT and programming. With dedication and enthusiasm, I believe that I have what it takes to succeed in this field.'
+				text: `My name is <strong>Jonas</strong>, and I am a <strong>${age}</strong>-year-old student currently studying at <strong><a href="https://www.htl-leonding.at/" target="_blank">HTBLA Leonding</a></strong> in <strong>Austria</strong>. I am pursuing a field of study in <strong><a href="https://www.htl-leonding.at/bildungsangebot/medientechnik/" target="_blank">IT/Mediatechnology</a></strong>, and I have a keen interest in programming, especially web development. <br> Aside from my native language, <strong>German</strong>, I am also fluent in <strong>English</strong>, with a B+ level of proficiency. I have experience working with various programming languages, including <strong>HTML</strong>, <strong>CSS</strong>, <strong>Java</strong>, <strong>ShellScript</strong>, <strong>JavaScript & NodeJS</strong>, <strong>PHP</strong>, and <strong>Oracle SQL</strong>. <br> Recently, I have discovered the Svelte JS-framework and learned Svelte along with <strong>SvelteKit</strong>. I have also gained expertise in working with <strong>TailwindCSS</strong> and <strong>DaisyUI</strong>. I am always eager to learn new programming languages and frameworks, and I am passionate about developing efficient, user-friendly websites and applications. I am constantly exploring ways to improve my skills and knowledge in the field of web development, and I am determined to achieve my career goals in the world of IT and programming. With dedication and enthusiasm, I believe that I have what it takes to succeed in this field.`
 			},
 			languages: {
 				navTitle: 'Languages',
