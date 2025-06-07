@@ -1,0 +1,1 @@
+import{g as e}from"../chunks/navigation.dac7278d.js";import{b as t}from"../chunks/paths.0bb2c2c2.js";new TextEncoder;async function n(){const o=`${t}/en`;return await e(o)}const c=Object.freeze(Object.defineProperty({__proto__:null,load:n},Symbol.toStringTag,{value:"Module"}));export{c as universal};
